@@ -1,4 +1,4 @@
-<% 
+<%
   let iconType = 'image/png'
   let faviconExt = theme.favicon.substr(theme.favicon.lastIndexOf('.') + 1, theme.favicon.length)
   if (faviconExt === 'png') {
@@ -66,7 +66,7 @@
             localStorage.setItem('modelId', themeModelId);
         }
     </script>
-    
+
     <script src="<%= theme.CDN.live2d %>"></script>
     <script>
         var live2dOpen = eval('<%= theme.live2d.open %>') || false;
@@ -77,7 +77,7 @@
   <% } %>
   <%- css('css/animate.min.css') %>
   <%- css('css/style.css') %>
-  
+
   <% if(theme.fancybox.on === true ) { %>
     <%- css('js/fancybox/jquery.fancybox.min.css') %>
   <% } %>
@@ -94,4 +94,5 @@
     <script src="<%- url_for(theme.CDN.paceJs) %>"></script>
     <link href="<%- url_for(theme.CDN.paceCss) %>" rel="stylesheet">
     <%- partial("baidu_tongji") %>
+    <meta name="baidu-site-verification" content="code-iAO71fL25c" />
 </head>
