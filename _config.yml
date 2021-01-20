@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://starrier.github.io/
+url: https://starrier.starrier.org/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -29,7 +29,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: [README.md,travis.yml]
+skip_render: [README.md,sitemap.xml,baidusitemap.xml,CNAME,robots.txt]
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -113,3 +113,9 @@ prism_plugin:
   theme: 'vs'    # 这里可以选择不同样式的主题
   line_number: false    # default false
   custom_css:
+
+# 自动生成sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
