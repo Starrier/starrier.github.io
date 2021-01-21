@@ -44,5 +44,5 @@ gulp.task('minify-js', function() {
         .pipe(gulp.dest('public/js'));
 });
 
-gulp.task('default',gulp.parallel('browser-sync'));
+//gulp.task('default',gulp.parallel('browser-sync'));
 gulp.task('min', gulp.parallel('minify-html','minify-css','minify-js'));
