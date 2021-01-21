@@ -85,3 +85,9 @@ neat_js:
     - '**/*.min.js'
     - '**/index.js'
 ```
+
+## hexo search
+
+```shell script
+npm install hexo-generator-searchdb
+```

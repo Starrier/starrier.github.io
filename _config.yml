@@ -15,7 +15,7 @@ timezone: ''
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
 url: https://starrier.starrier.org/
 root: /
-permalink: /blogs/:title.html
+permalink: blogs/:title.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -29,7 +29,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: [README.md,sitemap.xml,baidusitemap.xml,CNAME,robots.txt,baidu_urls.txt,blogs/**]
+skip_render: [README.md,sitemap.xml,baidusitemap.xml,CNAME,robots.txt,baidu_urls.txt,blogs/**,gulpfile.js]
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -130,7 +130,7 @@ baidu_url_submit:
 
 # hexo - neat
 # 开启压缩, 博文压缩
-neat_enable: true
+neat_enable: false
 # 压缩 html
 neat_html:
   enable: true
@@ -158,3 +158,9 @@ nofollow:
     - 'starriers.starrier.org'
     - 'github.com/Starrier'
     - 'github.com/Starriers'
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
