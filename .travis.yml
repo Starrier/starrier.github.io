@@ -1,5 +1,14 @@
 language: node_js   #设置语言
 node_js: stable     #设置相应的版本
+
+notifications:
+  email:
+    recipients:
+      - starrier@starrier.org
+      - starriers@starrier.org
+    on_success: change # default: change
+    on_failure: always # default: always
+
 cache:
   directories:
     - node_modules    #据说可以减少travis构建时间
