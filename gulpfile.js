@@ -3,7 +3,7 @@ var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 
 var minifycss = require('gulp-minify-css');
-var uglify = require('gulp-uglify');
+var uglify = require('gulp-uglify-es').default;
 var htmlmin = require('gulp-htmlmin');
 
 // 代理
@@ -45,4 +45,4 @@ gulp.task('minify-js', function() {
 });
 
 //gulp.task('default',gulp.parallel('browser-sync'));
-gulp.task('min', gulp.parallel('minify-html','minify-css','minify-js'));
+gulp.task('default', gulp.parallel('minify-css','minify-js'));

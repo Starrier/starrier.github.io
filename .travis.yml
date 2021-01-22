@@ -24,7 +24,9 @@ install:
 before_script:
   - git clone --branch master https://github.com/Starrier/starrier.github.io.git
 script:
-  - npm run build
+  - hexo clean
+  - hexo g
+  - gulp
 after_success:
   - cd ./public
   - git init
