@@ -322,9 +322,9 @@ color_scheme:
   # 通用颜色
   common:
     # 主题色
-    theme: '#808080'
+    theme: '#F8F8FF'
     # 主题色块内部的文字颜色
-    inner: '#fff'
+    inner: '#000000'
     # 链接色 a标签
     link: '#42b983'
     # border颜色，目前轮播图的 阅读更多按钮 和 回到顶部按钮 有用到该border，可自行配置该颜色
@@ -340,7 +340,7 @@ color_scheme:
   # 文章详情页 颜色属性
   post:
     # 文章详情页面-->标题在图片上时候的颜色
-    headerTitle: '#fff'
+    headerTitle: '#696969'
     # 文章详情页面-->标题在图片上时候字体粗细
     headerTitleFontWeight: 'normal' # 100-900 or bold, normal, bolder, lighter
     #文章详情页面--> copy按钮背景色, 空字符串则copy按钮背景为 主题颜色，否则强制使用该颜色

@@ -4,7 +4,8 @@ date: 2021-01-21 09:35:56
 tags: [hexo,seo]
 excerpt: hexo seo 优化
 swiper: true
-img: 
+swiperImg: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/snow.jpg
+img: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/fin-series.jpeg
 ---
 
 # Hexo SEO  优化

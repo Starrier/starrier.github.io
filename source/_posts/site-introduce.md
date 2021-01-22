@@ -5,6 +5,8 @@ tags: [Starrier]
 excerpt: 关于当前网站的一些问题说明
 top: tue
 swiper: true
+swiperImg: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/coffee-1284041.jpg
+img: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/coffee-1284041.jpg
 ---
 
 # 站点建设
