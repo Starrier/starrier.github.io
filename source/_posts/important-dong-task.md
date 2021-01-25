@@ -4,8 +4,8 @@ date: 2021-01-12 23:52:26
 tags: [task,starrier]
 top: true
 excerpt: 当前建设中的重点内容
-img: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/apple-2831949.png
-swiperImg: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/apple-2831949.png
+img: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/@v0.0.1/images/starrier/apple-2831949.png
+swiperImg: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/@v0.0.1/images/starrier/apple-2831949.png
 ---
 
 ## 当前网站建设的重点内容
