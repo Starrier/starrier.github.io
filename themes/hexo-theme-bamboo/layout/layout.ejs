@@ -40,10 +40,10 @@
         <script src="<%- url_for('/js/cursor/fireworks.js') %>"></script>
       <% } else if(theme.cursor_effect.type == "explosion") { %>
         <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 999; pointer-events: none;" ></canvas>
-        <script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+        <script src="https://pagecdn.io/lib/anime/3.2.0/anime.min.js"></script>
         <script src="<%- url_for('/js/cursor/explosion.min.js') %>"></script>
-      <% } else if(theme.cursor_effect.type == "love") { %> 
-        <script src="<%- url_for('/js/cursor/clicklove.js') %>"></script> 
+      <% } else if(theme.cursor_effect.type == "love") { %>
+        <script src="<%- url_for('/js/cursor/clicklove.js') %>"></script>
       <% } else if(theme.cursor_effect.type == "text") { %>
         <script src="<%- url_for('/js/cursor/text.js') %>"></script>
       <% } %>
@@ -51,7 +51,7 @@
 
     <%- partial('_partial/baidu-analytics') %>
     <%- partial('_partial/baidu-push') %>
-    
+
     <script type="text/javascript" size="100" alpha='0.4' zIndex="-1" src="<%- url_for('/js/ribbon.min.js') %>"></script>
     <% if(theme.aos.on === true ) { %>
       <script src="<%- url_for('/js/aos/aos.js') %>"></script>
