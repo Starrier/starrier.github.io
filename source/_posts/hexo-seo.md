@@ -87,8 +87,20 @@ neat_js:
     - '**/index.js'
 ```
 
-## hexo search
+## 四. hexo search
 
 ```shell script
 npm install hexo-generator-searchdb
+```
+
+## 五. hexo keywords
+
+关键字优化，为文章添加 HTML meta keywords 关键字描述
+
+```javascript
+ <% if (page.keywords){ %>
+    <meta name="keywords" content="<%= page.keywords %>,<%= config.keywords %>">
+ <% } else if (config.keywords){ %>
+    <meta name="keywords" content="<%= config.keywords %>">
+  <%} %>
 ```

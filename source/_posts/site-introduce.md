@@ -20,7 +20,7 @@ img: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/co
 
 #### 1. 关于当前已发布文章的缺陷说明
 
-当前已发布的文章，主要是为了做文章迁移。参见 [issuse](https://github.com/Starrier/starrier.github.io/issues/4)
+当前已发布的文章，主要是为了做文章迁移。参见 [issuse](https://github.com/Starrier/starrier.github.io/issues/2)
 
 #### 2. 关于文章发布内容的说明
 
