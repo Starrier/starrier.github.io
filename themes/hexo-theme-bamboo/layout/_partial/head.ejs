@@ -96,7 +96,7 @@ var pageTitle = title ? title + ' | ' + config.title : config.title;
             }
         </script>
     <% } %>
-    <%- css('css/animate.min.css') %>
+    <%- css('https://cdn.boomcdn.com/libs/animate-css/3.7.0/animate.css') %>
     <%- css('css/style.css') %>
 
     <% if(theme.fancybox.on === true ) { %>
@@ -132,5 +132,8 @@ var pageTitle = title ? title + ' | ' + config.title : config.title;
     <meta name="msvalidate.01" content="C345B6E16607367496EB0D95BABD89C8"/>
     <%- partial("baidu_tongji") %>
     <%- partial('_partial/google-analytics') %>
-    <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279642429'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279642429%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    <!--  友盟—+ -->
+    <script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1279642429&web_id=1279642429"></script>
+    <!-- 延迟加载图像 -->
+    <!--<script src="lazysizes.min.js" async></script>-->
 </head>
