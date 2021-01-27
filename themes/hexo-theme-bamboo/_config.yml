@@ -10,10 +10,10 @@ menu:
 Github: https://github.com/Starrier/
 
 # 网站logo
-logo: /medias/logo.png
+logo: https://starrier-starrier-org-1253634481.cos.ap-shanghai.myqcloud.com/jiujiu.jpg
 
 # 网站 favicon
-favicon: /favicon.ico # or .png .jpg .svg .gif .jpeg .ico
+favicon: https://starrier-starrier-org-1253634481.cos.ap-shanghai.myqcloud.com/jiujiu.jpg # or .png .jpg .svg .gif .jpeg .ico
 
 # 頂部导航固定
 headMenuFixed: true
