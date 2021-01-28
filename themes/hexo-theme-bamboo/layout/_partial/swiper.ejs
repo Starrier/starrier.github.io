@@ -18,19 +18,19 @@
 var imgArr = theme.imgs;
 var swpiers = site.posts.filter(function(post) {return post.swiper});
 var swiperLength = swpiers.length;
-var defaultIndex = Math.floor((Math.random()*imgArr.length)); 
+var defaultIndex = Math.floor((Math.random()*imgArr.length));
 %>
 <div class="swiper-length" style="display: none;"><%- swiperLength %></div>
 <div id="appSwiper"
   class="<% if(swiperLength <= 1) { %>swiper-no-swiping<% } %>"
-  @mouseenter="stopAutoPlay()" 
+  @mouseenter="stopAutoPlay()"
   @mouseleave="startAutoPlay()"
 >
   <swiper v-cloak ref="mySwiper" :options="swiperOptions" @slideChangeTransitionEnd="slideChangeTransitionEnd">
     <% if(swiperLength > 0) { %>
       <% site.posts.sort('-date').each(function (post) { %>
         <%
-            var index = Math.floor((Math.random()*imgArr.length)); 
+            var index = Math.floor((Math.random()*imgArr.length));
         %>
         <% if(post.swiper === true) { %>
           <%
@@ -42,13 +42,13 @@ var defaultIndex = Math.floor((Math.random()*imgArr.length));
             img = imgs[Math.abs(hashCode(post.title) % imgs.length)]
           %>
           <swiper-slide>
-            <div class="item swiper-lazy" data-background="<%- url_for(post.swiperImg || img) %>" style=" background-size: 90000px; 
+            <div class="item swiper-lazy" data-background="<%- url_for(post.swiperImg || img) %>" style=" background-size: 90000px;
             background-position: center center;" style="position: relative;">
             <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
               <div class="flag" style="z-index: 2;">
-                <div class="img-mask swiper-lazy" data-background="<%- url_for(post.swiperImg || img) %>" style="height: 100%; background-size: cover; 
+                <div class="img-mask swiper-lazy" data-background="<%- url_for(post.swiperImg || img) %>" style="height: 100%; background-size: cover;
                   background-position: center center;">
-                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>  
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
                 <div class="flag-text">
                   <div>
@@ -68,13 +68,13 @@ var defaultIndex = Math.floor((Math.random()*imgArr.length));
     <div class="swiper-button-next swiper-button-white" slot="button-next" style="<% if(!theme.swiper.showPrevNext || swiperLength <= 1) { %>display: none;<% } %>"></div>
     <% } else { %>
       <swiper-slide>
-        <div class="item swiper-lazy" data-background="<%- url_for(theme.swiper.defaultImg || imgArr[defaultIndex]) %>" style="background-size: 90000px; 
+        <div class="item swiper-lazy" data-background="<%- url_for(theme.swiper.defaultImg || imgArr[defaultIndex]) %>" style="background-size: 90000px;
           background-position: center center;" style="position: relative;">
           <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
             <div class="flag">
-              <div class="img-mask swiper-lazy" data-background="<%- url_for(theme.swiper.defaultImg || imgArr[defaultIndex]) %>" style="height: 100%; background-size: cover; 
+              <div class="img-mask swiper-lazy" data-background="<%- url_for(theme.swiper.defaultImg || imgArr[defaultIndex]) %>" style="height: 100%; background-size: cover;
                 background-position: center center;">
-                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>   
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="flag-text">
                 <div>
@@ -92,7 +92,7 @@ var defaultIndex = Math.floor((Math.random()*imgArr.length));
     <% } %>
   </swiper>
 </div>
-<script src="<%- url_for('/js/swiper.min.js') %>"></script>
+<script src="https://pagecdn.io/lib/swiper/5.4.5/js/swiper.min.js"></script>
 <script src="<%- url_for('/js/vue-awesome-swiper.js') %>"></script>
 <script src="<%- url_for('/js/swiper.animate1.0.3.min.js') %>"></script>
 <script type="text/javascript">
@@ -127,12 +127,12 @@ var defaultIndex = Math.floor((Math.random()*imgArr.length));
         },
         on:{
           init: function() {
-            swiperAnimateCache(this); //隐藏动画元素 
+            swiperAnimateCache(this); //隐藏动画元素
             swiperAnimate(this); //初始化完成开始动画
-          }, 
-          slideChangeTransitionEnd: function(){ 
+          },
+          slideChangeTransitionEnd: function(){
             swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
-          } 
+          }
         }
         // Some Swiper option/callback...
       }
@@ -305,7 +305,7 @@ var defaultIndex = Math.floor((Math.random()*imgArr.length));
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
   }
-  .flag-text .excerpt { 
+  .flag-text .excerpt {
     margin-top: 10px;
   }
   .flag-text .read-more {

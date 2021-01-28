@@ -3,9 +3,18 @@ title: 单元测试 - Mockito - powermock -实例函数调用
 date: 2020-12-26 22:10:53
 tags: [test,mockito,powermock]
 excerpt: 单元测试-Mockito, 函数方法调用使用示例
+keywords: [单元测试]
+description: 单元测试
 ---
 
 # 单元测试 - Mockito - powermock -实例函数调用
+
+> 1. [单元测试 - Mockito - powermock -实例函数调用](https://starrier.starrier.org/blogs/test-mockito-method.html) 
+> 
+> 2. [单元测试 - Mockito - powermock - 静态方法](https://starrier.starrier.org/blogs/test-mockito-static.html) 
+> 
+> 3. [单元测试 - Mockito - powermock - 异常测试](https://starrier.starrier.org/blogs/test-mockito-exception.html)
+
 
 ## 一. 引入 Maven 坐标
 
