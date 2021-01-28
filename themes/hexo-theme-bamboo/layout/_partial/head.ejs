@@ -51,14 +51,17 @@ var pageTitle = title ? title + ' | ' + config.title : config.title;
     <!-- 网页渲染配置，兼容配置-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <!-- 站点支持的地区-->
+    <meta http-equiv="Content-Language" content="zh-cn"/>
     <!-- 文档渲染引擎配置 -->
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
-    <meta http-equiv="Content-Language" content="zh-cn"/>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <!-- baidu verification -->
     <meta name="baidu-site-verification" content="code-iAO71fL25c"/>
     <!-- sogou verification -->
     <meta name="sogou_site_verification" content="xuJ1lZezIr"/>
+    <!--  Binying Web console-->
+    <meta name="msvalidate.01" content="C345B6E16607367496EB0D95BABD89C8"/>
     <!-- 添加 meta applicable-device 设备适配属性 -->
     <meta name="applicable-device" content="pc,mobile">
     <meta name="referrer" content="origin">
@@ -130,9 +133,6 @@ var pageTitle = title ? title + ' | ' + config.title : config.title;
             s.parentNode.insertBefore(bp, s);
         })();
     </script>
-
-    <!--  Binying Web console-->
-    <meta name="msvalidate.01" content="C345B6E16607367496EB0D95BABD89C8"/>
     <%- partial("baidu_tongji") %>
     <%- partial('_partial/google-analytics') %>
     <!--  友盟—+ -->
