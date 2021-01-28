@@ -5,7 +5,7 @@ tags: [git,amend,reset]
 excerpt: Git 修改提交的 commit 信息 author
 swiper:
 keywords: [git,amend,reset]
-description: Git 修改提交的 commit 信息 author
+description: 使用 git-convert 修改提交的 commit 信息 author
 ---
 
 #  Git 修改提交的 commit 信息 author
