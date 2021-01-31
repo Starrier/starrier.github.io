@@ -25,3 +25,55 @@ description:
 ```
 
 所以 `value` 禁止出现 `markdown` 语法内容。
+
+
+## 站点性能检测
+
+1. 安装插件
+
+```npm
+
+```
+
+2. 新增文件 `budget.json`,直接复制下文内容
+
+```json
+[
+  {
+    "path": "/*",
+    "timings": [
+      {
+        "metric": "interactive",
+        "budget": 3000
+      },
+      {
+        "metric": "first-meaningful-paint",
+        "budget": 1000
+      }
+    ],
+    "resourceSizes": [
+      {
+        "resourceType": "script",
+        "budget": 125
+      },
+      {
+        "resourceType": "total",
+        "budget": 300
+      }
+    ],
+    "resourceCounts": [
+      {
+        "resourceType": "third-party",
+        "budget": 10
+      }
+    ]
+  }
+]
+```
+
+
+3. 运行 
+
+```shell
+lighthouse https://localhost:4000 --budget-path=./budget.json
+```

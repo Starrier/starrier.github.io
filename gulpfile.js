@@ -56,4 +56,4 @@ gulp.task('minify-js', function () {
 });
 
 //gulp.task('default',gulp.parallel('browser-sync'));
-gulp.task('default', gulp.parallel('minify-css', 'minify-js'));
+gulp.task('default', gulp.parallel('minify-css', 'minify-js','minify-html'));
