@@ -79,6 +79,16 @@ var pageTitle = title ? title + ' | ' + config.title : config.title;
     <% }  else if (config.description){ %>
         <meta name="keywords" content="<%= config.description %>">
     <% } %>
+    <!--  添加 360 智能搜索摘要  -->
+    <!-- html 类型 -->
+    <meta property="og:type" content="blog"/>
+    <!-- html image address -->
+    <meta property="og:image" content="<%= page.swiper %>"/>
+    <!-- html post date -->
+    <meta property="og:release_date" content="<%= page.date %>"/>
+    <meta property="og:title" content="<%= page.title %>"/>
+    <meta property="og:description" content="<%= page.description %>" />
+    <meta property="og:author" content="<%= page.author %>,"/>
     <!-- Global site tag (gtag.js) - Google Analytics -->
    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNXETXCWEB"></script>
     <script>
