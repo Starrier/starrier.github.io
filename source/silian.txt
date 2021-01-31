@@ -1,1 +1,7 @@
-https://starrier.starrier.org/2021/01/12/java-stream-principle
+https://starrier.starrier.org/2021/01/12/java-stream-principle/
+https://starrier.starrier.org/2021/01/20/utils-command-life-port/
+https://starrier.starrier.org/2019/01/11/jvm-escape-analyse/
+https://starrier.starrier.org/2021/01/11/git-conf-repo/
+https://starrier.starrier.org/2021/01/20/utils-git-commit-refactor/
+https://starrier.starrier.org/2021/01/11/hexo-analyse-baidu/
+https://starrier.starrier.org/2021/01/20/github-repo-transfer/
