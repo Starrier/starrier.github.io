@@ -1,9 +1,10 @@
 ---
 title: Java 集合 ArrayList 详解
 date: 2021-01-29 15:40:16
+author: Starrier
 tags: [java,collection,arraylist]
 excerpt: Java 集合 ArrayList 详解
-swiper:
+swiper: /medias/1.jpg
 keywords: [java,collection,arraylist]
 description: Java 集合 ArrayList 详解
 ---
