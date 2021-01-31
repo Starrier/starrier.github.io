@@ -5,6 +5,8 @@ tags: [Starrier]
 excerpt: 关于当前网站的一些问题说明
 top: tue
 swiper: true
+swiperImg: https://cdn.stocksnap.io/img-thumbs/960w/single-tree_HJDLDXUIFW.jpg
+img: https://cdn.stocksnap.io/img-thumbs/960w/single-tree_HJDLDXUIFW.jpg
 ---
 
 # 站点建设
@@ -18,7 +20,7 @@ swiper: true
 
 #### 1. 关于当前已发布文章的缺陷说明
 
-当前已发布的文章，主要是为了做文章迁移。参见 [issuse](https://github.com/Starrier/starrier.github.io/issues/4)
+当前已发布的文章，主要是为了做文章迁移。参见 [issuse](https://github.com/Starrier/starrier.github.io/issues/2)
 
 #### 2. 关于文章发布内容的说明
 

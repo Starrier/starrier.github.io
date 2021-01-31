@@ -5,7 +5,8 @@ tags: Starrier
 top: true
 excerpt: 中间件 目录
 swiper: true
-swiperImg: ../post_img/CAP.jpeg
+swiperImg: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/snow.webp
+img: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/snow.webp
 ---
 
 #  目录 - 理论 -  中间件

@@ -1,10 +1,15 @@
 ---
-title: Guava - MultiSet 分析及教程
+title: Guava - MultiSet 原理与实战
 date: 2021-01-13 20:15:08
-tags: [guava]
+author: Starrier
+tags: [guava,multiset]
+excerpt: Java 集合 ArrayList 详解
+swiper: 
+keywords: [guava,multiset]
+description: Guava - MultiSet 原理与实战
 ---
 
-# Guava - MultiSet 分析及教程
+# Guava - MultiSet 原理与实战
 
 函数签名：
 

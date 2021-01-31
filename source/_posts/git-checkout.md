@@ -1,10 +1,17 @@
 ---
-title: git-checkout
+title: Git - git-checkout 深入理解与实战
 date: 2019-01-13 20:08:19
-tags:
+author: Starrier
+tags: [git,git-checkout,checkout]
+excerpt: Git - git-checkout 深入理解与实战
+swiper: 
+keywords: [git,checkout,git-checkout]
+description: Git - git-checkout 深入理解与实战
 ---
 
-# git-checkout
+# Git - git-checkout 深入理解与实战
+
+##### git-checkout
 
 1. 本地从当前所在分支上创建一个新分支。
 

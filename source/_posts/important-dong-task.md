@@ -4,6 +4,8 @@ date: 2021-01-12 23:52:26
 tags: [task,starrier]
 top: true
 excerpt: 当前建设中的重点内容
+img: https://visualhunt.com/photos/1/white-earphones-and-papers-on-table.jpg?s=l
+swiperImg: https://visualhunt.com/photos/1/white-earphones-and-papers-on-table.jpg?s=l
 ---
 
 ## 当前网站建设的重点内容

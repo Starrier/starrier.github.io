@@ -2,7 +2,11 @@
 title: Git 远程仓库设置
 date: 2021-01-11 16:35:33
 tags: [git]
+author: Starrier
 excerpt: git 本地代码关联远程仓库配置
+swiper: 
+keywords: [git,repository]
+description: Git 远程仓库设置
 ---
 
 # Git 远程仓库设置
