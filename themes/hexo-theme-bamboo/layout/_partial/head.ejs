@@ -58,6 +58,7 @@ var pageTitle = title ? title + ' | ' + config.title : config.title;
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <!-- baidu verification -->
     <meta name="baidu-site-verification" content="code-iAO71fL25c"/>
+    <meta name="baidu-site-verification" content="code-s18YXGN5UW"/>
     <!-- sogou verification -->
     <meta name="sogou_site_verification" content="XwNdDrJmt3"/>
     <!-- 360 verification -->
@@ -83,12 +84,37 @@ var pageTitle = title ? title + ' | ' + config.title : config.title;
     <!-- html 类型 -->
     <meta property="og:type" content="blog"/>
     <!-- html image address -->
-    <meta property="og:image" content="<%= page.swiper %>"/>
+    <% if (page.swiper){ %>
+        <meta property="og:image" content="<%= page.swiper %>"/>
+    <% } else if (config.swiper){ %>
+        <meta property="og:image" content="<%= config.swiper %>"/>
+    <% } %>
     <!-- html post date -->
-    <meta property="og:release_date" content="<%= page.date %>"/>
-    <meta property="og:title" content="<%= page.title %>"/>
-    <meta property="og:description" content="<%= page.description %>"/>
-    <meta property="og:author" content="<%= page.author %>"/>
+
+    <% if (page.date){ %>
+        <meta property="og:release_date" content="<%= page.date %>"/>
+    <% } else if (config.date){ %>
+        <meta property="og:release_date" content="<%= config.date %>"/>
+    <% } %>
+
+    <% if (page.title){ %>
+        <meta property="og:title" content="<%= page.title %>"/>
+    <% } else if (config.title){ %>
+        <meta property="og:title" content="<%= config.title %>"/>
+    <% } %>
+
+    <% if (page.description){ %>
+        <meta property="og:description" content="<%= page.description %>"/>
+    <% } else if (config.title){ %>
+        <meta property="og:description" content="<%= config.description %>"/>
+    <% } %>
+
+    <% if (page.author){ %>
+        <meta property="og:author" content="<%= page.author %>"/>
+    <% } else if (config.author){ %>
+        <meta property="og:author" content="<%= config.author %>"/>
+    <% } %>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNXETXCWEB"></script>
      <script>

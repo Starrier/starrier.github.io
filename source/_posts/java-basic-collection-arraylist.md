@@ -30,10 +30,10 @@ description: Java 集合 ArrayList 详解
 #### 构造函数
 
 ```javascript
-ArrayList()
+ArrayList();
 
-ArrayList(int capacity)
+ArrayList(int capacity);
 
-ArrayList(Collection<? extends E> Collection) 
+ArrayList(Collection<? extends E> Collection);
 ```
 

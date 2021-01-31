@@ -32,7 +32,7 @@ description:
 1. 安装插件
 
 ```npm
-
+npm install 
 ```
 
 2. 新增文件 `budget.json`,直接复制下文内容

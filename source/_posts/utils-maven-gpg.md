@@ -1,7 +1,8 @@
 ---
 title: utils-maven-gpg
 date: 2021-01-14 19:49:00
-tags:
+author: Starrier
+tags: [gpg]
 ---
 
 # GPG 秘钥生成
