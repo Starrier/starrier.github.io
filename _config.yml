@@ -11,6 +11,7 @@ author: Starrier Organization
 language: en
 timezone: ''
 date: 2021-01-01
+swiper: medias/1.jpg
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
