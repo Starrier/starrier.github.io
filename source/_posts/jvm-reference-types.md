@@ -1,6 +1,7 @@
 ---
 title: jvm-reference-types
 date: 2021-01-14 19:40:00
+author: Imperator
 tags: [java,jvm]
 excerpt: java 虚拟机中的四种引用类型
 ---

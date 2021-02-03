@@ -1,9 +1,13 @@
 ---
-title: Git commit 操作详解
+title: git commit 操作详解
 date: 2021-01-20 14:56:05
+author: Imperater
 tags: [git,rebase]
 excerpt: 使用 Git 修改 commit 的提交描述
 img: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/fin-series.jpeg
+swiper: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/fin-series.jpeg
+keywords: [git,rebase]
+description: git commit 操作详解
 ---
 
 # Git - commit 已提交 commit 记录的重写

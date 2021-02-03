@@ -1,14 +1,15 @@
 ---
-title: git commit 修改 author 信息
+title: git-commit 修改提交的 commit 信息 author
 date: 2021-01-28 14:04:27
+author: Imperater
 tags: [git,amend,reset]
-excerpt: Git 修改提交的 commit 信息 author
+excerpt: git-commit 修改提交的 commit 信息 author
 swiper:
 keywords: [git,amend,reset]
-description: 使用 git-convert 修改提交的 commit 信息 author
+description: git-commit 修改提交的 commit 信息 author
 ---
 
-#  Git 修改提交的 commit 信息 author
+#  git-commit 修改提交的 commit 信息 author
 
 ```git
 git commit --amend --reset-author

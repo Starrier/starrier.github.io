@@ -1,6 +1,7 @@
 ---
 title: minify-html 使用详解
 date: 2021-01-28 09:42:35
+author: Imperator
 tags: [minify-html,seo,hexo]
 excerpt: minify-html 使用详解
 swiper:

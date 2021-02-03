@@ -1,7 +1,7 @@
 ---
 title: 深入理解 Java 线程池 - 实战
 date: 2021-01-31 14:57:26
-author: Starrier
+author: Imperator
 tags: [java,thread,threadpool,多线程，线程池]
 excerpt: 深入理解 Java 线程池 - 实战
 swiper:

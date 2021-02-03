@@ -1,6 +1,7 @@
 ---
 title: 使用 git-convert 回滚已经提交的 commit
 date: 2021-01-28 16:55:55
+author: Imperater
 tags: [git,git-revert,commit]
 excerpt: 使用 git-convert 回滚已经提交的 commit
 swiper:

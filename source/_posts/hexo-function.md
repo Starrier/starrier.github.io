@@ -1,6 +1,7 @@
 ---
 title: hexo-function
 date: 2021-01-22 10:12:15
+author: Imperator
 tags: [hexo]
 excerpt: hexo 小功能
 swiper: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/fin-series.jpeg

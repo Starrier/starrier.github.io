@@ -1,6 +1,7 @@
 ---
 title: linux-mysql
 date: 2021-01-13 20:12:13
+author: Imperator
 tags:
 ---
 
