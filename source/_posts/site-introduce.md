@@ -1,7 +1,8 @@
 ---
 title: Starrier's Blog 站点说明
 date: 2021-01-13 20:28:16
-tags: [Starrier]
+author: Starrier-Org
+tags: [Starrier,Imperator]
 excerpt: 关于当前网站的一些问题说明
 top: tue
 swiper: true
@@ -12,11 +13,6 @@ img: https://cdn.stocksnap.io/img-thumbs/960w/single-tree_HJDLDXUIFW.jpg
 # 站点建设
 
 ## 一. 项目背景
-
-当前网站正在建设中，主要用于记录学习的内容。包括但不限于语言与技术。目前已知所以技术细节的代码实现 `demo` 代码相关，参见：
-[sky-ladder](https://github.com/Starriers/sky-ladder)
-
->当前项目待迁移，即将转移至 [Starrier](https://github.com/Starrier)
 
 #### 1. 关于当前已发布文章的缺陷说明
 
@@ -35,3 +31,20 @@ img: https://cdn.stocksnap.io/img-thumbs/960w/single-tree_HJDLDXUIFW.jpg
 
 
 (*￣︶￣)  喵喵喵 ~~
+
+如有文章侵权相关，侵权立删，联系人：
+
+[Starrier](https://github.com/Starrier)
+
+[Imperater](https://github.com/Imperater)
+
+团队邮箱：
+
+starrier@starrier.org
+
+
+个人邮箱：
+
+starriers@starrier.org
+
+imperator@starrier.org  ||  imperater@starrier.org

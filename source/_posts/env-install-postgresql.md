@@ -1,6 +1,7 @@
 ---
 title: env-install-postgresql
 date: 2019-01-13 20:01:48
+author: Imperator
 tags: [docker,env,postgresql]
 ---
 

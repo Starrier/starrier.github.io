@@ -1,6 +1,7 @@
 ---
 title: jvm - java - 内存模型
 date: 2019-02-17 19:26:44
+author: Imperator
 tags: [java,jvm,jmm]
 excerpt: Java 虚拟机内存模型分析与简介
 ---

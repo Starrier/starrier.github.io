@@ -1,7 +1,7 @@
 ---
 title: 深入理解 Java 函数式编程
 date: 2021-01-31 13:10:55
-author: Starrier
+author: Imperator
 tags: [java,functional,function]
 excerpt: 深入理解 Java 函数式编程
 swiper:

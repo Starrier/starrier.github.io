@@ -1,7 +1,7 @@
 ---
 title: utils-maven-gpg
 date: 2021-01-14 19:49:00
-author: Starrier
+author: Imperater
 tags: [gpg]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 深入理解 RocketMQ 事务原理 - 实战
 date: 2021-01-31 13:46:51
-author: Starrier
+author: Imperator
 tags: [RocketMQ,rocketmq,transaction]
 excerpt: 深入理解 RocketMQ 事务原理 - 实战
 swiper:
