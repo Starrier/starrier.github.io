@@ -1,6 +1,7 @@
 ---
 title: env-install-gitlab
 date: 2019-01-13 19:58:10
+author: Imperator
 tags: [gitlab,docker]
 ---
 

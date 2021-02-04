@@ -1,6 +1,7 @@
 ---
 title: jvm-gc-zgc
 date: 2019-02-13 20:15:42
+author: Imperator
 tags: [java,jvm,zgc]
 excerpt: Java 虚拟机，垃圾回收器 ZGC 简介与分析
 ---

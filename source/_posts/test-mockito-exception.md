@@ -1,31 +1,40 @@
 ---
-title: test-mockito-exception
+title: 单元测试 - Mockito - powermock - 异常测试
 date: 2021-01-12 22:39:39
+author: Imperater
 tags: [test,mockito,powermock]
 excerpt: 单元测试-Mockito, 静态方法调用，使用示例
 ---
 
 # 单元测试 - Mockito - powermock - 异常测试
+
+> 1. [单元测试 - Mockito - powermock - 实例函数调用](https://starrier.starrier.org/blogs/test-mockito-method.html)
+>
+> 2. [单元测试 - Mockito - powermock - 静态方法](https://starrier.starrier.org/blogs/test-mockito-static.html)
+>
+> 3. [单元测试 - Mockito - powermock - 异常测试](https://starrier.starrier.org/blogs/test-mockito-exception.html)
+
+
 ## 一. 引入 maven 坐标
-```java
-       <dependency>
-            <groupId>org.powermock</groupId>
-            <artifactId>powermock-api-mockito</artifactId>
-            <version>${powermock.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.powermock</groupId>
-            <artifactId>powermock-core</artifactId>
-            <version>${powermock.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.powermock</groupId>
-            <artifactId>powermock-module-junit4</artifactId>
-            <version>${powermock.version}</version>
-            <scope>test</scope>
-        </dependency>
+```xml
+<dependency>
+    <groupId>org.powermock</groupId>
+    <artifactId>powermock-api-mockito</artifactId>
+    <version>${powermock.version}</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>org.powermock</groupId>
+    <artifactId>powermock-core</artifactId>
+    <version>${powermock.version}</version>
+    <scope>test</scope>
+</dependency> 
+<dependency>
+    <groupId>org.powermock</groupId>
+    <artifactId>powermock-module-junit4</artifactId>
+    <version>${powermock.version}</version>
+    <scope>test</scope>
+ </dependency>
 ```
 
 > 具体的版本，可去 maven 中心仓库自行查找自己想要的
@@ -33,8 +42,9 @@ excerpt: 单元测试-Mockito, 静态方法调用，使用示例
 ## 二. Mock 异常
 
 ### 1. mock 异常的发生
+
 ```java
- Mockito.when(Mockito.anyObject())
+Mockito.when(Mockito.anyObject())
         .thenThrow(new Exception());
 ```
 

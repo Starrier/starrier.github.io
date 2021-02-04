@@ -1,11 +1,19 @@
 ---
-title: Spring-annotation-@ShellMethod 注解简介
+title: 深入理解 SpringBoot 注解 @ShellMethod 
 date: 2021-01-12 23:26:26
+author: Imperator
 tags: [spring-boot,shell-method,annotation]
 excerpt: SpringBoot @ShellMethod 简介
+keywords: [spring-boot,ShellMethod]
+description: 深入理解 SpringBoot 注解 @ShellMethod
 ---
 
-# @ShellMethod 简介
+# 深入理解 SpringBoot 注解 @ShellMethod
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 译文出自：[Starrier]()
+> * 本文永久链接：[]()
 
 `@ShellMethod` 将一个方法声明为 Shell 命令。默认情况下：
 

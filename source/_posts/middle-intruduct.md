@@ -1,11 +1,12 @@
 ---
 title: 文章目录 - 理论 - 中间件
 date: 2021-01-11 16:48:23
-tags: Starrier
+author: Imperator
 top: true
 excerpt: 中间件 目录
 swiper: true
-swiperImg: ../post_img/CAP.jpeg
+swiperImg: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/snow.webp
+img: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/snow.webp
 ---
 
 #  目录 - 理论 -  中间件
@@ -73,4 +74,17 @@ swiperImg: ../post_img/CAP.jpeg
 - [spring-mvc-初始化]()
 - [spring-mvc-原理]()
 - [spring-mvc-视图]()
+
+# Machine Learning
+
+-[梯度下降]()
+
+## Git
+
+- [使用 git-convert 回滚已经提交的 commit](https://starrier.starrier.org/blogs/utils-git-commit-revert.html)
+- [使用 git-reset 进行版本](https://starrier.starrier.org/blogs/git-rest.html)
+- [git-commit 修改提交的 commit 信息 author](https://starrier.starrier.org/blogs/utils-git-commit-author.html)
+- [git-commit 已提交 commit 记录的重写](https://starrier.starrier.org/blogs/utils-git-commit-refactor.html)
+- []()
+- []()
 
