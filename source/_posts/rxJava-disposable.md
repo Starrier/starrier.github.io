@@ -8,6 +8,8 @@ excerpt: 响应式编程 RxJava API Disposable 分析
 
 # 响应式白城 - RxJava - Disposable
 
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
 ###  1. Disposable 有两个方法
 
 ```java

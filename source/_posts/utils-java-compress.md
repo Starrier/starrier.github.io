@@ -11,6 +11,9 @@ description: 常见 Java 压缩-解压缩算法原理与实践
 
 # 常见 Java 压缩-解压缩算法原理与实践
 
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
+
 ##### **特别说明**
 
 当前文章内容迁移中，如有问题，请提交 PR 谢谢~~

@@ -1,7 +1,7 @@
 ---
 title: Guava - MultiSet 原理与实战
 date: 2021-01-13 20:15:08
-author: Imperator
+author: Imperater
 tags: [guava,multiset]
 excerpt: Java 集合 ArrayList 详解
 swiper: 
@@ -10,6 +10,14 @@ description: Guava - MultiSet 原理与实战
 ---
 
 # Guava - MultiSet 原理与实战
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 函数签名：
 

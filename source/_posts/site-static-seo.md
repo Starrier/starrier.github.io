@@ -11,6 +11,8 @@ description: 译文 - 提高 10 倍性能：优化静态网站
 
 # [译] 提高 10 倍性能：优化静态网站
 
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
 ##### **特别说明**
 
 当前文章内容迁移中，如有问题，请提交 PR 谢谢~~
@@ -19,7 +21,7 @@ description: 译文 - 提高 10 倍性能：优化静态网站
 > * 原文作者：[JonLuca De Caro](https://hackernoon.com/@jonluca?source=post_header_lockup)
 > * 译文出自：[掘金翻译计划](https://github.com/xitu/gold-miner)
 > * 本文永久链接：[https://github.com/xitu/gold-miner/blob/master/TODO1/optimizing-a-static-site.md](https://github.com/xitu/gold-miner/blob/master/TODO1/optimizing-a-static-site.md)
-> * 译者：[Starrier](https://github.com/Starriers)
+> * 译者：[Starriers](https://github.com/Starriers)
 > * 校对者：[dandyxu](https://github.com/dandyxu)、[Hopsken](https://github.com/Hopsken)
 
 # 提高 10 倍性能：优化静态网站

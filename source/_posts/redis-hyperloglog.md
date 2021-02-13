@@ -8,6 +8,8 @@ excerpt: Redis HyperLogLog 源码分析
 
 # Redis - HyperLogLog
 
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
 HyperLogLog 使用动态字符串存储数据，为了区别普通的 SDS，在头部固定了字节 `HYLL`
 
 HyperLogLog 底层数据结构

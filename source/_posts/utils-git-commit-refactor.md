@@ -12,6 +12,8 @@ description: git commit 操作详解
 
 # Git - commit 已提交 commit 记录的重写
 
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
 ## 一. 修改最新的 `commit` 信息
 
 ```shell script

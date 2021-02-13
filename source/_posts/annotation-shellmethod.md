@@ -12,8 +12,11 @@ description: 深入理解 SpringBoot 注解 @ShellMethod
 
 > * 原文地址：[]()
 > * 原文作者：[]()
-> * 译文出自：[Starrier]()
 > * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 `@ShellMethod` 将一个方法声明为 Shell 命令。默认情况下：
 

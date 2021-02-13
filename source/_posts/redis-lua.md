@@ -10,6 +10,8 @@ description: redis-lua 简介
 
 # Redis  Lua 简介
 
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
 `redis.call()`; 将返回一个错误给调用者
 
 `redis.pcall()`: 将捕获的错误以 `LUA` 表的形式返回。

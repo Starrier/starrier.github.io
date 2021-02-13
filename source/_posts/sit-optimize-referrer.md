@@ -11,6 +11,8 @@ description: 使用 `meta` 的 `referrer` 属性进行网站 `SEO` 优化
 
 # 网站优化 - SEO - 使用 `meta-referrer`
 
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
 head 中添加
 
 ```html

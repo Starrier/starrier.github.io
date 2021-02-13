@@ -12,6 +12,14 @@ description: hexo 使用 RSS 推送新文章发布消息
 
 # Hexo - RSS - 文章推送
 
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
 使用 SSR 推送新文章给订阅者。
 
 ## 一. 下载 hexo 插件

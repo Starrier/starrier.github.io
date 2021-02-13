@@ -31,7 +31,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: [README.md,sitemap.xml,baidusitemap.xml,CNAME,robots.txt,baidu_urls.txt,blogs/**,gulpfile.js,BingSiteAuth.xml,budget.json,sogousiteverification.txt,silian.txt]
+skip_render: [README.md,sitemap.xml,baidusitemap.xml,CNAME,robots.txt,baidu_urls.txt,blogs/**,gulpfile.js,BingSiteAuth.xml,budget.json,sogousiteverification.txt,silian.txt,.github/**,LICENSE]
 
 # Writing
 new_post_name: :title.md # File name of new posts

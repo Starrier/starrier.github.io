@@ -1,7 +1,7 @@
 ---
 title: 文章目录 - 理论 - 中间件
 date: 2021-01-11 16:48:23
-author: Imperator
+author: Imperater
 top: true
 excerpt: 中间件 目录
 swiper: true
@@ -10,6 +10,14 @@ img: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/sn
 ---
 
 #  目录 - 理论 -  中间件
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 ##  一. 缓存中间件
 
