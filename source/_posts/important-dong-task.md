@@ -1,7 +1,7 @@
 ---
 title: 重点内容
 date: 2021-01-12 23:52:26
-author: Imperator
+author: Imperater
 tags: [task,starrier]
 top: true
 excerpt: 当前建设中的重点内容

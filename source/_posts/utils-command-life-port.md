@@ -8,6 +8,8 @@ excerpt: 日常工作，常用命令解析，端口占用，Mac，Win 环境。
 
 # 日常工具-端口占用-Mac-Wind
 
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
 ## 一. Mac 环境
 
 ### 1. 根据指定端口，查找占用端口的进程的 pid

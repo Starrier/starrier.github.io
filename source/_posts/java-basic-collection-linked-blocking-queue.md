@@ -7,6 +7,14 @@ tags:
 
 # LinkedBlockingQueue
 
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
 LinkedBlockingQueue 由单链表实现，只能从 head 中取元素，向 tail 添加元素。添加元素预计获取元素都有独立的锁，即 LinkedBlockingQueue 是读写分离的，可以并行执行。LinkedBlockingQueue 采用可重入锁（ReentrantLock）来保证并发环境下的线程安全。
 
 函数签名：

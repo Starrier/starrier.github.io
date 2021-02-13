@@ -11,6 +11,8 @@ description: 网站站点优化
 
 # 网站站点优化
 
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
 ## 1. 添加 `meta` 元属性
 
 ## 2. html 添加 language

@@ -11,6 +11,8 @@ description: 网站性能优化
 
 # 网站性能优化
 
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
 ## JPG，PNG 等替换为使用 webp
 
 1. 下载 `cwebp`

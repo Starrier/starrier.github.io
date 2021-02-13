@@ -9,6 +9,14 @@ excerpt: java volatile 分析
 
 ## volatile
 
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
 #### Volatile 和 Synchronized 四个不同点：
 
 1. 粒度不同，前者锁对象和类，后者针对变量。

@@ -8,6 +8,16 @@ excerpt: Reactor 简介
 
 # Reactor
 
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
 Reactor 有两种类型：Flux<T> 和 Mono<T>。Flux 类似于 RxJava 的 Observable，它可以触发零到多个事件，并根据实际情况结束处理或触发错误。我们可以从返回类型获知一个方法：发射并忘记或者请求等待(Mono)/处理一个包含多个数据项的流(Flux)。
 
 Flux 和 Mono 主要用途是在于把对象合并到更高层次的流中，搜易一般来说，在现有代码上应用响应式模式，不应该把 `long getCount()` 这样的方法转换成 `Mono<Long> getCount()`。

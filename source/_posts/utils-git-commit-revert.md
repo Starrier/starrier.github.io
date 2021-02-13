@@ -11,6 +11,8 @@ description: 使用 git-convert 回滚已经提交的 commit
 
 # 使用 git-convert 回滚已经提交的 commit
 
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
 ## 一. 简介
 
 `git-revert` 用于撤销某次指定提交的操作，被操作的版本，之前和之后的内容（包括 commit 和 history 都会被保留下来）
