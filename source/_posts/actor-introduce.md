@@ -2,7 +2,7 @@
 title: Actor 模型简介
 date: 2021-02-04 23:04:44
 author: imperater
-tags: [actor]
+tags: [Actor]
 excerpt: Actor 模型简介
 swiper:
 keywords: [actor]

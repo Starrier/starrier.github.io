@@ -2,7 +2,7 @@
 title: git-stash
 date: 2021-01-13 20:18:36
 author: Imperator
-tags:
+tags: [Git]
 ---
 
 # Git Stash 简介
