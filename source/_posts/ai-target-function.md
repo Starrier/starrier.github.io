@@ -2,7 +2,7 @@
 title: 机器学习 目标函数简介
 date: 2021-02-05 00:45:50
 author: Starriers
-tags: [target function,machine learning]
+tags: [机器学习]
 excerpt: 机器学习 目标函数简介
 swiper:
 keywords: [target function,machine learning]

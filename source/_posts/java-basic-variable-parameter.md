@@ -2,7 +2,7 @@
 title: 深入理解 java 可变参数 - 实战
 date: 2021-01-31 14:30:32
 author: Imperator
-tags: [java,基础,可变参数,variable parameter]
+tags: [Java 基础]
 excerpt: 深入理解 java 可变参数 - 实战
 swiper:
 keywords: [java,基础,可变参数,variable parameter]

@@ -1,15 +1,15 @@
 ---
-title: redis-sds
+title: 深入理解 redis - 简单动态字符串
 date: 2021-05-19 23:55:17
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [Redis]
+excerpt: 深入理解 redis - 简单动态字符串
 swiper:
-keywords:
-description:
+keywords:[redis,sds,简单动态字符串]
+description: 深入理解 redis - 简单动态字符串
 ---
 
-# {{ :title }}
+# 深入理解 redis - 简单动态字符串
 
 > * 原文地址：[]()
 > * 原文作者：[]()

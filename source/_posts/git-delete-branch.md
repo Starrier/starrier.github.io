@@ -2,7 +2,7 @@
 title: Git 删除远程分支
 date: 2021-04-20 15:44:26
 author: Starrier
-tags: [Git]
+tags: [开发工具]
 excerpt: Git 删除远程分支
 swiper:
 keywords: [git,git-delete,git删除远程分支，删除分支]

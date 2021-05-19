@@ -2,7 +2,7 @@
 title: 单元测试 - Mockito - powermock -实例函数调用
 date: 2020-12-26 22:10:53
 author: Imperater
-tags: [test,mockito,powermock]
+tags: [单元测试]
 excerpt: 单元测试-Mockito, 函数方法调用使用示例
 keywords: [单元测试]
 description: 单元测试

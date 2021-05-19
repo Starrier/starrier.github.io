@@ -2,7 +2,7 @@
 title: 单元测试 - Mockito - powermock - 异常测试
 date: 2021-01-12 22:39:39
 author: Imperater
-tags: [test,mockito,powermock]
+tags: [单元测试]
 excerpt: 单元测试-Mockito, 静态方法调用，使用示例
 ---
 

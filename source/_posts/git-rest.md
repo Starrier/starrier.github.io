@@ -2,7 +2,7 @@
 title: git - reset - 版本回退
 date: 2021-01-22 15:23:09
 author: Imperator
-tags: [Git]
+tags: [开发工具]
 excerpt: 使用 `git-reset`，`git-revert` 进行版本回退
 swiper: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/fin-series.jpeg
 img: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/fin-series.jpeg

@@ -2,7 +2,7 @@
 title: 机器学习 - 激活函数
 date: 2021-02-05 00:38:50
 author: Starriers
-tags: [machine-learning]
+tags: [机器学习]
 excerpt: 机器学习 - 激活函数
 swiper:
 keywords: [ai,dp,activation-function]

@@ -2,14 +2,14 @@
 title: IDEA - plugin - JRebel 
 date: 2021-02-04 22:55:39
 author: Imperater
-tags: [idea,tools,plugin]
+tags: [开发工具]
 excerpt: IDEA - plugin  推荐
 swiper:
-keywords: [idea,tools,plugin]
+keywords: [idea,tools,plugin,常用开发工具]
 description: IDEA - plugin  推荐
 ---
 
-# IDEA - plugin - JRebel
+# 常用开发工具 - JRebel
 
 > * 原文地址：[]()
 > * 原文作者：[]()

@@ -2,7 +2,7 @@
 title: AI 常用名词解释
 date: 2021-02-05 00:36:49
 author: Starriers
-tags: [machine learning]
+tags: [机器学习]
 excerpt: AI 常用名词解释
 swiper:
 keywords: [machine learning]

@@ -2,7 +2,7 @@
 title:  Docker 分层存储原理
 date: 2021-04-16 12:54:28
 author: imperater
-tags: [Docker]
+tags: [DevOps]
 excerpt: Docker 分层存储原理
 swiper:
 keywords: [Docker,分层存储]

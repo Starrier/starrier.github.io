@@ -2,7 +2,7 @@
 title: Starrier's Blog 站点说明
 date: 2021-01-13 20:28:16
 author: Starrier-Org
-tags: [Starrier,Imperator]
+tags: [Starrier]
 excerpt: 关于当前网站的一些问题说明
 top: tue
 swiper: true

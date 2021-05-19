@@ -2,7 +2,7 @@
 title: Hexo 常用命令
 date: 2021-03-23 10:47:25
 author: Starriers
-tags: [hexo,命令]
+tags: [hexo]
 excerpt: Hexo 常用命令
 swiper:
 keywords: [hexo,命令]

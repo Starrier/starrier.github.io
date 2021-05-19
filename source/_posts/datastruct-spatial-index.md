@@ -2,7 +2,7 @@
 title: 空间索引
 date: 2021-02-07 10:08:18
 author: Starriers
-tags: [空间索引,Spatial Index]
+tags: [数据结构]
 excerpt: 空间索引
 swiper:
 keywords: [空间索引,Spatial Index]

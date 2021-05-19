@@ -2,7 +2,7 @@
 title: Gradle provided 类型
 date: 2021-02-09 15:22:38
 author: imperaterrrr
-tags: [gradle]
+tags: [开发工具]
 excerpt: Gradle provided 类型
 swiper:
 keywords: [gradle]

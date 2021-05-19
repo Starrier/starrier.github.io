@@ -2,7 +2,7 @@
 title: 译文 - 提高 10 倍性能：优化静态网站
 date: 2021-01-31 18:26:50
 author: Imperater
-tags: [github,Starrier,juejin]
+tags: [性能优化]
 excerpt: 译文 - 提高 10 倍性能：优化静态网站
 swiper:
 keywords: [github,Starrier,juejin]

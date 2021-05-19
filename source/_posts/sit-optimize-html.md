@@ -2,7 +2,7 @@
 title: 网站站点优化 
 date: 2021-01-27 13:29:34
 author: Imperator
-tags: [site,optimize,seo,hexo]
+tags: [性能优化]
 excerpt: 网站站点优化
 swiper:
 keywords: [seo,hexo,网站站点优化]

@@ -2,7 +2,7 @@
 title: env-install-ngnix
 date: 2019-01-13 20:04:41
 author: Imperator
-tags: [nginx,docker]
+tags: [环境搭建]
 ---
 
 #  Nginx

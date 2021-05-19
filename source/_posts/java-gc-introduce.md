@@ -2,7 +2,7 @@
 title: java-gc-introduce
 date: 2021-05-17 10:47:58
 author: Starrier
-tags: [JVM]
+tags: [jvm]
 excerpt: JVM GC 介绍
 swiper:
 keywords: [jvm,gc]

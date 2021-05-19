@@ -2,7 +2,7 @@
 title: utils-maven-gpg
 date: 2021-01-14 19:49:00
 author: Imperater
-tags: [gpg]
+tags: [开发工具]
 ---
 
 # GPG 秘钥生成

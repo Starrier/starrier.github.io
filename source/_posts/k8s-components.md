@@ -2,7 +2,7 @@
 title: k8s-components
 date: 2019-01-13 20:10:06
 author: Imperator
-tags: [k8s]
+tags: [DevOps]
 ---
 
 # Kubernents - components 简介

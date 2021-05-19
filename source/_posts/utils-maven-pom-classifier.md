@@ -2,7 +2,7 @@
 title: Maven Pom 坐标 classifier 作用
 date: 2021-03-23 10:28:48
 author: imperator
-tags: [Maven]
+tags: [开发工具]
 excerpt: Maven Pom 坐标 classifier 作用
 swiper:
 keywords: [Maven,POM,Classifier]

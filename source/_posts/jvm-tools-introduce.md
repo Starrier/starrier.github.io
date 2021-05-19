@@ -2,7 +2,7 @@
 title: Java JVM  tools 简介
 date: 2021-02-04 23:08:58
 author: imperater
-tags: [jvm,tools]
+tags: [jvm]
 excerpt: Java JVM  tools 简介
 swiper:
 keywords: [jvm,tools]

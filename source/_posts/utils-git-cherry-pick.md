@@ -2,7 +2,7 @@
 title: 使用 git cherry-pick 获取指定提交内容
 date: 2021-02-01 22:10:23
 author: Starrier
-tags: [Git]
+tags: [开发工具]
 excerpt: 使用 git cherry-pick 获取指定提交内容
 swiper:
 keywords: [git,cherry-pick]

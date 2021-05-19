@@ -2,7 +2,7 @@
 title: 深入理解 Spring Cloud Hystrix 原理
 date: 2021-02-01 13:02:49
 author: Imperater
-tags: [spring,spring-cloud,hystrix]
+tags: [分布式中间件]
 excerpt: 深入理解 Spring Cloud Hystrix 原理
 swiper:
 keywords: [spring,spring-cloud,hystrix]

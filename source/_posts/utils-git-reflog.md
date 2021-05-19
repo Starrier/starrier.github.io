@@ -2,7 +2,7 @@
 title: 使用 git-reset 回滚代码到指定版本
 date: 2021-02-03 13:19:19
 author: Imperater
-tags: [Git]
+tags: [开发工具]
 excerpt: 使用 git-reset 回滚代码到指定版本
 swiper:
 keywords: [git,git-reflog,git-reset]

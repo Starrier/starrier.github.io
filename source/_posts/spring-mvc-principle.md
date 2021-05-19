@@ -2,7 +2,7 @@
 title: 深入分析与理解 Spring MVC 原理
 date: 2021-02-01 12:59:42
 author: Imperater
-tags: [spring-mvc,mvc,spring]
+tags: [Spring]
 excerpt: 深入分析与理解 Spring MVC 原理
 swiper:
 keywords: [spring-mvc,mvc,spring]

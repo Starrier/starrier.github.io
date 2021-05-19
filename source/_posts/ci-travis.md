@@ -2,7 +2,7 @@
 title: GitHub 集成 Travis-CI Maven 项目
 date: 2021-02-04 22:50:36
 author: Imperater
-tags: [github,travis,maven]
+tags: [DevOps]
 excerpt: GitHub 集成 Travis-CI Maven 项目
 swiper:
 keywords: [github,travis,maven]

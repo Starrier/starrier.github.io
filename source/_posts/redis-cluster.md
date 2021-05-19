@@ -2,7 +2,7 @@
 title: 深入理解 Redis - 主从复制
 date: 2021-02-04 23:02:25
 author: imperater
-tags: [redis,redis-cluter]
+tags: [Redis]
 excerpt: 深入理解 Redis - 主从复制
 swiper:
 keywords: [redis,redis-cluter]

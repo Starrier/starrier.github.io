@@ -1,8 +1,8 @@
 ---
 title: books-gitbook-developer
 date: 2021-02-13 20:58:11
-author: imperater
-tags: [GitBook]
+author: Starrier
+tags: [书籍资料]
 excerpt: books-gitbook-developer
 swiper:
 keywords: [GitBook]
