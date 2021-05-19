@@ -23,8 +23,11 @@ img: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/sn
 
 ### 1. Redis
 
- - [redis-lua](https://starrier.starrier.org/2021/01/12/redis-lua/)
- - [redis-hyperloglog](https://starrier.starrier.org/2021/01/12/redis-hyperloglog/)
+ - [深入理解 redis-lua](https://starrier.starrier.org/2021/01/12/redis-lua/)
+ - [深入理解 redis-hyperloglog](https://starrier.starrier.org/2021/01/12/redis-hyperloglog/)
+ - [深入理解 主从复制]()
+ - [深入理解 redis 内存模型]()
+
 
 ## 二. 容器技术
 
