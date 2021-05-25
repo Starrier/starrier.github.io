@@ -5,7 +5,7 @@ author: Starrier
 tags: [Redis]
 excerpt: 深入理解 redis - 简单动态字符串
 swiper:
-keywords:[redis,sds,简单动态字符串]
+keywords: [redis,sds,简单动态字符串]
 description: 深入理解 redis - 简单动态字符串
 ---
 
