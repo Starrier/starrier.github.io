@@ -2,7 +2,7 @@
 title: 深入理解 MyBatis - PooledDataSource 
 date: 2021-01-12 22:41:47
 author: Imperator
-tags: [mybatis,源码,source-code]
+tags: [MyBatis]
 excerpt: MyBaits PooledDataSource 分析
 ---
 

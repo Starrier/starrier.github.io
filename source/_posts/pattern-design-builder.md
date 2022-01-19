@@ -2,7 +2,7 @@
 title: 设计模式 - 建造者模式
 date: 2021-01-12 23:37:11
 author: Imperator
-tags: [pattern-design,builder]
+tags: [pattern-design]
 excerpt: 建造者设计模式 简介
 ---
 

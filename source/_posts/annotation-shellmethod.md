@@ -2,7 +2,7 @@
 title: 深入理解 SpringBoot 注解 @ShellMethod 
 date: 2021-01-12 23:26:26
 author: Imperator
-tags: [spring-boot,shell-method,annotation]
+tags: [Spring Boot]
 excerpt: SpringBoot @ShellMethod 简介
 keywords: [spring-boot,ShellMethod]
 description: 深入理解 SpringBoot 注解 @ShellMethod
@@ -60,4 +60,6 @@ shell:>sum 2 1
 shell:>add -a 2 -b 1
 3
 ```
+
+##### 参考文章
 

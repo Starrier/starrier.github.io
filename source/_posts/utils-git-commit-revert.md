@@ -2,7 +2,7 @@
 title: 使用 git-convert 回滚已经提交的 commit
 date: 2021-01-28 16:55:55
 author: Imperater
-tags: [git,git-revert,commit]
+tags: [开发工具]
 excerpt: 使用 git-convert 回滚已经提交的 commit
 swiper:
 keywords: [使用git-convert回滚已经提交的commit]
@@ -48,3 +48,6 @@ git revert commit hashValue
    - `git-reset` 时，与旧分支合并时，旧分支的 `commit` 会被引入，有可能会产生冲突。
     
 3. git reset 是把 `HEAD` 向后移动了一下，而 `git revert` 是 `HEAD` 继续前进，只是新的 `commit` 的内容和要 `revert` 的内容正好相反，能够抵消要被 `revert`的内容。
+
+##### 参考文章
+

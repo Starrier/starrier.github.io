@@ -1,8 +1,8 @@
 ---
 title: books-gitbook-developer
 date: 2021-02-13 20:58:11
-author: imperater
-tags: [GitBook]
+author: Starrier
+tags: [书籍资料]
 excerpt: books-gitbook-developer
 swiper:
 keywords: [GitBook]
@@ -19,7 +19,9 @@ description: books-gitbook-developer
 
 当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢 ~~
 
-[GitBook Developer](https://developer.gitbook.com/)
 
+##### 参考文章
 
-https://segmentfault.com/a/1190000005859901
+- [GitBook Developer](https://developer.gitbook.com/)
+
+- [Gitbook简易教程](https://segmentfault.com/a/1190000005859901)

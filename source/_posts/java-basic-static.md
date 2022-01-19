@@ -2,7 +2,7 @@
 title: 深入理解 Java static 关键字
 date: 2019-02-14 13:24:25
 author: Imperator
-tags: [java,static]
+tags: [Java 基础]
 excerpt: 深入理解 Java static 关键字
 swiper:
 keywords: [java,static]

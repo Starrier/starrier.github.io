@@ -3,6 +3,7 @@ title: 文章目录 - 理论 - 中间件
 date: 2021-01-11 16:48:23
 author: Imperater
 top: true
+tag: [中间件 - 文章目录]
 excerpt: 中间件 目录
 swiper: true
 swiperImg: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/snow.webp
@@ -23,8 +24,11 @@ img: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/sn
 
 ### 1. Redis
 
- - [redis-lua](https://starrier.starrier.org/2021/01/12/redis-lua/)
- - [redis-hyperloglog](https://starrier.starrier.org/2021/01/12/redis-hyperloglog/)
+ - [深入理解 redis-lua](https://starrier.starrier.org/2021/01/12/redis-lua/)
+ - [深入理解 redis-hyperloglog](https://starrier.starrier.org/2021/01/12/redis-hyperloglog/)
+ - [深入理解 主从复制]()
+ - [深入理解 redis 内存模型]()
+
 
 ## 二. 容器技术
 

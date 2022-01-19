@@ -2,7 +2,7 @@
 title: 单元测试 - Mockito - powermock - 静态方法
 date: 2020-12-22 22:18:10
 author: Imperater
-tags: [test,mockito,powermock]
+tags: [单元测试]
 excerpt: 单元测试-Mockito, 静态方法调用，使用示例
 ---
 # 单元测试 - Mockito - powermock - 静态方法
@@ -62,3 +62,6 @@ public class test(){
   PowerMockito.mockStatic(RedisProviderHelper.class);
   Mockito.when(Utils.getUtils()).thenReturn(null);
 ```
+
+##### 参考文章
+

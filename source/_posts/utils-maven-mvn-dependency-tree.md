@@ -2,7 +2,7 @@
 title: 使用 mvn -Dverbose dependency:tree 查看依赖树 - 解决依赖问题
 date: 2021-02-01 17:44:39
 author: Imperater
-tags: [mvn,maven,dependency:tree]
+tags: [开发工具]
 excerpt: 使用 mvn -Dverbose dependency:tree 查看依赖树 - 解决依赖问题
 swiper:
 keywords: [mvn,maven,dependency:tree]
