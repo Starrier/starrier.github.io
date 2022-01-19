@@ -1,12 +1,12 @@
 ---
-title: {{ title }}
-date: {{ date }}
-author: 
+title: mysql-master-slave-copy
+date: 2021-08-23 11:10:15
+author:
 tags:
 excerpt:
-swiper: 
-keywords: 
-description: 
+swiper:
+keywords:
+description:
 ---
 
 # {{ :title }}
@@ -18,7 +18,3 @@ description:
 ##### **特别说明**
 
 当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢 ~~
-
-##### 参考文章
-
-- []()

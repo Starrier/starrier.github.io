@@ -1,15 +1,15 @@
 ---
-title: {{ title }}
-date: {{ date }}
-author: 
+title: redis-introduction
+date: 2022-01-18 19:09:16
+author:
 tags:
 excerpt:
-swiper: 
-keywords: 
-description: 
+swiper:
+keywords:
+description:
 ---
 
-# {{ :title }}
+# Redis 线程
 
 > * 原文地址：[]()
 > * 原文作者：[]()
@@ -21,4 +21,4 @@ description:
 
 ##### 参考文章
 
-- []()
+- [【Redis破障之路】三：Redis单线程架构](https://bbs.huaweicloud.com/blogs/262901)

@@ -1,15 +1,15 @@
 ---
-title: books-webpack
-date: 2021-02-13 20:53:30
+title: 算法 - 基础算法简介
+date: 2021-08-18 21:20:47
 author: Starrier
-tags: [书籍资料]
-excerpt: [books,webpack]
+tags: [算法]
+excerpt: 算法 - 基础算法简介
 swiper:
-keywords: [books,webpack]
-description: webpack 性能指南
+keywords: [算法]
+description: 算法 - 基础算法简介
 ---
 
-# books-webpack
+#  算法 - 基础算法简介
 
 > * 原文地址：[]()
 > * 原文作者：[]()
@@ -19,6 +19,4 @@ description: webpack 性能指南
 
 当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢 ~~
 
-##### Webpack GitBook 书籍地址
-
-- [GitBook - Webpack](http://webpack.wuhaolin.cn/)
+##### 参考文章

@@ -1,12 +1,12 @@
 ---
-title: {{ title }}
-date: {{ date }}
-author: 
+title: mq-rocket-zero-copy
+date: 2022-01-17 10:54:17
+author:
 tags:
 excerpt:
-swiper: 
-keywords: 
-description: 
+swiper:
+keywords:
+description:
 ---
 
 # {{ :title }}
@@ -18,7 +18,3 @@ description:
 ##### **特别说明**
 
 当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢 ~~
-
-##### 参考文章
-
-- []()

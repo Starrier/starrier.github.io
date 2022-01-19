@@ -1,12 +1,12 @@
 ---
-title: {{ title }}
-date: {{ date }}
-author: 
+title: mdc
+date: 2022-01-06 17:36:47
+author:
 tags:
 excerpt:
-swiper: 
-keywords: 
-description: 
+swiper:
+keywords:
+description:
 ---
 
 # {{ :title }}
@@ -21,4 +21,4 @@ description:
 
 ##### 参考文章
 
-- []()
+- [MDC是什么鬼？用法、源码一锅端](https://juejin.cn/post/6844904132478763022)

@@ -1,15 +1,15 @@
 ---
-title: {{ title }}
-date: {{ date }}
-author: 
+title: code-programming-log
+date: 2022-01-18 19:06:47
+author:
 tags:
 excerpt:
-swiper: 
-keywords: 
-description: 
+swiper:
+keywords:
+description:
 ---
 
-# {{ :title }}
+# 日志
 
 > * 原文地址：[]()
 > * 原文作者：[]()
@@ -21,4 +21,4 @@ description:
 
 ##### 参考文章
 
-- []()
+- [如何优雅地记录操作日志？](https://tech.meituan.com/2021/09/16/operational-logbook.html)

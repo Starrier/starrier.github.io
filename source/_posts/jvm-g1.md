@@ -1,12 +1,12 @@
 ---
-title: {{ title }}
-date: {{ date }}
-author: 
+title: jvm-g1
+date: 2022-01-19 11:01:23
+author:
 tags:
 excerpt:
-swiper: 
-keywords: 
-description: 
+swiper:
+keywords:
+description:
 ---
 
 # {{ :title }}

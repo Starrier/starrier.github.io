@@ -1,15 +1,15 @@
 ---
-title: {{ title }}
-date: {{ date }}
-author: 
+title: java-basic-hashmap
+date: 2022-01-17 20:24:01
+author:
 tags:
 excerpt:
-swiper: 
-keywords: 
-description: 
+swiper:
+keywords:
+description:
 ---
 
-# {{ :title }}
+# 深入理解 Java HashMap 及对应面试题
 
 > * 原文地址：[]()
 > * 原文作者：[]()
@@ -21,4 +21,4 @@ description:
 
 ##### 参考文章
 
-- []()
+- [Java集合-HashMap扰动函数](https://blog.csdn.net/weixin_33748818/article/details/91994025)

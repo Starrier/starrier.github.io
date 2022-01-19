@@ -1,15 +1,15 @@
 ---
-title: books-webpack
-date: 2021-02-13 20:53:30
+title: 代码编程规范
+date: 2022-01-06 15:36:33
 author: Starrier
-tags: [书籍资料]
-excerpt: [books,webpack]
+tags: [规范]
+excerpt: 代码编程规范
 swiper:
-keywords: [books,webpack]
-description: webpack 性能指南
+keywords: [规范]
+description: 代码编程规范
 ---
 
-# books-webpack
+# 代码编程规范
 
 > * 原文地址：[]()
 > * 原文作者：[]()
@@ -19,6 +19,5 @@ description: webpack 性能指南
 
 当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢 ~~
 
-##### Webpack GitBook 书籍地址
+##### 参考文章
 
-- [GitBook - Webpack](http://webpack.wuhaolin.cn/)

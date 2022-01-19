@@ -1,12 +1,12 @@
 ---
-title: {{ title }}
-date: {{ date }}
-author: 
+title: java-thread-aqs
+date: 2022-01-07 14:22:33
+author:
 tags:
 excerpt:
-swiper: 
-keywords: 
-description: 
+swiper:
+keywords:
+description:
 ---
 
 # {{ :title }}
@@ -21,4 +21,4 @@ description:
 
 ##### 参考文章
 
-- []()
+- [深入分析AQS实现原理](https://segmentfault.com/a/1190000017372067)

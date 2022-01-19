@@ -1,15 +1,15 @@
 ---
-title: {{ title }}
-date: {{ date }}
-author: 
+title: mysql-page-principle
+date: 2022-01-18 14:50:32
+author:
 tags:
 excerpt:
-swiper: 
-keywords: 
-description: 
+swiper:
+keywords:
+description:
 ---
 
-# {{ :title }}
+#  深入理解 MySQL - 页结构
 
 > * 原文地址：[]()
 > * 原文作者：[]()
@@ -21,4 +21,4 @@ description:
 
 ##### 参考文章
 
-- []()
+- [mysql原理一：innodb存储基本单位页结构及B+tree](https://blog.csdn.net/chuixue24/article/details/120266026)

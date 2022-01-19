@@ -1,12 +1,12 @@
 ---
-title: {{ title }}
-date: {{ date }}
-author: 
+title: mysql-query-cache
+date: 2022-01-06 16:24:21
+author:
 tags:
 excerpt:
-swiper: 
-keywords: 
-description: 
+swiper:
+keywords:
+description:
 ---
 
 # {{ :title }}
@@ -21,4 +21,4 @@ description:
 
 ##### 参考文章
 
-- []()
+-[MySQL为什么取消了Query Cache](https://mp.weixin.qq.com/s/_EXXmciNdgXswSVzKyO4xg)

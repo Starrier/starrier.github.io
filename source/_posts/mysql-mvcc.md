@@ -1,12 +1,12 @@
 ---
-title: {{ title }}
-date: {{ date }}
-author: 
+title: mysql-mvcc
+date: 2022-01-06 17:15:08
+author:
 tags:
 excerpt:
-swiper: 
-keywords: 
-description: 
+swiper:
+keywords:
+description:
 ---
 
 # {{ :title }}
@@ -21,4 +21,4 @@ description:
 
 ##### 参考文章
 
-- []()
+- [快速理解脏读、不可重复读、幻读和MVCC](https://cloud.tencent.com/developer/article/1450773)

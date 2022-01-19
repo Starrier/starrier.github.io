@@ -1,15 +1,15 @@
 ---
-title: {{ title }}
-date: {{ date }}
-author: 
+title: mq-rocket-store-principle
+date: 2022-01-17 11:02:08
+author:
 tags:
 excerpt:
-swiper: 
-keywords: 
-description: 
+swiper:
+keywords:
+description:
 ---
 
-# {{ :title }}
+# 深入理解 RocketMQ 存储原理
 
 > * 原文地址：[]()
 > * 原文作者：[]()
@@ -19,6 +19,4 @@ description:
 
 当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢 ~~
 
-##### 参考文章
 
-- []()

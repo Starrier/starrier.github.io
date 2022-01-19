@@ -1,15 +1,15 @@
 ---
-title: {{ title }}
-date: {{ date }}
-author: 
+title: redis-performance
+date: 2022-01-06 16:42:11
+author:
 tags:
 excerpt:
-swiper: 
-keywords: 
-description: 
+swiper:
+keywords:
+description:
 ---
 
-# {{ :title }}
+# Redis 性能问题
 
 > * 原文地址：[]()
 > * 原文作者：[]()
@@ -21,4 +21,4 @@ description:
 
 ##### 参考文章
 
-- []()
+- [分析内部运行机制，教你解决Redis性能问题](https://my.oschina.net/u/4526289/blog/5379857)

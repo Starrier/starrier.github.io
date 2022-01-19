@@ -43,3 +43,6 @@ public interface Multiset<E> extends Collection<E> {}
 ```
 
 如果使用 `MultiSet`：
+
+##### 参考文章
+
