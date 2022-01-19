@@ -1,12 +1,12 @@
 ---
 title: Lambda表达式的原理
 date: 2021-08-19 09:10:40
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [lambda]
+excerpt:  Lambda表达式的原理
 swiper:
-keywords:
-description:
+keywords: [lambda]
+description:  Lambda表达式的原理
 ---
 
 #  Lambda表达式的原理

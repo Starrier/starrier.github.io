@@ -1,12 +1,12 @@
 ---
-title: mq-rocket-store-principle
+title: 深入理解 RocketMQ 存储原理
 date: 2022-01-17 11:02:08
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [RocketMQ]
+excerpt: 深入理解 RocketMQ 存储原理
 swiper:
-keywords:
-description:
+keywords: [RocketMQ]
+description: 深入理解 RocketMQ 存储原理
 ---
 
 # 深入理解 RocketMQ 存储原理

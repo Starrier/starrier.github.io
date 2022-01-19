@@ -1,12 +1,12 @@
 ---
-title: security-xxe
+title: java --XXE 攻击原理及防御
 date: 2022-01-11 20:53:19
-author:
-tags:
-excerpt:
-swiper:
-keywords:
-description:
+author: Starrier
+tags: [security]
+excerpt: java --XXE 攻击原理及防御
+swiper: 
+keywords: [security]
+description: java --XXE 攻击原理及防御
 ---
 
 # java --XXE 攻击原理及防御

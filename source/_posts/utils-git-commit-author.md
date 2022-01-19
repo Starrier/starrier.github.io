@@ -24,3 +24,5 @@ git commit --amend --reset-author
 ```gitexclude
 git commit --amend --author="NewAuthor <NewEmail@address.com>"
 ```
+
+##### 参考文章

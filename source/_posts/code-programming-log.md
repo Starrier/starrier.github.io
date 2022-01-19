@@ -1,12 +1,12 @@
 ---
-title: code-programming-log
+title: 日志记录最佳实践
 date: 2022-01-18 19:06:47
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [log]
+excerpt: 日志记录最佳实践
 swiper:
-keywords:
-description:
+keywords: [log]
+description: 日志记录最佳实践
 ---
 
 # 日志

@@ -1,15 +1,15 @@
 ---
-title: mdc
+title: 深入理解 MDC
 date: 2022-01-06 17:36:47
-author:
-tags:
-excerpt:
-swiper:
-keywords:
-description:
+author: Starrier
+tags: [mdc]
+excerpt: 深入理解 MDC
+swiper: 
+keywords: [mdc]
+description: 深入理解 MDC
 ---
 
-# {{ :title }}
+# 深入理解 MDC
 
 > * 原文地址：[]()
 > * 原文作者：[]()

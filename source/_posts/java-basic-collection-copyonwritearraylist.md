@@ -1,15 +1,15 @@
 ---
 title: CopyOnWriteArrayList实现原理及源码分析
 date: 2021-08-18 15:04:08
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [多线程]
+excerpt: CopyOnWriteArrayList 实现原理及源码分析
 swiper:
-keywords:
-description:
+keywords: [多线程]
+description: CopyOnWriteArrayList 实现原理及源码分析
 ---
 
-# CopyOnWriteArrayList实现原理及源码分析
+# CopyOnWriteArrayList 实现原理及源码分析
 
 > * 原文地址：[]()
 > * 原文作者：[]()

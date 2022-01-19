@@ -1,12 +1,12 @@
 ---
 title: redis-multip-thread-model
 date: 2021-08-23 15:31:47
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [Redis]
+excerpt: Redis 性能问题
 swiper:
-keywords:
-description:
+keywords: [Redis]
+description: Redis 性能问题
 ---
 
 #  Redis 多线程模型

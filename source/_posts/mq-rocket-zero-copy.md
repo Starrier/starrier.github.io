@@ -1,15 +1,15 @@
 ---
-title: mq-rocket-zero-copy
+title: 深入理解 RocketMQ 零拷贝
 date: 2022-01-17 10:54:17
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [RocketMQ]
+excerpt: 深入理解 RocketMQ 零拷贝
 swiper:
-keywords:
-description:
+keywords: [RocketMQ]
+description: 深入理解 RocketMQ 零拷贝
 ---
 
-# {{ :title }}
+# 深入理解 RocketMQ 零拷贝
 
 > * 原文地址：[]()
 > * 原文作者：[]()

@@ -1,15 +1,15 @@
 ---
-title: mysql-gap-lock
+title: 深入理解 MySQL 间隙锁
 date: 2022-01-06 14:47:43
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [MySQL]
+excerpt: 深入理解 MySQL 间隙锁
 swiper:
-keywords:
-description:
+keywords: [MySQL]
+description: 深入理解 MySQL 间隙锁
 ---
 
-# {{ :title }}
+#  深入理解 MySQL 间隙锁
 
 > * 原文地址：[]()
 > * 原文作者：[]()

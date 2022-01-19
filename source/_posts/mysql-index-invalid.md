@@ -1,12 +1,12 @@
 ---
-title: mysql-index-invalid
+title: MySQL 索引失效
 date: 2021-08-19 19:25:37
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [MySQl]
+excerpt: MySQL 索引失效
 swiper:
-keywords:
-description:
+keywords: [MySQL]
+description: MySQL 索引失效
 ---
 
 # MySQL 索引失效

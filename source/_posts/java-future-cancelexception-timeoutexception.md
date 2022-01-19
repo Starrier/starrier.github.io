@@ -1,11 +1,11 @@
 ---
-title: Future CancellationException
+title: Future 取消异常机制
 date: 2022-01-06 14:42:53
 author: Starrier
 tags: [java]
-excerpt: 
+excerpt: Future 异常
 swiper:
-keywords:
+keywords: [多线程]
 description: Future 中 CancellationException 与 TimeoutException 的区别
 ---
 

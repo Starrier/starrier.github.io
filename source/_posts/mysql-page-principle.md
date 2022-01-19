@@ -1,12 +1,12 @@
 ---
-title: mysql-page-principle
+title: 深入理解 MySQL - 页结构
 date: 2022-01-18 14:50:32
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [MySQL]
+excerpt: 深入理解 MySQL - 页结构
 swiper:
-keywords:
-description:
+keywords: [MySQL]
+description: 深入理解 MySQL - 页结构
 ---
 
 #  深入理解 MySQL - 页结构

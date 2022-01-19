@@ -1,12 +1,12 @@
 ---
-title: redis-aof-rdb
+title: 深入理解 Redis - AOF 与 RDB
 date: 2022-01-11 16:05:55
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [Redis]
+excerpt: 深入理解 Redis - AOF 与 RDB
 swiper:
-keywords:
-description:
+keywords: [Redis]
+description: 深入理解 Redis - AOF 与 RDB
 ---
 
 # 深入理解 Redis - AOF 与 RDB

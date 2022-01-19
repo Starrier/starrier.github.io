@@ -1,15 +1,15 @@
 ---
-title: mysql-master-slave-copy
+title: 深入理解 MySQL 主从复制
 date: 2021-08-23 11:10:15
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [MySQL]
+excerpt: 深入理解 MySQL 主从复制
 swiper:
-keywords:
-description:
+keywords: [MySQL]
+description: 深入理解 MySQL 主从复制
 ---
 
-# {{ :title }}
+# 深入理解 MySQL 主从复制
 
 > * 原文地址：[]()
 > * 原文作者：[]()

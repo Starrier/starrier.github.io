@@ -1,12 +1,12 @@
 ---
-title: spring-bean-lifecycle
+title: Spring Bean  生命周期
 date: 2021-08-18 21:17:29
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [Srping]
+excerpt: Spring Bean  生命周期
 swiper:
-keywords:
-description:
+keywords: [Spring]
+description: Spring Bean  生命周期
 ---
 
 # Spring Bean  生命周期

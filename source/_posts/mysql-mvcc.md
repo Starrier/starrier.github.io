@@ -1,15 +1,15 @@
 ---
-title: mysql-mvcc
+title: 深入理解 MySQL MVCC
 date: 2022-01-06 17:15:08
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [MySQl]
+excerpt: 深入理解 MySQL MVCC
 swiper:
-keywords:
-description:
+keywords: [MySQL]
+description: 深入理解 MySQL MVCC
 ---
 
-# {{ :title }}
+# 深入理解 MySQL MVCC
 
 > * 原文地址：[]()
 > * 原文作者：[]()

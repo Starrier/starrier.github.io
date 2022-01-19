@@ -69,3 +69,5 @@ private TestService mockService = new TestService();
 ```java
 Whitebox.invokeMethod(powerMock, "getCarOperationService", vehicleGuidePriceParam);
 ```
+
+##### 参考文章

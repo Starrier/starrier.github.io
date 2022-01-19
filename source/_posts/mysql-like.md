@@ -1,15 +1,15 @@
 ---
-title: mysql-like
+title: MySQL like 关键字
 date: 2022-01-06 17:07:15
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [MySQL]
+excerpt: MySQL like 关键字
 swiper:
-keywords:
-description:
+keywords: [MySQL]
+description: MySQL like 关键字
 ---
 
-# {{ :title }}
+#  MySQL like 关键字
 
 > * 原文地址：[]()
 > * 原文作者：[]()

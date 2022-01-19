@@ -1,15 +1,15 @@
 ---
-title: redis-introduction
+title: Redis 简介
 date: 2022-01-18 19:09:16
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [Redis]
+excerpt: Redis 简介
 swiper:
-keywords:
-description:
+keywords: [Redis]
+description: Redsi 简介
 ---
 
-# Redis 线程
+# Redis 简介
 
 > * 原文地址：[]()
 > * 原文作者：[]()

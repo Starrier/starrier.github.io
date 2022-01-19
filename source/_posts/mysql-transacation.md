@@ -1,12 +1,12 @@
 ---
-title: mysql-transacation
+title: 深入理解 MySQL 事务机制
 date: 2022-01-07 16:55:02
-author:
-tags:
-excerpt:
-swiper:
-keywords:
-description:
+author: Starrier
+tags: [MySQL]
+excerpt: 深入理解 MySQL 事务机制
+swiper: 
+keywords: [MySQL]
+description: 深入理解 MySQL 事务机制
 ---
 
 # 深入理解 MySQL 事务机制

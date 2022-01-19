@@ -20,6 +20,7 @@ description: [hexo,命令]
 当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢 ~~
 
 
+```markdown
 npm install hexo -g #安装  
 npm update hexo -g #升级  
 hexo init #初始化
@@ -45,3 +46,5 @@ hexo generate --watch #监视文件变动
 两个命令的作用是相同的
 hexo generate --deploy
 hexo deploy --generate
+```
+

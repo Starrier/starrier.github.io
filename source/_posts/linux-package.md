@@ -5,7 +5,7 @@ author: Starrier
 tags: [Linux]
 excerpt: Linux 下文件的打包与压缩
 swiper:
-keywords:
+keywords: [Linux]
 description: Linux 下文件的打包与压缩
 ---
 

@@ -1,12 +1,12 @@
 ---
-title: redis-performance
+title: Redis 性能问题
 date: 2022-01-06 16:42:11
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [Redis]
+excerpt: Redis 性能问题
 swiper:
-keywords:
-description:
+keywords: [Redis]
+description: Redis 性能问题
 ---
 
 # Redis 性能问题

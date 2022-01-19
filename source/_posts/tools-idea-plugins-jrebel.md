@@ -39,3 +39,5 @@ https://jrebel.qekang.com/cb2546bb-9d43-4115-bf4b-10539349efed
 ##### 3. 设置离线模式 来防止失效
 
 File -> Settings -> JRebel -> [Work offline]按钮
+
+##### 参考文章

@@ -1,15 +1,15 @@
 ---
-title: mysql-query-cache
+title: MySQL 查询缓存
 date: 2022-01-06 16:24:21
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [MySQL]
+excerpt: MySQL 查询缓存
 swiper:
-keywords:
-description:
+keywords: [MySQL]
+description: MySQL 查询缓存
 ---
 
-# {{ :title }}
+#  MySQL 查询缓存
 
 > * 原文地址：[]()
 > * 原文作者：[]()

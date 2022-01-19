@@ -1,15 +1,15 @@
 ---
-title: Redis 缓存问题
-date: 2022-01-06 14:07:49
+title: Redis Cluster 实战经验
+date: 2022-01-19 14:12:19
 author: Starrier
 tags: [Redis]
-excerpt: Redis 缓存问题
+excerpt: Redis Cluster 实战经验
 swiper:
 keywords: [Redis]
-description: Redis 缓存问题
+description: Redis Cluster 实战经验
 ---
 
-#  Redis 缓存
+#  Redis Cluster 实战经验
 
 > * 原文地址：[]()
 > * 原文作者：[]()
@@ -19,9 +19,9 @@ description: Redis 缓存问题
 
 当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢 ~~
 
+当前文章目前只做同类型经验文章收集。
 
 
 ##### 参考文章
 
-- [Redis 缓存读写策略设计及常见问题](https://alsritter.icu/posts/56acbef6/)
-
+- [Redis大集群扩容性能优化实践](https://my.oschina.net/vivotech/blog/5281502)

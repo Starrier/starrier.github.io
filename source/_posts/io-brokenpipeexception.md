@@ -1,15 +1,15 @@
 ---
-title: io-brokenpipeexception
+title: 文件传输异常
 date: 2022-01-06 16:31:43
-author:
-tags:
-excerpt:
+author: Starrier
+tags: [Java]
+excerpt: 文件传输异常
 swiper:
-keywords:
-description:
+keywords: [Java]
+description: 文件传输异常
 ---
 
-# {{ :title }}
+# 文件传输异常
 
 > * 原文地址：[]()
 > * 原文作者：[]()
