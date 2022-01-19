@@ -2,7 +2,7 @@
 title: GitHub - Hexo - 网站数据分析 - Baidu
 date: 2021-01-11 17:13:31
 author: Imperator
-tags: [Hexo,CI/CD]
+tags: [hexo]
 excerpt: hexo 静态 blog，添加 baidu 网站数据分析流程
 ---
 

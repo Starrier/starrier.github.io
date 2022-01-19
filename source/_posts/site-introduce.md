@@ -2,7 +2,7 @@
 title: Starrier's Blog 站点说明
 date: 2021-01-13 20:28:16
 author: Starrier-Org
-tags: [Starrier,Imperator]
+tags: [Starrier]
 excerpt: 关于当前网站的一些问题说明
 top: tue
 swiper: true
@@ -34,17 +34,13 @@ img: https://cdn.stocksnap.io/img-thumbs/960w/single-tree_HJDLDXUIFW.jpg
 
 如有文章侵权相关，侵权立删，联系人：
 
-[Starrier](https://github.com/Starrier)
-
-[Imperater](https://github.com/Imperater)
+[Starriers](https://github.com/Starriers)
 
 团队邮箱：
 
 starrier@starrier.org
 
-
 个人邮箱：
 
 starriers@starrier.org
 
-imperator@starrier.org  ||  imperater@starrier.org

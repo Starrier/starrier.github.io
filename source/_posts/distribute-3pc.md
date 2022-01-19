@@ -2,7 +2,7 @@
 title: 分布式理论 3PC
 date: 2021-01-29 16:09:15
 author: Imperator
-tags: [distribute,3pc]
+tags: [分布式基础]
 excerpt: 分布式理论 3PC
 swiper:
 keywords: [distribute,3pc]

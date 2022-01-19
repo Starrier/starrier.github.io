@@ -2,7 +2,7 @@
 title: 单元测试 - Mockito - powermock - 内部私有函数
 date: 2021-02-03 10:41:40
 author: Imperater
-tags: [mockito,powermock,test]
+tags: [单元测试]
 excerpt: 单元测试 - Mockito - powermock - 内部私有函数
 swiper:
 keywords: [mockito,powermock,私有函数测试]
@@ -69,3 +69,5 @@ private TestService mockService = new TestService();
 ```java
 Whitebox.invokeMethod(powerMock, "getCarOperationService", vehicleGuidePriceParam);
 ```
+
+##### 参考文章

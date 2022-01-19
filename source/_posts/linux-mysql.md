@@ -1,8 +1,8 @@
 ---
 title: linux-mysql
 date: 2021-01-13 20:12:13
-author: Imperator
-tags:
+author: Starrier
+tags: [Linux]
 ---
 
 # Linux 环境下 MySQL 数据库操作

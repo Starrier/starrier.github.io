@@ -2,7 +2,7 @@
 title: 深入分析与理解 spring-cloud-hystrix - HystrixCommand
 date: 2021-02-01 12:53:07
 author: Imperater
-tags: [spring-cloud,hystrix,hystrix-command]
+tags: [分布式中间件]
 excerpt: 深入分析与理解 spring-cloud-hystrix - HystrixCommand
 swiper:
 keywords: [spring-cloud,hystrix,hystrix-command]
@@ -117,3 +117,5 @@ org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration
 EnableCircuitBreakerImportSelector 是 SpringFactoryImportSelector 子类。此类在初始化后，会执行 selectImports(AnnotationMetadata metadata) 的方法。此方法会根据注解启动的注解（这里指 `@EnableCircuitBreaker`）从spring.factories 文件中获取其配置需要初始化 `@Configuration` 类（这里是 org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration），从而最终初始化 HystrixCommandAspect 类，从而实现拦截 HystrixCommand` 的功能
 
 以上就是通过 `@EnableCircuitBreake` 可以开启 Hystrix 的原理。
+
+##### 参考文章

@@ -2,7 +2,7 @@
 title: 深度学习 - 后向传播算法
 date: 2021-02-05 00:23:26
 author: Starreirs
-tags: [dp]
+tags: [机器学习]
 excerpt: 深度学习 - 后向传播算法
 swiper:
 keywords: [dp]

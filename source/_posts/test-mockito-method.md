@@ -2,7 +2,7 @@
 title: 单元测试 - Mockito - powermock -实例函数调用
 date: 2020-12-26 22:10:53
 author: Imperater
-tags: [test,mockito,powermock]
+tags: [单元测试]
 excerpt: 单元测试-Mockito, 函数方法调用使用示例
 keywords: [单元测试]
 description: 单元测试
@@ -101,3 +101,5 @@ description: 单元测试
 
 1.  如果 Mockito 中，包含多个参数，则要么都为实际参数，要么都是 Mockito 所构造的参数，否则会报错。
 2.  如果对于返回值 `thenReturn` 需要指定的数据，则自行自己定义并放入即可。
+
+##### 参考文章

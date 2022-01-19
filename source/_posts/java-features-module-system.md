@@ -2,7 +2,7 @@
 title: java-features-module-system
 date: 2020-12-28 22:36:35
 author: Imperator
-tags: [java,jdk,jdk9,features,module-system]
+tags: [Java 基础]
 excerpt: jdk 9 module-system 简介
 ---
 

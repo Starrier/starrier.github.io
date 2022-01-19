@@ -2,7 +2,7 @@
 title: git-rebase
 date: 2021-01-14 19:46:32
 author: Imperator
-tags: [git]
+tags: [开发工具]
 excerpt: Git 基变操作
 ---
 

@@ -2,7 +2,7 @@
 title: redis-lua 简介
 date: 2021-01-12 22:46:53
 author: Imperator
-tags: [redis,lua]
+tags: [Redis]
 excerpt: Redis Lua 简介
 keywords: [redis,lua]
 description: redis-lua 简介
@@ -18,7 +18,7 @@ description: redis-lua 简介
 
 ## `Redis Lua` 优势
 
-1.减少网络开销：本来5次网络请求的操作，可以用一个请求完成，原先5次请求的逻辑放在 `redis` 服务器上完成。使用脚本，减少了网络往返时延。
+1.减少网络开销：本来 5 次的网络请求操作，可以用一个请求完成，原先 5 次请求的逻辑放在 `redis` 服务器上完成。使用脚本，减少了网络往返时延。
 
 2.原子操作：`Redis` 会将整个脚本作为一个整体执行，中间不会被其他命令插入。
 
