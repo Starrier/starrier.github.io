@@ -2,7 +2,7 @@
 title: java-features-stream 底层原理
 date: 2021-01-12 23:23:48
 author: Imperator
-tags: [java,stream,principle,原理]
+tags: [Java 基础]
 excerpt: Java Stream 底层原理
 ---
 

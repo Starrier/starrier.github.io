@@ -1,8 +1,8 @@
 ---
 title: books-webpack
 date: 2021-02-13 20:53:30
-author: Imperater
-tags: [books,webpack]
+author: Starrier
+tags: [书籍资料]
 excerpt: [books,webpack]
 swiper:
 keywords: [books,webpack]
@@ -19,6 +19,6 @@ description: webpack 性能指南
 
 当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢 ~~
 
-# Webpack GitBook 书籍地址
+##### Webpack GitBook 书籍地址
 
-[GitBook - Webpack](http://webpack.wuhaolin.cn/)
+- [GitBook - Webpack](http://webpack.wuhaolin.cn/)
