@@ -19,7 +19,11 @@ description: 深入理解 Java 多线程 Join
 
 当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢 ~~
 
+当前线程需要等待之前的线程执行完成后，才能继续运行。
+
+Join 可以阻塞的本质是，底层源码会最终调用 Object wait 方法。 方法 wait 是被 synchronize 修饰的，锁为  this。
+wait/notifyall
 
 ### 参考文章
 
-1. 
+- [(四)Thread.join的作用和原理](https://segmentfault.com/a/1190000017255019)
