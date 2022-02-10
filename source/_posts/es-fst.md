@@ -1,15 +1,15 @@
 ---
-title: MySQL 文章目录
-date: 2022-01-19 15:44:55
+title: ES 底层 FST 有限状态机
+date: 2022-02-09 16:21:44
 author: Starrier
-tags: [MySQL]
-excerpt: MySQL 文章目录
+tags: [ES]
+excerpt: ES 底层 FST 有限状态机
 swiper:
-keywords: [MySQL]
-description: MySQL 文章目录
+keywords: [ES]
+description: ES 底层 FST 有限状态机
 ---
 
-# MySQL 文章目录
+# ES 底层 FST 有限状态机
 
 > * 原文地址：[]()
 > * 原文作者：[]()
@@ -19,13 +19,6 @@ description: MySQL 文章目录
 
 当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢 ~~
 
-- [MySQL 基础知识]()
-  
-- [深入理解 MySQL 事务机制]()
-
-- [深入理解 MySQL 日志系统]()
-
-- []()
 ##### 参考文章
 
-- []()
+- [有限状态机FST](https://www.shangmayuan.com/a/4c53ea95cb1647579ee027e0.html)

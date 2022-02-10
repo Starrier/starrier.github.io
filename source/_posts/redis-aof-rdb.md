@@ -81,3 +81,5 @@ redis 执行 fork 命令，创建一个子进程。此时父进程对会将新�
 - [RDB 和 AOF 持久化的原理是什么？我应该用哪一个？它们的优缺点？](https://segmentfault.com/a/1190000018388385)
 
 - [彻底搞懂Redis持久化之RDB原理](https://blog.csdn.net/ctwctw/article/details/105147277?utm_source=app&app_version=4.21.1&utm_source=app)
+
+- [redis的rdb和aof两种持久化机制原理及优缺点](https://segmentfault.com/a/1190000021559677)

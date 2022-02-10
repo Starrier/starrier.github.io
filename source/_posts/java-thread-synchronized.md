@@ -33,3 +33,5 @@ ReentrantLock 独有的功能
 - [深度分析：锁升级过程和锁状态，看完这篇你就懂了！](https://segmentfault.com/a/1190000022904663)
 
 - [Synchronized 与 ReentrantLock 的区别！](https://www.cnblogs.com/javastack/p/12787771.html)
+
+- [(五)Synchronized原理分析](https://segmentfault.com/a/1190000017255044)
