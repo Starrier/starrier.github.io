@@ -63,3 +63,5 @@ Aware 主要是让 对应的 Bean 拥有 Spring 容器的功能。
 - [Spring中的InitializingBean接口的使用](https://blog.csdn.net/Asa_Prince/article/details/108508964)
 
 - [聊聊spring的那些扩展机制](https://juejin.cn/post/6844903682673229831)
+
+- [Spring IOC详解及Bean生命周期详细过程，看完直接吊打面试官！](https://juejin.cn/post/6966158157202587662#heading-5)

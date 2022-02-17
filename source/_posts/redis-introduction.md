@@ -19,6 +19,31 @@ description: Redsi 简介
 
 当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢 ~~
 
+
+
+1. [简单动态字符串]()
+
+2. [链表]()
+
+3. [字典]()
+
+4. [跳跃表]()
+
+5. [整数集合]()
+
+6. [压缩列表]()
+
+7. [对象]()
+
+redis 单线程架构
+
+redis 为什么那么快
+
+1. 基于内存
+2. 非阻塞 IO，Redis使用epoll作为I/O多路复用技术的实现，再加上Redis自身的事件处理模型将epoll中的连接、读写、关闭都转换为事件，不在网络I/O上浪费过多的时间
+3. 单线程，避免了线程切换产生的额外消耗
+
 ##### 参考文章
 
 - [【Redis破障之路】三：Redis单线程架构](https://bbs.huaweicloud.com/blogs/262901)
+

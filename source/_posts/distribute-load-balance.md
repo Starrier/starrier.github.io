@@ -59,4 +59,7 @@ description: 分布式系统 - 负载均衡原理及算法实现
 ### 参考文章
 
 - [分布式负载均衡算法的实现](https://www.cnblogs.com/lgjlife/p/10727245.html)
+
 - [一致性 Hash （复习版）](https://blog.csdn.net/weixin_41896463/article/details/106304145)
+
+- [常用负载均衡策略分析](https://www.jianshu.com/p/d7e173d212a8)

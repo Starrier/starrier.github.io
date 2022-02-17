@@ -100,6 +100,8 @@ keepAliveTime 的单位。
 
 可选择的饱和策略RejectedExecutionHandler详解
 
+## 任务拒绝策略
+
 
 ### 1. AbortPolicy 中止策略
 
@@ -230,3 +232,7 @@ e = executor;
 #####  参考文章
 
 - [深入 Java 线程池：从设计思想到源码解读](https://xie.infoq.cn/article/d0120c6e1518cec1da65cd31f)
+
+- [《Java线程池》：任务拒绝策略](https://blog.csdn.net/u010412719/article/details/52132613)
+
+- [Java线程池实现原理及其在美团业务中的实践](https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html)

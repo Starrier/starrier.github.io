@@ -19,7 +19,30 @@ description: 深入理解 AQS
 
 当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢 ~~
 
+> 抽象队列同步器 `AbstractQuenedSynchronizer`。是除了 `java` 自带的 `synchronized` 关键字之外的锁机制。
+
+##### 原理
+
+如果请求的共享资源空闲，则将当前线程置位工作线程，共享资源设置为锁定状态。
+如果请求的共享资源别占用，则使用一套阻塞等待，以及唤醒分配的锁机制。这个机制由 AQS 的 CLH 队列保证，即将暂时不使用的线程
+放入队列中。
+
+> CLH（Craig，Landin，and Hagersten）队列是一个虚拟的双向队列，虚拟的双向队列即不存在队列实例，仅存在节点之间的关联关系。
+
+> `AQS` 就是基于 `CLH` 队列，用 `volatile` 修饰共享变量 `state`，线程通过 `CAS` 去改变状态符，成功则获取锁成功，失败则进入等待队列，等待被唤醒。
+
+实现了 AQS 的锁有：
+
+- 自旋锁
+- 互斥锁
+- 读写锁
+- 信号量
+- 栅栏
+
 AQS  通过调用 Unsafe 类的 CAS 来保证原子性。
+
+AQS 
+
 
 ##### 参考文章
 
@@ -30,3 +53,5 @@ AQS  通过调用 Unsafe 类的 CAS 来保证原子性。
 - [Java 并发编程：AQS 的原子性如何保证](https://xie.infoq.cn/article/05516b2a11d576b74e49df634)
 
 - [(九)深入分析AQS实现原理](https://segmentfault.com/a/1190000017372067)
+
+- [AQS详解（面试）](https://blog.csdn.net/mulinsen77/article/details/84583716)

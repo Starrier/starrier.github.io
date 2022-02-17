@@ -19,6 +19,25 @@ description: Redis 缓存问题
 
 当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢 ~~
 
+Redis 缓存方案  业务设计
+
+1. Cache-Aisde
+
+2. Read-Through
+ 
+3.
+
+4. 
+
+
+Redis 缓存更新方案  Redis 自身设计
+
+1. LRU/LFU/FIFO 算法
+
+2. 超时剔除
+
+3. 主动更新
+
 
 
 ##### 参考文章
