@@ -36,6 +36,11 @@ Hash 冲突解决方案
 
 一致性 hash 存在什么问题，数据倾斜如何处理。
 
+为什么扩容的时候是 2 的冥次方
+
+- h&(n-1) 增大随机性，提高数组的利用率
+- 扩容的时候，移动数据的时候更加方便 
+  rehash时的取余操作，hash % length == hash & (length - 1)这个关系只有在length等于二的幂次方时成立，位运算能比%高效得多。
 
 
 ##### 参考文章
@@ -50,4 +55,4 @@ Hash 冲突解决方案
 
 - [HashMap面试题集源码解答](https://zhuanlan.zhihu.com/p/388105370)
 
-
+- [hashmap 面试相关](https://www.zhihu.com/column/c_1396819332995809280)

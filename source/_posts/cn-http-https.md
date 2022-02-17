@@ -28,3 +28,5 @@ description: 深入理解 Http Https 原理
 ##### 参考文章
 
 - [深入理解HTTPS工作原理](https://juejin.cn/post/6844903830916694030)
+
+- [Https](https://juejin.cn/post/6844903830916694030#heading-2)

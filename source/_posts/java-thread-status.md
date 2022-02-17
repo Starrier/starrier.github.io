@@ -27,3 +27,5 @@ new runnable blocked waiting time_waiting termined
 ##### 参考文章
 
 - [(一)线程的发展历史](https://segmentfault.com/a/1190000017252672)
+
+- [java线程的五大状态，阻塞状态详解](https://www.cnblogs.com/lifegoeson/p/13516019.html)

@@ -33,3 +33,11 @@ description: 深入理解 java 多线程 - ThreadLocal
    6. ThreadLocal 原理
 
 `ThreadLocal` 是一个将在多线程中为每一个线程创建单独的变量副本的类; 当使用 `ThreadLocal` 来维护变量时,`ThreadLocal` 会为每个线程创建单独的变量副本, 避免因多线程操作共享变量而导致的数据不一致的情况。
+
+
+
+##### 参考文章
+
+- [深入理解 ThreadLocal ](https://www.cnblogs.com/bingxinshuo/p/11503601.html)
+
+

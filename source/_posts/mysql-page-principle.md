@@ -22,3 +22,5 @@ description: 深入理解 MySQL - 页结构
 ##### 参考文章
 
 - [mysql原理一：innodb存储基本单位页结构及B+tree](https://blog.csdn.net/chuixue24/article/details/120266026)
+
+- [深入理解mysql-第五章 InnoDB记录存储结构-页结构](https://blog.csdn.net/king13127/article/details/115545972)
