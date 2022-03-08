@@ -19,4 +19,5 @@ description: 深入理解 RocketMQ 事务原理 - 实战
 
 当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
-
+事务消费前后 使用 redis 来保障，选择 mysql 的唯一索引 + redis 的 setNx 来看
+当前数据是否被消费。

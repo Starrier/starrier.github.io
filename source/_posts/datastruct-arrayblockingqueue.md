@@ -1,15 +1,15 @@
 ---
-title: datastruct-arrayblockingqueue
+title: 数据结构 -ArrayBlockingQueue
 date: 2022-02-10 19:19:46
 author: Starrier
 tags: [数据结构]
-excerpt: datastruct-arrayblockingqueue
+excerpt: 数据结构-ArrayBlockingQueue
 swiper:
 keywords: [数据结构]
-description: datastruct-arrayblockingqueue
+description: 数据结构-ArrayBlockingQueue
 ---
 
-# 数据结构 arrayblockingqueue
+# 数据结构 ArrayBlockingQueue
 
 > * 原文地址：[]()
 > * 原文作者：[]()

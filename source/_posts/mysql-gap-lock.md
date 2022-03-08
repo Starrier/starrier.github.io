@@ -25,7 +25,7 @@ description: 深入理解 MySQL 间隙锁
 > 如果请求对一个不存在的记录进行加锁，MySQL 也会使用间隙锁（Next-key）
 
 
-MySQL 中尽量不要使用 update 进行范围更新。
+**MySQL 中尽量不要使用 update 进行范围更新。**
 
 ##### 参考文章
 

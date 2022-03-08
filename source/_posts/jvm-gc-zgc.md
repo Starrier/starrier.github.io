@@ -25,3 +25,8 @@ java -XX:+PrintCommandLineFlags -version
 ZGC 特点：
 
  1. 暂停时间不超过 10
+
+ZGC  新增了两项技术
+
+- 着色指针
+- 读屏障

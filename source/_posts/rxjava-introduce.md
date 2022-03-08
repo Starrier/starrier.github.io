@@ -126,3 +126,8 @@ description: RxJava 简介
 1. toList
 2. toSortList
 3. toMap
+
+
+##### 参考文章
+
+- [一张图看懂Rxjava的原理](https://www.cnblogs.com/jymblog/p/11731546.html)

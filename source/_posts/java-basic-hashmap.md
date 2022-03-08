@@ -31,7 +31,7 @@ Hash 冲突解决方案
 4. 线性探测法：hash(key) 冲突 则查看 hash(key) +n /mod 是否有冲突。
 
 
-为什么不用 `hash` 进行分布式存储
+#### 1. 为什么不用 `hash` 进行分布式存储
 
 
 一致性 hash 存在什么问题，数据倾斜如何处理。
@@ -42,6 +42,13 @@ Hash 冲突解决方案
 - 扩容的时候，移动数据的时候更加方便 
   rehash时的取余操作，hash % length == hash & (length - 1)这个关系只有在length等于二的幂次方时成立，位运算能比%高效得多。
 
+
+扰动函数
+
+get 方法如何确定key在数组中的位置，先通过 hash(key) 再通过 tab[(n-1) & hash] 来确定位置。
+
+- 混合高位来增大随机性 hash(key)。
+- 尽量保证数据落在不同的地方，均匀分布在不同的位置。
 
 ##### 参考文章
 
@@ -56,3 +63,5 @@ Hash 冲突解决方案
 - [HashMap面试题集源码解答](https://zhuanlan.zhihu.com/p/388105370)
 
 - [hashmap 面试相关](https://www.zhihu.com/column/c_1396819332995809280)
+
+- [扰动函数](https://blog.csdn.net/weixin_33748818/article/details/91994025)

@@ -62,6 +62,10 @@ description: Spring 目录
 - [spring-mvc-原理]()
 - [spring-mvc-视图]()
 
+
+spring 自动装配原理
 ##### 参考文章
 
 - []()
+
+
