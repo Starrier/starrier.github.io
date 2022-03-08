@@ -35,6 +35,17 @@ description: Redsi 简介
 
 7. [对象]()
 
+8. [Redis IO 线程模型]()
+
+9. [Redis 与 MySQL 读写一致性]()
+
+10. [Redis 哨兵]()
+
+11. [Redis TTL 原理]()
+
+12. [Redis 内存淘汰策略，缓存过期策略]()
+
+
 redis 单线程架构
 
 redis 为什么那么快

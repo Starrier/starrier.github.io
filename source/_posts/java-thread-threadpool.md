@@ -96,6 +96,22 @@ keepAliveTime 的单位。
 如果不希望任务在队列中等待而是希望将任务直接移交给工作线程，可使用 `SynchronousQueue` 作为等待队列。`SynchronousQueue` 不是一个真正的队列，而是一种线程之间移交的机制。要将一个元素放入 `SynchronousQueue` 中，必须有另一个线程正在等待接收这个元素。只有在使用无界线程池或者有饱和策略时才建议使用该队列。
 
 
+### 4. 优先级队列
+
+PriorityBlockingQueue
+
+### 5. 延迟队列
+
+DelayQueue
+
+### 6. 无界阻塞队列
+
+LinkedTransfetQueue
+
+
+### 7. 链表结构的双向阻塞队列
+
+LinkedBlockingQueue
 
 
 可选择的饱和策略RejectedExecutionHandler详解

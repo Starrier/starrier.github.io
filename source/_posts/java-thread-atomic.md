@@ -19,6 +19,16 @@ description: 多线程 - 原子类
 
 当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢 ~~
 
+Atomic 类底层使用的是 CAS 
+
+UnSafe 类
+
+AtomicStampedReference 类使用的 使用的是 时间版本号
+
+除了比较值外 还加入了 时间版本号的比较。
+
 ##### 参考文章
 
 - [聊聊并发（五）原子操作的实现原理](http://ifeve.com/atomic-operation/)
+
+- [AtomicInteger的原理](https://www.cnblogs.com/scuwangjun/p/9098057.html)

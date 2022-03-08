@@ -25,7 +25,7 @@ description: MySQL 文章目录
 
 - [深入理解 MySQL 日志系统]()
 
-- []()
+- [深入理解 MySQL 间隙锁]()
 
 - [深入理解 MySQL 聚簇索引和非聚簇索引]()
 
