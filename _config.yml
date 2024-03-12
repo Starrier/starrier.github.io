@@ -107,7 +107,7 @@ theme: hexo-theme-bamboo
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
 - type: git
-  repo: git@github.com:Starrier/Starrier-blogs
+  repo: git@github.com:Starrier/starrier.github.io.git
   branch: gh-pages
 - type: baidu_url_submitter # 百度提交链接的deploy
 
