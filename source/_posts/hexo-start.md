@@ -1,8 +1,8 @@
 ---
 title: 用 Hexo 部署 github.io 静态网站 - 起源
 date: 2019-06-23 21:07:35
-author: Starrier
-tags: [git,hexo,github.io]
+author: Imperator
+tags: [hexo]
 excerpt: 用 Hexo 部署 github.io 静态网站 - 起源
 swiper:
 keywords: [git,hexo,github.io]
@@ -10,6 +10,14 @@ description: 用 Hexo 部署 github.io 静态网站 - 起源
 ---
 
 # 用 Hexo 部署 github.io 静态网站 - 起源
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 ##### **特别说明**
 

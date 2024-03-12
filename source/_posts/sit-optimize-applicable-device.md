@@ -1,7 +1,8 @@
 ---
 title: sit-optimize-applicable-device
 date: 2021-01-27 13:36:17
-tags: [seo]
+author: Imperator
+tags: [性能优化]
 excerpt: 网站优化，设备适配优化
 swiper:
 keywords: [seo,applicable-device]
@@ -10,7 +11,10 @@ description: 网站设备适配优化
 
 # 网站优化 - 设备适配优化
 
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
 ## 1. PC 
+
 如果该网页只适合在电脑上进行浏览，例如（http://starrier.org/ ），
 
 在html中加入如下meta：

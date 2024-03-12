@@ -1,8 +1,8 @@
 ---
 title: Git 远程仓库设置
 date: 2021-01-11 16:35:33
-tags: [git]
-author: Starrier
+author: Imperator
+tags: [开发工具]
 excerpt: git 本地代码关联远程仓库配置
 swiper: 
 keywords: [git,repository]
@@ -10,6 +10,14 @@ description: Git 远程仓库设置
 ---
 
 # Git 远程仓库设置
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 ## 一. 切换远程仓库地址
 

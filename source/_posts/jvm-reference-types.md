@@ -1,11 +1,20 @@
 ---
 title: jvm-reference-types
 date: 2021-01-14 19:40:00
-tags: [java,jvm]
+author: Imperator
+tags: [jvm]
 excerpt: java 虚拟机中的四种引用类型
 ---
 
 # JVM 四种引用类型
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 本文实践代码可以参阅 [CodeCombat](https://github.com/Starriers/CodeCombat) 的 [JVM](https://github.com/Starriers/CodeCombat/tree/master/JVM/src/main/java/org/starrier/codecombat)。
 
@@ -51,4 +60,4 @@ StringBuffer str1 = str;
 
 **注意**
 
-软引用和弱引用都适合用来保存那些可有可无的缓存数据。如果这么做，当系统内存不足时，这些缓存就会被回收，不会导致内存溢出。而当内存资源充足时，这些缓存书籍有可以存在相当长的时间，从而起到加速系统的作用。
+软引用和弱引用都适合用来保存那些可有可无的缓存数据。如果这么做，当系统内存不足时，这些缓存就会被回收，不会导致内存溢出。而当内存资源充足时，这些缓存数据有可以存在相当长的时间，从而起到加速系统的作用。

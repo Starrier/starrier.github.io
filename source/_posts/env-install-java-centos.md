@@ -1,8 +1,8 @@
 ---
 title: Java 环境安装 - Centos-Mac-Windows
 date: 2021-01-31 13:34:10
-author: Starrier
-tags: [java,centos,mac,windows,win]
+author: Imperator
+tags: [环境搭建]
 excerpt: Java 环境安装 - Centos,Mac,Windows
 swiper:
 keywords: [java,centos,mac,windows,win]
@@ -10,6 +10,14 @@ description: Java 环境安装 - Centos,Mac,Windows
 ---
 
 #  Java 环境安装
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 ##### **特别说明**
 

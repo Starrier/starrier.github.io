@@ -1,11 +1,14 @@
 ---
 title: redis-hyperloglog
 date: 2021-01-12 22:53:25
-tags: [redis,hyperloglog]
+author: Imperator
+tags: [Redis]
 excerpt: Redis HyperLogLog 源码分析
 ---
 
 # Redis - HyperLogLog
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 HyperLogLog 使用动态字符串存储数据，为了区别普通的 SDS，在头部固定了字节 `HYLL`
 
@@ -24,10 +27,11 @@ struct hllhdr {
 ```
 HLL  存储分为两部分：hllhdr 和 registers。
 
-registers: 用来存储组数据，
-hllhdr: 为 HLL 的头部信息，
+- registers: 用来存储组数据
 
-其中encoding来标识使用的编码，可以简单理解为空分组较多时使用稀疏编码存储，空分组较少时使用密集编码存储，内部计算使用HLL_RAW编码，因为数据总是增加的，所以一般只存在稀疏编码转为密集编码。
+- hllhdr: 为 HLL 的头部信息，
+
+其中 `encoding` 来标识使用的编码，可以简单理解为空分组较多时使用稀疏编码存储，空分组较少时使用密集编码存储，内部计算使用 `HLL_RAW` 编码，因为数据总是增加的，所以一般只存在稀疏编码转为密集编码。
 
 ## HLL 的命名
 
@@ -51,3 +55,7 @@ pfadd 用来讲一个或多个元素添加到指定的 HLL 中。Redis 不保存
 
 TODO 待处理
 
+
+##### 参考文章
+
+- [应用 4：四两拨千斤 —— HyperLogLog](https://juejin.cn/book/6844733724618129422/section/6844733724706209805)

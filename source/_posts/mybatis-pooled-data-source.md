@@ -1,11 +1,20 @@
 ---
 title: 深入理解 MyBatis - PooledDataSource 
 date: 2021-01-12 22:41:47
-tags: [mybatis,源码,source-code]
+author: Imperator
+tags: [MyBatis]
 excerpt: MyBaits PooledDataSource 分析
 ---
 
 # 深入理解 MyBatis - PooledDataSource 
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 我们在进行数据库链接操作时，会通过 `JDBC`  的 `connection` 进行数据库操作。但是频繁的创建和销毁 `connection` 会影响执行效率。因此 `MyBatis` 中存在连接池技术
 

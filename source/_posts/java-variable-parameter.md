@@ -1,12 +1,20 @@
 ---
 title: Java 可变参数
 date: 2021-01-13 22:02:12
-tags: [java]
+author: Imperator
+tags: [Java 基础]
 excerpt: Java 可变参数分析
 ---
 
-
 ## 可变参数
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 Java 要求实参和形参的数量和类型必须一致，而形参的数目是在方法定义时就已经确定了。重载允许我们扩展参数的类型和数目，但如果需求不同的内容过多，就会产生过多的重载方法。
 

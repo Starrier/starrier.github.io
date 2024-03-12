@@ -1,12 +1,21 @@
 ---
 title: 分布式理论-CAP
 date: 2019-02-22 23:40:04
-tags: [distribute,CAP]
+author: Imperator
+tags: [分布式基础]
 excerpt: 分布式系统 - CAP 理论
 ---
 
 
 ## 分布式理论 - `CAP`
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 `CAP` 理论指出，对于一个分布式计算系统，不可能同时满足以下三点:
 

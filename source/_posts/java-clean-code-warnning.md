@@ -1,11 +1,20 @@
 ---
 title: java-clean-code-警告压制
 date: 2020-12-31 22:26:37
-tags: [java,clean-code]
+author: Imperator
+tags: [Java 基础]
 excerpt: 警告压制
 ---
 
 # Java-clean-code-警告压制
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 ## 一. 列表
 

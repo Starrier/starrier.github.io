@@ -2,20 +2,22 @@
 title: Linux 下文件的打包与压缩
 date: 2019-06-23 21:27:10
 author: Starrier
-tags:
+tags: [Linux]
 excerpt: Linux 下文件的打包与压缩
 swiper:
-keywords:
+keywords: [Linux]
 description: Linux 下文件的打包与压缩
 ---
 
 # Linux 下文件的打包与压缩
 
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
 ##### **特别说明**
 
-当前文章内容迁移中，如有问题，请提交 PR 谢谢~~
-
-
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 | 工具 | 文件扩展名 | 描述 |
 | --- | --- | --- |

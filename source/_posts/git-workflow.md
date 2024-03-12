@@ -1,10 +1,20 @@
 ---
 title: git-workflow
 date: 2019-01-13 20:08:28
-tags:
+author: Starriers
+tags: [开发工具]
 ---
 
 # Different Authority
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
  
  Before the read following content, I consider you hava already had the basics of Git by default. If not, be sure to familiar with it first.
 

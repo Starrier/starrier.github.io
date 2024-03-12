@@ -1,7 +1,8 @@
 ---
 title: hexo-seo 优化
 date: 2021-01-21 09:35:56
-tags: [hexo,seo]
+author: Imperator
+tags: [hexo]
 excerpt: hexo seo 优化
 swiper: true
 swiperImg: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/snow.webp
@@ -9,6 +10,14 @@ img: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/fi
 ---
 
 # Hexo SEO  优化
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 ## 一. 
 

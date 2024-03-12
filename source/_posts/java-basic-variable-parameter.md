@@ -1,8 +1,8 @@
 ---
 title: 深入理解 java 可变参数 - 实战
 date: 2021-01-31 14:30:32
-author: Starrier
-tags: [java,基础,可变参数,variable parameter]
+author: Imperator
+tags: [Java 基础]
 excerpt: 深入理解 java 可变参数 - 实战
 swiper:
 keywords: [java,基础,可变参数,variable parameter]
@@ -11,10 +11,13 @@ description: 深入理解 java 可变参数 - 实战
 
 # 深入理解 java 可变参数 - 实战
 
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
 ##### **特别说明**
 
-当前文章内容迁移中，如有问题，请提交 PR 谢谢~~
-
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 ## 可变参数
 

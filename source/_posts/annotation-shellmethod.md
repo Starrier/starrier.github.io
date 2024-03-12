@@ -1,14 +1,22 @@
 ---
 title: 深入理解 SpringBoot 注解 @ShellMethod 
 date: 2021-01-12 23:26:26
-author: Starrier
-tags: [spring-boot,shell-method,annotation]
+author: Imperator
+tags: [Spring Boot]
 excerpt: SpringBoot @ShellMethod 简介
 keywords: [spring-boot,ShellMethod]
 description: 深入理解 SpringBoot 注解 @ShellMethod
 ---
 
 # 深入理解 SpringBoot 注解 @ShellMethod
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 `@ShellMethod` 将一个方法声明为 Shell 命令。默认情况下：
 
@@ -52,4 +60,6 @@ shell:>sum 2 1
 shell:>add -a 2 -b 1
 3
 ```
+
+##### 参考文章
 

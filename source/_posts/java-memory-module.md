@@ -1,13 +1,21 @@
 ---
 title: jvm - java - 内存模型
 date: 2019-02-17 19:26:44
-tags: [java,jvm,jmm]
+author: Imperator
+tags: [jvm]
 excerpt: Java 虚拟机内存模型分析与简介
 ---
 
 
 # Java 虚拟机内存模型
 
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 ## 一. 组成
 

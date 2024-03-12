@@ -1,12 +1,21 @@
 ---
 title: java volatile
 date: 2019-02-19 21:58:27
-tags: [java,basic,volatile]
+author: Imperator
+tags: [Java 基础]
 excerpt: java volatile 分析
 ---
 
 
-## volatile
+## 深入理解 JVM - volatile
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 #### Volatile 和 Synchronized 四个不同点：
 
@@ -23,8 +32,15 @@ excerpt: java volatile 分析
 #### Volatile 如何保证内存可见性:
 
 1. 当写一个 volatile 变量时，JVM 会把该线程对应的本地内存中的共享变量刷新到主内存中。
-2. 当写一个 volatile 变量时，JVM 会把该线程对应的本地内存置为无效。线程接下来将从主内存中读取共享变量。
+2. 当读一个 volatile 变量时，JVM 会把该线程对应的本地内存置为无效。线程接下来将从主内存中读取共享变量。
 
 同步：就是一个任务的完成需要依赖另外一个任务，只有等待被依赖的任务完成后，依赖任务才能完成。
 
 异步：不需要等待被依赖的任务完成，只是通知被依赖的任务要完成什么工作，只要自己任务完成了就算完成了，被依赖的任务是否完成会通知回来。（异步的特点就是通知）。
+
+
+### 参考文献
+
+- [深入解析 volatile 、CAS 的实现原理](https://blog.csdn.net/zero__007/article/details/90545073)
+
+- [一文读懂Java内存模型(JMM)及volatile关键字](https://segmentfault.com/a/1190000037799975)

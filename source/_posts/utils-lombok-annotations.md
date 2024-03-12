@@ -1,12 +1,17 @@
 ---
 title: 工具类库 - Lombok - 常用注解
 date: 2021-01-14 19:42:21
-tags: [utils,lombok]
+author: Imperater
+tags: [开发工具]
 excerpt: Lombok 常用注解
+keywords: [lombok,常用开发工具]
 ---
 
 
-# lombok
+# 常用开发工具 - Lombok
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
 
 ## 常用注解
 
@@ -106,3 +111,5 @@ Lombok 使用的是编译时解析的第二种。
 
 1. 不支持多种参数构造器的重载
 2. 虽然省去了手动创建getter/setter方法的麻烦，但大大降低了源代码的可读性和完整性，降低了阅读源代码的舒适度。
+
+##### 参考文章

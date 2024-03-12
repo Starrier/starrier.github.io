@@ -1,39 +1,49 @@
 ---
 title: 单元测试 - Mockito - powermock - 异常测试
 date: 2021-01-12 22:39:39
-tags: [test,mockito,powermock]
+author: Imperater
+tags: [单元测试]
 excerpt: 单元测试-Mockito, 静态方法调用，使用示例
 ---
 
 # 单元测试 - Mockito - powermock - 异常测试
 
-> 1. [单元测试 - Mockito - powermock -实例函数调用](https://starrier.starrier.org/blogs/test-mockito-method.html)
+> * 原文地址：[https://starrier.starrier.org/blogs/test-mockito-exception.html](https://starrier.starrier.org/blogs/test-mockito-exception.html)
+> * 原文作者：[imperater](https://github.com/imperater)
+> * 本文永久链接：[https://starrier.starrier.org/blogs/test-mockito-exception.html](https://starrier.starrier.org/blogs/test-mockito-exception.html)
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
+
+> 1. [单元测试 - Mockito - powermock - 实例函数调用](https://starrier.starrier.org/blogs/test-mockito-method.html)
 >
 > 2. [单元测试 - Mockito - powermock - 静态方法](https://starrier.starrier.org/blogs/test-mockito-static.html)
 >
 > 3. [单元测试 - Mockito - powermock - 异常测试](https://starrier.starrier.org/blogs/test-mockito-exception.html)
-
+>
+> 4. [单元测试 - Mockito - powermock - 内部私有函数](https://starrier.starrier.org/blogs/test-mockito-private.html)
 
 ## 一. 引入 maven 坐标
-```java
-       <dependency>
-            <groupId>org.powermock</groupId>
-            <artifactId>powermock-api-mockito</artifactId>
-            <version>${powermock.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.powermock</groupId>
-            <artifactId>powermock-core</artifactId>
-            <version>${powermock.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.powermock</groupId>
-            <artifactId>powermock-module-junit4</artifactId>
-            <version>${powermock.version}</version>
-            <scope>test</scope>
-        </dependency>
+```xml
+<dependency>
+    <groupId>org.powermock</groupId>
+    <artifactId>powermock-api-mockito</artifactId>
+    <version>${powermock.version}</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>org.powermock</groupId>
+    <artifactId>powermock-core</artifactId>
+    <version>${powermock.version}</version>
+    <scope>test</scope>
+</dependency> 
+<dependency>
+    <groupId>org.powermock</groupId>
+    <artifactId>powermock-module-junit4</artifactId>
+    <version>${powermock.version}</version>
+    <scope>test</scope>
+ </dependency>
 ```
 
 > 具体的版本，可去 maven 中心仓库自行查找自己想要的
@@ -41,8 +51,9 @@ excerpt: 单元测试-Mockito, 静态方法调用，使用示例
 ## 二. Mock 异常
 
 ### 1. mock 异常的发生
+
 ```java
- Mockito.when(Mockito.anyObject())
+Mockito.when(Mockito.anyObject())
         .thenThrow(new Exception());
 ```
 
@@ -76,3 +87,5 @@ excerpt: 单元测试-Mockito, 静态方法调用，使用示例
 ```java
 exception.expect(IOException.class);
 ```
+
+##### 参考文章

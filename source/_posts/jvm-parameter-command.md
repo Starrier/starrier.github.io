@@ -1,11 +1,20 @@
 ---
 title: jvm-parameter-command
 date: 2021-01-14 19:38:04
-tags: [java,jvm]
+author: Imperator
+tags: [jvm]
 excerpt: 定制化 Java 虚拟机的配置
 ---
 
 ## JVM-Command
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 ### **内存相关**
 

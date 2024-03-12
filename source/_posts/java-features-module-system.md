@@ -1,11 +1,20 @@
 ---
 title: java-features-module-system
 date: 2020-12-28 22:36:35
-tags: [java,jdk,jdk9,features,module-system]
+author: Imperator
+tags: [Java 基础]
 excerpt: jdk 9 module-system 简介
 ---
 
 # Java Features - Module System -JDK 9
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 ## 一. 背景
 Java 8 以前，我们使用 maven 或者 gradle 管理 jar 包时，可能会因为某一个小方法而必须引入一整个对应的 jar 包，这就导致当前 jar 包的 classpath 路径名会非常长，从而形成 jar hell。

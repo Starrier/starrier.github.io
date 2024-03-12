@@ -1,7 +1,8 @@
 ---
 title: 分布式理论 2PC 详解
 date: 2021-01-29 16:07:40
-tags: [distribute,2pc]
+author: Imperator
+tags: [分布式基础]
 excerpt: 分布式理论 2PC 详解
 swiper:
 keywords: [distribute,2pc]
@@ -9,6 +10,14 @@ description: 分布式理论 2PC 详解
 ---
 
 # 分布式理论 - 2PC 详解
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 **注意**
 

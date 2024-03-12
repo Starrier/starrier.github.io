@@ -1,11 +1,34 @@
 ---
-title: MyBatis 缓存
-date: 2021-01-12 22:57:00
-tags: [mybatis,cache]
-excerpt: MyBatis Cache 简介
+title: 深入理解 MyBatis - 缓存
+date: 2022-02-14 17:10:48
+author:  Starrier
+tags: [MyBatis]
+excerpt: 深入理解 MyBatis - 缓存
+swiper:
+keywords: [MyBatis]
+description: 深入理解 MyBatis - 缓存
 ---
 
-# MyBaits 缓存
+# 深入理解 MyBatis - 缓存
 
-`MyBatis` 的一些关键特性（例如通过 `<association>` 和 `<collection>` 建立级联映射
-避免循环引用（circular references）、加速重复嵌套查询等）都是基于 `MyBatis` 一级缓存实现的，而且 `MyBatis` 结果集映射相关代码重度依赖 `CacheKey`，所以目前 `MyBatis` 不支持关闭一级缓存。
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢 ~~
+
+MyBaits 一级缓存
+包名+函数名 进行 map 缓存，一旦设计到写入操作，比如 update 就会将缓存全部情况。
+由于 MyBatis 无法确定是哪个缓存，所以就会将所有的操作置空。
+
+一级缓存中，sqlSession 会有自己的缓存，不同的 sqlSession 不会共享缓存。
+
+可以手动执行缓存清除
+
+`sqlSession.clearCache()`
+
+##### 参考文章
+
+- [Mybatis 一连串提问，被面试官吊打了！](https://zhuanlan.zhihu.com/p/464162932)

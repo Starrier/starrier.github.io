@@ -1,6 +1,7 @@
 ---
 title: hexo-function
 date: 2021-01-22 10:12:15
+author: Imperator
 tags: [hexo]
 excerpt: hexo 小功能
 swiper: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/fin-series.jpeg
@@ -10,6 +11,14 @@ description: hexo 功能升级
 ---
 
 # Hexo 功能启用
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 ## 搜索功能
 

@@ -1,10 +1,19 @@
 ---
 title: env-install-git
 date: 2021-01-13 20:13:11
-tags:
+author: Imperator
+tags: [环境搭建]
 ---
 
 # Centos Git
+
+> * 原文地址：[]()
+> * 原文作者：[]()
+> * 本文永久链接：[]()
+
+##### **特别说明**
+
+当前文章内容迁移中，如有问题，请提交 [issues](https://github.com/Starrier/starrier.github.io/issues) 谢谢~~
 
 ## 检查服务器中是否存在 Git
 
