@@ -54,7 +54,7 @@
     
 
     
-        <meta property="og:author" content="Starrier Organization"/>
+        <meta property="og:author" content="Imperater"/>
     
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -144,8 +144,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <!--  友盟—+ -->
-    <!-- <script type="text/javascript" src="https://s4.hecnzz.com/z_stat.php?id=1279642429&web_id=1279642429"></script>-->
+
     <!-- 延迟加载图像 -->
     <!--<script src="lazysizes.min.js" async></script>-->
     <!--360 auto submit-->
@@ -537,19 +536,12 @@
         <div class="tags">
           <i class="iconfont icontag"></i>
           
-            <a href="/tags/test/" class="">
-              test
-            </a>
-          
-            <a href="/tags/mockito/" class="">
-              mockito
-            </a>
-          
-            <a href="/tags/powermock/" class="">
-              powermock
+            <a href="/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" class="">
+              单元测试
             </a>
           
         </div>
+
 
         
         
@@ -558,12 +550,22 @@
       <!-- 文章内容 -->
       <div class="post-content">
         <h1 id="单元测试-Mockito-powermock-实例函数调用"><a href="#单元测试-Mockito-powermock-实例函数调用" class="headerlink" title="单元测试 - Mockito - powermock -实例函数调用"></a>单元测试 - Mockito - powermock -实例函数调用</h1><blockquote>
+<ul>
+<li>原文地址：<a href="https://starrier.starrier.org/blogs/test-mockito-method.html">https://starrier.starrier.org/blogs/test-mockito-method.html</a></li>
+<li>原文作者：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/imperater">imperater</a></li>
+<li>本文永久链接：<a href="https://starrier.starrier.org/blogs/test-mockito-method.html">https://starrier.starrier.org/blogs/test-mockito-method.html</a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
+<blockquote>
 <ol>
-<li><p><a href="https://starrier.starrier.org/blogs/test-mockito-method.html">单元测试 - Mockito - powermock -实例函数调用</a> </p>
+<li><p><a href="https://starrier.starrier.org/blogs/test-mockito-method.html">单元测试 - Mockito - powermock - 实例函数调用</a> </p>
 </li>
 <li><p><a href="https://starrier.starrier.org/blogs/test-mockito-static.html">单元测试 - Mockito - powermock - 静态方法</a> </p>
 </li>
 <li><p><a href="https://starrier.starrier.org/blogs/test-mockito-exception.html">单元测试 - Mockito - powermock - 异常测试</a></p>
+</li>
+<li><p><a href="https://starrier.starrier.org/blogs/test-mockito-private.html">单元测试 - Mockito - powermock - 内部私有函数</a></p>
 </li>
 </ol>
 </blockquote>
@@ -589,39 +591,39 @@
 <p>具体的版本，可去 maven 中心仓库自行查找自己想要的</p>
 </blockquote>
 <h2 id="二-测试类声明"><a href="#二-测试类声明" class="headerlink" title="二 测试类声明"></a>二 测试类声明</h2><p>在当前的测试类上，引入下列代码。其中 <code>@PrepareForTest</code>  用于声明所需要引入的静态类（如工具类）。详情参见：<a href="https://starrier.starrier.org/blogs/test-mockito-static.html">单元测试 - Mockito - powermock - 静态方法</a></p>
-<pre class=" language-java"><code class="language-java"><span class="token annotation punctuation">@RunWith</span><span class="token punctuation">(</span>PowerMockRunner<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span>
-<span class="token annotation punctuation">@PowerMockRunnerDelegate</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token annotation punctuation">@PowerMockIgnore</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token string">"javax.management.*"</span><span class="token punctuation">,</span> <span class="token string">"javax.net.ssl.*"</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span>
-<span class="token annotation punctuation">@PrepareForTest</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>     
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span></code></pre>
+<pre class=" language-[java]"><code class="language-[java]">@RunWith(PowerMockRunner.class)
+@PowerMockRunnerDelegate()
+@PowerMockIgnore(&#123;"javax.management.*", "javax.net.ssl.*"&#125;)
+@PrepareForTest(&#123;     
+&#125;)</code></pre>
 <h2 id="三-注入实例"><a href="#三-注入实例" class="headerlink" title="三. 注入实例"></a>三. 注入实例</h2><p>注入对应的实例变量，包括待测试的类以及对应类所引用的实例（需要被 mock 的方法）</p>
-<pre class=" language-java"><code class="language-java">    <span class="token comment" spellcheck="true">//  待测试的类</span>
-    <span class="token annotation punctuation">@InjectMocks</span>
-    <span class="token keyword">private</span> TargetService targetService<span class="token punctuation">;</span>
+<pre class=" language-[java]"><code class="language-[java]">    //  待测试的类
+    @InjectMocks
+    private TargetService targetService;
 
-    <span class="token comment" spellcheck="true">//  需要被 mock 的实例方法</span>
-    <span class="token annotation punctuation">@Mock</span>
-    <span class="token keyword">private</span> TargetDao targetDao<span class="token punctuation">;</span>
+    //  需要被 mock 的实例方法
+    @Mock
+    private TargetDao targetDao;
 
-    <span class="token comment" spellcheck="true">// mock 初始化</span>
-    <span class="token annotation punctuation">@Before</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">before</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> Exception <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        MockitoAnnotations<span class="token punctuation">.</span><span class="token function">initMocks</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    // mock 初始化
+    @Before
+    public void before() throws Exception &#123;
+        MockitoAnnotations.initMocks(this);
         MemberModifier
-                <span class="token punctuation">.</span><span class="token function">field</span><span class="token punctuation">(</span>TargetService<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token string">"targetDao"</span><span class="token punctuation">)</span>
-                <span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>targetService<span class="token punctuation">,</span> targetDao<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
-<h2 id="四-在-test-中，引入-mock-的数据"><a href="#四-在-test-中，引入-mock-的数据" class="headerlink" title="四.  在 test 中，引入 mock 的数据"></a>四.  在 test 中，引入 mock 的数据</h2><pre class=" language-java"><code class="language-java">   <span class="token annotation punctuation">@Test</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">saveCertificatePolicy</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    Mockito
-     <span class="token punctuation">.</span><span class="token function">when</span><span class="token punctuation">(</span>targetDao<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>Mockito<span class="token punctuation">.</span><span class="token function">any</span><span class="token punctuation">(</span>TargetMapping<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-    <span class="token punctuation">.</span><span class="token function">thenReturn</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">TargetEntity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-   <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+                .field(TargetService.class, "targetDao")
+                .set(targetService, targetDao);
+    &#125;</code></pre>
+<h2 id="四-在-test-中，引入-mock-的数据"><a href="#四-在-test-中，引入-mock-的数据" class="headerlink" title="四.  在 test 中，引入 mock 的数据"></a>四.  在 test 中，引入 mock 的数据</h2><pre class=" language-[java]"><code class="language-[java]"> @Test
+ public void saveCertificatePolicy()&#123;
+   Mockito
+     .when(targetDao.insert(Mockito.any(TargetMapping.class)))
+    .thenReturn(new TargetEntity());
+   &#125;</code></pre>
 <h5 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h5><ol>
 <li> 如果 Mockito 中，包含多个参数，则要么都为实际参数，要么都是 Mockito 所构造的参数，否则会报错。</li>
 <li> 如果对于返回值 <code>thenReturn</code> 需要指定的数据，则自行自己定义并放入即可。</li>
 </ol>
-
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5>
       </div>
 
        <!-- 文章版权信息  -->
@@ -663,7 +665,14 @@
       </div>
       
       <!-- <div class="content">
-        Java Features - Module System -JDK 9一. 背景Java 8 以前，我们使用 mave
+        Java Features - Module System -JDK 9
+
+原文地址：
+原文作者：
+本文永久链接：
+
+
+
       </div> -->
     </a>
   </div>
@@ -683,7 +692,7 @@
       <!-- <div class="content">
         单元测试 - Mockito - powermock - 静态方法
 
-单元测试 - Mockito - powermoc
+原文地址：https://starrier.sta
       </div> -->
     </a>
   </div>
@@ -816,34 +825,43 @@
 
     </main>
     <div class="footer bg-color">
-  <div class="footer-main">
-    <div class="link">
-      <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/hexo-theme-bamboo">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-      <a href="mailto:1730241541@qq.com" rel="external nofollow noreferrer">
-        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-      </a>
-      <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541" rel="external nofollow noreferrer">
-        <i class="fa fa-qq" aria-hidden="true"></i>
-      </a>
-      <a href="/atom.xml" target="_blank">
-        <i class="fa fa-rss" aria-hidden="true"></i>
-      </a>
-    </div>
-    <div class="footer-copyright">
-      Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/theme">Bamboo</a>
-    </div>
+    <div class="footer-main">
+        <div class="link">
+            <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/hexo-theme-bamboo">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:1730241541@qq.com" rel="external nofollow noreferrer">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+            <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541" rel="external nofollow noreferrer">
+                <i class="fa fa-qq" aria-hidden="true"></i>
+            </a>
+            <a href="/atom.xml" target="_blank">
+                <i class="fa fa-rss" aria-hidden="true"></i>
+            </a>
+            <a>       <!--  友盟—+ -->
+                <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279642429'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279642429%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+            </a>
+        </div>
+        <div class="footer-copyright">
+            Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a
+                    target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a>
+        </div>
 
-    Copyright © 2017 - 2021 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier">Starrier</a> All Rights Reserved  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://beian.miit.gov.cn">苏ICP备17039741号-2</a>
-    <div style="width:300px;margin:0 auto; padding:20px 0;">
+        Copyright © 2017 - 2021 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier">Starrier</a> All Rights Reserved <a
+                target="_blank" rel="noopener" href="https://beian.miit.gov.cn">苏ICP备17039741号-2</a>
+        <div style="width:300px;margin:0 auto; padding:20px 0;">
 
-      <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240" rel="external nofollow noreferrer" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
-        <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"  style="float:left;" alt="备案图标"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"
+                     style="float:left;" alt="备案图标"/>
+                <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
+        </div>
+
+        
+
     </div>
-
-  
-  </div>
 </div>
 
 

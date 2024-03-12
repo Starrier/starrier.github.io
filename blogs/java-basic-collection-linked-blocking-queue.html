@@ -54,7 +54,7 @@
     
 
     
-        <meta property="og:author" content="Starrier Organization"/>
+        <meta property="og:author" content="Imperator"/>
     
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -144,8 +144,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <!--  友盟—+ -->
-    <!-- <script type="text/javascript" src="https://s4.hecnzz.com/z_stat.php?id=1279642429&web_id=1279642429"></script>-->
+
     <!-- 延迟加载图像 -->
     <!--<script src="lazysizes.min.js" async></script>-->
     <!--360 auto submit-->
@@ -534,12 +533,31 @@
       <!--  文章的 tag 标签 ， 分类-->
       <div class="post-tags-categories">
         
+        <div class="tags">
+          <i class="iconfont icontag"></i>
+          
+            <a href="/tags/Java-%E5%9F%BA%E7%A1%80/" class="">
+              Java 基础
+            </a>
+          
+        </div>
+
+
+        
         
       </div>
 
       <!-- 文章内容 -->
       <div class="post-content">
-        <h1 id="LinkedBlockingQueue"><a href="#LinkedBlockingQueue" class="headerlink" title="LinkedBlockingQueue"></a>LinkedBlockingQueue</h1><p>LinkedBlockingQueue 由单链表实现，只能从 head 中取元素，向 tail 添加元素。添加元素预计获取元素都有独立的锁，即 LinkedBlockingQueue 是读写分离的，可以并行执行。LinkedBlockingQueue 采用可重入锁（ReentrantLock）来保证并发环境下的线程安全。</p>
+        <h1 id="LinkedBlockingQueue"><a href="#LinkedBlockingQueue" class="headerlink" title="LinkedBlockingQueue"></a>LinkedBlockingQueue</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
+<p><code>LinkedBlockingQueue</code> 由单链表实现，只能从 <code>head</code> 中取元素，向 <code>tail</code> 添加元素。添加元素预计获取元素都有独立的锁，即 <code>LinkedBlockingQueue</code> 是读写分离的，可以并行执行。<code>LinkedBlockingQueue</code> 采用可重入锁（<code>ReentrantLock</code>）来保证并发环境下的线程安全。</p>
 <p>函数签名：</p>
 <pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">LinkedBlockingDeque</span><span class="token operator">&lt;</span>E<span class="token operator">></span>
     <span class="token keyword">extends</span> <span class="token class-name">AbstractQueue</span><span class="token operator">&lt;</span>E<span class="token operator">></span>
@@ -559,12 +577,12 @@
         <span class="token keyword">this</span><span class="token punctuation">.</span>capacity <span class="token operator">=</span> capacity<span class="token punctuation">;</span>
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 <ol start="3">
-<li>接入一个容器的构造器<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token function">LinkedBlockingDeque</span><span class="token punctuation">(</span>Collection<span class="token operator">&lt;</span><span class="token operator">?</span> <span class="token keyword">extends</span> <span class="token class-name">E</span><span class="token operator">></span> c<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-     <span class="token keyword">this</span><span class="token punctuation">(</span>Integer<span class="token punctuation">.</span>MAX_VALUE<span class="token punctuation">)</span><span class="token punctuation">;</span>
-     <span class="token function">addAll</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span>
- <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
-</li>
+<li>接入一个容器的构造器</li>
 </ol>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token function">LinkedBlockingDeque</span><span class="token punctuation">(</span>Collection<span class="token operator">&lt;</span><span class="token operator">?</span> <span class="token keyword">extends</span> <span class="token class-name">E</span><span class="token operator">></span> c<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">(</span>Integer<span class="token punctuation">.</span>MAX_VALUE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">addAll</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 <h3 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h3><table>
 <thead>
 <tr>
@@ -590,21 +608,156 @@
 </tr>
 </tbody></table>
 <h5 id="判断队列是否为空"><a href="#判断队列是否为空" class="headerlink" title="判断队列是否为空"></a>判断队列是否为空</h5><p>size() 方法会遍历整个队列，时间复杂度为 O(n)，所以最好选择 isEmpty()</p>
-<h2 id="take"><a href="#take" class="headerlink" title="take():"></a>take():</h2><ol>
-<li><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> E <span class="token function">takeFirst</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> InterruptedException <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-     <span class="token keyword">final</span> ReentrantLock lock <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>lock<span class="token punctuation">;</span>
-     lock<span class="token punctuation">.</span><span class="token function">lock</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-     <span class="token keyword">try</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-         E x<span class="token punctuation">;</span>
-         <span class="token keyword">while</span> <span class="token punctuation">(</span> <span class="token punctuation">(</span>x <span class="token operator">=</span> <span class="token function">unlinkFirst</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">==</span> null<span class="token punctuation">)</span>
-             notEmpty<span class="token punctuation">.</span><span class="token function">await</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-         <span class="token keyword">return</span> x<span class="token punctuation">;</span>
-     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">finally</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-         lock<span class="token punctuation">.</span><span class="token function">unlock</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
- <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<h2 id="take"><a href="#take" class="headerlink" title="take():"></a>take():</h2><pre class=" language-java"><code class="language-java"> <span class="token keyword">public</span> E <span class="token function">takeFirst</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> InterruptedException <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">final</span> ReentrantLock lock <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>lock<span class="token punctuation">;</span>
+        lock<span class="token punctuation">.</span><span class="token function">lock</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">try</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            E x<span class="token punctuation">;</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span> <span class="token punctuation">(</span>x <span class="token operator">=</span> <span class="token function">unlinkFirst</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">==</span> null<span class="token punctuation">)</span>
+                notEmpty<span class="token punctuation">.</span><span class="token function">await</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> x<span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">finally</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            lock<span class="token punctuation">.</span><span class="token function">unlock</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<h2 id="put"><a href="#put" class="headerlink" title="put():"></a>put():</h2><pre class=" language-java"><code class="language-java">put元素原理
+
+基本过程：
+
+<span class="token number">1</span><span class="token punctuation">.</span>判断元素是否为null，为null抛出异常
+
+<span class="token number">2</span><span class="token punctuation">.</span>加锁<span class="token punctuation">(</span>可中断锁<span class="token punctuation">)</span>
+
+<span class="token number">3</span><span class="token punctuation">.</span>判断队列长度是否到达容量，如果到达一直等待
+
+<span class="token number">4</span><span class="token punctuation">.</span>如果没有队满，<span class="token function">enqueue</span><span class="token punctuation">(</span><span class="token punctuation">)</span>在队尾加入元素
+
+<span class="token number">5</span><span class="token punctuation">.</span>队列长度加<span class="token number">1</span>，此时如果队列还没有满，调用signal唤醒其他堵塞队列
+</code></pre>
+<h3 id="二-添加数据"><a href="#二-添加数据" class="headerlink" title="二. 添加数据"></a>二. 添加数据</h3><ul>
+<li><p>poll()：弹出队顶元素，队列为空时，返回空</p>
 </li>
+<li><p>peek()：和 <code>poll</code> 类似，返回队队顶元素，但顶元素不弹出。队列为空时返回 <code>null</code></p>
+</li>
+<li><p>remove(Object o)：移除某个元素，队列为空时抛出异常。成功移除返回 <code>true</code></p>
+</li>
+</ul>
+<h3 id="三-取出数据"><a href="#三-取出数据" class="headerlink" title="三. 取出数据"></a>三. 取出数据</h3><p>添加数据</p>
+<ul>
+<li><p>put()：首选。队满是阻塞</p>
+</li>
+<li><p>offer()：队满时返回 <code>false</code></p>
+</li>
+</ul>
+<p>判断队列是否为空</p>
+<p><code>size()</code> 方法会遍历整个队列，时间复杂度为O(n),所以最好选用 <code>isEmtpy()</code></p>
+<p>LinkedBlockingQueue与LinkedBlockingDeque比较</p>
+<p>LinkedBlockingDeque和LinkedBlockingQueue的相同点在于：</p>
+<ol>
+<li>基于链表</li>
+<li>容量可选，不设置的话，就是Int的最大值</li>
 </ol>
+<p>和LinkedBlockingQueue的不同点在于：</p>
+<ol>
+<li>双端链表和单链表</li>
+<li>不存在哨兵节点</li>
+<li>一把锁+两个条件</li>
+</ol>
+<p>AtomicInteger的getAndIncrment和getAndDcrement()等方法，这些方法分为两步，get和increment(decrement)，在get和increment中间可能有其他线程进入，导致多个线程get到的数值是相同的，也会导致多个线程累加后的值其实累加1.在这种情况下，使用volatile也是没有效果的，因为get之后没有对值进行修改，不能触发volatile的效果。</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ProducerAndConsumer</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">try</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            BlockingQueue queue <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedBlockingQueue</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            ExecutorService executor <span class="token operator">=</span> Executors<span class="token punctuation">.</span><span class="token function">newFixedThreadPool</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            Produer producer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Produer</span><span class="token punctuation">(</span>queue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token number">3</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                executor<span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span>producer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            executor<span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Consumer</span><span class="token punctuation">(</span>queue<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            executor<span class="token punctuation">.</span><span class="token function">shutdown</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Produer</span> <span class="token keyword">implements</span>  <span class="token class-name">Runnable</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">private</span> BlockingQueue queue<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">int</span> nums <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//循环次数</span>
+
+    <span class="token comment" spellcheck="true">//标记数据编号</span>
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">volatile</span> AtomicInteger count <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">AtomicInteger</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">boolean</span> isRunning <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token function">Produer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token function">Produer</span><span class="token punctuation">(</span>BlockingQueue queue<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>queue <span class="token operator">=</span> queue<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        String data <span class="token operator">=</span> null<span class="token punctuation">;</span>
+        <span class="token keyword">try</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"开始生产数据"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"-----------------------"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+          <span class="token keyword">while</span><span class="token punctuation">(</span>nums<span class="token operator">></span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                nums<span class="token operator">--</span><span class="token punctuation">;</span>
+                count<span class="token punctuation">.</span><span class="token function">decrementAndGet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+                Thread<span class="token punctuation">.</span><span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Thread<span class="token punctuation">.</span><span class="token function">currentThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span> <span class="token string">" :生产者生产了一个数据"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                queue<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span>count<span class="token punctuation">.</span><span class="token function">getAndIncrement</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token keyword">catch</span><span class="token punctuation">(</span>Exception e<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            Thread<span class="token punctuation">.</span><span class="token function">currentThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">interrupt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token keyword">finally</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"生产者线程退出！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Consumer</span> <span class="token keyword">implements</span> <span class="token class-name">Runnable</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">private</span> BlockingQueue queue<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">int</span> nums <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">boolean</span> isRunning <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token function">Consumer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token function">Consumer</span><span class="token punctuation">(</span>BlockingQueue queue<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>queue <span class="token operator">=</span> queue<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"消费者开始消费"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"-------------------------"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">while</span><span class="token punctuation">(</span>nums<span class="token operator">></span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            nums<span class="token operator">--</span><span class="token punctuation">;</span>
+            <span class="token keyword">try</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">while</span><span class="token punctuation">(</span>isRunning<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                    <span class="token keyword">int</span> data <span class="token operator">=</span> <span class="token punctuation">(</span>Integer<span class="token punctuation">)</span>queue<span class="token punctuation">.</span><span class="token function">take</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    Thread<span class="token punctuation">.</span><span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"消费者消费的数据是"</span> <span class="token operator">+</span> data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token keyword">catch</span><span class="token punctuation">(</span>Exception e<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                Thread<span class="token punctuation">.</span><span class="token function">currentThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">interrupt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token keyword">finally</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"消费者线程退出!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
 
       </div>
 
@@ -647,7 +800,14 @@
       </div>
       
       <!-- <div class="content">
-        ReactorReactor 有两种类型：Flux 和 Mono。Flux 类似于 RxJava 的 Observabl
+        Reactor
+
+原文地址：
+原文作者：
+本文永久链接：
+
+
+特别说明当前文章内容迁移中，如有问题，请提交 issues
       </div> -->
     </a>
   </div>
@@ -665,9 +825,14 @@
         <div>Guava - MultiSet 原理与实战</div>
       </div>
       <!-- <div class="content">
-        Guava - MultiSet 原理与实战函数签名：
-@GwtCompatible
-public interface 
+        Guava - MultiSet 原理与实战
+
+原文地址：
+原文作者：
+本文永久链接：
+
+
+特别说明当前文章内容迁移中，
       </div> -->
     </a>
   </div>
@@ -800,34 +965,43 @@ public interface
 
     </main>
     <div class="footer bg-color">
-  <div class="footer-main">
-    <div class="link">
-      <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/hexo-theme-bamboo">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-      <a href="mailto:1730241541@qq.com" rel="external nofollow noreferrer">
-        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-      </a>
-      <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541" rel="external nofollow noreferrer">
-        <i class="fa fa-qq" aria-hidden="true"></i>
-      </a>
-      <a href="/atom.xml" target="_blank">
-        <i class="fa fa-rss" aria-hidden="true"></i>
-      </a>
-    </div>
-    <div class="footer-copyright">
-      Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/theme">Bamboo</a>
-    </div>
+    <div class="footer-main">
+        <div class="link">
+            <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/hexo-theme-bamboo">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:1730241541@qq.com" rel="external nofollow noreferrer">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+            <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541" rel="external nofollow noreferrer">
+                <i class="fa fa-qq" aria-hidden="true"></i>
+            </a>
+            <a href="/atom.xml" target="_blank">
+                <i class="fa fa-rss" aria-hidden="true"></i>
+            </a>
+            <a>       <!--  友盟—+ -->
+                <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279642429'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279642429%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+            </a>
+        </div>
+        <div class="footer-copyright">
+            Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a
+                    target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a>
+        </div>
 
-    Copyright © 2017 - 2021 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier">Starrier</a> All Rights Reserved  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://beian.miit.gov.cn">苏ICP备17039741号-2</a>
-    <div style="width:300px;margin:0 auto; padding:20px 0;">
+        Copyright © 2017 - 2021 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier">Starrier</a> All Rights Reserved <a
+                target="_blank" rel="noopener" href="https://beian.miit.gov.cn">苏ICP备17039741号-2</a>
+        <div style="width:300px;margin:0 auto; padding:20px 0;">
 
-      <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240" rel="external nofollow noreferrer" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
-        <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"  style="float:left;" alt="备案图标"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"
+                     style="float:left;" alt="备案图标"/>
+                <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
+        </div>
+
+        
+
     </div>
-
-  
-  </div>
 </div>
 
 

@@ -54,7 +54,7 @@
     
 
     
-        <meta property="og:author" content="Starrier Organization"/>
+        <meta property="og:author" content="Imperator"/>
     
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -144,8 +144,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <!--  友盟—+ -->
-    <!-- <script type="text/javascript" src="https://s4.hecnzz.com/z_stat.php?id=1279642429&web_id=1279642429"></script>-->
+
     <!-- 延迟加载图像 -->
     <!--<script src="lazysizes.min.js" async></script>-->
     <!--360 auto submit-->
@@ -537,15 +536,12 @@
         <div class="tags">
           <i class="iconfont icontag"></i>
           
-            <a href="/tags/docker/" class="">
-              docker
-            </a>
-          
-            <a href="/tags/gitlab/" class="">
-              gitlab
+            <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="">
+              环境搭建
             </a>
           
         </div>
+
 
         
         
@@ -553,7 +549,15 @@
 
       <!-- 文章内容 -->
       <div class="post-content">
-        <h1 id="环境搭建-Docker-安装-GitLab"><a href="#环境搭建-Docker-安装-GitLab" class="headerlink" title="环境搭建 - Docker - 安装 GitLab"></a>环境搭建 - Docker - 安装 GitLab</h1><pre class=" language-shell"><code class="language-shell">docker run -dit \
+        <h1 id="环境搭建-Docker-安装-GitLab"><a href="#环境搭建-Docker-安装-GitLab" class="headerlink" title="环境搭建 - Docker - 安装 GitLab"></a>环境搭建 - Docker - 安装 GitLab</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
+<h2 id="一-使用-Docker-安装-GitLab-镜像服务器"><a href="#一-使用-Docker-安装-GitLab-镜像服务器" class="headerlink" title="一. 使用 Docker 安装 GitLab 镜像服务器"></a>一. 使用 Docker 安装 GitLab 镜像服务器</h2><pre class=" language-shell"><code class="language-shell">docker run -dit \
 -p 8443:443 \
 -p 8080:80 \
 -p 2222:22 \
@@ -563,6 +567,20 @@
 -v /home/gitlab/config:/etc/gitlab \
 -v /home/gitlab/logs:/var/log/gitlab \
 -v /home/gitlab/data:/var/opt/gitlab </code></pre>
+<h2 id="二-GitLab-配置"><a href="#二-GitLab-配置" class="headerlink" title="二. GitLab 配置"></a>二. GitLab 配置</h2><h3 id="1-配置邮件服务器"><a href="#1-配置邮件服务器" class="headerlink" title="1. 配置邮件服务器"></a>1. 配置邮件服务器</h3><pre class=" language-shell"><code class="language-shell">#配置下面，需要配置smtp_tls 注意gitlab_rails['smtp_tls'] 这个是设定为true
+gitlab_rails['smtp_enable'] = true
+gitlab_rails['smtp_address'] = "smtp.exmail.qq.com"
+gitlab_rails['smtp_port'] = 465
+gitlab_rails['smtp_user_name'] = "xxx@*****.com"
+gitlab_rails['smtp_password'] = "********"
+gitlab_rails['smtp_domain'] = "smtp.exmail.qq.com"
+gitlab_rails['smtp_authentication'] = "login"
+gitlab_rails['smtp_enable_starttls_auto'] = true
+gitlab_rails['smtp_tls'] = true
+##配置邮箱来源， 与展示的名称
+gitlab_rails['gitlab_email_enabled'] = true
+gitlab_rails['gitlab_email_from'] = 'xxn@*****.com'
+gitlab_rails['gitlab_email_display_name'] = ''</code></pre>
 
       </div>
 
@@ -605,7 +623,14 @@
       </div>
       
       <!-- <div class="content">
-        环境搭建 - docker - 安装 jenkinsdocker run --name devops-jenkins \
+        环境搭建 - docker - 安装 jenkins
+
+原文地址：
+原文作者：
+本文永久链接：
+
+
+特别说明当前文章内容
       </div> -->
     </a>
   </div>
@@ -623,8 +648,14 @@
         <div>环境搭建 - Docker - Linux 环境</div>
       </div>
       <!-- <div class="content">
-        环境搭建 - Docker - 安装 - Linux 环境1. 更新安装数据源sudo yum update
-sudo 
+        环境搭建 - Docker - 安装 - Linux 环境
+
+原文地址：
+原文作者：
+本文永久链接：
+
+
+特别说明当前文
       </div> -->
     </a>
   </div>
@@ -757,34 +788,43 @@ sudo
 
     </main>
     <div class="footer bg-color">
-  <div class="footer-main">
-    <div class="link">
-      <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/hexo-theme-bamboo">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-      <a href="mailto:1730241541@qq.com" rel="external nofollow noreferrer">
-        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-      </a>
-      <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541" rel="external nofollow noreferrer">
-        <i class="fa fa-qq" aria-hidden="true"></i>
-      </a>
-      <a href="/atom.xml" target="_blank">
-        <i class="fa fa-rss" aria-hidden="true"></i>
-      </a>
-    </div>
-    <div class="footer-copyright">
-      Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/theme">Bamboo</a>
-    </div>
+    <div class="footer-main">
+        <div class="link">
+            <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/hexo-theme-bamboo">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:1730241541@qq.com" rel="external nofollow noreferrer">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+            <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541" rel="external nofollow noreferrer">
+                <i class="fa fa-qq" aria-hidden="true"></i>
+            </a>
+            <a href="/atom.xml" target="_blank">
+                <i class="fa fa-rss" aria-hidden="true"></i>
+            </a>
+            <a>       <!--  友盟—+ -->
+                <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279642429'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279642429%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+            </a>
+        </div>
+        <div class="footer-copyright">
+            Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a
+                    target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a>
+        </div>
 
-    Copyright © 2017 - 2021 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier">Starrier</a> All Rights Reserved  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://beian.miit.gov.cn">苏ICP备17039741号-2</a>
-    <div style="width:300px;margin:0 auto; padding:20px 0;">
+        Copyright © 2017 - 2021 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier">Starrier</a> All Rights Reserved <a
+                target="_blank" rel="noopener" href="https://beian.miit.gov.cn">苏ICP备17039741号-2</a>
+        <div style="width:300px;margin:0 auto; padding:20px 0;">
 
-      <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240" rel="external nofollow noreferrer" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
-        <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"  style="float:left;" alt="备案图标"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"
+                     style="float:left;" alt="备案图标"/>
+                <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
+        </div>
+
+        
+
     </div>
-
-  
-  </div>
 </div>
 
 

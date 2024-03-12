@@ -26,11 +26,11 @@
     <meta name="referrer" content="origin">
     <!--  添加 meta keywords -->
     
-        <meta name="keywords" content="Starrier,Hexo,hexo,Java">
+        <meta name="keywords" content="redis,lua,Starrier,Hexo,hexo,Java">
     
     <!--  添加 meta description-->
     
-        <meta name="keywords" content="Starrier own  Blog with Learning Records">
+        <meta name="description" content="redis-lua 简介,Starrier own  Blog with Learning Records">
     
     <!--  添加 360 智能搜索摘要  -->
     <!-- html 类型 -->
@@ -50,11 +50,11 @@
     
 
     
-        <meta property="og:description" content="Starrier own  Blog with Learning Records"/>
+        <meta property="og:description" content="redis-lua 简介"/>
     
 
     
-        <meta property="og:author" content="Starrier Organization"/>
+        <meta property="og:author" content="Imperator"/>
     
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -144,8 +144,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <!--  友盟—+ -->
-    <!-- <script type="text/javascript" src="https://s4.hecnzz.com/z_stat.php?id=1279642429&web_id=1279642429"></script>-->
+
     <!-- 延迟加载图像 -->
     <!--<script src="lazysizes.min.js" async></script>-->
     <!--360 auto submit-->
@@ -537,15 +536,12 @@
         <div class="tags">
           <i class="iconfont icontag"></i>
           
-            <a href="/tags/redis/" class="">
-              redis
-            </a>
-          
-            <a href="/tags/lua/" class="">
-              lua
+            <a href="/tags/Redis/" class="">
+              Redis
             </a>
           
         </div>
+
 
         
         
@@ -553,9 +549,13 @@
 
       <!-- 文章内容 -->
       <div class="post-content">
-        <h1 id="Redis-Lua-简介"><a href="#Redis-Lua-简介" class="headerlink" title="Redis  Lua 简介"></a>Redis  Lua 简介</h1><p><code>redis.call()</code>; 将返回一个错误给调用者</p>
+        <h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
+<p>从 Redis 2.6.0 版本开始，通过内置的 Lua 解释器，可以使用 EVAL 命令对 Lua 脚本进行求值。</p>
+<p>script 参数是一段 Lua  脚本程序，它会被运行在 Redis 服务器上下文中，这段脚本不必(也不应该)定义为一个 Lua 函数。</p>
+<p>numkeys 参数用于指定键名参数的个数。</p>
+<h1 id="Redis-Lua-简介"><a href="#Redis-Lua-简介" class="headerlink" title="Redis  Lua 简介"></a>Redis  Lua 简介</h1><p><code>redis.call()</code>; 将返回一个错误给调用者</p>
 <p><code>redis.pcall()</code>: 将捕获的错误以 <code>LUA</code> 表的形式返回。</p>
-<h2 id="Redis-Lua-优势"><a href="#Redis-Lua-优势" class="headerlink" title="Redis Lua 优势"></a><code>Redis Lua</code> 优势</h2><p>1.减少网络开销：本来5次网络请求的操作，可以用一个请求完成，原先5次请求的逻辑放在 <code>redis</code> 服务器上完成。使用脚本，减少了网络往返时延。</p>
+<h2 id="Redis-Lua-优势"><a href="#Redis-Lua-优势" class="headerlink" title="Redis Lua 优势"></a><code>Redis Lua</code> 优势</h2><p>1.减少网络开销：本来 5 次的网络请求操作，可以用一个请求完成，原先 5 次请求的逻辑放在 <code>redis</code> 服务器上完成。使用脚本，减少了网络往返时延。</p>
 <p>2.原子操作：<code>Redis</code> 会将整个脚本作为一个整体执行，中间不会被其他命令插入。</p>
 <p>3.复用：客户端发送的脚本会永久存储在 <code>Redis</code> 中，意味着其他客户端可以复用这一脚本而不需要使用代码完成同样的逻辑。</p>
 <h2 id="Redis-注意事项"><a href="#Redis-注意事项" class="headerlink" title="Redis 注意事项"></a>Redis 注意事项</h2><ol>
@@ -565,11 +565,17 @@
 </li>
 <li><p><code>Lua</code> 中不应该存在常量 <code>Key</code>，这样会导致每次执行时都会在脚本字典中新建一个条目，应该使用全局变量数组 <code>KEYS</code> 和 <code>ARGV</code>, <code>KEYS</code> 和 <code>ARGV</code> 的索引都从 <code>1</code> 开始。</p>
 </li>
-<li><p>传递给 <code>lua</code> 脚本的键列表应该包括可能会读取或者写入的所有键。传入全部的键使得在使用各种分片或者集群技术时，其他软件可以在应用层检查所有的数据是不是都在同一个分片里面。另外集群版 <code>redis</code> 也会对将要访问的 <code>key</code> 进行检查，如果不在同一个服务器里面，那么 <code>redis</code> 将会返回一个错误。（决定使用集群版之前应该考虑业务拆分），参数列表无所谓。。</p>
+<li><p>传递给 <code>lua</code> 脚本的键列表应该包括可能会读取或者写入的所有键。传入全部的键使得在使用各种分片或者集群技术时，其他软件可以在应用层检查所有的数据是不是都在同一个分片里面。<br>另外集群版 <code>redis</code> 也会对将要访问的 <code>key</code> 进行检查，如果不在同一个服务器里面，那么 <code>redis</code> 将会返回一个错误。<br>（决定使用集群版之前应该考虑业务拆分），参数列表无所谓。。</p>
 </li>
 <li><p><code>lua</code> 和 <code>redis</code> 命令，事务一样都是原子，的已经进行了数据写入的 <code>lua</code> 脚本将无法中断，只能使用 <code>SHUTDOWN NOSAVE</code> 杀死 <code>Redis</code> 服务器。</p>
 </li>
 </ol>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ul>
+<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://juejin.cn/post/6844903697034510343">深入分析 Redis Lua 脚本运行原理</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.cnblogs.com/chopper-poet/p/14172485.html">redis源码学习之lua执行原理</a></p>
+</li>
+</ul>
 
       </div>
 
@@ -612,7 +618,8 @@
       </div>
       
       <!-- <div class="content">
-        Redis - HyperLogLogHyperLogLog 使用动态字符串存储数据，为了区别普通的 SDS，在头部固定
+        Redis - HyperLogLog当前文章内容迁移中，如有问题，请提交 issues 谢谢~~
+HyperLogLo
       </div> -->
     </a>
   </div>
@@ -630,7 +637,14 @@
         <div>深入理解 MyBatis - PooledDataSource</div>
       </div>
       <!-- <div class="content">
-        深入理解 MyBatis - PooledDataSource我们在进行数据库链接操作时，会通过 JDBC  的 con
+        深入理解 MyBatis - PooledDataSource
+
+原文地址：
+原文作者：
+本文永久链接：
+
+
+特别说明当
       </div> -->
     </a>
   </div>
@@ -763,34 +777,43 @@
 
     </main>
     <div class="footer bg-color">
-  <div class="footer-main">
-    <div class="link">
-      <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/hexo-theme-bamboo">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-      <a href="mailto:1730241541@qq.com" rel="external nofollow noreferrer">
-        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-      </a>
-      <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541" rel="external nofollow noreferrer">
-        <i class="fa fa-qq" aria-hidden="true"></i>
-      </a>
-      <a href="/atom.xml" target="_blank">
-        <i class="fa fa-rss" aria-hidden="true"></i>
-      </a>
-    </div>
-    <div class="footer-copyright">
-      Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/theme">Bamboo</a>
-    </div>
+    <div class="footer-main">
+        <div class="link">
+            <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/hexo-theme-bamboo">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:1730241541@qq.com" rel="external nofollow noreferrer">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+            <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541" rel="external nofollow noreferrer">
+                <i class="fa fa-qq" aria-hidden="true"></i>
+            </a>
+            <a href="/atom.xml" target="_blank">
+                <i class="fa fa-rss" aria-hidden="true"></i>
+            </a>
+            <a>       <!--  友盟—+ -->
+                <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279642429'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279642429%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+            </a>
+        </div>
+        <div class="footer-copyright">
+            Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a
+                    target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a>
+        </div>
 
-    Copyright © 2017 - 2021 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier">Starrier</a> All Rights Reserved  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://beian.miit.gov.cn">苏ICP备17039741号-2</a>
-    <div style="width:300px;margin:0 auto; padding:20px 0;">
+        Copyright © 2017 - 2021 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier">Starrier</a> All Rights Reserved <a
+                target="_blank" rel="noopener" href="https://beian.miit.gov.cn">苏ICP备17039741号-2</a>
+        <div style="width:300px;margin:0 auto; padding:20px 0;">
 
-      <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240" rel="external nofollow noreferrer" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
-        <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"  style="float:left;" alt="备案图标"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"
+                     style="float:left;" alt="备案图标"/>
+                <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
+        </div>
+
+        
+
     </div>
-
-  
-  </div>
 </div>
 
 

@@ -26,11 +26,11 @@
     <meta name="referrer" content="origin">
     <!--  添加 meta keywords -->
     
-        <meta name="keywords" content="Starrier,Hexo,hexo,Java">
+        <meta name="keywords" content="MyBatis,Starrier,Hexo,hexo,Java">
     
     <!--  添加 meta description-->
     
-        <meta name="keywords" content="Starrier own  Blog with Learning Records">
+        <meta name="description" content="深入理解 MyBatis - 缓存,Starrier own  Blog with Learning Records">
     
     <!--  添加 360 智能搜索摘要  -->
     <!-- html 类型 -->
@@ -42,19 +42,19 @@
     <!-- html post date -->
 
     
-        <meta property="og:release_date" content="Tue Jan 12 2021 22:57:00 GMT+0800"/>
+        <meta property="og:release_date" content="Mon Feb 14 2022 17:10:48 GMT+0800"/>
     
 
     
-        <meta property="og:title" content="MyBatis 缓存"/>
+        <meta property="og:title" content="深入理解 MyBatis - 缓存"/>
     
 
     
-        <meta property="og:description" content="Starrier own  Blog with Learning Records"/>
+        <meta property="og:description" content="深入理解 MyBatis - 缓存"/>
     
 
     
-        <meta property="og:author" content="Starrier Organization"/>
+        <meta property="og:author" content="Starrier"/>
     
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -68,7 +68,7 @@
      </script>-->
 
     <!--  tittle -->
-    <title>MyBatis 缓存 | Starrier&#39;s Blog</title>
+    <title>深入理解 MyBatis - 缓存 | Starrier&#39;s Blog</title>
     
         
 <link rel="stylesheet" href="/js/aos/aos.css">
@@ -144,8 +144,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <!--  友盟—+ -->
-    <!-- <script type="text/javascript" src="https://s4.hecnzz.com/z_stat.php?id=1279642429&web_id=1279642429"></script>-->
+
     <!-- 延迟加载图像 -->
     <!--<script src="lazysizes.min.js" async></script>-->
     <!--360 auto submit-->
@@ -509,12 +508,12 @@
       
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/simple/5.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/simple/6.jpg" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0"></canvas>
   
-    <span class="title">MyBatis 缓存</span>
+    <span class="title">深入理解 MyBatis - 缓存</span>
   
 </div>
 
@@ -528,7 +527,7 @@
       
       <div class="post-meta">
         <i class="fa fa-clock-o" aria-hidden="true"></i>
-        <span class="post-time">2021-01-12</span>
+        <span class="post-time">2022-02-14</span>
       </div>
       
       <!--  文章的 tag 标签 ， 分类-->
@@ -537,15 +536,12 @@
         <div class="tags">
           <i class="iconfont icontag"></i>
           
-            <a href="/tags/mybatis/" class="">
-              mybatis
-            </a>
-          
-            <a href="/tags/cache/" class="">
-              cache
+            <a href="/tags/MyBatis/" class="">
+              MyBatis
             </a>
           
         </div>
+
 
         
         
@@ -553,7 +549,21 @@
 
       <!-- 文章内容 -->
       <div class="post-content">
-        <h1 id="MyBaits-缓存"><a href="#MyBaits-缓存" class="headerlink" title="MyBaits 缓存"></a>MyBaits 缓存</h1><p><code>MyBatis</code> 的一些关键特性（例如通过 <code>&lt;association&gt;</code> 和 <code>&lt;collection&gt;</code> 建立级联映射<br>避免循环引用（circular references）、加速重复嵌套查询等）都是基于 <code>MyBatis</code> 一级缓存实现的，而且 <code>MyBatis</code> 结果集映射相关代码重度依赖 <code>CacheKey</code>，所以目前 <code>MyBatis</code> 不支持关闭一级缓存。</p>
+        <h1 id="深入理解-MyBatis-缓存"><a href="#深入理解-MyBatis-缓存" class="headerlink" title="深入理解 MyBatis - 缓存"></a>深入理解 MyBatis - 缓存</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<p>MyBaits 一级缓存<br>包名+函数名 进行 map 缓存，一旦设计到写入操作，比如 update 就会将缓存全部情况。<br>由于 MyBatis 无法确定是哪个缓存，所以就会将所有的操作置空。</p>
+<p>一级缓存中，sqlSession 会有自己的缓存，不同的 sqlSession 不会共享缓存。</p>
+<p>可以手动执行缓存清除</p>
+<p><code>sqlSession.clearCache()</code></p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://zhuanlan.zhihu.com/p/464162932">Mybatis 一连串提问，被面试官吊打了！</a></li>
+</ul>
 
       </div>
 
@@ -566,7 +576,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>link:  </strong>
-    <a href="/blogs/mybatis-cache.html" target="_blank" title="MyBatis 缓存">https://starrier.starrier.org/blogs/mybatis-cache.html</a>
+    <a href="/blogs/mybatis-cache.html" target="_blank" title="深入理解 MyBatis - 缓存">https://starrier.starrier.org/blogs/mybatis-cache.html</a>
     </li>
     <li class="post-copyright-license">
       <strong>Copyright notice:   </strong>
@@ -586,20 +596,24 @@
 
   
   <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img lazyload" data-original="https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/simple/5.jpg" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/simple/1.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/blogs/java-stream-principle.html" class="post-nav-link">
+    <a href="/blogs/java-basic-linkedhashmap.html" class="post-nav-link">
       <div class="title">
         <i class="fa fa-angle-left"></i> Prev:
-        <div>java-features-stream 底层原理</div>
+        <div>数据结构 - LinkedHahsMap</div>
       </div>
       
       <!-- <div class="content">
-        Java Stream 底层原理Stream 并行流 使用条件
+        数据结构 - LinkedHahsMap
 
-独立：每个元素的计算都不依赖或影响任何其他元素的计算
+原文地址：
+原文作者：
+本文永久链接：
 
+
+特别说明当前文章内容迁移中，如有
       </div> -->
     </a>
   </div>
@@ -608,16 +622,23 @@
 
   
   <div class="post-nav-next post-nav-item">
-    <div class="post-nav-img lazyload" data-original="https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/simple/14.jpg" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/simple/13.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/blogs/redis-hyperloglog.html" class="post-nav-link">
+    <a href="/blogs/java-basic-final.html" class="post-nav-link">
       <div class="title">
         Next: <i class="fa fa-angle-right"></i>
-        <div>redis-hyperloglog</div>
+        <div>Java - final</div>
       </div>
       <!-- <div class="content">
-        Redis - HyperLogLogHyperLogLog 使用动态字符串存储数据，为了区别普通的 SDS，在头部固定
+        Java - final
+
+原文地址：
+原文作者：
+本文永久链接：
+
+
+特别说明当前文章内容迁移中，如有问题，请提交 i
       </div> -->
     </a>
   </div>
@@ -750,34 +771,43 @@
 
     </main>
     <div class="footer bg-color">
-  <div class="footer-main">
-    <div class="link">
-      <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/hexo-theme-bamboo">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-      <a href="mailto:1730241541@qq.com" rel="external nofollow noreferrer">
-        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-      </a>
-      <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541" rel="external nofollow noreferrer">
-        <i class="fa fa-qq" aria-hidden="true"></i>
-      </a>
-      <a href="/atom.xml" target="_blank">
-        <i class="fa fa-rss" aria-hidden="true"></i>
-      </a>
-    </div>
-    <div class="footer-copyright">
-      Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/theme">Bamboo</a>
-    </div>
+    <div class="footer-main">
+        <div class="link">
+            <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/hexo-theme-bamboo">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:1730241541@qq.com" rel="external nofollow noreferrer">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+            <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541" rel="external nofollow noreferrer">
+                <i class="fa fa-qq" aria-hidden="true"></i>
+            </a>
+            <a href="/atom.xml" target="_blank">
+                <i class="fa fa-rss" aria-hidden="true"></i>
+            </a>
+            <a>       <!--  友盟—+ -->
+                <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279642429'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279642429%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+            </a>
+        </div>
+        <div class="footer-copyright">
+            Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a
+                    target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a>
+        </div>
 
-    Copyright © 2017 - 2021 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier">Starrier</a> All Rights Reserved  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://beian.miit.gov.cn">苏ICP备17039741号-2</a>
-    <div style="width:300px;margin:0 auto; padding:20px 0;">
+        Copyright © 2017 - 2021 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier">Starrier</a> All Rights Reserved <a
+                target="_blank" rel="noopener" href="https://beian.miit.gov.cn">苏ICP备17039741号-2</a>
+        <div style="width:300px;margin:0 auto; padding:20px 0;">
 
-      <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240" rel="external nofollow noreferrer" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
-        <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"  style="float:left;" alt="备案图标"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"
+                     style="float:left;" alt="备案图标"/>
+                <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
+        </div>
+
+        
+
     </div>
-
-  
-  </div>
 </div>
 
 

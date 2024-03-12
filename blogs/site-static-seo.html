@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html>
+  
+
+
+<head>
+    <!-- 网页渲染配置，兼容配置-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <!-- 站点支持的地区-->
+    <meta http-equiv="Content-Language" content="zh-cn"/>
+    <!-- 文档渲染引擎配置 -->
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <!-- baidu verification -->
+    <meta name="baidu-site-verification" content="code-iAO71fL25c"/>
+    <meta name="baidu-site-verification" content="code-s18YXGN5UW"/>
+    <!-- sogou verification -->
+    <meta name="sogou_site_verification" content="XwNdDrJmt3"/>
+    <!-- 360 verification -->
+    <meta name="360-site-verification" content="7a8e21c6d5ab8f346e0a212052467a5a"/>
+    <!--  Binying Web console-->
+    <meta name="msvalidate.01" content="C345B6E16607367496EB0D95BABD89C8"/>
+    <!-- 添加 meta applicable-device 设备适配属性 -->
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="referrer" content="origin">
+    <!--  添加 meta keywords -->
+    
+        <meta name="keywords" content="github,Starrier,juejin,Starrier,Hexo,hexo,Java">
+    
+    <!--  添加 meta description-->
+    
+        <meta name="description" content="译文 - 提高 10 倍性能：优化静态网站,Starrier own  Blog with Learning Records">
+    
+    <!--  添加 360 智能搜索摘要  -->
+    <!-- html 类型 -->
+    <meta property="og:type" content=" blog "/>
+    <!-- html image address -->
+    
+        <meta property="og:image" content="medias/1.jpg"/>
+    
+    <!-- html post date -->
+
+    
+        <meta property="og:release_date" content="Sun Jan 31 2021 18:26:50 GMT+0800"/>
+    
+
+    
+        <meta property="og:title" content="译文 - 提高 10 倍性能：优化静态网站"/>
+    
+
+    
+        <meta property="og:description" content="译文 - 提高 10 倍性能：优化静态网站"/>
+    
+
+    
+        <meta property="og:author" content="Imperater"/>
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNXETXCWEB"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-FNXETXCWEB');
+     </script>-->
+
+    <!--  tittle -->
+    <title>译文 - 提高 10 倍性能：优化静态网站 | Starrier&#39;s Blog</title>
+    
+        
+<link rel="stylesheet" href="/js/aos/aos.css">
+
+    
+    <link rel="icon" type="image/jpeg" href="/medias/favicon.jpg">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+        <script>
+            var themeModelId = '';
+            if (themeModelId) {
+                localStorage.setItem('modelId', themeModelId);
+            }
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/gh/yuang01/live2d-widget@latest/autoload.js"></script>
+        <script>
+            var live2dOpen = eval('true') || false;
+            if (!live2dOpen) {
+                localStorage.setItem('waifu-display', 1609323474481);
+            }
+        </script>
+    
+    
+<link rel="stylesheet" href="https://cdn.boomcdn.com/libs/animate-css/3.7.0/animate.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/js/fancybox/jquery.fancybox.min.css">
+
+    
+    
+    <style>
+        @media (max-width: 992px) {
+            #waifu {
+                display: none;
+            }
+        }
+    </style>
+    <link rel="preload" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="font"
+          type="font/woff2" crossorigin>
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            } else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    
+    <script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b2fa5532f3236ede096152637a3f1c32";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+    <!-- 延迟加载图像 -->
+    <!--<script src="lazysizes.min.js" async></script>-->
+    <!--360 auto submit-->
+    <script>
+        (function () {
+            var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+        })();
+    </script>
+<meta name="generator" content="Hexo 5.3.0"><link rel="stylesheet" href="/css/prism-vs.css" type="text/css"></head>
+
+  <script src="https://pagecdn.io/lib/jquery/3.5.1/jquery.js"></script>
+  <script src="https://pagecdn.io/lib/vue/2.6.11/vue.js"></script>
+  <body>
+    <!-- 判断是否为黑夜模式 -->
+    <script>
+      let isDark = JSON.parse(localStorage.getItem('dark')) || JSON.parse('false');
+
+      if (isDark) {
+        $(document.body).addClass('darkModel');
+      }
+    </script>
+
+    <header class="header bg-color"
+  style="position: fixed; 
+  left: 0; top: 0; z-index: 10;width: 100%;"
+>
+  <div class="header-content">
+    <div class="bars">
+      <div id="appDrawer" class="sidebar-image">
+    <i class="fa fa-bars" aria-hidden="true" @click="showDialogDrawer"></i>
+    <transition name="fade">
+        <div class="drawer-box_mask" v-cloak style="display: none;" v-show="visible" @click.self="cancelDialogDrawer">
+        </div>
+    </transition>
+    <div class="drawer-box" :class="{'active': visible}">
+        <div class="drawer-box-head bg-color">
+            <img class="drawer-box-head_logo" src="/medias/logo.jpg" alt="logo">
+            <h3 class="drawer-box-head_title">Starrier&#39;s Blog</h3>
+            <h3 class="drawer-box-head_desc">Starrier own  Blog with Learning Records</h3>
+        </div>
+        <div class="drawer-box-content">
+            <ul class="drawer-box-content_menu">
+                
+                    <li class="drawer-box-content_item">
+                        <a href="/" class="menu-item-link">
+                            
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                            
+                            <span>Home</span>
+                        </a>
+                    </li>
+                
+                    <li class="drawer-box-content_item">
+                        <a href="/archives" class="menu-item-link">
+                            
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                            
+                            <span>Archives</span>
+                        </a>
+                    </li>
+                
+                    <li class="drawer-box-content_item">
+                        <a href="/tags" class="menu-item-link">
+                            
+                                <i class="fa fa-tags" aria-hidden="true"></i>
+                            
+                            <span>Tags</span>
+                        </a>
+                    </li>
+                
+                    <li class="drawer-box-content_item">
+                        <a href="/categories" class="menu-item-link">
+                            
+                                <i class="fa fa-bookmark" aria-hidden="true"></i>
+                            
+                            <span>Categories</span>
+                        </a>
+                    </li>
+                
+                    <li class="drawer-box-content_item">
+                        <a href="/about" class="menu-item-link">
+                            
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            
+                            <span>About</span>
+                        </a>
+                    </li>
+                
+                    <li class="drawer-box-content_item">
+                        <a href="/friends" class="menu-item-link">
+                            
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            
+                            <span>link</span>
+                        </a>
+                    </li>
+                
+                <li class="drawer-box-content_item">
+                    <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier/">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        <span>Github</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    var body = document.body || document.documentElement || window;
+    var vm = new Vue({
+        el: '#appDrawer',
+        data: {
+            visible: false,
+            top: 0,
+        },
+        computed: {},
+        mounted() {
+        },
+        methods: {
+            showDialogDrawer() {
+                this.visible = true;
+                // 防止页面滚动，只能让弹框滚动
+                this.top = $(document).scrollTop()
+                body.style.cssText = 'width: 100%; height: 100%; position: fixed; top: -' + this.top + 'px; left: 0; overflow: hidden;';
+            },
+            cancelDialogDrawer() {
+                this.visible = false;
+                body.removeAttribute('style');
+                $(document).scrollTop(this.top)
+            }
+        },
+        created() {
+        }
+    })
+</script>
+
+    </div>
+    <div class="blog-title" id="author-avatar">
+      <div class="avatar">
+        <img src="/medias/logo.jpg" alt="logo">
+      </div>
+      <a href="/" class="logo">Starrier&#39;s Blog</a>
+    </div>
+    <nav class="navbar">
+      <ul class="menu">
+        
+          <li class="menu-item">
+            <a href="/" class="menu-item-link">
+              
+                <i class="fa fa-home" aria-hidden="true"></i>
+              
+              <span>Home</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/archives" class="menu-item-link">
+              
+                <i class="fa fa-archive" aria-hidden="true"></i>
+              
+              <span>Archives</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/tags" class="menu-item-link">
+              
+                <i class="fa fa-tags" aria-hidden="true"></i>
+              
+              <span>Tags</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/categories" class="menu-item-link">
+              
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+              
+              <span>Categories</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/about" class="menu-item-link">
+              
+                <i class="fa fa-user" aria-hidden="true"></i>
+              
+              <span>About</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/friends" class="menu-item-link">
+              
+                <i class="fa fa-link" aria-hidden="true"></i>
+              
+              <span>link</span>
+            </a>
+          </li>
+        
+      </ul>
+      
+        <div class="dark">
+  <div class="dark-content">
+    <i class="fa fa-moon-o" aria-hidden="true"></i>
+    <!-- <span>关灯</span> -->
+  </div>
+  
+</div>
+
+<script>
+  $(function() {
+    let isDark = JSON.parse(localStorage.getItem('dark'))  || JSON.parse('false');
+    if (isDark) {
+      $(".dark-content").replaceWith(
+          `
+          <div class='dark-content'>
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+          </div>
+          `
+        );
+    }
+    $('.dark').click(function() {
+      if ($(document.body).is('.darkModel')) {
+        $(document.body).removeClass('darkModel');
+        localStorage.setItem('dark', false);
+        $(".dark-content").replaceWith(
+          `
+          <div class='dark-content'>
+            <i class="fa fa-moon-o" aria-hidden="true"></i>
+          </div>
+          `
+        );
+      } else {
+        $(document.body).addClass('darkModel');
+        localStorage.setItem('dark', true);
+        $(".dark-content").replaceWith(
+          `
+          <div class='dark-content'>
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+          </div>
+          `
+        );
+      }
+    })
+  })
+</script>
+        
+      
+        <div id="appSearch">
+  <div class="search"  @click="showDialog()"><i class="fa fa-search" aria-hidden="true"></i></div>
+  <transition name="fade">
+    <div class="message-box_wrapper" style="display: none;" v-cloak v-show="dialogVisible" @click.self="cancelDialogVisible()">
+      <div class="message-box animated bounceInDown">
+        <div class="close" style="overflow: hidden;">
+          <i class="fa fa-close" aria-hidden="true" style="float:right;" @click.self="cancelDialogVisible()"></i>
+        </div>
+        <h2>
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <span class="title">Search</span>
+          <!-- <i class="fa fa-close" style="float:right;" aria-hidden="true" @click.self="cancelDialogVisible()"></i> -->
+        </h2>
+        <form class="site-search-form">
+          <input type="text"
+            placeholder="Please enter keywords"
+            id="local-search-input" 
+            @click="getSearchFile()"
+            class="st-search-input"
+            v-model="searchInput"
+          />
+        </form>
+        <div class="result-wrapper">
+          <div id="local-search-result" class="local-search-result-cls"></div>
+        </div>
+      </div>
+    </div>
+  </transition>
+</div>
+<script src="/js/local_search.js"></script>
+<script>
+  var body = document.body || document.documentElement || window;
+  var vm = new Vue({
+    el: '#appSearch',
+    data: {
+      dialogVisible: false,
+      searchInput: '',
+      top: 0,
+    },
+    computed: {
+    },
+    mounted() {
+    },
+    methods: {
+      showDialog() {
+        this.dialogVisible = true;
+        // 防止页面滚动，只能让弹框滚动
+        this.top = $(document).scrollTop()
+        body.style.cssText = 'overflow: hidden;';
+      },
+      getSearchFile() {
+        if (!this.searchInput) {
+          getSearchFile("/search.xml");
+        }
+      },
+      cancelDialogVisible() {
+        this.dialogVisible = false;
+        body.removeAttribute('style');
+        $(document).scrollTop(this.top)
+      },
+    },
+    created() {}
+  })
+</script>
+<!-- 解决刷新页面闪烁问题，可以在元素上添加display: none, 或者用vue.extend方法，详情：https://blog.csdn.net/qq_31393401/article/details/81017912 -->
+<!-- 下面是搜索基本写法 -->
+<!-- <script type="text/javascript" id="local.search.active">
+  var inputArea = document.querySelector("#local-search-input");
+  inputArea.onclick   = function(){ getSearchFile(); this.onclick = null }
+  inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
+</script> -->
+
+      
+
+    </nav>
+  </div>
+
+  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier/" class="github-corner color-primary" aria-label="View source on GitHub"><svg width="70" height="60" viewBox="0 0 250 250" style="fill:#1C1C1C; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  
+    <div id="he-plugin-simple"></div>
+    <script>
+      WIDGET = {
+        CONFIG: {
+          "modules": "012",
+          "background": 5,
+          "tmpColor": "4A4A4A",
+          "tmpSize": 16,
+          "cityColor": "4A4A4A",
+          "citySize": 16,
+          "aqiSize": 16,
+          "weatherIconSize": 24,
+          "alertIconSize": 18,
+          "padding": "10px 10px 10px 10px",
+          "shadow": "1",
+          "language": "auto",
+          "borderRadius": 5,
+          "fixed": "false",
+          "vertical": "middle",
+          "horizontal": "center",
+          "key": "2784dd3fcb1e4f0f9a9b579bf69641f2"
+        }
+      }
+    </script>
+    <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+    
+</header>
+
+    <div class="bg-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"></div>
+    <main class="main" style="margin-top: 60px;">
+      
+
+
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/simple/7.jpg" style="background-repeat: no-repeat; background-size: cover; 
+  background-position: center center;position: relative;">
+  <div class="post-detail-header-mask"></div>
+  <canvas id="header_canvas"style="position:absolute;bottom:0"></canvas>
+  
+    <span class="title">译文 - 提高 10 倍性能：优化静态网站</span>
+  
+</div>
+
+<script src="/js/bubble/bubble.js"></script>
+<div class="row justify-position">
+  <div class="main-content">
+    <article class="post post-detail">
+      <!-- 文章是否置顶-->
+      
+        <!-- 文章编辑的时间-->
+      
+      <div class="post-meta">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <span class="post-time">2021-01-31</span>
+      </div>
+      
+      <!--  文章的 tag 标签 ， 分类-->
+      <div class="post-tags-categories">
+        
+        <div class="tags">
+          <i class="iconfont icontag"></i>
+          
+            <a href="/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" class="">
+              性能优化
+            </a>
+          
+        </div>
+
+
+        
+        
+      </div>
+
+      <!-- 文章内容 -->
+      <div class="post-content">
+        <h1 id="译-提高-10-倍性能：优化静态网站"><a href="#译-提高-10-倍性能：优化静态网站" class="headerlink" title="[译] 提高 10 倍性能：优化静态网站"></a>[译] 提高 10 倍性能：优化静态网站</h1><p>当前文章内容迁移中，如有问题，请提交 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 PR 谢谢~~</p>
+<blockquote>
+<ul>
+<li>原文地址：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://hackernoon.com/optimizing-a-static-site-d5ab6899f249">10x Performance Increases: Optimizing a Static Site</a></li>
+<li>原文作者：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://hackernoon.com/@jonluca?source=post_header_lockup">JonLuca De Caro</a></li>
+<li>译文出自：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/xitu/gold-miner">掘金翻译计划</a></li>
+<li>本文永久链接：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/xitu/gold-miner/blob/master/TODO1/optimizing-a-static-site.md">https://github.com/xitu/gold-miner/blob/master/TODO1/optimizing-a-static-site.md</a></li>
+<li>译者：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starriers">Starriers</a></li>
+<li>校对者：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/dandyxu">dandyxu</a>、<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Hopsken">Hopsken</a></li>
+</ul>
+</blockquote>
+<h1 id="提高-10-倍性能：优化静态网站"><a href="#提高-10-倍性能：优化静态网站" class="headerlink" title="提高 10 倍性能：优化静态网站"></a>提高 10 倍性能：优化静态网站</h1><p>几个月前，我在国外旅行，想给朋友看我个人（静态）网站上的一个链接。我试着浏览我的网站，但花费的时间比我预期的要长。网站绝对没有任何动态内容–只有动画和一些响应式设计，而且内容始终保持不变。 我对结果感到震惊，DOMContentLoaded 要 4 s，整个页面加载要 6.8 s。有 20 项关于<strong>静态网站</strong>的请求（总数据的 1MB）被转移。我习惯了从洛杉矶到我在旧金山的服务器之间用 1 GB/s 的低延迟互联网连接，这使得这个怪物看起来像闪电一样快。在意大利，8 MB/s 的速度让情况变得完全不同。</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/4/8/162a4a354ba3f527?w=800&h=505&f=png&s=153445"></p>
+<p>这是我第一次尝试优化。到目前为止，每次我想添加一个库或者资源时，我都只是将它引入并使用 <strong>src=””</strong> 指向它。从缓存到内联，再到延迟加载，对任何形式的性能我都没有给予关注。</p>
+<p>我开始寻找有相似经历的人。不幸的是，许多有关静态优化的文献很快就过时–那些来自 2010 或者 2011 年的建议，要么是在讨论库，要么做一些根本不再试用的假设，要么就是不断地重复某些相同的准则。</p>
+<p>不过我确实找到了两个很好的信息源 – <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hpbn.co/">高性能浏览器网络</a>和 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://danluu.com/octopress-speedup/">Dan Luu 类似的静态网站优化经历</a>。尽管在剥离格式和内容方面还不如 Dan，但是我确实成功地让我的页面加载速度提高了大约 10 倍。DOMContentLoaded 大约需要五分之一秒，而整个页面加载只有 388 ms（实际上有点不准确，下文将解释延迟加载的原因）。</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/4/8/162a4a3561be31e1?w=800&h=572&f=png&s=126355"></p>
+<h3 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h3><p>过程的第一步是对网站进行分析梳理，我想弄清楚哪些地方花费了最长的时间，以及如何最好地并行化一切。我运行了各种工具来分析我的网站，并在世界各地测试它，包括：</p>
+<ul>
+<li>  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://tools.pingdom.com/">https://tools.pingdom.com/</a></li>
+<li>  <a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.webpagetest.org/">www.webpagetest.org/</a></li>
+<li>  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://tools.keycdn.com/speed">https://tools.keycdn.com/speed</a></li>
+<li>  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://developers.google.com/web/tools/lighthouse/">https://developers.google.com/web/tools/lighthouse/</a></li>
+<li>  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://developers.google.com/speed/pagespeed/insights/">https://developers.google.com/speed/pagespeed/insights/</a></li>
+<li>  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://webspeedtest.cloudinary.com/">https://webspeedtest.cloudinary.com/</a></li>
+</ul>
+<p>其中一些提供了改进建议，但当静态站点有 50 个请求时，您只能做这么多 – 从 90 年代遗留下来的间隔 gif 到不再使用的资源（我加载了 6 种字体但只使用了 1 种字体）。</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/4/8/162a4a3567665f00?w=800&h=864&f=png&s=286748"></p>
+<p>我的网站时间线 – 我在 Web Archive(译者注：一家提供网站历史快照的服务商)上测试了这个却没有截取原始图片，可是它看起来和我几个月前看到的还是很相似。</p>
+<p>我想改进我所能控制的一切 – 从 JavaScript 的内容和速度到实际的 Web 服务器（Ngnix）和 DNS 设置。</p>
+<h3 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h3><h4 id="简化与合并资源"><a href="#简化与合并资源" class="headerlink" title="简化与合并资源"></a>简化与合并资源</h4><p>我注意到的第一件事是，不管是对于 CSS 还是 JS，我都向各种网站发起十几个请求（没有任何形式的 HTTP keepalive），其中还有一些是 https 请求。这增加了对各种 CDN 或 服务器的多次往返，一些 JS 文件正在请求其他文件，这导致了上面所示的阻塞级联。</p>
+<p>我使用 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://webpack.js.org/">webpack</a> 将所有资源合并到一个 js 文件中。每当我对内容进行更改时，它都会自动简化并将我的所有依赖项转换为单文件。</p>
+<pre><code>const UglifyJsPlugin = require(&#39;uglifyjs-webpack-plugin&#39;);
+const ZopfliPlugin = require(&quot;zopfli-webpack-plugin&quot;);
+
+module.exports = &#123;
+  entry: &#39;./js/app.js&#39;,
+  mode: &#39;production&#39;,
+  output: &#123;
+    path: __dirname + &#39;/dist&#39;,
+    filename: &#39;bundle.js&#39;
+  &#125;,
+  module: &#123;
+    rules: [&#123;
+      test: /\.css$/,
+      loaders: [&#39;style-loader&#39;, &#39;css-loader&#39;]
+    &#125;, &#123;
+      test: /(fonts|images)/,
+      loaders: [&#39;url-loader&#39;]
+    &#125;]
+  &#125;,
+  plugins: [new UglifyJsPlugin(&#123;
+    test: /\.js($|\?)/i
+  &#125;), new ZopfliPlugin(&#123;
+    asset: &quot;[path].gz[query]&quot;,
+    algorithm: &quot;zopfli&quot;,
+    test: /\.(js|html)$/,
+    threshold: 10240,
+    minRatio: 0.8
+  &#125;)]
+
+&#125;;</code></pre>
+<p>我尝试了各种不同的配置。现在，这个 bundle.js 文件在我网站的 <code>&lt;head&gt;</code> 中，并且处于阻塞状态。它的最终大小是 829 kb，包括每个非图像资源（字体、css、所有的库、依赖项以及 js）。绝大多数字体使用的是 font-awesome，它们占 829 kb 中的 724。</p>
+<p>我浏览了 Font Awesome 库，除了我要使用的 fa-github、fa-envelope 和 fa-code 三个图标外，其他的所有图标都已经删除。我使用叫做 <a target="_blank" rel="noopener external nofollow noreferrer" href="http://fontello.com/">fontello</a> 的服务来提取我需要的图标。新的大小只有 94 kb。</p>
+<p>按照目前网站的构建方式，如果我们只有样式表，它看起来是不正确的，所以我接受了单个 bundle.js 的阻塞特性。加载时间为 118 ms，比之前提高了一个数量级。</p>
+<p>这也带来了一些额外的好处–我不再指向第三方资源或 CDN，因此用户不需要：（1）执行对该资源的 DNS 查询，（2）执行 https 握手，（3）等待该资源被完整地下载。</p>
+<p>虽然 CDN 和分布式缓存对于大规模的分布式网站可能是有意义的，但对于我的小型静态网站来说却没有意义。是否需要优化这额外的 100 ms 左右时间是值得权衡的。</p>
+<h4 id="压缩资源"><a href="#压缩资源" class="headerlink" title="压缩资源"></a>压缩资源</h4><p>我加载了一个 8 MB 大小的头像，然后以 10% 的宽高比显示它。这不仅仅是缺少优化，这几乎<strong>是忽略了用户对带宽使用</strong>。</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/4/8/162a4a3541bc520c?w=800&h=217&f=png&s=79121"></p>
+<p>我使用 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://webspeedtest.cloudinary.com/">https://webspeedtest.cloudinary.com/</a> 来压缩所有的图像 – 它还建议我切换到  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://developers.google.com/speed/webp/">webp</a>，但我希望尽可能多的与其他浏览器进行兼容，所以我坚持使用 jpg。尽管完全有可能建立一个只将 webp 交付给支持它的浏览器系统，但我希望尽可能地保持简单，添加抽象层的好处似乎并不明显。</p>
+<h4 id="改进-Web-Server-—-HTTP2-TLS-等"><a href="#改进-Web-Server-—-HTTP2-TLS-等" class="headerlink" title="改进 Web Server — HTTP2, TLS 等"></a>改进 Web Server — HTTP2, TLS 等</h4><p>我做的第一件事是过度到 https – 一开始，我在 80 端口运行 Ngnix，只服务于来自 /var/www/html 的文件。</p>
+<pre><code>server&#123;
+    listen 80;
+    server_name jonlu.ca www.jonlu.ca;
+
+    root /var/www/html;
+    index index.html index.htm;
+    location ~ /.git/ &#123;
+          deny all;
+    &#125;
+    location ~ / &#123;
+        allow all;
+    &#125;
+&#125;</code></pre>
+<p>首先设置 https 并将所有 http 请求重定向到 https。我从 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://letsencrypt.org/">Let’s Encrypt</a> (一个刚开始签署通配符证书的伟大组织！<a target="_blank" rel="noopener external nofollow noreferrer" href="https://community.letsencrypt.org/t/acme-v2-and-wildcard-certificate-support-is-live/55579">wildcard certificates</a> )那里获得了自己的 TLS 证书。</p>
+<pre><code>server &#123;
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name jonlu.ca www.jonlu.ca;
+
+    root /var/www/html;
+    index index.html index.htm;
+
+    location ~ /.git &#123;
+        deny all;
+    &#125;
+
+    location / &#123;
+        allow all;
+    &#125;
+
+    ssl_certificate /etc/letsencrypt/live/jonlu.ca/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/jonlu.ca/privkey.pem; # managed by Certbot
+&#125;</code></pre>
+<p>只要添加 http2 的指令，Ngnix 就能够利用 HTTP 最新特性的所有优点。注意，如果要利用 HTTP2（以前的 SPDY），您<strong>必须</strong>使用 HTTPS，在<a target="_blank" rel="noopener external nofollow noreferrer" href="https://hpbn.co/http2/">这里</a>阅读更多内容。</p>
+<p>您还可以利用 HTTP2 push 指令，使用 <strong>http2</strong> push images/Headshot.jpg；</p>
+<p>注意：启用 gzip 和 TLS 可能会使您面临 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://en.wikipedia.org/wiki/BREACH">BREACH</a> 风险。由于这是一个静态网站，而 BREACH 实际的风险很低，所以保持压缩状态让我感觉舒服。</p>
+<h4 id="利用缓存和压缩指令"><a href="#利用缓存和压缩指令" class="headerlink" title="利用缓存和压缩指令"></a>利用缓存和压缩指令</h4><p>仅通过使用 Ngnix 还能完成什么呢？首先是缓存和压缩指令。</p>
+<p>我之前一直都是发送未经压缩的原始 HTML。只需要一个单独的 <strong>gzip</strong>；是的，我就可以从 16000 字节减少到 8000 字节，减少 50%。</p>
+<p>实际上，我们能够进一步改进这个数字，如果将 Ngnix 的 <strong>gzip</strong> 静态设置为开启，它会事先查找所有请求文件的预压缩版本。这与我们上面的 webpack 配置结合在一起 – 我们可以在构建时使用 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/webpack-contrib/zopfli-webpack-plugin">ZopflicPlugin</a> 预压缩所有文件！这节省了计算资源，并允许我们在不牺牲速度的情况下最大限度地实现压缩。</p>
+<p>此外，我的站点变化很少，所以我希望尽可能长时间地缓存资源。这样，在以后的访问中，用户就不需要重新下载所有资源（特别是 bundle.js）。</p>
+<p>我更新的服务器配置如下所示。请注意，我不会涉及我所做的所有更改，例如 TCP 设置更改、gzip 指令和文件缓存。如果您想了解更多，请<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.nginx.com/blog/tuning-nginx/">阅读这篇关于 Ngnix 调优的文章</a>。</p>
+<pre><code>worker_processes auto;
+pid /run/nginx.pid;
+worker_rlimit_nofile 30000;
+
+events &#123;
+    worker_connections 65535;
+    multi_accept on;
+    use epoll;
+&#125;
+
+http &#123;
+
+    ##
+    # Basic Settings
+    ##
+
+    sendfile on;
+    tcp_nopush on;
+    tcp_nodelay on;
+    keepalive_timeout 65;
+    types_hash_max_size 2048;
+
+    # Turn of server tokens specifying nginx version
+    server_tokens off;
+
+    open_file_cache max=200000 inactive=20s;
+    open_file_cache_valid 30s;
+    open_file_cache_min_uses 2;
+    open_file_cache_errors on;
+
+    include /etc/nginx/mime.types;
+    default_type application/octet-stream;
+
+    add_header Referrer-Policy &quot;no-referrer&quot;;
+
+    ##
+    # SSL Settings
+    ##
+
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    ssl_prefer_server_ciphers on;
+    ssl_dhparam /location/to/dhparam.pem;
+    ssl_ciphers &#39;ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:CAMELLIA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!aECDH:!EDH-DSS-DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA&#39;;
+
+    ssl_session_timeout 1d;
+    ssl_session_cache shared:SSL:50m;
+    ssl_stapling on;
+    ssl_stapling_verify on;
+    add_header Strict-Transport-Security &#39;max-age=31536000; includeSubDomains; preload&#39;;
+
+    ssl_certificate /location/to/fullchain.pem;
+    ssl_certificate_key /location/to/privkey.pem;
+
+    ##
+    # Logging Settings
+    ##
+
+    access_log /var/log/nginx/access.log;
+    error_log /var/log/nginx/error.log;
+
+    ##
+    # Gzip Settings
+    ##
+
+    gzip on;
+    gzip_disable &quot;msie6&quot;;
+
+    gzip_vary on;
+    gzip_proxied any;
+    gzip_comp_level 6;
+    gzip_buffers 16 8k;
+    gzip_http_version 1.1;
+    gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript application/vnd.ms-fontobject application/x-font-ttf font/opentype image/svg+xml image/x-icon;
+    gzip_min_length 256;
+
+    ##
+    # Virtual Host Configs
+    ##
+
+    include /etc/nginx/conf.d/*.conf;
+    include /etc/nginx/sites-enabled/*;
+&#125;</code></pre>
+<p>以及相应的服务器块</p>
+<pre><code>server &#123;
+    listen 443 ssl http2;
+
+    server_name jonlu.ca www.jonlu.ca;
+
+    root /var/www/html;
+    index index.html index.htm;
+
+    location ~ /.git/ &#123;
+        deny all;
+    &#125;
+
+    location ~* /(images|js|css|fonts|assets|dist) &#123;
+        gzip_static on; # 告诉 Nginx 首先查找所有请求文件的压缩版本。
+        expires 15d; # 15 day expiration for all static assets
+    &#125;
+
+&#125;</code></pre>
+<h4 id="延迟加载"><a href="#延迟加载" class="headerlink" title="延迟加载"></a>延迟加载</h4><p>最后我的实际网站有一个小的变化，它所带来的优化是不可忽视的。有 5 张图片直到您按下相应选项卡后才能看到，但它们是与其他所有内容同时加载的（因为它们位于 <code>&lt;img src=”…”&gt;</code> 标签中）。</p>
+<p>我编写了一个简短的脚本，用 <strong>lazyload 类</strong>修改每个元素的属性。只有单击相应的框后才会加载这些图像。</p>
+<pre><code>$(document).ready(function() &#123;
+    $(&quot;#about&quot;).click(function() &#123;
+        $(&#39;#about &gt; .lazyload&#39;).each(function() &#123;
+            // set the img src from data-src
+            $(this).attr(&#39;src&#39;, $(this).attr(&#39;data-src&#39;));
+        &#125;);
+    &#125;);
+
+    $(&quot;#articles&quot;).click(function() &#123;
+        $(&#39;#articles &gt; .lazyload&#39;).each(function() &#123;
+            // set the img src from data-src
+            $(this).attr(&#39;src&#39;, $(this).attr(&#39;data-src&#39;));
+        &#125;);
+    &#125;);
+
+&#125;);</code></pre>
+<p>因此一旦文档完成加载，它将修改 <code>&lt;img&gt;</code> 标签，使他们从 <code>&lt;img data-src=”…”&gt;</code> 转到 <code>&lt;img src=”…”&gt;</code> 然后将其加载到后台。</p>
+<h4 id="未来的改进"><a href="#未来的改进" class="headerlink" title="未来的改进"></a>未来的改进</h4><p>还有一些其他的更改可以提高页面加载速度 – 最显著的是使用 Service Workers 缓存并拦截所有请求，让站点甚至脱机运行，在 CDN 上缓存内容，这样用户就不需要在 SF 中对服务器进行完整的往返操作。这些都是有价值的改变，但对于个人静态网站来说并不是特别重要，因为它是一个在线简历（关于我）的页面。</p>
+<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>这使我的页面加载时间从第一次加载的 8 s 提高到 350 ms，之后的页面加载速度达到了 200 ms。我真的建议阅读<a target="_blank" rel="noopener external nofollow noreferrer" href="https://hpbn.co/#toc">高性能浏览器网络</a> – 您可以很快就阅读完它，它提供了对现代互联网的一个非常好的概述，并在互联网模型的每一层都进行了优化。</p>
+<p><strong>我遗漏了什么事情吗？是否有任何违反最优做法？或者可以改善我的叙述内容甚至是其他方面？请随时指正 –</strong> <a target="_blank" rel="noopener external nofollow noreferrer" href="https://medium.com/@jonluca"><em>JonLuca De Caro</em></a><strong>！</strong></p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/4/8/162a4a35452205a1?w=800&h=400&f=png&s=37767"></p>
+<hr>
+<blockquote>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/xitu/gold-miner">掘金翻译计划</a> 是一个翻译优质互联网技术文章的社区，文章来源为 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://juejin.im/">掘金</a> 上的英文分享文章。内容覆盖 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/xitu/gold-miner#android">Android</a>、<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/xitu/gold-miner#ios">iOS</a>、<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/xitu/gold-miner#%E5%89%8D%E7%AB%AF">前端</a>、<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/xitu/gold-miner#%E5%90%8E%E7%AB%AF">后端</a>、<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/xitu/gold-miner#%E5%8C%BA%E5%9D%97%E9%93%BE">区块链</a>、<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/xitu/gold-miner#%E4%BA%A7%E5%93%81">产品</a>、<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/xitu/gold-miner#%E8%AE%BE%E8%AE%A1">设计</a>、<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/xitu/gold-miner#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD">人工智能</a>等领域，想要查看更多优质译文请持续关注 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/xitu/gold-miner">掘金翻译计划</a>、<a target="_blank" rel="noopener external nofollow noreferrer" href="http://weibo.com/juejinfanyi">官方微博</a>、<a target="_blank" rel="noopener external nofollow noreferrer" href="https://zhuanlan.zhihu.com/juejinfanyi">知乎专栏</a>。</p>
+</blockquote>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5>
+      </div>
+
+       <!-- 文章版权信息  -->
+      
+        <div class="copyright">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+    <strong>author:  </strong>Starrier Organization</a>
+    </li>
+    <li class="post-copyright-link">
+    <strong>link:  </strong>
+    <a href="/blogs/site-static-seo.html" target="_blank" title="译文 - 提高 10 倍性能：优化静态网站">https://starrier.starrier.org/blogs/site-static-seo.html</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>Copyright notice:   </strong>
+      All articles on this website, unless otherwise stated, adopt <a rel="license external nofollow noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="MIT">MIT</a>
+      reprint polocy. If reproduced, please indicate source!
+    </li>
+  </ul>
+<div>
+      
+    </article>
+    <!-- 上一篇文章和下一篇文章 -->
+    
+      
+<div class="post-nav">
+
+
+
+  
+  <div class="post-nav-prev post-nav-item">
+    <div class="post-nav-img lazyload" data-original="https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/simple/4.jpg" style="background-size: cover; 
+      background-position: center center;">
+    </div>
+    <a href="/blogs/spring-cloud-hystrix-hystrixcommand.html" class="post-nav-link">
+      <div class="title">
+        <i class="fa fa-angle-left"></i> Prev:
+        <div>深入分析与理解 spring-cloud-hystrix - HystrixCommand</div>
+      </div>
+      
+      <!-- <div class="content">
+        深入分析与理解 spring-cloud-hystrix - HystrixCommand当前文章内容迁移中，如有问题，
+      </div> -->
+    </a>
+  </div>
+
+
+
+  
+  <div class="post-nav-next post-nav-item">
+    <div class="post-nav-img lazyload" data-original="https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/simple/7.jpg" style="background-size: cover; 
+      background-position: center center;">
+    </div>
+    <a href="/blogs/utils-java-compress.html" class="post-nav-link">
+      <div class="title">
+        Next: <i class="fa fa-angle-right"></i>
+        <div>常见 Java 压缩-解压缩算法原理与实践</div>
+      </div>
+      <!-- <div class="content">
+        常见 Java 压缩-解压缩算法原理与实践当前文章内容迁移中，如有问题，请提交 issues 谢谢~~
+特别说明当前文章
+      </div> -->
+    </a>
+  </div>
+
+</div>
+
+    
+
+
+    <!-- 打赏 -->
+    
+
+    <!-- 分享 -->
+    
+
+    <!-- 评论 -->
+      
+        <div id="myComment">
+          
+        </div>
+      
+  </div>
+
+  
+    <div class="toc-aside">
+      <div class="toc-main">
+        <div class="toc-aside-title">
+          <i class="fa fa-list-ul" aria-hidden="true"></i><span>Contents of this article</span>
+          <div class="toc-open-close">Contents of this article</div>
+        </div>
+        <div class="toc-content">
+          <link href="/js/tocbot/tocbot.css" rel="stylesheet">
+<script src="/js/tocbot/tocbot.min.js"></script>
+<div class="toc"></div>
+
+<script>
+  if ($('.toc').length > 0) {
+    var headerEl = 'h2, h3, h4',  //headers 
+      content = '.post-detail',//文章容器
+      idArr = {};  //标题数组以确定是否增加索引id
+      //add #id
+
+    $(content).children(headerEl).each(function () {
+      //去除空格以及多余标点
+      var headerId = $(this).text().replace(/[\s|\~|`|\!|\@|\#|\$|\%|\^|\&|\*|\(|\)|\_|\+|\=|\||\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?|\：|\，|\。]/g, '');
+
+      headerId = headerId.toLowerCase();
+      if (idArr[headerId]) {
+        //id已经存在
+        $(this).attr('id', headerId + '-' + idArr[headerId]);
+        idArr[headerId]++;
+      }
+      else {
+        //id未存在
+        idArr[headerId] = 1;
+        $(this).attr('id', headerId);
+      }
+    });
+
+    tocbot.init({
+      // Where to render the table of contents.
+      tocSelector: '.toc',
+      // Where to grab the headings to build the table of contents.
+      contentSelector: content,
+      // Which headings to grab inside of the contentSelector element.
+      headingSelector: headerEl,
+      scrollSmooth: true,
+      scrollSmoothOffset: -80,
+      headingsOffset: 130,
+      positionFixedSelector: '.toc-main',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
+    });
+  }
+
+</script>
+
+<style>
+.is-position-fixed {
+  position:fixed !important;
+  top: 64px;
+}
+.toc-main ul {
+  counter-reset: show-list;
+}
+.toc-main ul li::before {
+  content: counter(item)".";
+  display: block;
+  position: absolute;
+  left: 12px;
+  top:0;
+}
+.toc > .toc-list {
+  padding-left: 35px;
+}
+.toc>.toc-list li {
+  list-style: decimal;
+}
+.toc-list {
+  padding-left: 25px;
+}
+</style>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script>
+      let openOrCloseBtn = $('.toc-aside .toc-aside-title .toc-open-close');
+      let open = eval('' || 'true');
+      openOrCloseBtn.click(function() {
+        if (open === true) {
+          $(".toc-aside").css({'width': 0, 'padding': 0});
+          $(".toc-content").css({'width': 0});
+          $(".toc-aside-title span, .toc-aside-title i").css({'display': 'none'});
+          $(".main-content").css({'width': '75%', 'margin': '10px auto'});
+          open = false;
+        } else {
+          $(".toc-aside").css({'width': '300px', 'padding': '0 10px'});
+          $(".toc-content").css({'width': '300px'});
+          $(".toc-aside-title span, .toc-aside-title i").css({'display': 'inline-block'});
+          $(".main-content").css({'width': '65%', 'margin-right': '10px', 'margin-left': 'calc(35% - 350px)'});
+          open = true;
+        }
+      });
+    </script>
+  
+</div>
+
+    </main>
+    <div class="footer bg-color">
+    <div class="footer-main">
+        <div class="link">
+            <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/hexo-theme-bamboo">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:1730241541@qq.com" rel="external nofollow noreferrer">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+            <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541" rel="external nofollow noreferrer">
+                <i class="fa fa-qq" aria-hidden="true"></i>
+            </a>
+            <a href="/atom.xml" target="_blank">
+                <i class="fa fa-rss" aria-hidden="true"></i>
+            </a>
+            <a>       <!--  友盟—+ -->
+                <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279642429'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279642429%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+            </a>
+        </div>
+        <div class="footer-copyright">
+            Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a
+                    target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a>
+        </div>
+
+        Copyright © 2017 - 2021 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier">Starrier</a> All Rights Reserved <a
+                target="_blank" rel="noopener" href="https://beian.miit.gov.cn">苏ICP备17039741号-2</a>
+        <div style="width:300px;margin:0 auto; padding:20px 0;">
+
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"
+                     style="float:left;" alt="备案图标"/>
+                <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
+        </div>
+
+        
+
+    </div>
+</div>
+
+
+    
+      <div class="goTop top-btn-color border-color">
+  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+</div>
+<script src="/js/goTop.js"></script>
+    
+
+    
+
+    <!-- 图片放大 -->
+    
+      <script src="/js/fancybox/jquery.fancybox.min.js"></script>
+      <script src="/js/wrapImage.js"></script>
+    
+
+    <!-- 爱心点击 -->
+    
+      
+        <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 999; pointer-events: none;" ></canvas>
+        <script src="https://pagecdn.io/lib/anime/3.2.0/anime.min.js"></script>
+        <script src="/js/cursor/explosion.min.js"></script>
+      
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+
+    <script type="text/javascript" size="100" alpha='0.4' zIndex="-1" src="/js/ribbon.min.js"></script>
+    
+      <script src="/js/aos/aos.js"></script>
+      <script>
+        // https://github.com/michalsnik/aos
+        const themeOffset = parseInt('120') || 120;
+        const themeDelay = parseInt('0')|| 0;
+        const themeDuration = parseInt('400') || 400;
+        const themeEasing = 'ease' || 'ease';
+        const themeOnce = eval('true') || false;
+        const themeMirror = eval('false') || false;
+        const themeAnchorPlacement = 'top-bottom' || 'top-bottom';
+        AOS.init({
+          // Global settings:
+          disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+          startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+          initClassName: 'aos-init', // class applied after initialization
+          animatedClassName: 'aos-animate', // class applied on animation
+          useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+          disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+          debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+          throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+          // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+          offset: themeOffset, // offset (in px) from the original trigger point
+          delay: themeDelay, // values from 0 to 3000, with step 50ms
+          duration: themeDuration, // values from 0 to 3000, with step 50ms
+          easing: themeEasing, // default easing for AOS animations
+          once: themeOnce, // whether animation should happen only once - while scrolling down
+          mirror: themeMirror, // whether elements should animate out while scrolling past them
+          anchorPlacement: themeAnchorPlacement, // defines which position of the element regarding to window should trigger the animation
+
+        });
+      </script>
+    
+
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/v-plugs-ayu/lib/ayu.css">
+<script src="https://cdn.jsdelivr.net/npm/v-plugs-ayu/lib/ayu.umd.min.js"></script>
+<div id="appCopy">
+</div>
+<script>
+  var vm = new Vue({
+    el: '#appCopy',
+    data: {
+    },
+    computed: {
+    },
+    mounted() {
+      const that = this;
+      //  监听 ctrl + c事件  
+      $(document).unbind('keypress').bind('keypress', function (e) {
+        if (e.ctrlKey && e.keyCode == 67) {
+          doSomething();
+          // 返回false, 防止重复触发copy事件  
+          return false;
+        }
+      })
+
+      // 鼠标右键的复制事件  
+      $(document).unbind('copy').bind('copy', function (e) {
+        doSomething();
+        // console.log('右键复制 监听成功');
+      });
+
+      function doSomething() {
+        that.$notify({
+          title: "成功",
+          content: "复制成功了哦",
+          type: 'success'
+        })
+        // console.log('ctrl + c 监听成功');  
+      }
+    },
+    methods: {
+    },
+    created() { }
+  })
+</script>
+    
+
+    <!-- 输入框打字特效 -->
+    
+      <script src="/js/activate-power-mode.js"></script>
+      <script>
+          POWERMODE.colorful = true;  // 打开随机颜色特效
+          POWERMODE.shake = false;    // 关闭输入框抖动
+          document.body.addEventListener('input', POWERMODE);//监听打字事件
+      </script>
+    
+
+    <!-- markdown代码一键复制功能 -->
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+    <script>
+      !function (e, t, a) {
+        var copy = 'copy';
+        /* code */
+        var initCopyCode = function(){
+          var copyHtml = '';
+          copyHtml += '<button class="btn-copy" data-clipboard-snippet="" style="position:absolute;top:0;right:0;z-index:1;">';
+          copyHtml += '<i class="fa fa-copy"></i><span>' + copy + '</span>';
+          copyHtml += '</button>';
+          $(".post-detail pre").wrap("<div class='codeBox' style='position:relative;width:100%;'></div>")
+          $(".post-detail pre").before(copyHtml);
+          new ClipboardJS('.btn-copy', {
+              target: function(trigger) {
+                  return trigger.nextElementSibling;
+              }
+          });
+        }
+        initCopyCode();
+      }(window, document);
+    </script>
+    <script src="/js/lazyload/lazyload@1.9.1.js"></script>
+    <script>
+      $(function() {
+        $("div.lazyload, img.lazyload, a.lazyload").lazyload(
+            {
+                effect: "fadeIn",
+                placeholder: "https://cdn.pixabay.com/photo/2020/10/24/03/09/street-5680458__340.jpg"    //图片未加载出来时显示的占位图
+            }
+        );
+    });
+    </script>
+  </body>
+</html>

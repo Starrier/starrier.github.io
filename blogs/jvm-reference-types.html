@@ -54,7 +54,7 @@
     
 
     
-        <meta property="og:author" content="Starrier Organization"/>
+        <meta property="og:author" content="Imperator"/>
     
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -144,8 +144,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <!--  友盟—+ -->
-    <!-- <script type="text/javascript" src="https://s4.hecnzz.com/z_stat.php?id=1279642429&web_id=1279642429"></script>-->
+
     <!-- 延迟加载图像 -->
     <!--<script src="lazysizes.min.js" async></script>-->
     <!--360 auto submit-->
@@ -537,15 +536,12 @@
         <div class="tags">
           <i class="iconfont icontag"></i>
           
-            <a href="/tags/java/" class="">
-              java
-            </a>
-          
             <a href="/tags/jvm/" class="">
               jvm
             </a>
           
         </div>
+
 
         
         
@@ -553,7 +549,15 @@
 
       <!-- 文章内容 -->
       <div class="post-content">
-        <h1 id="JVM-四种引用类型"><a href="#JVM-四种引用类型" class="headerlink" title="JVM 四种引用类型"></a>JVM 四种引用类型</h1><p>本文实践代码可以参阅 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starriers/CodeCombat">CodeCombat</a> 的 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starriers/CodeCombat/tree/master/JVM/src/main/java/org/starrier/codecombat">JVM</a>。</p>
+        <h1 id="JVM-四种引用类型"><a href="#JVM-四种引用类型" class="headerlink" title="JVM 四种引用类型"></a>JVM 四种引用类型</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
+<p>本文实践代码可以参阅 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starriers/CodeCombat">CodeCombat</a> 的 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starriers/CodeCombat/tree/master/JVM/src/main/java/org/starrier/codecombat">JVM</a>。</p>
 <h3 id="1-强引用"><a href="#1-强引用" class="headerlink" title="1. 强引用"></a>1. 强引用</h3><p>强引用是程序中一般使用的引用类型，强引用的对象是可触及的，不会被回收。相对的，弱引用，软引用，虚引用的对象是可触及的，在一定情况下，是可以被回收的。</p>
 <pre class=" language-Java"><code class="language-Java">StringBuffer str = new StringBuffer("Hello World");</code></pre>
 <p>以上代码中，局部变量 str 将被分配在栈上，而对象 StringBuffer 实例对象将被分配在堆上。局部变量 str 指向 StringBuffer 实例所在的堆空间，通过 str 可以操作该实例，那么 str 就是 StringBuffer 实例的强引用。</p>
@@ -572,7 +576,7 @@
 <p>弱引用对象可以和一个引用队列一起使用，如果弱引用所引用的对象被垃圾回收，JVM 就会把这个弱引用加入到与之关联的引用队列中。</p>
 <h3 id="4-虚引用"><a href="#4-虚引用" class="headerlink" title="4. 虚引用"></a>4. 虚引用</h3><p>如果一个对象仅持有虚引用，那么它和没有任何引用一样，在任何时候都可能被垃圾回收。虚引用主要用来跟踪对象被垃圾回收的活动。虚引用与弱引用和软引用的区别在于：虚引用必须和引用队列一起使用。当垃圾回收器准备回收一个对象时，如果发现它还有虚引用，就会在回收对象后，将这个虚引用加入引用队列，以通知应用程序对象的回收情况。</p>
 <p><strong>注意</strong></p>
-<p>软引用和弱引用都适合用来保存那些可有可无的缓存数据。如果这么做，当系统内存不足时，这些缓存就会被回收，不会导致内存溢出。而当内存资源充足时，这些缓存书籍有可以存在相当长的时间，从而起到加速系统的作用。</p>
+<p>软引用和弱引用都适合用来保存那些可有可无的缓存数据。如果这么做，当系统内存不足时，这些缓存就会被回收，不会导致内存溢出。而当内存资源充足时，这些缓存数据有可以存在相当长的时间，从而起到加速系统的作用。</p>
 
       </div>
 
@@ -615,7 +619,8 @@
       </div>
       
       <!-- <div class="content">
-        lombok常用注解@Data注解在类上，会为类的所有属性自动生成 setter/getter、equals、canEq
+        常用开发工具 - Lombok当前文章内容迁移中，如有问题，请提交 issues 谢谢~~
+常用注解@Data注解在类上
       </div> -->
     </a>
   </div>
@@ -633,12 +638,14 @@
         <div>jvm-parameter-command</div>
       </div>
       <!-- <div class="content">
-        JVM-Command内存相关
-表示设置 JVM 启动内存的最小值为 20M，必须以 M 为单位：
+        JVM-Command
 
--Xms20M
+原文地址：
+原文作者：
+本文永久链接：
 
 
+特别说明当前文章内容迁移中，如有问题，请提交 is
       </div> -->
     </a>
   </div>
@@ -771,34 +778,43 @@
 
     </main>
     <div class="footer bg-color">
-  <div class="footer-main">
-    <div class="link">
-      <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/hexo-theme-bamboo">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-      <a href="mailto:1730241541@qq.com" rel="external nofollow noreferrer">
-        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-      </a>
-      <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541" rel="external nofollow noreferrer">
-        <i class="fa fa-qq" aria-hidden="true"></i>
-      </a>
-      <a href="/atom.xml" target="_blank">
-        <i class="fa fa-rss" aria-hidden="true"></i>
-      </a>
-    </div>
-    <div class="footer-copyright">
-      Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/theme">Bamboo</a>
-    </div>
+    <div class="footer-main">
+        <div class="link">
+            <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/hexo-theme-bamboo">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:1730241541@qq.com" rel="external nofollow noreferrer">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+            <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541" rel="external nofollow noreferrer">
+                <i class="fa fa-qq" aria-hidden="true"></i>
+            </a>
+            <a href="/atom.xml" target="_blank">
+                <i class="fa fa-rss" aria-hidden="true"></i>
+            </a>
+            <a>       <!--  友盟—+ -->
+                <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279642429'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279642429%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+            </a>
+        </div>
+        <div class="footer-copyright">
+            Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a
+                    target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a>
+        </div>
 
-    Copyright © 2017 - 2021 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier">Starrier</a> All Rights Reserved  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://beian.miit.gov.cn">苏ICP备17039741号-2</a>
-    <div style="width:300px;margin:0 auto; padding:20px 0;">
+        Copyright © 2017 - 2021 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier">Starrier</a> All Rights Reserved <a
+                target="_blank" rel="noopener" href="https://beian.miit.gov.cn">苏ICP备17039741号-2</a>
+        <div style="width:300px;margin:0 auto; padding:20px 0;">
 
-      <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240" rel="external nofollow noreferrer" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
-        <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"  style="float:left;" alt="备案图标"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"
+                     style="float:left;" alt="备案图标"/>
+                <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
+        </div>
+
+        
+
     </div>
-
-  
-  </div>
 </div>
 
 

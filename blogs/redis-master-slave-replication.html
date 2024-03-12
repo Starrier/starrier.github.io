@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html>
+  
+
+
+<head>
+    <!-- 网页渲染配置，兼容配置-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <!-- 站点支持的地区-->
+    <meta http-equiv="Content-Language" content="zh-cn"/>
+    <!-- 文档渲染引擎配置 -->
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <!-- baidu verification -->
+    <meta name="baidu-site-verification" content="code-iAO71fL25c"/>
+    <meta name="baidu-site-verification" content="code-s18YXGN5UW"/>
+    <!-- sogou verification -->
+    <meta name="sogou_site_verification" content="XwNdDrJmt3"/>
+    <!-- 360 verification -->
+    <meta name="360-site-verification" content="7a8e21c6d5ab8f346e0a212052467a5a"/>
+    <!--  Binying Web console-->
+    <meta name="msvalidate.01" content="C345B6E16607367496EB0D95BABD89C8"/>
+    <!-- 添加 meta applicable-device 设备适配属性 -->
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="referrer" content="origin">
+    <!--  添加 meta keywords -->
+    
+        <meta name="keywords" content="Redis,主从复制,Starrier,Hexo,hexo,Java">
+    
+    <!--  添加 meta description-->
+    
+        <meta name="description" content="Redis 主从复制原理,Starrier own  Blog with Learning Records">
+    
+    <!--  添加 360 智能搜索摘要  -->
+    <!-- html 类型 -->
+    <meta property="og:type" content=" blog "/>
+    <!-- html image address -->
+    
+        <meta property="og:image" content="medias/1.jpg"/>
+    
+    <!-- html post date -->
+
+    
+        <meta property="og:release_date" content="Thu May 27 2021 09:48:43 GMT+0800"/>
+    
+
+    
+        <meta property="og:title" content="Redis 主从复制原理"/>
+    
+
+    
+        <meta property="og:description" content="Redis 主从复制原理"/>
+    
+
+    
+        <meta property="og:author" content="Starrier"/>
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNXETXCWEB"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-FNXETXCWEB');
+     </script>-->
+
+    <!--  tittle -->
+    <title>Redis 主从复制原理 | Starrier&#39;s Blog</title>
+    
+        
+<link rel="stylesheet" href="/js/aos/aos.css">
+
+    
+    <link rel="icon" type="image/jpeg" href="/medias/favicon.jpg">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+        <script>
+            var themeModelId = '';
+            if (themeModelId) {
+                localStorage.setItem('modelId', themeModelId);
+            }
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/gh/yuang01/live2d-widget@latest/autoload.js"></script>
+        <script>
+            var live2dOpen = eval('true') || false;
+            if (!live2dOpen) {
+                localStorage.setItem('waifu-display', 1609323474481);
+            }
+        </script>
+    
+    
+<link rel="stylesheet" href="https://cdn.boomcdn.com/libs/animate-css/3.7.0/animate.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/js/fancybox/jquery.fancybox.min.css">
+
+    
+    
+    <style>
+        @media (max-width: 992px) {
+            #waifu {
+                display: none;
+            }
+        }
+    </style>
+    <link rel="preload" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="font"
+          type="font/woff2" crossorigin>
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            } else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    
+    <script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b2fa5532f3236ede096152637a3f1c32";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+    <!-- 延迟加载图像 -->
+    <!--<script src="lazysizes.min.js" async></script>-->
+    <!--360 auto submit-->
+    <script>
+        (function () {
+            var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+        })();
+    </script>
+<meta name="generator" content="Hexo 5.3.0"><link rel="stylesheet" href="/css/prism-vs.css" type="text/css"></head>
+
+  <script src="https://pagecdn.io/lib/jquery/3.5.1/jquery.js"></script>
+  <script src="https://pagecdn.io/lib/vue/2.6.11/vue.js"></script>
+  <body>
+    <!-- 判断是否为黑夜模式 -->
+    <script>
+      let isDark = JSON.parse(localStorage.getItem('dark')) || JSON.parse('false');
+
+      if (isDark) {
+        $(document.body).addClass('darkModel');
+      }
+    </script>
+
+    <header class="header bg-color"
+  style="position: fixed; 
+  left: 0; top: 0; z-index: 10;width: 100%;"
+>
+  <div class="header-content">
+    <div class="bars">
+      <div id="appDrawer" class="sidebar-image">
+    <i class="fa fa-bars" aria-hidden="true" @click="showDialogDrawer"></i>
+    <transition name="fade">
+        <div class="drawer-box_mask" v-cloak style="display: none;" v-show="visible" @click.self="cancelDialogDrawer">
+        </div>
+    </transition>
+    <div class="drawer-box" :class="{'active': visible}">
+        <div class="drawer-box-head bg-color">
+            <img class="drawer-box-head_logo" src="/medias/logo.jpg" alt="logo">
+            <h3 class="drawer-box-head_title">Starrier&#39;s Blog</h3>
+            <h3 class="drawer-box-head_desc">Starrier own  Blog with Learning Records</h3>
+        </div>
+        <div class="drawer-box-content">
+            <ul class="drawer-box-content_menu">
+                
+                    <li class="drawer-box-content_item">
+                        <a href="/" class="menu-item-link">
+                            
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                            
+                            <span>Home</span>
+                        </a>
+                    </li>
+                
+                    <li class="drawer-box-content_item">
+                        <a href="/archives" class="menu-item-link">
+                            
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                            
+                            <span>Archives</span>
+                        </a>
+                    </li>
+                
+                    <li class="drawer-box-content_item">
+                        <a href="/tags" class="menu-item-link">
+                            
+                                <i class="fa fa-tags" aria-hidden="true"></i>
+                            
+                            <span>Tags</span>
+                        </a>
+                    </li>
+                
+                    <li class="drawer-box-content_item">
+                        <a href="/categories" class="menu-item-link">
+                            
+                                <i class="fa fa-bookmark" aria-hidden="true"></i>
+                            
+                            <span>Categories</span>
+                        </a>
+                    </li>
+                
+                    <li class="drawer-box-content_item">
+                        <a href="/about" class="menu-item-link">
+                            
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            
+                            <span>About</span>
+                        </a>
+                    </li>
+                
+                    <li class="drawer-box-content_item">
+                        <a href="/friends" class="menu-item-link">
+                            
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            
+                            <span>link</span>
+                        </a>
+                    </li>
+                
+                <li class="drawer-box-content_item">
+                    <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier/">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        <span>Github</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    var body = document.body || document.documentElement || window;
+    var vm = new Vue({
+        el: '#appDrawer',
+        data: {
+            visible: false,
+            top: 0,
+        },
+        computed: {},
+        mounted() {
+        },
+        methods: {
+            showDialogDrawer() {
+                this.visible = true;
+                // 防止页面滚动，只能让弹框滚动
+                this.top = $(document).scrollTop()
+                body.style.cssText = 'width: 100%; height: 100%; position: fixed; top: -' + this.top + 'px; left: 0; overflow: hidden;';
+            },
+            cancelDialogDrawer() {
+                this.visible = false;
+                body.removeAttribute('style');
+                $(document).scrollTop(this.top)
+            }
+        },
+        created() {
+        }
+    })
+</script>
+
+    </div>
+    <div class="blog-title" id="author-avatar">
+      <div class="avatar">
+        <img src="/medias/logo.jpg" alt="logo">
+      </div>
+      <a href="/" class="logo">Starrier&#39;s Blog</a>
+    </div>
+    <nav class="navbar">
+      <ul class="menu">
+        
+          <li class="menu-item">
+            <a href="/" class="menu-item-link">
+              
+                <i class="fa fa-home" aria-hidden="true"></i>
+              
+              <span>Home</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/archives" class="menu-item-link">
+              
+                <i class="fa fa-archive" aria-hidden="true"></i>
+              
+              <span>Archives</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/tags" class="menu-item-link">
+              
+                <i class="fa fa-tags" aria-hidden="true"></i>
+              
+              <span>Tags</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/categories" class="menu-item-link">
+              
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+              
+              <span>Categories</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/about" class="menu-item-link">
+              
+                <i class="fa fa-user" aria-hidden="true"></i>
+              
+              <span>About</span>
+            </a>
+          </li>
+        
+          <li class="menu-item">
+            <a href="/friends" class="menu-item-link">
+              
+                <i class="fa fa-link" aria-hidden="true"></i>
+              
+              <span>link</span>
+            </a>
+          </li>
+        
+      </ul>
+      
+        <div class="dark">
+  <div class="dark-content">
+    <i class="fa fa-moon-o" aria-hidden="true"></i>
+    <!-- <span>关灯</span> -->
+  </div>
+  
+</div>
+
+<script>
+  $(function() {
+    let isDark = JSON.parse(localStorage.getItem('dark'))  || JSON.parse('false');
+    if (isDark) {
+      $(".dark-content").replaceWith(
+          `
+          <div class='dark-content'>
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+          </div>
+          `
+        );
+    }
+    $('.dark').click(function() {
+      if ($(document.body).is('.darkModel')) {
+        $(document.body).removeClass('darkModel');
+        localStorage.setItem('dark', false);
+        $(".dark-content").replaceWith(
+          `
+          <div class='dark-content'>
+            <i class="fa fa-moon-o" aria-hidden="true"></i>
+          </div>
+          `
+        );
+      } else {
+        $(document.body).addClass('darkModel');
+        localStorage.setItem('dark', true);
+        $(".dark-content").replaceWith(
+          `
+          <div class='dark-content'>
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+          </div>
+          `
+        );
+      }
+    })
+  })
+</script>
+        
+      
+        <div id="appSearch">
+  <div class="search"  @click="showDialog()"><i class="fa fa-search" aria-hidden="true"></i></div>
+  <transition name="fade">
+    <div class="message-box_wrapper" style="display: none;" v-cloak v-show="dialogVisible" @click.self="cancelDialogVisible()">
+      <div class="message-box animated bounceInDown">
+        <div class="close" style="overflow: hidden;">
+          <i class="fa fa-close" aria-hidden="true" style="float:right;" @click.self="cancelDialogVisible()"></i>
+        </div>
+        <h2>
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <span class="title">Search</span>
+          <!-- <i class="fa fa-close" style="float:right;" aria-hidden="true" @click.self="cancelDialogVisible()"></i> -->
+        </h2>
+        <form class="site-search-form">
+          <input type="text"
+            placeholder="Please enter keywords"
+            id="local-search-input" 
+            @click="getSearchFile()"
+            class="st-search-input"
+            v-model="searchInput"
+          />
+        </form>
+        <div class="result-wrapper">
+          <div id="local-search-result" class="local-search-result-cls"></div>
+        </div>
+      </div>
+    </div>
+  </transition>
+</div>
+<script src="/js/local_search.js"></script>
+<script>
+  var body = document.body || document.documentElement || window;
+  var vm = new Vue({
+    el: '#appSearch',
+    data: {
+      dialogVisible: false,
+      searchInput: '',
+      top: 0,
+    },
+    computed: {
+    },
+    mounted() {
+    },
+    methods: {
+      showDialog() {
+        this.dialogVisible = true;
+        // 防止页面滚动，只能让弹框滚动
+        this.top = $(document).scrollTop()
+        body.style.cssText = 'overflow: hidden;';
+      },
+      getSearchFile() {
+        if (!this.searchInput) {
+          getSearchFile("/search.xml");
+        }
+      },
+      cancelDialogVisible() {
+        this.dialogVisible = false;
+        body.removeAttribute('style');
+        $(document).scrollTop(this.top)
+      },
+    },
+    created() {}
+  })
+</script>
+<!-- 解决刷新页面闪烁问题，可以在元素上添加display: none, 或者用vue.extend方法，详情：https://blog.csdn.net/qq_31393401/article/details/81017912 -->
+<!-- 下面是搜索基本写法 -->
+<!-- <script type="text/javascript" id="local.search.active">
+  var inputArea = document.querySelector("#local-search-input");
+  inputArea.onclick   = function(){ getSearchFile(); this.onclick = null }
+  inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
+</script> -->
+
+      
+
+    </nav>
+  </div>
+
+  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier/" class="github-corner color-primary" aria-label="View source on GitHub"><svg width="70" height="60" viewBox="0 0 250 250" style="fill:#1C1C1C; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  
+    <div id="he-plugin-simple"></div>
+    <script>
+      WIDGET = {
+        CONFIG: {
+          "modules": "012",
+          "background": 5,
+          "tmpColor": "4A4A4A",
+          "tmpSize": 16,
+          "cityColor": "4A4A4A",
+          "citySize": 16,
+          "aqiSize": 16,
+          "weatherIconSize": 24,
+          "alertIconSize": 18,
+          "padding": "10px 10px 10px 10px",
+          "shadow": "1",
+          "language": "auto",
+          "borderRadius": 5,
+          "fixed": "false",
+          "vertical": "middle",
+          "horizontal": "center",
+          "key": "2784dd3fcb1e4f0f9a9b579bf69641f2"
+        }
+      }
+    </script>
+    <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+    
+</header>
+
+    <div class="bg-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"></div>
+    <main class="main" style="margin-top: 60px;">
+      
+
+
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/simple/15.jpg" style="background-repeat: no-repeat; background-size: cover; 
+  background-position: center center;position: relative;">
+  <div class="post-detail-header-mask"></div>
+  <canvas id="header_canvas"style="position:absolute;bottom:0"></canvas>
+  
+    <span class="title">Redis 主从复制原理</span>
+  
+</div>
+
+<script src="/js/bubble/bubble.js"></script>
+<div class="row justify-position">
+  <div class="main-content">
+    <article class="post post-detail">
+      <!-- 文章是否置顶-->
+      
+        <!-- 文章编辑的时间-->
+      
+      <div class="post-meta">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <span class="post-time">2021-05-27</span>
+      </div>
+      
+      <!--  文章的 tag 标签 ， 分类-->
+      <div class="post-tags-categories">
+        
+        <div class="tags">
+          <i class="iconfont icontag"></i>
+          
+            <a href="/tags/Redis/" class="">
+              Redis
+            </a>
+          
+        </div>
+
+
+        
+        
+      </div>
+
+      <!-- 文章内容 -->
+      <div class="post-content">
+        <h1 id="Redis-主从复制原理"><a href="#Redis-主从复制原理" class="headerlink" title="Redis 主从复制原理"></a>Redis 主从复制原理</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<p>在 <code>Redis</code> 的持久化中曾提到，<code>Redis</code> 高可用的方案包括持久化、主从复制（及读写分离）、哨兵和集群。其中持久化侧重解决的是 <code>Redis</code> 数据的单机备份问题（从内存到硬盘的备份）；而主从复制则侧重解决数据的多机热备。此外，主从复制还可以实现负载均衡和故障恢复。</p>
+<p><code>Redis</code> 的主从复制，主要有两种方式</p>
+<ul>
+<li>通过在配置文件 <code>redis.conf</code> 中设置 <code>slaveof</code> 方式（永久）</li>
+<li>直接在客户端执行 <code>slaveof ip port</code> 的方式（临时）；</li>
+</ul>
+<h2 id="主从一致性原理"><a href="#主从一致性原理" class="headerlink" title="主从一致性原理"></a>主从一致性原理</h2><h3 id="全量复制"><a href="#全量复制" class="headerlink" title="全量复制"></a>全量复制</h3><p>使用消息队列检测消息是否丢失时，我们无法处理不知道消息已经丢失的情况。一般而言，一个新的系统刚刚上线，各方面都不太稳定，需要一个磨合期，这个时候，特别需要监控到你的系统中是否有消息丢失的情况。</p>
+<p>分布式链路追踪系统，使用类似的追踪系统可以很方便地追踪每一条消息。如果没有这样的追踪系统，也可以使用其他方式，来检查是否有消息丢失的情况。</p>
+<p>我们可以利用消息队列的有序性来验证是否有消息丢失。原理非常简单，在 <code>Producer</code> 端，我们给每个发出的消息附加一个连续递增的序号，然后在 <code>Consumer</code> 端来检查这个序号的连续性。如果没有消息丢失，<code>Consumer</code> 收到消息的序号必然是连续递增的，或者说收到的消息，其中的序号必然是上一条消息的序号 +1。如果检测到序号不连续，那就是丢消息了。还可以通过缺失的序号来确定丢失的是哪条消息，方便进一步排查原因。</p>
+<p>大多数消息队列的客户端都支持拦截器机制，你可以利用这个拦截器机制，在 <code>Producer</code> 发送消息之前的拦截器中将序号注入到消息中，在 <code>Consume</code>r 收到消息的拦截器中检测序号的连续性，这样实现的好处是消息检测的代码不会侵入到你的业务代码中，待你的系统稳定后，也方便将这部分检测的逻辑关闭或者删除。如果是在一个分布式系统中实现这个检测方法，有几个问题需要你注意。首先，像 <code>Kafka</code> 和 <code>RocketMQ</code> 这样的消息队列，它是不保证在 <code>Topic</code> 上的严格顺序的，只能保证分区上的消息是有序的，所以我们在发消息的时候必须要指定分区，并且，在每个分区单独检测消息序号的连续性。如果你的系统中 <code>Producer</code> 是多实例的，由于并不好协调多个 <code>Producer</code> 之间的发送顺序，所以也需要每个 <code>Producer</code> 分别生成各自的消息序号，并且需要附加上 <code>Producer</code> 的标识，在 <code>Consumer</code> 端按照每个 <code>Producer</code> 分别来检测序号的连续性。<code>Consumer</code> 实例的数量最好和分区数量一致，做到 <code>Consumer</code> 和分区一一对应，这样会比较方便地在 <code>Consumer</code> 内检测消息序号的连续性。</p>
+<h2 id="一-主从复制-概述"><a href="#一-主从复制-概述" class="headerlink" title="一. 主从复制 - 概述"></a>一. 主从复制 - 概述</h2><h3 id="主从复制"><a href="#主从复制" class="headerlink" title="主从复制"></a>主从复制</h3><p>是指将一台 <code>Redis</code> 服务器的数据，复制到其他的 <code>Redis</code> 服务器。前者称为主节点(master)，后者称为从节点(slave)；数据的复制是单向的，只能由主节点到从节点。</p>
+<p>默认情况下，每台 <code>Redis</code> 服务器都是主节点；且一个主节点可以有多个从节点(或没有从节点)，但一个从节点只能有一个主节点。</p>
+<h3 id="主从复制的作用"><a href="#主从复制的作用" class="headerlink" title="主从复制的作用"></a>主从复制的作用</h3><h4 id="1-数据冗余："><a href="#1-数据冗余：" class="headerlink" title="1. 数据冗余："></a>1. 数据冗余：</h4><p>主从复制实现了数据的热备份，是持久化之外的一种数据冗余方式。</p>
+<h4 id="2-故障恢复："><a href="#2-故障恢复：" class="headerlink" title="2. 故障恢复："></a>2. 故障恢复：</h4><p>当主节点出现问题时，可以由从节点提供服务，实现快速的故障恢复；实际上是一种服务的冗余。</p>
+<h4 id="3-负载均衡："><a href="#3-负载均衡：" class="headerlink" title="3. 负载均衡："></a>3. 负载均衡：</h4><p>在主从复制的基础上，配合读写分离，可以由主节点提供写服务，由从节点提供读服务（即写Redis数据时应用连接主节点，读Redis数据时应用连接从节点），分担服务器负载；尤其是在写少读多的场景下，通过多个从节点分担读负载，可以大大提高Redis服务器的并发量。</p>
+<h4 id="4-高可用基石："><a href="#4-高可用基石：" class="headerlink" title="4. 高可用基石："></a>4. 高可用基石：</h4><p>除了上述作用以外，主从复制还是哨兵和集群能够实施的基础，因此说主从复制是Redis高可用的基础。</p>
+<h2 id="主从复制-原理"><a href="#主从复制-原理" class="headerlink" title="主从复制 - 原理"></a>主从复制 - 原理</h2><p>主从复制过程大体可以分为3个阶段：</p>
+<ul>
+<li>连接建立阶段（即准备阶段）</li>
+<li>数据同步阶段</li>
+<li>命令传播阶段</li>
+</ul>
+<h3 id="连接建立"><a href="#连接建立" class="headerlink" title="连接建立"></a>连接建立</h3><p>1：保存主节点信息</p>
+<p>从节点服务器内部维护了两个字段，即masterhost和masterport字段，用于存储主节点的ip和port信息。</p>
+<p>需要注意的是，slaveof是异步命令，从节点完成主节点ip和port的保存后，向发送slaveof命令的客户端直接返回OK，实际的复制操作在这之后才开始进行。</p>
+<p>2：建立 <code>socket</code>连接</p>
+<p>从节点每秒1次调用复制定时函数replicationCron()，如果发现了有主节点可以连接，便会根据主节点的ip和port，创建socket连接。如果连接成功，则：</p>
+<p>从节点：为该socket建立一个专门处理复制工作的文件事件处理器，负责后续的复制工作，如接收RDB文件、接收命令传播等。</p>
+<p>主节点：接收到从节点的socket连接后（即accept之后），为该socket创建相应的客户端状态，并将从节点看做是连接到主节点的一个客户端，后面的步骤会以从节点向主节点发送命令请求的形式来进行。</p>
+<p>3：发送ping命令</p>
+<p>从节点成为主节点的客户端之后，发送ping命令进行首次请求，目的是：检查socket连接是否可用，以及主节点当前是否能够处理请求。</p>
+<p>从节点发送ping命令后，可能出现3种情况：</p>
+<p>（1）返回pong：说明socket连接正常，且主节点当前可以处理请求，复制过程继续。</p>
+<p>（2）超时：一定时间后从节点仍未收到主节点的回复，说明socket连接不可用，则从节点断开socket连接，并重连。</p>
+<p>（3）返回pong以外的结果：如果主节点返回其他结果，如正在处理超时运行的脚本，说明主节点当前无法处理命令，则从节点断开socket连接，并重连。</p>
+<p>4：身份验证</p>
+<p>如果从节点中设置了masterauth选项，则从节点需要向主节点进行身份验证；没有设置该选项，则不需要验证。从节点进行身份验证是通过向主节点发送auth命令进行的，auth命令的参数即为配置文件中的masterauth的值。</p>
+<p>如果主节点设置密码的状态，与从节点masterauth的状态一致（一致是指都存在，且密码相同，或者都不存在），则身份验证通过，复制过程继续；如果不一致，则从节点断开socket连接，并重连。</p>
+<h3 id="数据同步阶段"><a href="#数据同步阶段" class="headerlink" title="数据同步阶段"></a>数据同步阶段</h3><p>主从节点之间的连接建立以后，便可以开始进行数据同步，该阶段可以理解为从节点数据的初始化。具体执行的方式是：从节点向主节点发送 <code>psync</code> 命令（Redis2.8以前是sync命令），开始同步。</p>
+<p>数据同步阶段是主从复制最核心的阶段，根据主从节点当前状态的不同，可以分为全量复制和部分复制，下面会有一章专门讲解这两种复制方式以及 <code>psync</code> 命令的执行过程，这里不再详述。</p>
+<p>需要注意的是，在数据同步阶段之前，从节点是主节点的客户端，主节点不是从节点的客户端；而到了这一阶段及以后，主从节点互为客户端。原因在于：在此之前，主节点只需要响应从节点的请求即可，不需要主动发请求，而在数据同步阶段和后面的命令传播阶段，主节点需要主动向从节点发送请求（如推送缓冲区中的写命令），才能完成复制。</p>
+<h3 id="命令传播阶段"><a href="#命令传播阶段" class="headerlink" title="命令传播阶段"></a>命令传播阶段</h3><p>数据同步阶段完成后，主从节点进入命令传播阶段；在这个阶段主节点将自己执行的写命令发送给从节点，从节点接收命令并执行，从而保证主从节点数据的一致性。</p>
+<p>在命令传播阶段，除了发送写命令，主从节点还维持着心跳机制：<code>PING和REPLCONF ACK</code>。由于心跳机制的原理涉及部分复制，因此将在介绍了部分复制的相关内容后单独介绍该心跳机制。</p>
+<p>延迟与不一致</p>
+<p>需要注意的是，命令传播是异步的过程，即主节点发送写命令后并不会等待从节点的回复；因此实际上主从节点之间很难保持实时的一致性，延迟在所难免。数据不一致的程度，与主从节点之间的网络状况、主节点写命令的执行频率、以及主节点中的repl-disable-tcp-nodelay配置等有关。</p>
+<p><code>repl-disable-tcp-nodelay no</code>：</p>
+<p>该配置作用于命令传播阶段，控制主节点是否禁止与从节点的 <code>TCP_NODELAY</code>；默认 <code>no</code>，即不禁止 <code>TCP_NODELAY</code>。当设置为 <code>yes</code> 时，<code>TCP</code> 会对包进行合并从而减少带宽，但是发送的频率会降低，从节点数据延迟增加，一致性变差；具体发送频率与 <code>Linux</code> 内核的配置有关，默认配置为40ms。当设置为no时，TCP会立马将主节点的数据发送给从节点，带宽增加但延迟变小。</p>
+<p>一般来说，只有当应用对Redis数据不一致的容忍度较高，且主从节点之间网络状况不好时，才会设置为yes；多数情况使用默认值no。</p>
+<p>数据同步阶段</p>
+<blockquote>
+<p>全量复制和部分复制</p>
+</blockquote>
+<h3 id="全量复制-1"><a href="#全量复制-1" class="headerlink" title="全量复制"></a>全量复制</h3><p>Redis通过psync命令进行全量复制的过程如下：</p>
+<p>（1）从节点判断无法进行部分复制，向主节点发送全量复制的请求；或从节点发送部分复制的请求，但主节点判断无法进行部分复制；具体判断过程需要在讲述了部分复制原理后再介绍。</p>
+<p>（2）主节点收到全量复制的命令后，执行 <code>bgsave</code>，在后台生成 <code>RDB</code> 文件，并使用一个缓冲区（称为复制缓冲区）记录从现在开始执行的所有写命令</p>
+<p>（3）主节点的 <code>bgsave</code> 执行完成后，将 <code>RDB</code> 文件发送给从节点；从节点首先清除自己的旧数据，然后载入接收的 <code>RDB</code> 文件，将数据库状态更新至主节点执行 <code>bgsave</code> 时的数据库状态</p>
+<p>（4）主节点将前述复制缓冲区中的所有写命令发送给从节点，从节点执行这些写命令，将数据库状态更新至主节点的最新状态</p>
+<p>（5）如果从节点开启了 <code>AOF</code>，则会触发 <code>bgrewriteaof</code> 的执行，从而保证 <code>AOF</code> 文件更新至主节点的最新状态</p>
+<p>从节点在载入主节点的数据之前要先将老数据清除；从节点在同步完数据后，调用了 <code>bgrewriteaof</code>。</p>
+<p>通过全量复制的过程可以看出，全量复制是非常重型的操作：</p>
+<p>（1）主节点通过 <code>bgsave</code> 命令 <code>fork</code> 子进程进行 <code>RDB</code> 持久化，该过程是非常消耗 <code>CPU</code>、内存(页表复制)、硬盘 <code>IO</code> 的；关于 <code>bgsave</code> 的性能问题，可以参考 深入学习Redis（2）：持久化</p>
+<p>（2）主节点通过网络将 <code>RDB</code> 文件发送给从节点，对主从节点的带宽都会带来很大的消耗</p>
+<p>（3）从节点清空老数据、载入新 <code>RDB</code> 文件的过程是阻塞的，无法响应客户端的命令；如果从节点执行 <code>bgrewriteaof</code>，也会带来额外的消耗</p>
+<h3 id="部分复制"><a href="#部分复制" class="headerlink" title="部分复制"></a>部分复制</h3><p>（1）复制偏移量<br>主节点和从节点分别维护一个复制偏移量（offset），代表的是主节点向从节点传递的字节数；主节点每次向从节点传播N个字节数据时，主节点的offset增加N；从节点每次收到主节点传来的N个字节数据时，从节点的offset增加N。</p>
+<p>offset用于判断主从节点的数据库状态是否一致：如果二者offset相同，则一致；如果offset不同，则不一致，此时可以根据两个offset找出从节点缺少的那部分数据。例如，如果主节点的offset是1000，而从节点的offset是500，那么部分复制就需要将offset为501-1000的数据传递给从节点。而offset为501-1000的数据存储的位置，就是下面要介绍的复制积压缓冲区。</p>
+<p>（2）复制积压缓冲区<br>复制积压缓冲区是由主节点维护的、固定长度的、先进先出(FIFO)队列，默认大小1MB；当主节点开始有从节点时创建，其作用是备份主节点最近发送给从节点的数据。注意，无论主节点有一个还是多个从节点，都只需要一个复制积压缓冲区。</p>
+<p>在命令传播阶段，主节点除了将写命令发送给从节点，还会发送一份给复制积压缓冲区，作为写命令的备份；除了存储写命令，复制积压缓冲区中还存储了其中的每个字节对应的复制偏移量（offset）。由于复制积压缓冲区定长且是先进先出，所以它保存的是主节点最近执行的写命令；时间较早的写命令会被挤出缓冲区。</p>
+<p>由于该缓冲区长度固定且有限，因此可以备份的写命令也有限，当主从节点offset的差距过大超过缓冲区长度时，将无法执行部分复制，只能执行全量复制。反过来说，为了提高网络中断时部分复制执行的概率，可以根据需要增大复制积压缓冲区的大小(通过配置repl-backlog-size)；例如如果网络中断的平均时间是60s，而主节点平均每秒产生的写命令(特定协议格式)所占的字节数为100KB，则复制积压缓冲区的平均需求为6MB，保险起见，可以设置为12MB，来保证绝大多数断线情况都可以使用部分复制。</p>
+<p>从节点将offset发送给主节点后，主节点根据offset和缓冲区大小决定能否执行部分复制：</p>
+<p>如果offset偏移量之后的数据，仍然都在复制积压缓冲区里，则执行部分复制；<br>如果offset偏移量之后的数据已不在复制积压缓冲区中（数据已被挤出），则执行全量复制。<br>（3）服务器运行ID(runid)<br>每个Redis节点(无论主从)，在启动时都会自动生成一个随机ID(每次启动都不一样)，由40个随机的十六进制字符组成；runid用来唯一识别一个Redis节点。通过info Server命令，可以查看节点的runid：</p>
+<p>主从节点初次复制时，主节点将自己的runid发送给从节点，从节点将这个runid保存起来；当断线重连时，从节点会将这个runid发送给主节点；主节点根据runid判断能否进行部分复制：</p>
+<p>如果从节点保存的runid与主节点现在的runid相同，说明主从节点之前同步过，主节点会继续尝试使用部分复制(到底能不能部分复制还要看offset和复制积压缓冲区的情况)；<br>如果从节点保存的runid与主节点现在的runid不同，说明从节点在断线前同步的Redis节点并不是当前的主节点，只能进行全量复制。</p>
+
+      </div>
+
+       <!-- 文章版权信息  -->
+      
+        <div class="copyright">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+    <strong>author:  </strong>Starrier Organization</a>
+    </li>
+    <li class="post-copyright-link">
+    <strong>link:  </strong>
+    <a href="/blogs/redis-master-slave-replication.html" target="_blank" title="Redis 主从复制原理">https://starrier.starrier.org/blogs/redis-master-slave-replication.html</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>Copyright notice:   </strong>
+      All articles on this website, unless otherwise stated, adopt <a rel="license external nofollow noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="MIT">MIT</a>
+      reprint polocy. If reproduced, please indicate source!
+    </li>
+  </ul>
+<div>
+      
+    </article>
+    <!-- 上一篇文章和下一篇文章 -->
+    
+      
+<div class="post-nav">
+
+
+
+  
+  <div class="post-nav-prev post-nav-item">
+    <div class="post-nav-img lazyload" data-original="https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/simple/3.jpg" style="background-size: cover; 
+      background-position: center center;">
+    </div>
+    <a href="/blogs/java-thread-threadlocal.html" class="post-nav-link">
+      <div class="title">
+        <i class="fa fa-angle-left"></i> Prev:
+        <div>java-thread-threadlocal</div>
+      </div>
+      
+      <!-- <div class="content">
+        深入理解 java 多线程 - ThreadLocal
+
+原文地址：
+原文作者：
+本文永久链接：
+
+
+特别说明当前文章内
+      </div> -->
+    </a>
+  </div>
+
+
+
+  
+  <div class="post-nav-next post-nav-item">
+    <div class="post-nav-img lazyload" data-original="https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/simple/13.jpg" style="background-size: cover; 
+      background-position: center center;">
+    </div>
+    <a href="/blogs/design-anti-pattern.html" class="post-nav-link">
+      <div class="title">
+        Next: <i class="fa fa-angle-right"></i>
+        <div>反模式</div>
+      </div>
+      <!-- <div class="content">
+        反模式
+
+原文地址：
+原文作者：
+本文永久链接：
+
+
+特别说明当前文章内容迁移中，如有问题，请提交 issues 谢谢 
+      </div> -->
+    </a>
+  </div>
+
+</div>
+
+    
+
+
+    <!-- 打赏 -->
+    
+
+    <!-- 分享 -->
+    
+
+    <!-- 评论 -->
+      
+        <div id="myComment">
+          
+        </div>
+      
+  </div>
+
+  
+    <div class="toc-aside">
+      <div class="toc-main">
+        <div class="toc-aside-title">
+          <i class="fa fa-list-ul" aria-hidden="true"></i><span>Contents of this article</span>
+          <div class="toc-open-close">Contents of this article</div>
+        </div>
+        <div class="toc-content">
+          <link href="/js/tocbot/tocbot.css" rel="stylesheet">
+<script src="/js/tocbot/tocbot.min.js"></script>
+<div class="toc"></div>
+
+<script>
+  if ($('.toc').length > 0) {
+    var headerEl = 'h2, h3, h4',  //headers 
+      content = '.post-detail',//文章容器
+      idArr = {};  //标题数组以确定是否增加索引id
+      //add #id
+
+    $(content).children(headerEl).each(function () {
+      //去除空格以及多余标点
+      var headerId = $(this).text().replace(/[\s|\~|`|\!|\@|\#|\$|\%|\^|\&|\*|\(|\)|\_|\+|\=|\||\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?|\：|\，|\。]/g, '');
+
+      headerId = headerId.toLowerCase();
+      if (idArr[headerId]) {
+        //id已经存在
+        $(this).attr('id', headerId + '-' + idArr[headerId]);
+        idArr[headerId]++;
+      }
+      else {
+        //id未存在
+        idArr[headerId] = 1;
+        $(this).attr('id', headerId);
+      }
+    });
+
+    tocbot.init({
+      // Where to render the table of contents.
+      tocSelector: '.toc',
+      // Where to grab the headings to build the table of contents.
+      contentSelector: content,
+      // Which headings to grab inside of the contentSelector element.
+      headingSelector: headerEl,
+      scrollSmooth: true,
+      scrollSmoothOffset: -80,
+      headingsOffset: 130,
+      positionFixedSelector: '.toc-main',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
+    });
+  }
+
+</script>
+
+<style>
+.is-position-fixed {
+  position:fixed !important;
+  top: 64px;
+}
+.toc-main ul {
+  counter-reset: show-list;
+}
+.toc-main ul li::before {
+  content: counter(item)".";
+  display: block;
+  position: absolute;
+  left: 12px;
+  top:0;
+}
+.toc > .toc-list {
+  padding-left: 35px;
+}
+.toc>.toc-list li {
+  list-style: decimal;
+}
+.toc-list {
+  padding-left: 25px;
+}
+</style>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script>
+      let openOrCloseBtn = $('.toc-aside .toc-aside-title .toc-open-close');
+      let open = eval('' || 'true');
+      openOrCloseBtn.click(function() {
+        if (open === true) {
+          $(".toc-aside").css({'width': 0, 'padding': 0});
+          $(".toc-content").css({'width': 0});
+          $(".toc-aside-title span, .toc-aside-title i").css({'display': 'none'});
+          $(".main-content").css({'width': '75%', 'margin': '10px auto'});
+          open = false;
+        } else {
+          $(".toc-aside").css({'width': '300px', 'padding': '0 10px'});
+          $(".toc-content").css({'width': '300px'});
+          $(".toc-aside-title span, .toc-aside-title i").css({'display': 'inline-block'});
+          $(".main-content").css({'width': '65%', 'margin-right': '10px', 'margin-left': 'calc(35% - 350px)'});
+          open = true;
+        }
+      });
+    </script>
+  
+</div>
+
+    </main>
+    <div class="footer bg-color">
+    <div class="footer-main">
+        <div class="link">
+            <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/hexo-theme-bamboo">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:1730241541@qq.com" rel="external nofollow noreferrer">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+            <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541" rel="external nofollow noreferrer">
+                <i class="fa fa-qq" aria-hidden="true"></i>
+            </a>
+            <a href="/atom.xml" target="_blank">
+                <i class="fa fa-rss" aria-hidden="true"></i>
+            </a>
+            <a>       <!--  友盟—+ -->
+                <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279642429'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279642429%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+            </a>
+        </div>
+        <div class="footer-copyright">
+            Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a
+                    target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a>
+        </div>
+
+        Copyright © 2017 - 2021 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier">Starrier</a> All Rights Reserved <a
+                target="_blank" rel="noopener" href="https://beian.miit.gov.cn">苏ICP备17039741号-2</a>
+        <div style="width:300px;margin:0 auto; padding:20px 0;">
+
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"
+                     style="float:left;" alt="备案图标"/>
+                <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
+        </div>
+
+        
+
+    </div>
+</div>
+
+
+    
+      <div class="goTop top-btn-color border-color">
+  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+</div>
+<script src="/js/goTop.js"></script>
+    
+
+    
+
+    <!-- 图片放大 -->
+    
+      <script src="/js/fancybox/jquery.fancybox.min.js"></script>
+      <script src="/js/wrapImage.js"></script>
+    
+
+    <!-- 爱心点击 -->
+    
+      
+        <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 999; pointer-events: none;" ></canvas>
+        <script src="https://pagecdn.io/lib/anime/3.2.0/anime.min.js"></script>
+        <script src="/js/cursor/explosion.min.js"></script>
+      
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+
+    <script type="text/javascript" size="100" alpha='0.4' zIndex="-1" src="/js/ribbon.min.js"></script>
+    
+      <script src="/js/aos/aos.js"></script>
+      <script>
+        // https://github.com/michalsnik/aos
+        const themeOffset = parseInt('120') || 120;
+        const themeDelay = parseInt('0')|| 0;
+        const themeDuration = parseInt('400') || 400;
+        const themeEasing = 'ease' || 'ease';
+        const themeOnce = eval('true') || false;
+        const themeMirror = eval('false') || false;
+        const themeAnchorPlacement = 'top-bottom' || 'top-bottom';
+        AOS.init({
+          // Global settings:
+          disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+          startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+          initClassName: 'aos-init', // class applied after initialization
+          animatedClassName: 'aos-animate', // class applied on animation
+          useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+          disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+          debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+          throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+          // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+          offset: themeOffset, // offset (in px) from the original trigger point
+          delay: themeDelay, // values from 0 to 3000, with step 50ms
+          duration: themeDuration, // values from 0 to 3000, with step 50ms
+          easing: themeEasing, // default easing for AOS animations
+          once: themeOnce, // whether animation should happen only once - while scrolling down
+          mirror: themeMirror, // whether elements should animate out while scrolling past them
+          anchorPlacement: themeAnchorPlacement, // defines which position of the element regarding to window should trigger the animation
+
+        });
+      </script>
+    
+
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/v-plugs-ayu/lib/ayu.css">
+<script src="https://cdn.jsdelivr.net/npm/v-plugs-ayu/lib/ayu.umd.min.js"></script>
+<div id="appCopy">
+</div>
+<script>
+  var vm = new Vue({
+    el: '#appCopy',
+    data: {
+    },
+    computed: {
+    },
+    mounted() {
+      const that = this;
+      //  监听 ctrl + c事件  
+      $(document).unbind('keypress').bind('keypress', function (e) {
+        if (e.ctrlKey && e.keyCode == 67) {
+          doSomething();
+          // 返回false, 防止重复触发copy事件  
+          return false;
+        }
+      })
+
+      // 鼠标右键的复制事件  
+      $(document).unbind('copy').bind('copy', function (e) {
+        doSomething();
+        // console.log('右键复制 监听成功');
+      });
+
+      function doSomething() {
+        that.$notify({
+          title: "成功",
+          content: "复制成功了哦",
+          type: 'success'
+        })
+        // console.log('ctrl + c 监听成功');  
+      }
+    },
+    methods: {
+    },
+    created() { }
+  })
+</script>
+    
+
+    <!-- 输入框打字特效 -->
+    
+      <script src="/js/activate-power-mode.js"></script>
+      <script>
+          POWERMODE.colorful = true;  // 打开随机颜色特效
+          POWERMODE.shake = false;    // 关闭输入框抖动
+          document.body.addEventListener('input', POWERMODE);//监听打字事件
+      </script>
+    
+
+    <!-- markdown代码一键复制功能 -->
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+    <script>
+      !function (e, t, a) {
+        var copy = 'copy';
+        /* code */
+        var initCopyCode = function(){
+          var copyHtml = '';
+          copyHtml += '<button class="btn-copy" data-clipboard-snippet="" style="position:absolute;top:0;right:0;z-index:1;">';
+          copyHtml += '<i class="fa fa-copy"></i><span>' + copy + '</span>';
+          copyHtml += '</button>';
+          $(".post-detail pre").wrap("<div class='codeBox' style='position:relative;width:100%;'></div>")
+          $(".post-detail pre").before(copyHtml);
+          new ClipboardJS('.btn-copy', {
+              target: function(trigger) {
+                  return trigger.nextElementSibling;
+              }
+          });
+        }
+        initCopyCode();
+      }(window, document);
+    </script>
+    <script src="/js/lazyload/lazyload@1.9.1.js"></script>
+    <script>
+      $(function() {
+        $("div.lazyload, img.lazyload, a.lazyload").lazyload(
+            {
+                effect: "fadeIn",
+                placeholder: "https://cdn.pixabay.com/photo/2020/10/24/03/09/street-5680458__340.jpg"    //图片未加载出来时显示的占位图
+            }
+        );
+    });
+    </script>
+  </body>
+</html>

@@ -144,8 +144,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <!--  友盟—+ -->
-    <!-- <script type="text/javascript" src="https://s4.hecnzz.com/z_stat.php?id=1279642429&web_id=1279642429"></script>-->
+
     <!-- 延迟加载图像 -->
     <!--<script src="lazysizes.min.js" async></script>-->
     <!--360 auto submit-->
@@ -537,23 +536,12 @@
         <div class="tags">
           <i class="iconfont icontag"></i>
           
-            <a href="/tags/java/" class="">
-              java
-            </a>
-          
-            <a href="/tags/thread/" class="">
-              thread
-            </a>
-          
-            <a href="/tags/threadpool/" class="">
-              threadpool
-            </a>
-          
-            <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B%EF%BC%8C%E7%BA%BF%E7%A8%8B%E6%B1%A0/" class="">
-              多线程，线程池
+            <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="">
+              多线程
             </a>
           
         </div>
+
 
         
         
@@ -562,14 +550,117 @@
       <!-- 文章内容 -->
       <div class="post-content">
         <h1 id="深入理解-Java-线程池-实战"><a href="#深入理解-Java-线程池-实战" class="headerlink" title="深入理解 Java 线程池 - 实战"></a>深入理解 Java 线程池 - 实战</h1><h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 PR 谢谢~~</p>
-<h2 id="一-Java-线程池详解"><a href="#一-Java-线程池详解" class="headerlink" title="一. Java 线程池详解"></a>一. Java 线程池详解</h2><h3 id="1-corePoolSize："><a href="#1-corePoolSize：" class="headerlink" title="1.corePoolSize："></a>1.<strong>corePoolSize</strong>：</h3><p>线程池的核心池大小，在创建线程池之后，线程池默认没有任何线程。当有任务过来时，才会去创建线程并执行任务。直到创建的线程数量达到 corePoolSize。之后，再有任务进来时，就会被放入队列中。corePoolSize 表示允许线程池中允许同时运行的最大线程数。</p>
+<h4 id="为什么需要线程池"><a href="#为什么需要线程池" class="headerlink" title="为什么需要线程池"></a>为什么需要线程池</h4><p>我们知道创建线程的常用方式就是 new Thread()，而每一次new Thread()都会重新创建一个线程，而线程的创建和销毁都需要耗时的，不仅会消耗系统资源，还会降低系统的稳定性。在 jdk1.5 的 JUC 包中有一个 Executors，他能使我们创建的线程得到复用，不会频繁的创建和销毁线程。</p>
+<p>合理的使用线程池可以带来以下几个好处：</p>
+<ol>
+<li>降低资源消耗。</li>
+</ol>
+<blockquote>
+<p>通过重复利用已创建的线程，降低线程创建和销毁造成的消耗。</p>
+</blockquote>
+<ol start="2">
+<li>提高响应速度。</li>
+</ol>
+<blockquote>
+<p>当任务到达时，任务可以不需要等到线程创建就能立即执行。</p>
+</blockquote>
+<ol start="3">
+<li>增加线程的可管理性。</li>
+</ol>
+<blockquote>
+<p>线程是稀缺资源，使用线程池可以进行统一分配，调优和监控。</p>
+</blockquote>
+<h2 id="一-Java-线程池详解"><a href="#一-Java-线程池详解" class="headerlink" title="一. Java 线程池详解"></a>一. Java 线程池详解</h2><p><img src="https://pic3.zhimg.com/80/v2-10a39f5ab6ff4780007537e2e73ee106_1440w.jpg"></p>
+<ul>
+<li>corePoolSize 核心线程池大小</li>
+<li>maximumPoolSize 线程池允许的最大线程数</li>
+<li>keepAliveTime 线程池没有任务时存活的最长时间</li>
+<li>unit 存活时间的单位</li>
+<li>workQueue 阻塞队列</li>
+<li>threadFactory 线程工厂</li>
+<li>handler 线程饱和策略</li>
+</ul>
+<h3 id="1-corePoolSize："><a href="#1-corePoolSize：" class="headerlink" title="1.corePoolSize："></a>1.<strong>corePoolSize</strong>：</h3><p>线程池的核心池大小，在创建线程池之后，线程池默认没有任何线程。当有任务过来时，才会去创建线程并执行任务。直到创建的线程数量达到 corePoolSize。之后，再有任务进来时，就会被放入队列中。corePoolSize 表示允许线程池中允许同时运行的最大线程数。</p>
 <p>如果执行了线程池的 prestartAllCoreThread() 方法，线程池会提前创建并启动所有核心线程。</p>
 <h3 id="2-maximumPoolSize："><a href="#2-maximumPoolSize：" class="headerlink" title="2.maximumPoolSize："></a>2.<strong>maximumPoolSize</strong>：</h3><p>线程池允许的最大线程数，他表示最大能创建多少个线程。maximunPoolSize 肯定是大于等于 corePoolSize。</p>
 <h3 id="3-keepAliveTime："><a href="#3-keepAliveTime：" class="headerlink" title="3. keepAliveTime："></a>3. <strong>keepAliveTime</strong>：</h3><p>表示线程没有任务时，最多保持多久然后停止。默认情况下，只有线程池中的线程数大于 corePoolSize 时，keepAliveTime 才会起作用。即，当线程池中的线程数大于 corePoolSize 并且一个线程空闲时间达到了 keepAliveTime 时，那么就是会 shutdown。</p>
 <h3 id="4-Unit："><a href="#4-Unit：" class="headerlink" title="4. Unit："></a>4. <strong>Unit</strong>：</h3><p>keepAliveTime 的单位。</p>
 <h3 id="5-workQueue："><a href="#5-workQueue：" class="headerlink" title="5. workQueue："></a>5. <strong>workQueue</strong>：</h3><p>一个阻塞队列，用来存储等待执行的任务，当线程池中的线程数超过它的 corePoolSize 时，线程会进入阻塞队列进行阻塞等待。通过 workQueue，线程池实现了阻塞功能。</p>
 <h3 id="6-threadFactory："><a href="#6-threadFactory：" class="headerlink" title="6. threadFactory："></a>6. <strong>threadFactory</strong>：</h3><p>线程工厂，用来创建线程。</p>
-<h3 id="7-hannler："><a href="#7-hannler：" class="headerlink" title="7. hannler："></a>7. <strong>hannler</strong>：</h3><p>表示拒绝处理任务时的策略。</p>
+<h3 id="7-handler："><a href="#7-handler：" class="headerlink" title="7. handler："></a>7. <strong>handler</strong>：</h3><p>表示拒绝处理任务时的策略。</p>
+<h2 id="可选择的阻塞队列-BlockingQueue-详解"><a href="#可选择的阻塞队列-BlockingQueue-详解" class="headerlink" title="可选择的阻塞队列 BlockingQueue 详解"></a>可选择的阻塞队列 BlockingQueue 详解</h2><p>主要有3种类型的BlockingQueue：</p>
+<h3 id="1-无界队列"><a href="#1-无界队列" class="headerlink" title="1. 无界队列"></a>1. 无界队列</h3><p>队列大小无限制，常用的为无界的 <code>LinkedBlockingQueue</code>，使用该队列做为阻塞队列时要尤其当心，当任务耗时较长时可能会导致大量新任务在队列中堆积最终导致 OOM。阅读代码发现，<code>Executors.newFixedThreadPool</code> 采用就是 <code>LinkedBlockingQueue</code>，而楼主踩到的就是这个坑，当QPS很高，发送数据很大，大量的任务被添加到这个无界 <code>LinkedBlockingQueue</code> 中，导致 cpu 和内存飙升服务器挂掉。</p>
+<h3 id="2-有界队列"><a href="#2-有界队列" class="headerlink" title="2. 有界队列"></a>2. 有界队列</h3><p>常用的有两类，一类是遵循 FIFO 原则的队列如 <code>ArrayBlockingQueue</code>与有界的 <code>LinkedBlockingQueue</code>，另一类是优先级队列如 <code>PriorityBlockingQueue</code>。<code>PriorityBlockingQueue</code> 中的优先级由任务的 <code>Comparator</code> 决定。<br>使用有界队列时队列大小需和线程池大小互相配合，线程池较小有界队列较大时可减少内存消耗，降低 cpu 使用率和上下文切换，但是可能会限制系统吞吐量。</p>
+<h3 id="3-同步移交队列"><a href="#3-同步移交队列" class="headerlink" title="3. 同步移交队列"></a>3. 同步移交队列</h3><p>如果不希望任务在队列中等待而是希望将任务直接移交给工作线程，可使用 <code>SynchronousQueue</code> 作为等待队列。<code>SynchronousQueue</code> 不是一个真正的队列，而是一种线程之间移交的机制。要将一个元素放入 <code>SynchronousQueue</code> 中，必须有另一个线程正在等待接收这个元素。只有在使用无界线程池或者有饱和策略时才建议使用该队列。</p>
+<h3 id="4-优先级队列"><a href="#4-优先级队列" class="headerlink" title="4. 优先级队列"></a>4. 优先级队列</h3><p>PriorityBlockingQueue</p>
+<h3 id="5-延迟队列"><a href="#5-延迟队列" class="headerlink" title="5. 延迟队列"></a>5. 延迟队列</h3><p>DelayQueue</p>
+<h3 id="6-无界阻塞队列"><a href="#6-无界阻塞队列" class="headerlink" title="6. 无界阻塞队列"></a>6. 无界阻塞队列</h3><p>LinkedTransfetQueue</p>
+<h3 id="7-链表结构的双向阻塞队列"><a href="#7-链表结构的双向阻塞队列" class="headerlink" title="7. 链表结构的双向阻塞队列"></a>7. 链表结构的双向阻塞队列</h3><p>LinkedBlockingQueue</p>
+<p>可选择的饱和策略RejectedExecutionHandler详解</p>
+<h2 id="任务拒绝策略"><a href="#任务拒绝策略" class="headerlink" title="任务拒绝策略"></a>任务拒绝策略</h2><h3 id="1-AbortPolicy-中止策略"><a href="#1-AbortPolicy-中止策略" class="headerlink" title="1. AbortPolicy 中止策略"></a>1. AbortPolicy 中止策略</h3><p>该策略是默认饱和策略。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">rejectedExecution</span><span class="token punctuation">(</span>Runnable r<span class="token punctuation">,</span> ThreadPoolExecutor e<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">RejectedExecutionException</span><span class="token punctuation">(</span><span class="token string">"Task "</span> <span class="token operator">+</span> r<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">" rejected from "</span> <span class="token operator">+</span> e<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<p>使用该策略时在饱和时会抛出RejectedExecutionException（继承自RuntimeException），调用者可捕获该异常自行处理。</p>
+<h3 id="2-DiscardPolicy-抛弃策略"><a href="#2-DiscardPolicy-抛弃策略" class="headerlink" title="2. DiscardPolicy 抛弃策略"></a>2. DiscardPolicy 抛弃策略</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">rejectedExecution</span><span class="token punctuation">(</span>Runnable r<span class="token punctuation">,</span> ThreadPoolExecutor e<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<p>如代码所示，不做任何处理直接抛弃任务</p>
+<h3 id="3-DiscardOldestPolicy-抛弃旧任务策略"><a href="#3-DiscardOldestPolicy-抛弃旧任务策略" class="headerlink" title="3. DiscardOldestPolicy 抛弃旧任务策略"></a>3. DiscardOldestPolicy 抛弃旧任务策略</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">rejectedExecution</span><span class="token punctuation">(</span>Runnable r<span class="token punctuation">,</span> ThreadPoolExecutor e<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>e<span class="token punctuation">.</span><span class="token function">isShutdown</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        e<span class="token punctuation">.</span><span class="token function">getQueue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">poll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        e<span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<p>如代码，先将阻塞队列中的头元素出队抛弃，再尝试提交任务。如果此时阻塞队列使用 <code>PriorityBlockingQueue</code> 优先级队列，将会导致优先级最高的任务被抛弃，因此不建议将该种策略配合优先级队列使用。</p>
+<h3 id="4-CallerRunsPolicy-调用者运行"><a href="#4-CallerRunsPolicy-调用者运行" class="headerlink" title="4. CallerRunsPolicy 调用者运行"></a>4. CallerRunsPolicy 调用者运行</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">rejectedExecution</span><span class="token punctuation">(</span>Runnable r<span class="token punctuation">,</span> ThreadPoolExecutor e<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>e<span class="token punctuation">.</span><span class="token function">isShutdown</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        r<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<p>既不抛弃任务也不抛出异常，直接运行任务的run方法，换言之将任务回退给调用者来直接运行。使用该策略时线程池饱和后将由调用线程池的主线程自己来执行任务，因此在执行任务的这段时间里主线程无法再提交新任务，从而使线程池中工作线程有时间将正在处理的任务处理完成。</p>
+<h2 id="Java-提供的四种常用线程池解析"><a href="#Java-提供的四种常用线程池解析" class="headerlink" title="Java 提供的四种常用线程池解析"></a>Java 提供的四种常用线程池解析</h2><p>   既然楼主踩坑就是使用了 JDK 的默认实现，那么再来看看这些默认实现到底干了什么，封装了哪些参数。简而言之 Executors 工厂方法Executors.newCachedThreadPool() 提供了无界线程池，可以进行自动线程回收；Executors.newFixedThreadPool(int) 提供了固定大小线程池，内部使用无界队列；Executors.newSingleThreadExecutor() 提供了单个后台线程。</p>
+<p>详细介绍一下上述四种线程池。</p>
+<h3 id="1-newCachedThreadPool"><a href="#1-newCachedThreadPool" class="headerlink" title="1. newCachedThreadPool"></a>1. newCachedThreadPool</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">public</span> <span class="token keyword">static</span> ExecutorService <span class="token function">newCachedThreadPool</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ThreadPoolExecutor</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> Integer<span class="token punctuation">.</span>MAX_VALUE<span class="token punctuation">,</span> 60L<span class="token punctuation">,</span> TimeUnit<span class="token punctuation">.</span>SECONDS<span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">SynchronousQueue</span><span class="token operator">&lt;</span>Runnable<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<p>在 <code>newCachedThreadPool</code> 中如果线程池长度超过处理需要，可灵活回收空闲线程，若无可回收，则新建线程。<br>初看该构造函数时我有这样的疑惑：核心线程池为0，那按照前面所讲的线程池策略新任务来临时无法进入核心线程池，只能进入 <code>SynchronousQueue</code> 中进行等待，而SynchronousQueue的大小为1，那岂不是第一个任务到达时只能等待在队列中，直到第二个任务到达发现无法进入队列才能创建第一个线程？<br>这个问题的答案在上面讲SynchronousQueue时其实已经给出了，要将一个元素放入SynchronousQueue中，必须有另一个线程正在等待接收这个元素。因此即便SynchronousQueue一开始为空且大小为1，第一个任务也无法放入其中，因为没有线程在等待从SynchronousQueue中取走元素。因此第一个任务到达时便会创建一个新线程执行该任务。</p>
+<h3 id="2-newFixedThreadPool"><a href="#2-newFixedThreadPool" class="headerlink" title="2. newFixedThreadPool"></a>2. newFixedThreadPool</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">public</span> <span class="token keyword">static</span> ExecutorService <span class="token function">newFixedThreadPool</span><span class="token punctuation">(</span>int nThreads<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ThreadPoolExecutor</span><span class="token punctuation">(</span>nThreads<span class="token punctuation">,</span> nThreads<span class="token punctuation">,</span>
+0L<span class="token punctuation">,</span> TimeUnit<span class="token punctuation">.</span>MILLISECONDS<span class="token punctuation">,</span>
+<span class="token keyword">new</span> <span class="token class-name">LinkedBlockingQueue</span><span class="token operator">&lt;</span>Runnable<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<p>看代码一目了然了，线程数量固定，使用无限大的队列。再次强调，楼主就是踩的这个无限大队列的坑。</p>
+<h3 id="3-newScheduledThreadPool"><a href="#3-newScheduledThreadPool" class="headerlink" title="3. newScheduledThreadPool"></a>3. newScheduledThreadPool</h3><p>创建一个定长线程池，支持定时及周期性任务执行。</p>
+<p>public static ScheduledExecutorService newScheduledThreadPool(int corePoolSize) {<br>return new ScheduledThreadPoolExecutor(corePoolSize);<br>}</p>
+<p>在来看看 <code>ScheduledThreadPoolExecutor()</code>的构造函数</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">public</span> <span class="token function">ScheduledThreadPoolExecutor</span><span class="token punctuation">(</span>int corePoolSize<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">super</span><span class="token punctuation">(</span>corePoolSize<span class="token punctuation">,</span> Integer<span class="token punctuation">.</span>MAX_VALUE<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> NANOSECONDS<span class="token punctuation">,</span>
+<span class="token keyword">new</span> <span class="token class-name">DelayedWorkQueue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<p>ScheduledThreadPoolExecutor的父类即ThreadPoolExecutor，因此这里各参数含义和上面一样。值得关心的是DelayedWorkQueue这个阻塞对列，在上面没有介绍，它作为静态内部类就在ScheduledThreadPoolExecutor中进行了实现。简单的说，DelayedWorkQueue是一个无界队列，它能按一定的顺序对工作队列中的元素进行排列。</p>
+<h3 id="4-newSingleThreadExecutor"><a href="#4-newSingleThreadExecutor" class="headerlink" title="4. newSingleThreadExecutor"></a>4. newSingleThreadExecutor</h3><p>创建一个单线程化的线程池，它只会用唯一的工作线程来执行任务，保证所有任务按照指定顺序(FIFO, LIFO, 优先级)执行。</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">public</span> <span class="token keyword">static</span> ScheduledExecutorService <span class="token function">newSingleThreadScheduledExecutor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">DelegatedScheduledExecutorService</span>
+<span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ScheduledThreadPoolExecutor</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<p>首先 new了一个线程数目为 1 的 <code>ScheduledThreadPoolExecutor</code>，再把该对象传入 <code>DelegatedScheduledExecutorService</code> 中，看看 <code>DelegatedScheduledExecutorService</code> 的实现代码：</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token function">DelegatedScheduledExecutorService</span><span class="token punctuation">(</span>ScheduledExecutorService executor<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">super</span><span class="token punctuation">(</span>executor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+e <span class="token operator">=</span> executor<span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<p>在看看它的父类</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token function">DelegatedExecutorService</span><span class="token punctuation">(</span>ExecutorService executor<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+e <span class="token operator">=</span> executor<span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<p>其实就是使用装饰模式增强了 <code>ScheduledExecutorService</code>（1）的功能，不仅确保只有一个线程顺序执行任务，也保证线程意外终止后会重新创建一个线程继续执行任务。</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://xie.infoq.cn/article/d0120c6e1518cec1da65cd31f">深入 Java 线程池：从设计思想到源码解读</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/u010412719/article/details/52132613">《Java线程池》：任务拒绝策略</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html">Java线程池实现原理及其在美团业务中的实践</a></p>
+</li>
+</ul>
 
       </div>
 
@@ -600,6 +691,24 @@
 
 
 
+  
+  <div class="post-nav-prev post-nav-item">
+    <div class="post-nav-img lazyload" data-original="https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/simple/7.jpg" style="background-size: cover; 
+      background-position: center center;">
+    </div>
+    <a href="/blogs/utils-java-compress.html" class="post-nav-link">
+      <div class="title">
+        <i class="fa fa-angle-left"></i> Prev:
+        <div>常见 Java 压缩-解压缩算法原理与实践</div>
+      </div>
+      
+      <!-- <div class="content">
+        常见 Java 压缩-解压缩算法原理与实践当前文章内容迁移中，如有问题，请提交 issues 谢谢~~
+特别说明当前文章
+      </div> -->
+    </a>
+  </div>
+
 
 
   
@@ -613,8 +722,14 @@
         <div>深入理解 java 可变参数 - 实战</div>
       </div>
       <!-- <div class="content">
-        深入理解 java 可变参数 - 实战特别说明当前文章内容迁移中，如有问题，请提交 PR 谢谢~~
-可变参数Java 要
+        深入理解 java 可变参数 - 实战
+
+原文地址：
+原文作者：
+本文永久链接：
+
+
+特别说明当前文章内容迁移中，如有问
       </div> -->
     </a>
   </div>
@@ -747,34 +862,43 @@
 
     </main>
     <div class="footer bg-color">
-  <div class="footer-main">
-    <div class="link">
-      <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/hexo-theme-bamboo">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-      <a href="mailto:1730241541@qq.com" rel="external nofollow noreferrer">
-        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-      </a>
-      <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541" rel="external nofollow noreferrer">
-        <i class="fa fa-qq" aria-hidden="true"></i>
-      </a>
-      <a href="/atom.xml" target="_blank">
-        <i class="fa fa-rss" aria-hidden="true"></i>
-      </a>
-    </div>
-    <div class="footer-copyright">
-      Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/theme">Bamboo</a>
-    </div>
+    <div class="footer-main">
+        <div class="link">
+            <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/hexo-theme-bamboo">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:1730241541@qq.com" rel="external nofollow noreferrer">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+            <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541" rel="external nofollow noreferrer">
+                <i class="fa fa-qq" aria-hidden="true"></i>
+            </a>
+            <a href="/atom.xml" target="_blank">
+                <i class="fa fa-rss" aria-hidden="true"></i>
+            </a>
+            <a>       <!--  友盟—+ -->
+                <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279642429'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279642429%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+            </a>
+        </div>
+        <div class="footer-copyright">
+            Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a
+                    target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a>
+        </div>
 
-    Copyright © 2017 - 2021 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier">Starrier</a> All Rights Reserved  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://beian.miit.gov.cn">苏ICP备17039741号-2</a>
-    <div style="width:300px;margin:0 auto; padding:20px 0;">
+        Copyright © 2017 - 2021 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier">Starrier</a> All Rights Reserved <a
+                target="_blank" rel="noopener" href="https://beian.miit.gov.cn">苏ICP备17039741号-2</a>
+        <div style="width:300px;margin:0 auto; padding:20px 0;">
 
-      <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240" rel="external nofollow noreferrer" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
-        <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"  style="float:left;" alt="备案图标"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"
+                     style="float:left;" alt="备案图标"/>
+                <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
+        </div>
+
+        
+
     </div>
-
-  
-  </div>
 </div>
 
 

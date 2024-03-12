@@ -1,6 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://starrier.starrier.org/blogs/spring-transcation.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/rxjava-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/site-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-inject.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-mvc-url-match.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-bitmap.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-hyperloglog.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-introduction.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-lua.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-ttl.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-zset.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/problems-cache.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-aof-rdb.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-gap-lock.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-mvcc.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-redolog-binlog.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/pattern-design-prinpicle.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mq-rocketmq-pull-push-model.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mq-rocketmq-store-principle.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mq-rocketmq-transaction-in-action.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mq-rocketmq-transaction.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mq-rocketmq-zero-copy.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-acid.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-fuc-update-or-insert.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-fuzzy-query.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mic-config-nacos.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mq-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mq-message-accumulation.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mq-rocketmq-consumer.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mq-rocketmq-producer.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mq-rocketmq-protocol.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-threadpool.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/jvm-gc-san-se-biao-ji.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/jvm-gc-zgc.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/linux-memory-manage-basic.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/linux-memory-manage.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-basic-hashmap.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-basic-overloading-overwrite.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-filter-interceptor.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-atomic.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-auto-lock.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-core-number-define.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/ddd-cqrs.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/docker-daemon.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/docker-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/es-ha.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/es-performance-optimize.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-basic-condition.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/actor-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/datastruct-SynchronousQueue.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/datastruct-arrayblockingqueue.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/datastruct-linkedblockingqueue.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/datastruct-red-black-tree.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
     <loc>https://starrier.starrier.org/blogs/utils-websit-op.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
@@ -9,11 +229,11 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/utils-git-commit-revert.html</loc>
+    <loc>https://starrier.starrier.org/blogs/utils-maven-mvn-dependency-tree.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/utils-lombok-annotation-value.html</loc>
+    <loc>https://starrier.starrier.org/blogs/utils-maven-pom-classifier.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -25,11 +245,27 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/utils-command-life-port.html</loc>
+    <loc>https://starrier.starrier.org/blogs/utils-git-reflog.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/utils-gava-lists.html</loc>
+    <loc>https://starrier.starrier.org/blogs/utils-gradle-provided.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/utils-java-compress.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/utils-lombok-annotation-value.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/utils-git-commit-revert.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/utils-git-gitkeep.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -41,11 +277,19 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/site-introduce.html</loc>
+    <loc>https://starrier.starrier.org/blogs/tools-idea-plugins-jrebel.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/test-mockito-exception.html</loc>
+    <loc>https://starrier.starrier.org/blogs/utils-command-life-port.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/utils-gava-lists.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/utils-git-cherry-pick.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -53,15 +297,91 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
+    <loc>https://starrier.starrier.org/blogs/test-mockito-private.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
     <loc>https://starrier.starrier.org/blogs/test-mockito-static.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/rxJava-disposable.html</loc>
+    <loc>https://starrier.starrier.org/blogs/spring-validate.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/sit-optimize-applicable-device.html</loc>
+    <loc>https://starrier.starrier.org/blogs/tcp-rst.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/test-mockito-exception.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-ioc-principle.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-mvc-principle.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-refresh.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-cloud-hystrix-hystrixcommand.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-cloud-hystrix-principle.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-design-pattern.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-factorybean.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-bean-lifecycle.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-bean-post-processor.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-beandefinition.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-cloud-feign.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-beanfactory.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-aop.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-applicationcontext.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-auto-config-prinpicle.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/site-static-seo.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/spring-DispatcherServlet.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -73,7 +393,87 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/pattern-design-builder.html</loc>
+    <loc>https://starrier.starrier.org/blogs/servlet-annotation-postconstruct.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/sit-optimize-applicable-device.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/security-introduction.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/security-password.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/security-ssrf.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/security-xxe.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/rx-backpress.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/rxJava-disposable.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-transcation.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/rsocket-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-quicklist.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-rdb.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-sds.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-sentinel.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-string.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-master-slave-replication.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-multip-thread-model.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-performance.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-cluster-1.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-cluster.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/redis-hash.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -81,19 +481,23 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/redis-hyperloglog.html</loc>
+    <loc>https://starrier.starrier.org/blogs/redis-cache.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/redis-lua.html</loc>
+    <loc>https://starrier.starrier.org/blogs/reactive-api.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/mybatis-cache.html</loc>
+    <loc>https://starrier.starrier.org/blogs/reactive-introduce.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/mybatis-pooled-data-source.html</loc>
+    <loc>https://starrier.starrier.org/blogs/reactive-reduction.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/performance-interface-optimize.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -101,11 +505,115 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/mq-rocket-transaction.html</loc>
+    <loc>https://starrier.starrier.org/blogs/pattern-design-builder.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/ml-gan.html</loc>
+    <loc>https://starrier.starrier.org/blogs/performance-basic-context-switch.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/performance-basic-core-processor.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-optimize-profile.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-performance-schema.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-page-principle.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-query-cache.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-transacation.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-innodb-datastruct-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-like.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-log-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-master-slave-consistency.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-master-slave-copy.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-lock-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-fen-ku-fen-biao.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-index-invalid.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-index.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-index-jucu-fei-jucu.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mybatis-pooled-data-source.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mybatis-sql-inject.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-basic.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mysql-execute-princciple.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mybatis-cache.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mybatis-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mq-zeromq-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mybatis-actual-params-type.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/mq-rabbitmq-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/ml-algorithm-embedding.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -113,11 +621,15 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/linux-mysql.html</loc>
+    <loc>https://starrier.starrier.org/blogs/ml-gan.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/linux-package.html</loc>
+    <loc>https://starrier.starrier.org/blogs/mdc.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/middle-event-menu.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -125,11 +637,23 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
+    <loc>https://starrier.starrier.org/blogs/linux-package.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/linux-tcp-connect-number.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/linux-top.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
     <loc>https://starrier.starrier.org/blogs/linux-menu.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/linux-cat.html</loc>
+    <loc>https://starrier.starrier.org/blogs/linux-mysql.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -137,15 +661,55 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
+    <loc>https://starrier.starrier.org/blogs/linux-cat.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/linux-data-write.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/jvm-tools-jmap.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/jvm-tools-jstack.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/jvm-tools-jstat.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
     <loc>https://starrier.starrier.org/blogs/jvm-reference-types.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/java-variable-parameter.html</loc>
+    <loc>https://starrier.starrier.org/blogs/jvm-satb.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/jvm-gc-zgc.html</loc>
+    <loc>https://starrier.starrier.org/blogs/jvm-tools-jconsole.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/jvm-tools-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/jvm-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/jvm-memory-instruct.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/jvm-jit.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/jvm-memory-model.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -153,11 +717,103 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/java-thread-threadpool.html</loc>
+    <loc>https://starrier.starrier.org/blogs/jvm-gc-oop.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/java-memory-module.html</loc>
+    <loc>https://starrier.starrier.org/blogs/jvm-gc-shenandoah.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/jvm-gc-roots.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-version-new-feature.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/jvm-classloader.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/jvm-cms-gc-collection.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/jvm-escape-analyse.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/jvm-gc-cms.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/jvm-gc-g1.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-volatile.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-variable-parameter.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-yield.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-synchronized.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-threadlocal.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-lock.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-semaphore.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-locksupport.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-start.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-status.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-countdownlatch.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-join.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-cas.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-close.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-condition.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -165,7 +821,35 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
+    <loc>https://starrier.starrier.org/blogs/java-thread-aqs.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-memory-module.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-lambda-principle.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-future.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-gc-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-future-cancelexception-timeoutexception.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
     <loc>https://starrier.starrier.org/blogs/java-concurrent%20programming.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-dynamic-proxy.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -189,11 +873,71 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
+    <loc>https://starrier.starrier.org/blogs/java-basic-string-principle.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-basic-uuid.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-basic-io.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-basic-linkedhashmap.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-basic-static.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-basic-final.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-basic-initialize-time.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-basic-inner-class.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-basic-int-integer.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-basic-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
     <loc>https://starrier.starrier.org/blogs/java-basic-collection-linked-blocking-queue.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/java-basic-condition.html</loc>
+    <loc>https://starrier.starrier.org/blogs/java-basic-collection-set.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-basic-concurrenthashmap.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/io-brokenpipeexception.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-basic-bigdecimal.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-basic-collection-arraylist.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/java-basic-collection-copyonwritearraylist.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -201,11 +945,23 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
+    <loc>https://starrier.starrier.org/blogs/high-performance-bloomfilter.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/high-performance-interface-equivalence.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
     <loc>https://starrier.starrier.org/blogs/important-dong-task.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/java-basic-collection-arraylist.html</loc>
+    <loc>https://starrier.starrier.org/blogs/hexo-function.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/hexo-gulp.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -217,15 +973,19 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/hexo-function.html</loc>
-    <lastmod>2024-03-12</lastmod>
-  </url>
-  <url>
-    <loc>https://starrier.starrier.org/blogs/github-repo-transfer.html</loc>
-    <lastmod>2024-03-12</lastmod>
-  </url>
-  <url>
     <loc>https://starrier.starrier.org/blogs/hexo-analyse-baidu.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/hexo-calendar.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/hexo-code-hightlight.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/hexo-commands.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -233,15 +993,11 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/git-stash.html</loc>
+    <loc>https://starrier.starrier.org/blogs/github-repo-transfer.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/git-conf-repo.html</loc>
-    <lastmod>2024-03-12</lastmod>
-  </url>
-  <url>
-    <loc>https://starrier.starrier.org/blogs/git-rebase.html</loc>
+    <loc>https://starrier.starrier.org/blogs/grayscale-publishing.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -249,7 +1005,15 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/env-install-postgresql.html</loc>
+    <loc>https://starrier.starrier.org/blogs/git-rebase.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/git-stash.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/fenbushi.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -257,7 +1021,31 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/env-install-ngnix.html</loc>
+    <loc>https://starrier.starrier.org/blogs/git-conf-repo.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/git-delete-branch.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/env-install-postgresql.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/es-fst.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/es-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/es-version-control.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/es-write-principle.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -269,15 +1057,11 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/env-install-gitlab.html</loc>
+    <loc>https://starrier.starrier.org/blogs/env-install-ngnix.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
     <loc>https://starrier.starrier.org/blogs/env-install-java-centos.html</loc>
-    <lastmod>2024-03-12</lastmod>
-  </url>
-  <url>
-    <loc>https://starrier.starrier.org/blogs/distribute-cap.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -289,11 +1073,43 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/commons-utils-guava-multiset.html</loc>
+    <loc>https://starrier.starrier.org/blogs/env-install-gitlab.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
-    <loc>https://starrier.starrier.org/blogs/design-pattern-bridge-pattern.html</loc>
+    <loc>https://starrier.starrier.org/blogs/dp-back-propagation.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/dp-forward-propagation.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/dp-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/docker-layered-storage.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/distribution-snowflake.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/distribute-rpc.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/distribute-load-balance.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/distribute-cap.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/distribute-rpc-serialization.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
@@ -305,7 +1121,123 @@
     <lastmod>2024-03-12</lastmod>
   </url>
   <url>
+    <loc>https://starrier.starrier.org/blogs/datastruct-spatial-index.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/datastruct-tire.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/design-anti-pattern.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/design-pattern-bridge-pattern.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/datastruct-fst.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/datastruct-spatial-index-geohash.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/datastruct-spatial-index-quad-tree.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/datastruct-spatial-index-r-tree.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/commons-utils-guava-multiset.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/create-random-num.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/cs-basic.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/cn-tcp-link.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/cn-tcp-reset.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/code-programming-log.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/code-programming-specification.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/books-gitbook-developer.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/books-webpack.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/ci-travis.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/cn-dns.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/cn-basic-introduce.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/cn-osi-tcp-ip.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/cn-tcp-ip.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/cn-http-https.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/ai-common-vocabulary.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/ai-supervised-learning.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/ai-svm.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/ai-target-function.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
     <loc>https://starrier.starrier.org/blogs/annotation-shellmethod.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/basic-suanfa.html</loc>
+    <lastmod>2024-03-12</lastmod>
+  </url>
+  <url>
+    <loc>https://starrier.starrier.org/blogs/ai-activation-function.html</loc>
     <lastmod>2024-03-12</lastmod>
   </url>
 </urlset> 

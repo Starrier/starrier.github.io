@@ -2,6 +2,12 @@
 
 [![Build Status](https://travis-ci.com/Starrier/starrier.github.io.svg?branch=master)](https://travis-ci.com/Starrier/starrier.github.io)
 
+
+# 网站性能优化指南
+
+## 1. `Gulp` 指南
+
+
 ## 一. `Gulp` 说明
 
 如果在使用  `gulp` 命令时，导致压缩 `html` 无法被压缩，出现异常，目前的解决方法是，在 `gulpfile.js` 中禁用 `
@@ -27,7 +33,7 @@ description:
 所以 `value` 禁止出现 `markdown` 语法内容。
 
 
-## 站点性能检测
+## 二. 站点性能检测
 
 1. 安装插件
 
@@ -75,5 +81,5 @@ npm install
 3. 运行 
 
 ```shell
-lighthouse https://localhost:4000 --budget-path=./budget.json
+lighthouse http://localhost:4000 --budget-path=./budget.json
 ```

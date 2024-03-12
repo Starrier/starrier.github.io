@@ -54,7 +54,7 @@
     
 
     
-        <meta property="og:author" content="Starrier Organization"/>
+        <meta property="og:author" content="Imperator"/>
     
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -144,8 +144,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <!--  友盟—+ -->
-    <!-- <script type="text/javascript" src="https://s4.hecnzz.com/z_stat.php?id=1279642429&web_id=1279642429"></script>-->
+
     <!-- 延迟加载图像 -->
     <!--<script src="lazysizes.min.js" async></script>-->
     <!--360 auto submit-->
@@ -537,15 +536,12 @@
         <div class="tags">
           <i class="iconfont icontag"></i>
           
-            <a href="/tags/redis/" class="">
-              redis
-            </a>
-          
-            <a href="/tags/hyperloglog/" class="">
-              hyperloglog
+            <a href="/tags/Redis/" class="">
+              Redis
             </a>
           
         </div>
+
 
         
         
@@ -553,7 +549,8 @@
 
       <!-- 文章内容 -->
       <div class="post-content">
-        <h1 id="Redis-HyperLogLog"><a href="#Redis-HyperLogLog" class="headerlink" title="Redis - HyperLogLog"></a>Redis - HyperLogLog</h1><p>HyperLogLog 使用动态字符串存储数据，为了区别普通的 SDS，在头部固定了字节 <code>HYLL</code></p>
+        <h1 id="Redis-HyperLogLog"><a href="#Redis-HyperLogLog" class="headerlink" title="Redis - HyperLogLog"></a>Redis - HyperLogLog</h1><p>当前文章内容迁移中，如有问题，请提交 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
+<p>HyperLogLog 使用动态字符串存储数据，为了区别普通的 SDS，在头部固定了字节 <code>HYLL</code></p>
 <p>HyperLogLog 底层数据结构</p>
 <pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> hllhdr <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token comment" spellcheck="true">// 固定值 HYLL</span>
@@ -565,8 +562,13 @@
     uint8_t registers<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/* Data bytes. */</span>
 <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span></code></pre>
 <p>HLL  存储分为两部分：hllhdr 和 registers。</p>
-<p>registers: 用来存储组数据，<br>hllhdr: 为 HLL 的头部信息，</p>
-<p>其中encoding来标识使用的编码，可以简单理解为空分组较多时使用稀疏编码存储，空分组较少时使用密集编码存储，内部计算使用HLL_RAW编码，因为数据总是增加的，所以一般只存在稀疏编码转为密集编码。</p>
+<ul>
+<li><p>registers: 用来存储组数据</p>
+</li>
+<li><p>hllhdr: 为 HLL 的头部信息，</p>
+</li>
+</ul>
+<p>其中 <code>encoding</code> 来标识使用的编码，可以简单理解为空分组较多时使用稀疏编码存储，空分组较少时使用密集编码存储，内部计算使用 <code>HLL_RAW</code> 编码，因为数据总是增加的，所以一般只存在稀疏编码转为密集编码。</p>
 <h2 id="HLL-的命名"><a href="#HLL-的命名" class="headerlink" title="HLL 的命名"></a>HLL 的命名</h2><ul>
 <li>pfadd</li>
 <li>pfcount</li>
@@ -587,6 +589,9 @@
 <li>源码实现原理</li>
 </ol>
 <p>TODO 待处理</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://juejin.cn/book/6844733724618129422/section/6844733724706209805">应用 4：四两拨千斤 —— HyperLogLog</a></li>
+</ul>
 
       </div>
 
@@ -622,14 +627,21 @@
     <div class="post-nav-img lazyload" data-original="https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/simple/5.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/blogs/mybatis-cache.html" class="post-nav-link">
+    <a href="/blogs/mybatis-introduce.html" class="post-nav-link">
       <div class="title">
         <i class="fa fa-angle-left"></i> Prev:
         <div>MyBatis 缓存</div>
       </div>
       
       <!-- <div class="content">
-        MyBaits 缓存MyBatis 的一些关键特性（例如通过 &lt;association&gt; 和 &lt;col
+        MyBaits 缓存
+
+原文地址：
+原文作者：
+本文永久链接：
+
+
+特别说明当前文章内容迁移中，如有问题，请提交 iss
       </div> -->
     </a>
   </div>
@@ -647,8 +659,8 @@
         <div>redis-lua 简介</div>
       </div>
       <!-- <div class="content">
-        Redis  Lua 简介redis.call(); 将返回一个错误给调用者
-redis.pcall(): 将捕获的错误
+        特别说明当前文章内容迁移中，如有问题，请提交 issues 谢谢~~
+从 Redis 2.6.0 版本开始，通过内置的 
       </div> -->
     </a>
   </div>
@@ -781,34 +793,43 @@ redis.pcall(): 将捕获的错误
 
     </main>
     <div class="footer bg-color">
-  <div class="footer-main">
-    <div class="link">
-      <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/hexo-theme-bamboo">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-      <a href="mailto:1730241541@qq.com" rel="external nofollow noreferrer">
-        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-      </a>
-      <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541" rel="external nofollow noreferrer">
-        <i class="fa fa-qq" aria-hidden="true"></i>
-      </a>
-      <a href="/atom.xml" target="_blank">
-        <i class="fa fa-rss" aria-hidden="true"></i>
-      </a>
-    </div>
-    <div class="footer-copyright">
-      Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/theme">Bamboo</a>
-    </div>
+    <div class="footer-main">
+        <div class="link">
+            <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuang01/hexo-theme-bamboo">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:1730241541@qq.com" rel="external nofollow noreferrer">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+            <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541" rel="external nofollow noreferrer">
+                <i class="fa fa-qq" aria-hidden="true"></i>
+            </a>
+            <a href="/atom.xml" target="_blank">
+                <i class="fa fa-rss" aria-hidden="true"></i>
+            </a>
+            <a>       <!--  友盟—+ -->
+                <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279642429'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279642429%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+            </a>
+        </div>
+        <div class="footer-copyright">
+            Powered by <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a
+                    target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a>
+        </div>
 
-    Copyright © 2017 - 2021 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier">Starrier</a> All Rights Reserved  <a target="_blank" rel="noopener external nofollow noreferrer" href="https://beian.miit.gov.cn">苏ICP备17039741号-2</a>
-    <div style="width:300px;margin:0 auto; padding:20px 0;">
+        Copyright © 2017 - 2021 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Starrier">Starrier</a> All Rights Reserved <a
+                target="_blank" rel="noopener" href="https://beian.miit.gov.cn">苏ICP备17039741号-2</a>
+        <div style="width:300px;margin:0 auto; padding:20px 0;">
 
-      <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240" rel="external nofollow noreferrer" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
-        <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"  style="float:left;" alt="备案图标"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240"
+               style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"
+                     style="float:left;" alt="备案图标"/>
+                <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
+        </div>
+
+        
+
     </div>
-
-  
-  </div>
 </div>
 
 
