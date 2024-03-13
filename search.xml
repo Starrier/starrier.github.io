@@ -23,6 +23,22 @@
       </tags>
   </entry>
   <entry>
+    <title>机器学习 - 激活函数</title>
+    <url>/blogs/ai-activation-function.html</url>
+    <content><![CDATA[<h1 id="机器学习-激活函数"><a href="#机器学习-激活函数" class="headerlink" title="机器学习 - 激活函数"></a>机器学习 - 激活函数</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5>]]></content>
+      <tags>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AI 常用名词解释</title>
     <url>/blogs/ai-common-vocabulary.html</url>
     <content><![CDATA[<h1 id="AI-常用名词解释"><a href="#AI-常用名词解释" class="headerlink" title="AI 常用名词解释"></a>AI 常用名词解释</h1><blockquote>
@@ -239,6 +255,25 @@ env:
       </tags>
   </entry>
   <entry>
+    <title>计算机网络 - 基础知识点</title>
+    <url>/blogs/cn-basic-introduce.html</url>
+    <content><![CDATA[<h1 id="计算机网络-基础知识点"><a href="#计算机网络-基础知识点" class="headerlink" title="计算机网络 - 基础知识点"></a>计算机网络 - 基础知识点</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><a href="https://www.cnblogs.com/aspirant/p/9172336.html">SOA,SOAP,RPC,以及 RPC协议与 REST 协议之间的关系(搜狗)</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>计算机网络</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>计算机网络 | 图解 DNS &amp; HTTPDNS 原理</title>
     <url>/blogs/cn-dns.html</url>
     <content><![CDATA[<h1 id="计算机网络-图解-DNS-amp-HTTPDNS-原理"><a href="#计算机网络-图解-DNS-amp-HTTPDNS-原理" class="headerlink" title="计算机网络 | 图解 DNS &amp; HTTPDNS 原理"></a>计算机网络 | 图解 DNS &amp; HTTPDNS 原理</h1><blockquote>
@@ -258,9 +293,9 @@ env:
       </tags>
   </entry>
   <entry>
-    <title>计算机网络 - 基础知识点</title>
-    <url>/blogs/cn-basic-introduce.html</url>
-    <content><![CDATA[<h1 id="计算机网络-基础知识点"><a href="#计算机网络-基础知识点" class="headerlink" title="计算机网络 - 基础知识点"></a>计算机网络 - 基础知识点</h1><blockquote>
+    <title>深入理解 Http Https 原理</title>
+    <url>/blogs/cn-http-https.html</url>
+    <content><![CDATA[<h1 id="深入理解-Http-Https-原理"><a href="#深入理解-Http-Https-原理" class="headerlink" title="深入理解 Http Https 原理"></a>深入理解 Http Https 原理</h1><blockquote>
 <ul>
 <li>原文地址：<a href=""></a></li>
 <li>原文作者：<a href=""></a></li>
@@ -268,12 +303,21 @@ env:
 </ul>
 </blockquote>
 <h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<h3 id="Https-工作流程"><a href="#Https-工作流程" class="headerlink" title="Https 工作流程"></a>Https 工作流程</h3><ol>
+<li><p>Client 发起 Https 请求到 Server 的 443 端口。Server 将 CA 颁发的证书返回。</p>
+</li>
+<li><p>Client 校验返回的证书是否有效。如果证书校验失败，则会出现高进</p>
+</li>
+</ol>
 <h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
-<li><a href="https://www.cnblogs.com/aspirant/p/9172336.html">SOA,SOAP,RPC,以及 RPC协议与 REST 协议之间的关系(搜狗)</a></li>
+<li><p><a href="https://juejin.cn/post/6844903830916694030">深入理解HTTPS工作原理</a></p>
+</li>
+<li><p><a href="https://juejin.cn/post/6844903830916694030#heading-2">Https</a></p>
+</li>
 </ul>
 ]]></content>
       <tags>
-        <tag>计算机网络</tag>
+        <tag>网络</tag>
       </tags>
   </entry>
   <entry>
@@ -312,34 +356,6 @@ env:
 ]]></content>
       <tags>
         <tag>计算机网络</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深入理解 Http Https 原理</title>
-    <url>/blogs/cn-http-https.html</url>
-    <content><![CDATA[<h1 id="深入理解-Http-Https-原理"><a href="#深入理解-Http-Https-原理" class="headerlink" title="深入理解 Http Https 原理"></a>深入理解 Http Https 原理</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<h3 id="Https-工作流程"><a href="#Https-工作流程" class="headerlink" title="Https 工作流程"></a>Https 工作流程</h3><ol>
-<li><p>Client 发起 Https 请求到 Server 的 443 端口。Server 将 CA 颁发的证书返回。</p>
-</li>
-<li><p>Client 校验返回的证书是否有效。如果证书校验失败，则会出现高进</p>
-</li>
-</ol>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
-<li><p><a href="https://juejin.cn/post/6844903830916694030">深入理解HTTPS工作原理</a></p>
-</li>
-<li><p><a href="https://juejin.cn/post/6844903830916694030#heading-2">Https</a></p>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>网络</tag>
       </tags>
   </entry>
   <entry>
@@ -488,6 +504,25 @@ env:
 ]]></content>
       <tags>
         <tag>计算机基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>cs-domian</title>
+    <url>/blogs/cs-domian.html</url>
+    <content><![CDATA[<h1 id="CS-域名"><a href="#CS-域名" class="headerlink" title="CS 域名"></a>CS 域名</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><a href=""></a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>CS</tag>
       </tags>
   </entry>
   <entry>
@@ -714,6 +749,22 @@ env:
       </tags>
   </entry>
   <entry>
+    <title>设计模式 - 桥接模式 详解</title>
+    <url>/blogs/design-pattern-bridge-pattern.html</url>
+    <content><![CDATA[<h1 id="设计模式-桥接模式-详解"><a href="#设计模式-桥接模式-详解" class="headerlink" title="设计模式 - 桥接模式 详解"></a>设计模式 - 桥接模式 详解</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
+]]></content>
+      <tags>
+        <tag>设计模式</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>分布式理论 2PC 详解</title>
     <url>/blogs/distribute-2pc.html</url>
     <content><![CDATA[<h1 id="分布式理论-2PC-详解"><a href="#分布式理论-2PC-详解" class="headerlink" title="分布式理论 - 2PC 详解"></a>分布式理论 - 2PC 详解</h1><blockquote>
@@ -736,22 +787,6 @@ env:
       </tags>
   </entry>
   <entry>
-    <title>设计模式 - 桥接模式 详解</title>
-    <url>/blogs/design-pattern-bridge-pattern.html</url>
-    <content><![CDATA[<h1 id="设计模式-桥接模式-详解"><a href="#设计模式-桥接模式-详解" class="headerlink" title="设计模式 - 桥接模式 详解"></a>设计模式 - 桥接模式 详解</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
-]]></content>
-      <tags>
-        <tag>设计模式</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>分布式理论 3PC</title>
     <url>/blogs/distribute-3pc.html</url>
     <content><![CDATA[<h1 id="分布式理论-3PC"><a href="#分布式理论-3PC" class="headerlink" title="分布式理论 3PC"></a>分布式理论 3PC</h1><blockquote>
@@ -762,34 +797,6 @@ env:
 </ul>
 </blockquote>
 <h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
-]]></content>
-      <tags>
-        <tag>分布式基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>distribute-load-balance</title>
-    <url>/blogs/distribute-load-balance.html</url>
-    <content><![CDATA[<h1 id="分布式系统-负载均衡原理及算法实现"><a href="#分布式系统-负载均衡原理及算法实现" class="headerlink" title="分布式系统 - 负载均衡原理及算法实现"></a>分布式系统 - 负载均衡原理及算法实现</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<p>常用的负载均衡算法有：</p>
-<p>随机算法<br>加权随机算法<br>轮询算法<br>加权轮询算法<br>最小时延算法<br>一致性hash算法</p>
-<h2 id="一致性-Hash-性质"><a href="#一致性-Hash-性质" class="headerlink" title="一致性 Hash 性质"></a>一致性 Hash 性质</h2><h3 id="平衡性"><a href="#平衡性" class="headerlink" title="平衡性"></a>平衡性</h3><h3 id="单调性"><a href="#单调性" class="headerlink" title="单调性"></a>单调性</h3><h3 id="分散性"><a href="#分散性" class="headerlink" title="分散性"></a>分散性</h3><h3 id="负载"><a href="#负载" class="headerlink" title="负载"></a>负载</h3><h3 id="平滑线"><a href="#平滑线" class="headerlink" title="平滑线"></a>平滑线</h3><p>平滑性是指缓存服务器的数据平滑改变和缓存对象的平滑改变一致。</p>
-<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><h5 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h5><p>一致性 Hash 算法在服务节点太少时，容易因为节点分布不均匀导致数据倾斜问题。</p>
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ul>
-<li><p><a href="https://www.cnblogs.com/lgjlife/p/10727245.html">分布式负载均衡算法的实现</a></p>
-</li>
-<li><p><a href="https://blog.csdn.net/weixin_41896463/article/details/106304145">一致性 Hash （复习版）</a></p>
-</li>
-<li><p><a href="https://www.jianshu.com/p/d7e173d212a8">常用负载均衡策略分析</a></p>
-</li>
-</ul>
 ]]></content>
       <tags>
         <tag>分布式基础</tag>
@@ -878,6 +885,34 @@ env:
       </tags>
   </entry>
   <entry>
+    <title>distribute-load-balance</title>
+    <url>/blogs/distribute-load-balance.html</url>
+    <content><![CDATA[<h1 id="分布式系统-负载均衡原理及算法实现"><a href="#分布式系统-负载均衡原理及算法实现" class="headerlink" title="分布式系统 - 负载均衡原理及算法实现"></a>分布式系统 - 负载均衡原理及算法实现</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<p>常用的负载均衡算法有：</p>
+<p>随机算法<br>加权随机算法<br>轮询算法<br>加权轮询算法<br>最小时延算法<br>一致性hash算法</p>
+<h2 id="一致性-Hash-性质"><a href="#一致性-Hash-性质" class="headerlink" title="一致性 Hash 性质"></a>一致性 Hash 性质</h2><h3 id="平衡性"><a href="#平衡性" class="headerlink" title="平衡性"></a>平衡性</h3><h3 id="单调性"><a href="#单调性" class="headerlink" title="单调性"></a>单调性</h3><h3 id="分散性"><a href="#分散性" class="headerlink" title="分散性"></a>分散性</h3><h3 id="负载"><a href="#负载" class="headerlink" title="负载"></a>负载</h3><h3 id="平滑线"><a href="#平滑线" class="headerlink" title="平滑线"></a>平滑线</h3><p>平滑性是指缓存服务器的数据平滑改变和缓存对象的平滑改变一致。</p>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><h5 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h5><p>一致性 Hash 算法在服务节点太少时，容易因为节点分布不均匀导致数据倾斜问题。</p>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ul>
+<li><p><a href="https://www.cnblogs.com/lgjlife/p/10727245.html">分布式负载均衡算法的实现</a></p>
+</li>
+<li><p><a href="https://blog.csdn.net/weixin_41896463/article/details/106304145">一致性 Hash （复习版）</a></p>
+</li>
+<li><p><a href="https://www.jianshu.com/p/d7e173d212a8">常用负载均衡策略分析</a></p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>分布式基础</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>distribute-rpc-serialization</title>
     <url>/blogs/distribute-rpc-serialization.html</url>
     <content><![CDATA[<h1 id="RPC-序列化"><a href="#RPC-序列化" class="headerlink" title="RPC - 序列化"></a>RPC - 序列化</h1><blockquote>
@@ -913,28 +948,6 @@ env:
 ]]></content>
       <tags>
         <tag>分布式基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>分布式 - 雪花算法</title>
-    <url>/blogs/distribution-snowflake.html</url>
-    <content><![CDATA[<h1 id="分布式-雪花算法"><a href="#分布式-雪花算法" class="headerlink" title="分布式 - 雪花算法"></a>分布式 - 雪花算法</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><p>64 位</p>
-<p>0   - 不可变<br>时间戳 41<br>工作机器id 10<br>序列号 12</p>
-<p>除了第一个位置不可变以外，其余三个可按照需求更改位数。</p>
-<ul>
-<li><a href="https://www.lanindex.com/twitter-snowflake%EF%BC%8C64%E4%BD%8D%E8%87%AA%E5%A2%9Eid%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/">Twitter-Snowflake，64位自增ID算法详解</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>分布式</tag>
       </tags>
   </entry>
   <entry>
@@ -979,6 +992,28 @@ env:
 ]]></content>
       <tags>
         <tag>分布式基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分布式 - 雪花算法</title>
+    <url>/blogs/distribution-snowflake.html</url>
+    <content><![CDATA[<h1 id="分布式-雪花算法"><a href="#分布式-雪花算法" class="headerlink" title="分布式 - 雪花算法"></a>分布式 - 雪花算法</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><p>64 位</p>
+<p>0   - 不可变<br>时间戳 41<br>工作机器id 10<br>序列号 12</p>
+<p>除了第一个位置不可变以外，其余三个可按照需求更改位数。</p>
+<ul>
+<li><a href="https://www.lanindex.com/twitter-snowflake%EF%BC%8C64%E4%BD%8D%E8%87%AA%E5%A2%9Eid%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/">Twitter-Snowflake，64位自增ID算法详解</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>分布式</tag>
       </tags>
   </entry>
   <entry>
@@ -1467,25 +1502,6 @@ docker pull wurstmeister/kafka</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>分布式基础</title>
-    <url>/blogs/fenbushi.html</url>
-    <content><![CDATA[<h1 id="分布式基础"><a href="#分布式基础" class="headerlink" title="分布式基础"></a>分布式基础</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
-<li><a href=""></a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>分布式</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ES  数据更新 版本控制</title>
     <url>/blogs/es-version-control.html</url>
     <content><![CDATA[<h1 id="ES-数据更新-版本控制"><a href="#ES-数据更新-版本控制" class="headerlink" title="ES  数据更新 版本控制"></a>ES  数据更新 版本控制</h1><blockquote>
@@ -1523,6 +1539,25 @@ docker pull wurstmeister/kafka</code></pre>
 ]]></content>
       <tags>
         <tag>es</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分布式基础</title>
+    <url>/blogs/fenbushi.html</url>
+    <content><![CDATA[<h1 id="分布式基础"><a href="#分布式基础" class="headerlink" title="分布式基础"></a>分布式基础</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><a href=""></a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>分布式</tag>
       </tags>
   </entry>
   <entry>
@@ -1604,6 +1639,23 @@ docker pull wurstmeister/kafka</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>git-rebase</title>
+    <url>/blogs/git-rebase.html</url>
+    <content><![CDATA[<h1 id="Git-基变操作-git-rebase"><a href="#Git-基变操作-git-rebase" class="headerlink" title="Git - 基变操作 - git rebase"></a>Git - 基变操作 - git rebase</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
+<h2 id="git-rebase-介绍"><a href="#git-rebase-介绍" class="headerlink" title="git-rebase 介绍"></a><code>git-rebase</code> 介绍</h2><h3 id="二-案例"><a href="#二-案例" class="headerlink" title="二. 案例"></a>二. 案例</h3><p>使用 <code>git-rebase</code> 清理 <code>git-commit</code> 的 <code>log</code> 日志。</p>
+]]></content>
+      <tags>
+        <tag>开发工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>git - reset - 版本回退</title>
     <url>/blogs/git-rest.html</url>
     <content><![CDATA[<h1 id="使用-git-reset-进行版本"><a href="#使用-git-reset-进行版本" class="headerlink" title="使用 git-reset 进行版本"></a>使用 git-reset 进行版本</h1><blockquote>
@@ -1620,23 +1672,6 @@ docker pull wurstmeister/kafka</code></pre>
 <li><code>git-reset soft</code></li>
 <li><code>git-reset mixed</code></li>
 </ul>
-]]></content>
-      <tags>
-        <tag>开发工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git-rebase</title>
-    <url>/blogs/git-rebase.html</url>
-    <content><![CDATA[<h1 id="Git-基变操作-git-rebase"><a href="#Git-基变操作-git-rebase" class="headerlink" title="Git - 基变操作 - git rebase"></a>Git - 基变操作 - git rebase</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
-<h2 id="git-rebase-介绍"><a href="#git-rebase-介绍" class="headerlink" title="git-rebase 介绍"></a><code>git-rebase</code> 介绍</h2><h3 id="二-案例"><a href="#二-案例" class="headerlink" title="二. 案例"></a>二. 案例</h3><p>使用 <code>git-rebase</code> 清理 <code>git-commit</code> 的 <code>log</code> 日志。</p>
 ]]></content>
       <tags>
         <tag>开发工具</tag>
@@ -2506,6 +2541,27 @@ ssh-add ~/.ssh/id_rsa</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>Java - final</title>
+    <url>/blogs/java-basic-final.html</url>
+    <content><![CDATA[<h1 id="Java-final"><a href="#Java-final" class="headerlink" title="Java - final"></a>Java - final</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<p>final 的可见性</p>
+<p>保障构造函数中，对象不溢出的情况下，其他线程拿到的是初始化后的对象。</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><a href=""></a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>java-basic-condition</title>
     <url>/blogs/java-basic-condition.html</url>
     <content><![CDATA[<h1 id="Condition"><a href="#Condition" class="headerlink" title="Condition"></a>Condition</h1><blockquote>
@@ -2607,27 +2663,6 @@ ssh-add ~/.ssh/id_rsa</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>Java - final</title>
-    <url>/blogs/java-basic-final.html</url>
-    <content><![CDATA[<h1 id="Java-final"><a href="#Java-final" class="headerlink" title="Java - final"></a>Java - final</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<p>final 的可见性</p>
-<p>保障构造函数中，对象不溢出的情况下，其他线程拿到的是初始化后的对象。</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
-<li><a href=""></a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>java 初始化时机</title>
     <url>/blogs/java-basic-initialize-time.html</url>
     <content><![CDATA[<h1 id="Java-初始化时机"><a href="#Java-初始化时机" class="headerlink" title="Java 初始化时机"></a>Java 初始化时机</h1><blockquote>
@@ -2687,9 +2722,9 @@ ssh-add ~/.ssh/id_rsa</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>Java 基础 IO-NIO-AIO</title>
-    <url>/blogs/java-basic-io.html</url>
-    <content><![CDATA[<h1 id="Java-基础-IO-NIO-AIO"><a href="#Java-基础-IO-NIO-AIO" class="headerlink" title="Java 基础 IO-NIO-AIO"></a>Java 基础 IO-NIO-AIO</h1><blockquote>
+    <title>java-basic-introduce</title>
+    <url>/blogs/java-basic-introduce.html</url>
+    <content><![CDATA[<h1 id="Java-基础"><a href="#Java-基础" class="headerlink" title="Java 基础"></a>Java 基础</h1><blockquote>
 <ul>
 <li>原文地址：<a href=""></a></li>
 <li>原文作者：<a href=""></a></li>
@@ -2706,9 +2741,9 @@ ssh-add ~/.ssh/id_rsa</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>java-basic-introduce</title>
-    <url>/blogs/java-basic-introduce.html</url>
-    <content><![CDATA[<h1 id="Java-基础"><a href="#Java-基础" class="headerlink" title="Java 基础"></a>Java 基础</h1><blockquote>
+    <title>Java 基础 IO-NIO-AIO</title>
+    <url>/blogs/java-basic-io.html</url>
+    <content><![CDATA[<h1 id="Java-基础-IO-NIO-AIO"><a href="#Java-基础-IO-NIO-AIO" class="headerlink" title="Java 基础 IO-NIO-AIO"></a>Java 基础 IO-NIO-AIO</h1><blockquote>
 <ul>
 <li>原文地址：<a href=""></a></li>
 <li>原文作者：<a href=""></a></li>
@@ -2744,9 +2779,9 @@ ssh-add ~/.ssh/id_rsa</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>String 详解</title>
-    <url>/blogs/java-basic-string-principle.html</url>
-    <content><![CDATA[<h1 id="String-详解"><a href="#String-详解" class="headerlink" title="String 详解"></a>String 详解</h1><blockquote>
+    <title>深入理解 Java 基础 重写和重载</title>
+    <url>/blogs/java-basic-overloading-overwrite.html</url>
+    <content><![CDATA[<h1 id="深入理解-Java-基础-重写和重载"><a href="#深入理解-Java-基础-重写和重载" class="headerlink" title="深入理解 Java 基础 重写和重载"></a>深入理解 Java 基础 重写和重载</h1><blockquote>
 <ul>
 <li>原文地址：<a href=""></a></li>
 <li>原文作者：<a href=""></a></li>
@@ -2754,8 +2789,8 @@ ssh-add ~/.ssh/id_rsa</code></pre>
 </ul>
 </blockquote>
 <h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ul>
-<li><a href="https://segmentfault.com/a/1190000018211009">你有没有想过: 为什么Java中String是不可变的？</a></li>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><a href=""></a></li>
 </ul>
 ]]></content>
       <tags>
@@ -2804,6 +2839,25 @@ ssh-add ~/.ssh/id_rsa</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>String 详解</title>
+    <url>/blogs/java-basic-string-principle.html</url>
+    <content><![CDATA[<h1 id="String-详解"><a href="#String-详解" class="headerlink" title="String 详解"></a>String 详解</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ul>
+<li><a href="https://segmentfault.com/a/1190000018211009">你有没有想过: 为什么Java中String是不可变的？</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>深入理解 Java UUID 及其实战应用</title>
     <url>/blogs/java-basic-uuid.html</url>
     <content><![CDATA[<h1 id="深入理解-Java-UUID-及其实战应用"><a href="#深入理解-Java-UUID-及其实战应用" class="headerlink" title="深入理解 Java UUID 及其实战应用"></a>深入理解 Java UUID 及其实战应用</h1><blockquote>
@@ -2818,25 +2872,6 @@ ssh-add ~/.ssh/id_rsa</code></pre>
 ]]></content>
       <tags>
         <tag>分布式基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深入理解 Java 基础 重写和重载</title>
-    <url>/blogs/java-basic-overloading-overwrite.html</url>
-    <content><![CDATA[<h1 id="深入理解-Java-基础-重写和重载"><a href="#深入理解-Java-基础-重写和重载" class="headerlink" title="深入理解 Java 基础 重写和重载"></a>深入理解 Java 基础 重写和重载</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
-<li><a href=""></a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -3177,29 +3212,6 @@ test(new int[](1,2,3));//1
       </tags>
   </entry>
   <entry>
-    <title>深入理解 Java Web 拦截器和过滤器</title>
-    <url>/blogs/java-filter-interceptor.html</url>
-    <content><![CDATA[<h1 id="深入理解-Java-Web-拦截器和过滤器"><a href="#深入理解-Java-Web-拦截器和过滤器" class="headerlink" title="深入理解 Java Web 拦截器和过滤器"></a>深入理解 Java Web 拦截器和过滤器</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<p>过滤器 Filter</p>
-<p>基于 函数回调，</p>
-<p>拦截器 Interceptor 基于反射</p>
-<p>filter -&gt; servlet -&gt; interceptor -&gt; controller</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
-<li><a href="https://www.zhihu.com/question/30212464/answer/1786967139">Spring 拦截器和过滤器的区别？</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>java-features-module-system</title>
     <url>/blogs/java-features-module-system.html</url>
     <content><![CDATA[<h1 id="Java-Features-Module-System-JDK-9"><a href="#Java-Features-Module-System-JDK-9" class="headerlink" title="Java Features - Module System -JDK 9"></a>Java Features - Module System -JDK 9</h1><blockquote>
@@ -3248,6 +3260,29 @@ test(new int[](1,2,3));//1
       </tags>
   </entry>
   <entry>
+    <title>深入理解 Java Web 拦截器和过滤器</title>
+    <url>/blogs/java-filter-interceptor.html</url>
+    <content><![CDATA[<h1 id="深入理解-Java-Web-拦截器和过滤器"><a href="#深入理解-Java-Web-拦截器和过滤器" class="headerlink" title="深入理解 Java Web 拦截器和过滤器"></a>深入理解 Java Web 拦截器和过滤器</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<p>过滤器 Filter</p>
+<p>基于 函数回调，</p>
+<p>拦截器 Interceptor 基于反射</p>
+<p>filter -&gt; servlet -&gt; interceptor -&gt; controller</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><a href="https://www.zhihu.com/question/30212464/answer/1786967139">Spring 拦截器和过滤器的区别？</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>深入理解 Java 函数式编程</title>
     <url>/blogs/java-function-principle.html</url>
     <content><![CDATA[<h1 id="深入理解-Java-函数式编程"><a href="#深入理解-Java-函数式编程" class="headerlink" title="深入理解 Java 函数式编程"></a>深入理解 Java 函数式编程</h1><blockquote>
@@ -3265,6 +3300,25 @@ test(new int[](1,2,3));//1
 ]]></content>
       <tags>
         <tag>函数式编程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Future 取消异常机制</title>
+    <url>/blogs/java-future-cancelexception-timeoutexception.html</url>
+    <content><![CDATA[<h1 id="Future-CancellationException"><a href="#Future-CancellationException" class="headerlink" title="Future CancellationException"></a>Future CancellationException</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<p>参考文章</p>
+<p><a href="https://www.coder.work/article/5533506">java - TimeoutException和CancellationException之间的区别
+</a></p>
+]]></content>
+      <tags>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -3436,25 +3490,6 @@ synchronized <span class="token keyword">static</span> <span class="token keywor
       </tags>
   </entry>
   <entry>
-    <title>Future 取消异常机制</title>
-    <url>/blogs/java-future-cancelexception-timeoutexception.html</url>
-    <content><![CDATA[<h1 id="Future-CancellationException"><a href="#Future-CancellationException" class="headerlink" title="Future CancellationException"></a>Future CancellationException</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<p>参考文章</p>
-<p><a href="https://www.coder.work/article/5533506">java - TimeoutException和CancellationException之间的区别
-</a></p>
-]]></content>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Lambda表达式的原理</title>
     <url>/blogs/java-lambda-principle.html</url>
     <content><![CDATA[<h1 id="Lambda表达式的原理"><a href="#Lambda表达式的原理" class="headerlink" title="Lambda表达式的原理"></a>Lambda表达式的原理</h1><blockquote>
@@ -3475,22 +3510,6 @@ synchronized <span class="token keyword">static</span> <span class="token keywor
 ]]></content>
       <tags>
         <tag>lambda</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>机器学习 - 激活函数</title>
-    <url>/blogs/ai-activation-function.html</url>
-    <content><![CDATA[<h1 id="机器学习-激活函数"><a href="#机器学习-激活函数" class="headerlink" title="机器学习 - 激活函数"></a>机器学习 - 激活函数</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5>]]></content>
-      <tags>
-        <tag>机器学习</tag>
       </tags>
   </entry>
   <entry>
@@ -3750,6 +3769,25 @@ synchronized <span class="token keyword">static</span> <span class="token keywor
       </tags>
   </entry>
   <entry>
+    <title>深入理解 Java 多线程</title>
+    <url>/blogs/java-thread-introduce.html</url>
+    <content><![CDATA[<h1 id="深入理解-Java-多线程"><a href="#深入理解-Java-多线程" class="headerlink" title="深入理解 Java 多线程"></a>深入理解 Java 多线程</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ol>
+<li><a href="http://zqhxuyuan.github.io/2017/10/25/Java-Threads/">图解 Java 多线程</a></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>多线程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>深入理解 Java 多线程 Join</title>
     <url>/blogs/java-thread-join.html</url>
     <content><![CDATA[<h1 id="深入理解-Java-多线程-Join"><a href="#深入理解-Java-多线程-Join" class="headerlink" title="深入理解 Java 多线程 Join"></a>深入理解 Java 多线程 Join</h1><blockquote>
@@ -3787,9 +3825,9 @@ synchronized <span class="token keyword">static</span> <span class="token keywor
       </tags>
   </entry>
   <entry>
-    <title>深入理解 Java 多线程</title>
-    <url>/blogs/java-thread-introduce.html</url>
-    <content><![CDATA[<h1 id="深入理解-Java-多线程"><a href="#深入理解-Java-多线程" class="headerlink" title="深入理解 Java 多线程"></a>深入理解 Java 多线程</h1><blockquote>
+    <title>深入理解 Java 多线程 - LockSupport</title>
+    <url>/blogs/java-thread-locksupport.html</url>
+    <content><![CDATA[<h1 id="深入理解-Java-多线程-LockSupport"><a href="#深入理解-Java-多线程-LockSupport" class="headerlink" title="深入理解 Java 多线程 - LockSupport"></a>深入理解 Java 多线程 - LockSupport</h1><blockquote>
 <ul>
 <li>原文地址：<a href=""></a></li>
 <li>原文作者：<a href=""></a></li>
@@ -3798,7 +3836,7 @@ synchronized <span class="token keyword">static</span> <span class="token keywor
 </blockquote>
 <h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
 <h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ol>
-<li><a href="http://zqhxuyuan.github.io/2017/10/25/Java-Threads/">图解 Java 多线程</a></li>
+<li><a href="https://xie.infoq.cn/article/610a1a56ad372645e1c5036dc">【Java 技术之旅】从底层分析 LockSupport 原理机制</a></li>
 </ol>
 ]]></content>
       <tags>
@@ -3819,25 +3857,6 @@ synchronized <span class="token keyword">static</span> <span class="token keywor
 <h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
 <li><a href=""></a></li>
 </ul>
-]]></content>
-      <tags>
-        <tag>多线程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深入理解 Java 多线程 - LockSupport</title>
-    <url>/blogs/java-thread-locksupport.html</url>
-    <content><![CDATA[<h1 id="深入理解-Java-多线程-LockSupport"><a href="#深入理解-Java-多线程-LockSupport" class="headerlink" title="深入理解 Java 多线程 - LockSupport"></a>深入理解 Java 多线程 - LockSupport</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ol>
-<li><a href="https://xie.infoq.cn/article/610a1a56ad372645e1c5036dc">【Java 技术之旅】从底层分析 LockSupport 原理机制</a></li>
-</ol>
 ]]></content>
       <tags>
         <tag>多线程</tag>
@@ -3868,6 +3887,30 @@ synchronized <span class="token keyword">static</span> <span class="token keywor
       </tags>
   </entry>
   <entry>
+    <title>Java 多线程状态</title>
+    <url>/blogs/java-thread-status.html</url>
+    <content><![CDATA[<h1 id="Java-多线程状态"><a href="#Java-多线程状态" class="headerlink" title="Java 多线程状态"></a>Java 多线程状态</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<p>多线程的状态</p>
+<p>new runnable blocked waiting time_waiting termined</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><p><a href="https://segmentfault.com/a/1190000017252672">(一)线程的发展历史</a></p>
+</li>
+<li><p><a href="https://www.cnblogs.com/lifegoeson/p/13516019.html">java线程的五大状态，阻塞状态详解</a></p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>多线程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>深入理解 Java 多线程 - synchronized</title>
     <url>/blogs/java-thread-synchronized.html</url>
     <content><![CDATA[<h1 id="深入理解-Java-多线程-synchronized"><a href="#深入理解-Java-多线程-synchronized" class="headerlink" title="深入理解 Java 多线程 - synchronized"></a>深入理解 Java 多线程 - synchronized</h1><blockquote>
@@ -3888,30 +3931,6 @@ synchronized <span class="token keyword">static</span> <span class="token keywor
 <li><p><a href="https://www.cnblogs.com/javastack/p/12787771.html">Synchronized 与 ReentrantLock 的区别！</a></p>
 </li>
 <li><p><a href="https://segmentfault.com/a/1190000017255044">(五)Synchronized原理分析</a></p>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>多线程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java 多线程状态</title>
-    <url>/blogs/java-thread-status.html</url>
-    <content><![CDATA[<h1 id="Java-多线程状态"><a href="#Java-多线程状态" class="headerlink" title="Java 多线程状态"></a>Java 多线程状态</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<p>多线程的状态</p>
-<p>new runnable blocked waiting time_waiting termined</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
-<li><p><a href="https://segmentfault.com/a/1190000017252672">(一)线程的发展历史</a></p>
-</li>
-<li><p><a href="https://www.cnblogs.com/lifegoeson/p/13516019.html">java线程的五大状态，阻塞状态详解</a></p>
 </li>
 </ul>
 ]]></content>
@@ -4118,6 +4137,25 @@ e <span class="token operator">=</span> executor<span class="token punctuation">
       </tags>
   </entry>
   <entry>
+    <title>多线程 yield</title>
+    <url>/blogs/java-thread-yield.html</url>
+    <content><![CDATA[<h1 id="多线程-yield"><a href="#多线程-yield" class="headerlink" title="多线程 yield"></a>多线程 yield</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><a href=""></a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>多线程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java 可变参数</title>
     <url>/blogs/java-variable-parameter.html</url>
     <content><![CDATA[<h2 id="可变参数"><a href="#可变参数" class="headerlink" title="可变参数"></a>可变参数</h2><blockquote>
@@ -4248,25 +4286,6 @@ test(new int[](1,2,3));//1
 ]]></content>
       <tags>
         <tag>Java 基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>多线程 yield</title>
-    <url>/blogs/java-thread-yield.html</url>
-    <content><![CDATA[<h1 id="多线程-yield"><a href="#多线程-yield" class="headerlink" title="多线程 yield"></a>多线程 yield</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
-<li><a href=""></a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>多线程</tag>
       </tags>
   </entry>
   <entry>
@@ -4524,6 +4543,41 @@ test(new int[](1,2,3));//1
       </tags>
   </entry>
   <entry>
+    <title>深入理解 JVM GC roots</title>
+    <url>/blogs/jvm-gc-roots.html</url>
+    <content><![CDATA[<h1 id="深入理解-JVM-GC-roots"><a href="#深入理解-JVM-GC-roots" class="headerlink" title="深入理解 JVM GC roots"></a>深入理解 JVM GC roots</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<h3 id="安全点"><a href="#安全点" class="headerlink" title="安全点"></a>安全点</h3><p>安全点是指一些特殊位置（一段禁止访问的内存，代码访问到此处时，会促使当前线程进入阻塞），当代码执行到特殊位置时，此时的虚拟机状态是安全可控的。<br>虚拟机可以通过 VM 线程找到活跃对象（通过一开始创建的 oopMap），检查并更新 Mutator。</p>
+<h4 id="进入安全点方式"><a href="#进入安全点方式" class="headerlink" title="进入安全点方式"></a>进入安全点方式</h4><ol>
+<li><p>G1 并发线程进行安全点</p>
+</li>
+<li><p>解释线程进入安全点</p>
+</li>
+<li><p>编译线程进入安全点</p>
+</li>
+<li><p>正在执行本地代码的线程进入安全点</p>
+</li>
+</ol>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><p><a href="https://juejin.cn/post/6952376918855385125">JVM技术之旅-GCRoots定位及Mutator线程中断</a></p>
+</li>
+<li><p><a href="https://www.jianshu.com/p/e68a422c93cb">【jvm学习笔记八】G1-线程中的安全点</a></p>
+</li>
+<li><p><a href="https://segmentfault.com/a/1190000039300766">SATB的一些理解</a></p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>JVM</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JVM-垃圾回收-三色标记算法</title>
     <url>/blogs/jvm-gc-san-se-biao-ji.html</url>
     <content><![CDATA[<h1 id="JVM-垃圾回收-三色标记算法"><a href="#JVM-垃圾回收-三色标记算法" class="headerlink" title="JVM-垃圾回收-三色标记算法"></a>JVM-垃圾回收-三色标记算法</h1><blockquote>
@@ -4592,41 +4646,6 @@ test(new int[](1,2,3));//1
       </tags>
   </entry>
   <entry>
-    <title>深入理解 JVM GC roots</title>
-    <url>/blogs/jvm-gc-roots.html</url>
-    <content><![CDATA[<h1 id="深入理解-JVM-GC-roots"><a href="#深入理解-JVM-GC-roots" class="headerlink" title="深入理解 JVM GC roots"></a>深入理解 JVM GC roots</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<h3 id="安全点"><a href="#安全点" class="headerlink" title="安全点"></a>安全点</h3><p>安全点是指一些特殊位置（一段禁止访问的内存，代码访问到此处时，会促使当前线程进入阻塞），当代码执行到特殊位置时，此时的虚拟机状态是安全可控的。<br>虚拟机可以通过 VM 线程找到活跃对象（通过一开始创建的 oopMap），检查并更新 Mutator。</p>
-<h4 id="进入安全点方式"><a href="#进入安全点方式" class="headerlink" title="进入安全点方式"></a>进入安全点方式</h4><ol>
-<li><p>G1 并发线程进行安全点</p>
-</li>
-<li><p>解释线程进入安全点</p>
-</li>
-<li><p>编译线程进入安全点</p>
-</li>
-<li><p>正在执行本地代码的线程进入安全点</p>
-</li>
-</ol>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
-<li><p><a href="https://juejin.cn/post/6952376918855385125">JVM技术之旅-GCRoots定位及Mutator线程中断</a></p>
-</li>
-<li><p><a href="https://www.jianshu.com/p/e68a422c93cb">【jvm学习笔记八】G1-线程中的安全点</a></p>
-</li>
-<li><p><a href="https://segmentfault.com/a/1190000039300766">SATB的一些理解</a></p>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>JVM</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JVM 简介</title>
     <url>/blogs/jvm-introduce.html</url>
     <content><![CDATA[<h1 id="JVM-简介"><a href="#JVM-简介" class="headerlink" title="JVM 简介"></a>JVM 简介</h1><blockquote>
@@ -4651,25 +4670,6 @@ test(new int[](1,2,3));//1
 </li>
 <li><p><a href="https://www.cnblogs.com/aspirant/p/8662690.html">JVM的垃圾回收机制 总结(垃圾收集、回收算法、垃圾回收器)</a></p>
 </li>
-</ul>
-]]></content>
-      <tags>
-        <tag>JVM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深入理解 JVM 内存结构</title>
-    <url>/blogs/jvm-memory-instruct.html</url>
-    <content><![CDATA[<h1 id="深入理解-JVM-内存结构"><a href="#深入理解-JVM-内存结构" class="headerlink" title="深入理解 JVM 内存结构"></a>深入理解 JVM 内存结构</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
-<li><a href="https://zhuanlan.zhihu.com/p/68145978">JVM系列（1）java8的内存结构</a></li>
 </ul>
 ]]></content>
       <tags>
@@ -4703,6 +4703,25 @@ test(new int[](1,2,3));//1
 ]]></content>
       <tags>
         <tag>jvm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深入理解 JVM 内存结构</title>
+    <url>/blogs/jvm-memory-instruct.html</url>
+    <content><![CDATA[<h1 id="深入理解-JVM-内存结构"><a href="#深入理解-JVM-内存结构" class="headerlink" title="深入理解 JVM 内存结构"></a>深入理解 JVM 内存结构</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><a href="https://zhuanlan.zhihu.com/p/68145978">JVM系列（1）java8的内存结构</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>JVM</tag>
       </tags>
   </entry>
   <entry>
@@ -4884,29 +4903,6 @@ test(new int[](1,2,3));//1
       </tags>
   </entry>
   <entry>
-    <title>jvm-tools-jconsole</title>
-    <url>/blogs/jvm-tools-jconsole.html</url>
-    <content><![CDATA[<h1 id="JVM-jconsole"><a href="#JVM-jconsole" class="headerlink" title="JVM - jconsole"></a>JVM - jconsole</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<p>是一个用java写的GUI程序，用来监控VM，并可监控远程的VM</p>
-<p>服务器端配置，远程调控是如下配置：在服务端启动时添加如下参数：</p>
-<p>-Dcom.sun.management.jmxremote.port=22801</p>
-<p>-Dcom.sun.management.jmxremote.pwd.file=jmxremote.pwd</p>
-<p>-Dcom.sun.management.jmxremote.ssl=false</p>
-<p>-Dcom.sun.management.jmxremote.authenticate=false</p>
-<p>在相同目录下创建文件jmxremote.pwd，并填写用户名和密码</p>
-]]></content>
-      <tags>
-        <tag>jvm</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java JVM  tools 简介</title>
     <url>/blogs/jvm-tools-introduce.html</url>
     <content><![CDATA[<h1 id="Java-JVM-tools-简介"><a href="#Java-JVM-tools-简介" class="headerlink" title="Java JVM  tools 简介"></a>Java JVM  tools 简介</h1><blockquote>
@@ -4932,6 +4928,29 @@ test(new int[](1,2,3));//1
 <h2 id="其他工具"><a href="#其他工具" class="headerlink" title="其他工具"></a>其他工具</h2><h3 id="1-grep"><a href="#1-grep" class="headerlink" title="1. grep"></a>1. grep</h3><h3 id="2-find"><a href="#2-find" class="headerlink" title="2. find"></a>2. find</h3><h3 id="3-tail"><a href="#3-tail" class="headerlink" title="3. tail"></a>3. tail</h3><h3 id="4-less-more-cat"><a href="#4-less-more-cat" class="headerlink" title="4. less,more,cat"></a>4. less,more,cat</h3><h3 id="5-awk"><a href="#5-awk" class="headerlink" title="5. awk"></a>5. awk</h3><h3 id="6-sed"><a href="#6-sed" class="headerlink" title="6. sed"></a>6. sed</h3><blockquote>
 <p>文本替换工具</p>
 </blockquote>
+]]></content>
+      <tags>
+        <tag>jvm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>jvm-tools-jconsole</title>
+    <url>/blogs/jvm-tools-jconsole.html</url>
+    <content><![CDATA[<h1 id="JVM-jconsole"><a href="#JVM-jconsole" class="headerlink" title="JVM - jconsole"></a>JVM - jconsole</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<p>是一个用java写的GUI程序，用来监控VM，并可监控远程的VM</p>
+<p>服务器端配置，远程调控是如下配置：在服务端启动时添加如下参数：</p>
+<p>-Dcom.sun.management.jmxremote.port=22801</p>
+<p>-Dcom.sun.management.jmxremote.pwd.file=jmxremote.pwd</p>
+<p>-Dcom.sun.management.jmxremote.ssl=false</p>
+<p>-Dcom.sun.management.jmxremote.authenticate=false</p>
+<p>在相同目录下创建文件jmxremote.pwd，并填写用户名和密码</p>
 ]]></content>
       <tags>
         <tag>jvm</tag>
@@ -5517,7 +5536,7 @@ test(new int[](1,2,3));//1
 </ul>
 </blockquote>
 <h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<h2 id="消息队列介绍"><a href="#消息队列介绍" class="headerlink" title="消息队列介绍"></a>消息队列介绍</h2><h2 id="消息队列类型"><a href="#消息队列类型" class="headerlink" title="消息队列类型"></a>消息队列类型</h2><h3 id="1-RocketMQ"><a href="#1-RocketMQ" class="headerlink" title="1. RocketMQ"></a>1. RocketMQ</h3><ol>
+<h2 id="消息队列介绍"><a href="#消息队列介绍" class="headerlink" title="消息队列介绍"></a>消息队列介绍</h2><ol>
 <li><p><a href="">深入理解 RocketMQ 路由机制</a></p>
 </li>
 <li><p><a href="">深入理解 RocketMQ 消息发送</a></p>
@@ -5534,6 +5553,10 @@ test(new int[](1,2,3));//1
 </li>
 <li><p><a href="">深入理解 RocketMQ 负载均衡</a></p>
 </li>
+<li><p><a href="https://starrier.starrier.org/blogs/mq-rocketmq-producer.html">深入理解 RocketMQ 生产者</a></p>
+</li>
+</ol>
+<h2 id="消息队列类型"><a href="#消息队列类型" class="headerlink" title="消息队列类型"></a>消息队列类型</h2><h3 id="1-RocketMQ"><a href="#1-RocketMQ" class="headerlink" title="1. RocketMQ"></a>1. RocketMQ</h3><ol>
 <li><p><a href="">深入理解消息队列 MQ 消息积压</a></p>
 </li>
 <li><p><a href="">深入理解消息队列 MQ 重复消费</a></p>
@@ -5545,7 +5568,7 @@ test(new int[](1,2,3));//1
 <li><p><a href="">深入理解消息队列 MQ 消息事务</a></p>
 </li>
 </ol>
-<h3 id="2-ZeroMQ"><a href="#2-ZeroMQ" class="headerlink" title="2. ZeroMQ"></a>2. ZeroMQ</h3>]]></content>
+<h3 id="2-ZeroMQ"><a href="#2-ZeroMQ" class="headerlink" title="2. ZeroMQ"></a>2. ZeroMQ</h3><h3 id="3-QMQ"><a href="#3-QMQ" class="headerlink" title="3. QMQ"></a>3. QMQ</h3><h3 id="4-Kafka"><a href="#4-Kafka" class="headerlink" title="4. Kafka"></a>4. Kafka</h3>]]></content>
       <tags>
         <tag>消息中间件</tag>
       </tags>
@@ -5570,25 +5593,6 @@ test(new int[](1,2,3));//1
 ]]></content>
       <tags>
         <tag>mq</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深入理解 RabbitMQ 简介</title>
-    <url>/blogs/mq-rabbitmq-introduce.html</url>
-    <content><![CDATA[<h1 id="深入理解-RabbitMQ-简介"><a href="#深入理解-RabbitMQ-简介" class="headerlink" title="深入理解 RabbitMQ 简介"></a>深入理解 RabbitMQ 简介</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
-<li><a href="https://blog.csdn.net/cd_yourheart/article/details/108230264#:~:text=RabbitMQ%E6%98%AF%E4%B8%80%E4%B8%AA%E5%BC%80%E6%BA%90%E7%9A%84,%E7%9A%84%E8%B4%9F%E8%BD%BD%E4%BB%A5%E5%8F%8A%E5%BB%B6%E6%97%B6%E3%80%82">RabbitMQ工作原理</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>RabbitMQ</tag>
       </tags>
   </entry>
   <entry>
@@ -5619,6 +5623,25 @@ test(new int[](1,2,3));//1
 ]]></content>
       <tags>
         <tag>MQ</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深入理解 RabbitMQ 简介</title>
+    <url>/blogs/mq-rabbitmq-introduce.html</url>
+    <content><![CDATA[<h1 id="深入理解-RabbitMQ-简介"><a href="#深入理解-RabbitMQ-简介" class="headerlink" title="深入理解 RabbitMQ 简介"></a>深入理解 RabbitMQ 简介</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><a href="https://blog.csdn.net/cd_yourheart/article/details/108230264#:~:text=RabbitMQ%E6%98%AF%E4%B8%80%E4%B8%AA%E5%BC%80%E6%BA%90%E7%9A%84,%E7%9A%84%E8%B4%9F%E8%BD%BD%E4%BB%A5%E5%8F%8A%E5%BB%B6%E6%97%B6%E3%80%82">RabbitMQ工作原理</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>RabbitMQ</tag>
       </tags>
   </entry>
   <entry>
@@ -6183,6 +6206,25 @@ ArrayList<span class="token tag"><span class="token tag"><span class="token punc
       </tags>
   </entry>
   <entry>
+    <title>深入理解 MySQL 模糊搜索</title>
+    <url>/blogs/mysql-fuzzy-query.html</url>
+    <content><![CDATA[<h1 id="深入理解-MySQL-模糊搜索"><a href="#深入理解-MySQL-模糊搜索" class="headerlink" title="深入理解 MySQL 模糊搜索"></a>深入理解 MySQL 模糊搜索</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><a href=""></a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>深入理解 MySQL 间隙锁</title>
     <url>/blogs/mysql-gap-lock.html</url>
     <content><![CDATA[<h1 id="深入理解-MySQL-间隙锁"><a href="#深入理解-MySQL-间隙锁" class="headerlink" title="深入理解 MySQL 间隙锁"></a>深入理解 MySQL 间隙锁</h1><blockquote>
@@ -6248,25 +6290,6 @@ ArrayList<span class="token tag"><span class="token tag"><span class="token punc
       </tags>
   </entry>
   <entry>
-    <title>MySQL 索引</title>
-    <url>/blogs/mysql-index.html</url>
-    <content><![CDATA[<h1 id="MySQL-索引"><a href="#MySQL-索引" class="headerlink" title="MySQL 索引"></a>MySQL 索引</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
-<li><a href="https://cloud.tencent.com/developer/article/1541265">聚簇索引与非聚簇索引（也叫二级索引）–最清楚的一篇讲解</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>深入理解 MySQL - 聚簇索引和非聚簇索引</title>
     <url>/blogs/mysql-index-jucu-fei-jucu.html</url>
     <content><![CDATA[<h1 id="深入理解-MySQL-聚簇索引和非聚簇索引"><a href="#深入理解-MySQL-聚簇索引和非聚簇索引" class="headerlink" title="深入理解 MySQL - 聚簇索引和非聚簇索引"></a>深入理解 MySQL - 聚簇索引和非聚簇索引</h1><blockquote>
@@ -6288,9 +6311,9 @@ ArrayList<span class="token tag"><span class="token tag"><span class="token punc
       </tags>
   </entry>
   <entry>
-    <title>深入理解 MySQL 模糊搜索</title>
-    <url>/blogs/mysql-fuzzy-query.html</url>
-    <content><![CDATA[<h1 id="深入理解-MySQL-模糊搜索"><a href="#深入理解-MySQL-模糊搜索" class="headerlink" title="深入理解 MySQL 模糊搜索"></a>深入理解 MySQL 模糊搜索</h1><blockquote>
+    <title>MySQL 索引</title>
+    <url>/blogs/mysql-index.html</url>
+    <content><![CDATA[<h1 id="MySQL-索引"><a href="#MySQL-索引" class="headerlink" title="MySQL 索引"></a>MySQL 索引</h1><blockquote>
 <ul>
 <li>原文地址：<a href=""></a></li>
 <li>原文作者：<a href=""></a></li>
@@ -6299,7 +6322,7 @@ ArrayList<span class="token tag"><span class="token tag"><span class="token punc
 </blockquote>
 <h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
 <h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
-<li><a href=""></a></li>
+<li><a href="https://cloud.tencent.com/developer/article/1541265">聚簇索引与非聚簇索引（也叫二级索引）–最清楚的一篇讲解</a></li>
 </ul>
 ]]></content>
       <tags>
@@ -6368,6 +6391,25 @@ ArrayList<span class="token tag"><span class="token tag"><span class="token punc
 </ul>
 </blockquote>
 <h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+]]></content>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MySQL 锁分类</title>
+    <url>/blogs/mysql-lock-introduce.html</url>
+    <content><![CDATA[<h1 id="MySQL-锁分类"><a href="#MySQL-锁分类" class="headerlink" title="MySQL 锁分类"></a>MySQL 锁分类</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><a href=""></a></li>
+</ul>
 ]]></content>
       <tags>
         <tag>MySQL</tag>
@@ -6466,25 +6508,6 @@ log-bin=mysqlbin # 默认配置</code></pre>
 </ul>
 </blockquote>
 <h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-]]></content>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL 锁分类</title>
-    <url>/blogs/mysql-lock-introduce.html</url>
-    <content><![CDATA[<h1 id="MySQL-锁分类"><a href="#MySQL-锁分类" class="headerlink" title="MySQL 锁分类"></a>MySQL 锁分类</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
-<li><a href=""></a></li>
-</ul>
 ]]></content>
       <tags>
         <tag>MySQL</tag>
@@ -6601,22 +6624,6 @@ log-bin=mysqlbin # 默认配置</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>mysql-performance-schema</title>
-    <url>/blogs/mysql-performance-schema.html</url>
-    <content><![CDATA[<h1 id="MySQL-Performance-Schema"><a href="#MySQL-Performance-Schema" class="headerlink" title="MySQL - Performance Schema"></a>MySQL - Performance Schema</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-]]></content>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>深入理解 MySQL - 页结构</title>
     <url>/blogs/mysql-page-principle.html</url>
     <content><![CDATA[<h1 id="深入理解-MySQL-页结构"><a href="#深入理解-MySQL-页结构" class="headerlink" title="深入理解 MySQL - 页结构"></a>深入理解 MySQL - 页结构</h1><blockquote>
@@ -6633,6 +6640,22 @@ log-bin=mysqlbin # 默认配置</code></pre>
 <li><p><a href="https://blog.csdn.net/king13127/article/details/115545972">深入理解mysql-第五章 InnoDB记录存储结构-页结构</a></p>
 </li>
 </ul>
+]]></content>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mysql-performance-schema</title>
+    <url>/blogs/mysql-performance-schema.html</url>
+    <content><![CDATA[<h1 id="MySQL-Performance-Schema"><a href="#MySQL-Performance-Schema" class="headerlink" title="MySQL - Performance Schema"></a>MySQL - Performance Schema</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
 ]]></content>
       <tags>
         <tag>MySQL</tag>
@@ -6869,6 +6892,58 @@ log-bin=mysqlbin # 默认配置</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>高并发 - 缓存问题处理方案</title>
+    <url>/blogs/problems-cache.html</url>
+    <content><![CDATA[<h1 id="高并发-缓存问题处理方案"><a href="#高并发-缓存问题处理方案" class="headerlink" title="高并发 - 缓存问题处理方案"></a>高并发 - 缓存问题处理方案</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
+<h5 id="特别说明-1"><a href="#特别说明-1" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 PR 谢谢~~</p>
+<h2 id="一-缓存雪崩"><a href="#一-缓存雪崩" class="headerlink" title="一. 缓存雪崩"></a>一. 缓存雪崩</h2><h3 id="定义："><a href="#定义：" class="headerlink" title="定义："></a>定义：</h3><h5 id="可能是因为数据未加载到缓存中，或者缓存同一时间大面积的失效，从而导致所有请求都去查数据库，导致数据库CPU和内存负载过高，甚至宕机。"><a href="#可能是因为数据未加载到缓存中，或者缓存同一时间大面积的失效，从而导致所有请求都去查数据库，导致数据库CPU和内存负载过高，甚至宕机。" class="headerlink" title="可能是因为数据未加载到缓存中，或者缓存同一时间大面积的失效，从而导致所有请求都去查数据库，导致数据库CPU和内存负载过高，甚至宕机。"></a>可能是因为数据未加载到缓存中，或者缓存同一时间大面积的失效，从而导致所有请求都去查数据库，导致数据库CPU和内存负载过高，甚至宕机。</h5><h4 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h4><ol>
+<li>均匀分布 key 的过期时间。防止同一时间 key 大面试失效</li>
+</ol>
+<p>2 种策略（同时使用）：</p>
+<h5 id="1-对缓存做高可用，防止缓存宕机"><a href="#1-对缓存做高可用，防止缓存宕机" class="headerlink" title="1) .对缓存做高可用，防止缓存宕机"></a>1) .对缓存做高可用，防止缓存宕机</h5><ul>
+<li>分析用户行为，然后失效时间均匀分布。或者在失效时间的基础上再加1~5分钟的随机数。</li>
+</ul>
+<h5 id="2-使用断路器，如果缓存宕机，为了防止系统全部宕机，限制部分流量进入-DB，保证部分可用，其余的请求返回断路器的默认值。"><a href="#2-使用断路器，如果缓存宕机，为了防止系统全部宕机，限制部分流量进入-DB，保证部分可用，其余的请求返回断路器的默认值。" class="headerlink" title="2). 使用断路器，如果缓存宕机，为了防止系统全部宕机，限制部分流量进入 DB，保证部分可用，其余的请求返回断路器的默认值。"></a>2). 使用断路器，如果缓存宕机，为了防止系统全部宕机，限制部分流量进入 DB，保证部分可用，其余的请求返回断路器的默认值。</h5><ul>
+<li> 加锁计数（即限制并发的数量，可以用 semphore）或者起一定数量的队列来避免缓存失效时大量请求并发到数据库。但这种方式会降低吞吐量。</li>
+</ul>
+<ol start="3">
+<li>按照 key 加锁，同一时间只允许一个请求去读库。</li>
+</ol>
+<h2 id="二-缓存穿透"><a href="#二-缓存穿透" class="headerlink" title="二. 缓存穿透"></a>二. 缓存穿透</h2><h3 id="定义：-1"><a href="#定义：-1" class="headerlink" title="定义："></a>定义：</h3><h5 id="用户查询一个不存在的-key，redis-没有，请求打到缓存中。"><a href="#用户查询一个不存在的-key，redis-没有，请求打到缓存中。" class="headerlink" title="用户查询一个不存在的 key，redis 没有，请求打到缓存中。"></a>用户查询一个不存在的 key，redis 没有，请求打到缓存中。</h5><ol>
+<li>如果查询数据库也为空，直接设置一个默认值存放到缓存，这样第二次到缓冲中获取就有值了，而不会继续访问数据库。设置一个过期时间或者当有值的时候将缓存中的值替换掉即可。</li>
+<li>可以给key设置一些格式规则，然后查询之前先过滤掉不符合规则的Key。</li>
+<li>如果查询数据库也为空的时候，把这个 key 缓存起来，这样在下次请求过来的时候就可以走缓存了。当然这种方案有个弊端，那就是请求过来的 key 必须大部分相同，如果受到攻击的话，每次的 key 肯定不是固定的，只要不固定 key，这个方案就没用。</li>
+<li>可以用缓存 key 的规则来做一些限制，当然这种只适合特定的使用场景，比如我们查询商品信息，我们把商品信息存储在 Mongodb 中，Mongodb 有一个 _id 是自动生成的，它有一定的生成规则，如果是直接根据 id 查询商品，在查询之前我们可以对这个 id 做认证，看是不是符合规范，当不符合的时候就直接返回默认的值，既不用去缓存中查询，也不用操作数据库了。这种方案可以解决一部分问题，使用场景比较少。</li>
+<li>利用布隆过滤器来实现对缓存 key 的检验，需要将所有可能缓存的数据 Hash 到一个足够大的 BitSet 中，在缓存之前先从布隆过滤器中判断这个 key 是否存在，然后做对应的操作<br>d<h2 id="三-缓存击穿"><a href="#三-缓存击穿" class="headerlink" title="三. 缓存击穿"></a>三. 缓存击穿</h2></li>
+</ol>
+<h3 id="定义：-2"><a href="#定义：-2" class="headerlink" title="定义："></a>定义：</h3><h5 id="如果网站并发访问高，一个缓存如果失效，可能出现多个进程同时查询DB，同时设置缓存的情况，如果并发确实很大，这也可能造成DB压力过大，还有缓存频繁更新的问题"><a href="#如果网站并发访问高，一个缓存如果失效，可能出现多个进程同时查询DB，同时设置缓存的情况，如果并发确实很大，这也可能造成DB压力过大，还有缓存频繁更新的问题" class="headerlink" title="如果网站并发访问高，一个缓存如果失效，可能出现多个进程同时查询DB，同时设置缓存的情况，如果并发确实很大，这也可能造成DB压力过大，还有缓存频繁更新的问题"></a>如果网站并发访问高，一个缓存如果失效，可能出现多个进程同时查询DB，同时设置缓存的情况，如果并发确实很大，这也可能造成DB压力过大，还有缓存频繁更新的问题</h5><ol>
+<li>对缓存查询加锁，如果 <code>KEY</code> 不存在，就加锁，然后查DB入缓存，然后解锁；其他进程如果发现有锁就等待，然后等解锁后返回数据或者进入DB查询。</li>
+</ol>
+<h2 id="四-缓存预热"><a href="#四-缓存预热" class="headerlink" title="四. 缓存预热"></a>四. 缓存预热</h2><h3 id="目的就是在系统上线前，将数据加载到缓存中。解决思路"><a href="#目的就是在系统上线前，将数据加载到缓存中。解决思路" class="headerlink" title="目的就是在系统上线前，将数据加载到缓存中。解决思路"></a>目的就是在系统上线前，将数据加载到缓存中。解决思路</h3><ol>
+<li>数据量不大的话，在系统启动的时候直接加载。</li>
+<li>自己写个简单的缓存预热程序。</li>
+</ol>
+<h2 id="五-缓存算法"><a href="#五-缓存算法" class="headerlink" title="五. 缓存算法"></a>五. 缓存算法</h2><ol>
+<li>FIFO算法：First in First out，先进先出。原则：一个数据最先进入缓存中，则应该最早淘汰掉。也就是说，当缓存满的时候，应当把最先进入缓存的数据给淘汰掉。</li>
+<li>LFU算法：Least Frequently Used，最不经常使用算法。</li>
+<li>LRU算法：Least Recently Used，近期最少使用算法。</li>
+<li>LRU和LFU的区别。LFU算法是根据在一段时间里数据项被使用的次数选择出最少使用的数据项，即根据使用次数的差异来决定。而LRU是根据使用时间的差异来决定的</li>
+</ol>
+<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><p><a href="http://c.biancheng.net/view/5555.html">http://c.biancheng.net/view/5555.html</a></p>
+<p>-<a href="https://alsritter.icu/posts/56acbef6/">Redis 缓存读写策略设计及常见问题</a></p>
+]]></content>
+      <tags>
+        <tag>分布式基础</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>reactive api 功能</title>
     <url>/blogs/reactive-api.html</url>
     <content><![CDATA[<h1 id="reactive-api-功能"><a href="#reactive-api-功能" class="headerlink" title="reactive api 功能"></a>reactive api 功能</h1><blockquote>
@@ -6920,58 +6995,6 @@ log-bin=mysqlbin # 默认配置</code></pre>
 ]]></content>
       <tags>
         <tag>响应式编程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>高并发 - 缓存问题处理方案</title>
-    <url>/blogs/problems-cache.html</url>
-    <content><![CDATA[<h1 id="高并发-缓存问题处理方案"><a href="#高并发-缓存问题处理方案" class="headerlink" title="高并发 - 缓存问题处理方案"></a>高并发 - 缓存问题处理方案</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
-<h5 id="特别说明-1"><a href="#特别说明-1" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 PR 谢谢~~</p>
-<h2 id="一-缓存雪崩"><a href="#一-缓存雪崩" class="headerlink" title="一. 缓存雪崩"></a>一. 缓存雪崩</h2><h3 id="定义："><a href="#定义：" class="headerlink" title="定义："></a>定义：</h3><h5 id="可能是因为数据未加载到缓存中，或者缓存同一时间大面积的失效，从而导致所有请求都去查数据库，导致数据库CPU和内存负载过高，甚至宕机。"><a href="#可能是因为数据未加载到缓存中，或者缓存同一时间大面积的失效，从而导致所有请求都去查数据库，导致数据库CPU和内存负载过高，甚至宕机。" class="headerlink" title="可能是因为数据未加载到缓存中，或者缓存同一时间大面积的失效，从而导致所有请求都去查数据库，导致数据库CPU和内存负载过高，甚至宕机。"></a>可能是因为数据未加载到缓存中，或者缓存同一时间大面积的失效，从而导致所有请求都去查数据库，导致数据库CPU和内存负载过高，甚至宕机。</h5><h4 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h4><ol>
-<li>均匀分布 key 的过期时间。防止同一时间 key 大面试失效</li>
-</ol>
-<p>2 种策略（同时使用）：</p>
-<h5 id="1-对缓存做高可用，防止缓存宕机"><a href="#1-对缓存做高可用，防止缓存宕机" class="headerlink" title="1) .对缓存做高可用，防止缓存宕机"></a>1) .对缓存做高可用，防止缓存宕机</h5><ul>
-<li>分析用户行为，然后失效时间均匀分布。或者在失效时间的基础上再加1~5分钟的随机数。</li>
-</ul>
-<h5 id="2-使用断路器，如果缓存宕机，为了防止系统全部宕机，限制部分流量进入-DB，保证部分可用，其余的请求返回断路器的默认值。"><a href="#2-使用断路器，如果缓存宕机，为了防止系统全部宕机，限制部分流量进入-DB，保证部分可用，其余的请求返回断路器的默认值。" class="headerlink" title="2). 使用断路器，如果缓存宕机，为了防止系统全部宕机，限制部分流量进入 DB，保证部分可用，其余的请求返回断路器的默认值。"></a>2). 使用断路器，如果缓存宕机，为了防止系统全部宕机，限制部分流量进入 DB，保证部分可用，其余的请求返回断路器的默认值。</h5><ul>
-<li> 加锁计数（即限制并发的数量，可以用 semphore）或者起一定数量的队列来避免缓存失效时大量请求并发到数据库。但这种方式会降低吞吐量。</li>
-</ul>
-<ol start="3">
-<li>按照 key 加锁，同一时间只允许一个请求去读库。</li>
-</ol>
-<h2 id="二-缓存穿透"><a href="#二-缓存穿透" class="headerlink" title="二. 缓存穿透"></a>二. 缓存穿透</h2><h3 id="定义：-1"><a href="#定义：-1" class="headerlink" title="定义："></a>定义：</h3><h5 id="用户查询一个不存在的-key，redis-没有，请求打到缓存中。"><a href="#用户查询一个不存在的-key，redis-没有，请求打到缓存中。" class="headerlink" title="用户查询一个不存在的 key，redis 没有，请求打到缓存中。"></a>用户查询一个不存在的 key，redis 没有，请求打到缓存中。</h5><ol>
-<li>如果查询数据库也为空，直接设置一个默认值存放到缓存，这样第二次到缓冲中获取就有值了，而不会继续访问数据库。设置一个过期时间或者当有值的时候将缓存中的值替换掉即可。</li>
-<li>可以给key设置一些格式规则，然后查询之前先过滤掉不符合规则的Key。</li>
-<li>如果查询数据库也为空的时候，把这个 key 缓存起来，这样在下次请求过来的时候就可以走缓存了。当然这种方案有个弊端，那就是请求过来的 key 必须大部分相同，如果受到攻击的话，每次的 key 肯定不是固定的，只要不固定 key，这个方案就没用。</li>
-<li>可以用缓存 key 的规则来做一些限制，当然这种只适合特定的使用场景，比如我们查询商品信息，我们把商品信息存储在 Mongodb 中，Mongodb 有一个 _id 是自动生成的，它有一定的生成规则，如果是直接根据 id 查询商品，在查询之前我们可以对这个 id 做认证，看是不是符合规范，当不符合的时候就直接返回默认的值，既不用去缓存中查询，也不用操作数据库了。这种方案可以解决一部分问题，使用场景比较少。</li>
-<li>利用布隆过滤器来实现对缓存 key 的检验，需要将所有可能缓存的数据 Hash 到一个足够大的 BitSet 中，在缓存之前先从布隆过滤器中判断这个 key 是否存在，然后做对应的操作<br>d<h2 id="三-缓存击穿"><a href="#三-缓存击穿" class="headerlink" title="三. 缓存击穿"></a>三. 缓存击穿</h2></li>
-</ol>
-<h3 id="定义：-2"><a href="#定义：-2" class="headerlink" title="定义："></a>定义：</h3><h5 id="如果网站并发访问高，一个缓存如果失效，可能出现多个进程同时查询DB，同时设置缓存的情况，如果并发确实很大，这也可能造成DB压力过大，还有缓存频繁更新的问题"><a href="#如果网站并发访问高，一个缓存如果失效，可能出现多个进程同时查询DB，同时设置缓存的情况，如果并发确实很大，这也可能造成DB压力过大，还有缓存频繁更新的问题" class="headerlink" title="如果网站并发访问高，一个缓存如果失效，可能出现多个进程同时查询DB，同时设置缓存的情况，如果并发确实很大，这也可能造成DB压力过大，还有缓存频繁更新的问题"></a>如果网站并发访问高，一个缓存如果失效，可能出现多个进程同时查询DB，同时设置缓存的情况，如果并发确实很大，这也可能造成DB压力过大，还有缓存频繁更新的问题</h5><ol>
-<li>对缓存查询加锁，如果 <code>KEY</code> 不存在，就加锁，然后查DB入缓存，然后解锁；其他进程如果发现有锁就等待，然后等解锁后返回数据或者进入DB查询。</li>
-</ol>
-<h2 id="四-缓存预热"><a href="#四-缓存预热" class="headerlink" title="四. 缓存预热"></a>四. 缓存预热</h2><h3 id="目的就是在系统上线前，将数据加载到缓存中。解决思路"><a href="#目的就是在系统上线前，将数据加载到缓存中。解决思路" class="headerlink" title="目的就是在系统上线前，将数据加载到缓存中。解决思路"></a>目的就是在系统上线前，将数据加载到缓存中。解决思路</h3><ol>
-<li>数据量不大的话，在系统启动的时候直接加载。</li>
-<li>自己写个简单的缓存预热程序。</li>
-</ol>
-<h2 id="五-缓存算法"><a href="#五-缓存算法" class="headerlink" title="五. 缓存算法"></a>五. 缓存算法</h2><ol>
-<li>FIFO算法：First in First out，先进先出。原则：一个数据最先进入缓存中，则应该最早淘汰掉。也就是说，当缓存满的时候，应当把最先进入缓存的数据给淘汰掉。</li>
-<li>LFU算法：Least Frequently Used，最不经常使用算法。</li>
-<li>LRU算法：Least Recently Used，近期最少使用算法。</li>
-<li>LRU和LFU的区别。LFU算法是根据在一段时间里数据项被使用的次数选择出最少使用的数据项，即根据使用次数的差异来决定。而LRU是根据使用时间的差异来决定的</li>
-</ol>
-<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><p><a href="http://c.biancheng.net/view/5555.html">http://c.biancheng.net/view/5555.html</a></p>
-<p>-<a href="https://alsritter.icu/posts/56acbef6/">Redis 缓存读写策略设计及常见问题</a></p>
-]]></content>
-      <tags>
-        <tag>分布式基础</tag>
       </tags>
   </entry>
   <entry>
@@ -7902,6 +7925,26 @@ def <span class="token function">BGSAVE</span><span class="token punctuation">(<
       </tags>
   </entry>
   <entry>
+    <title>java --XXE 攻击原理及防御</title>
+    <url>/blogs/security-xxe.html</url>
+    <content><![CDATA[<h1 id="java-–XXE-攻击原理及防御"><a href="#java-–XXE-攻击原理及防御" class="headerlink" title="java –XXE 攻击原理及防御"></a>java –XXE 攻击原理及防御</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<p>XXE(XML External Entity Injection) 全称为 XML 外部实体注入，从名字就能看出来，这是一个注入漏洞，注入的是什么？XML外部实体。需要强调的是利用点是 外部实体 ，也是提醒读者将注意力集中于外部实体中，而不要被 XML 中其他的一些名字相似的东西扰乱了思维(盯好外部实体就行了)，如果能注入 外部实体并且成功解析的话，这就会大大拓宽我们 XML 注入的攻击面。</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><a href="https://www.k0rz3n.com/2018/11/19/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%20XXE%20%E6%BC%8F%E6%B4%9E/">一篇文章带你理解漏洞之 XXE 漏洞</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>security</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>servlet-annotation-postconstruct</title>
     <url>/blogs/servlet-annotation-postconstruct.html</url>
     <content><![CDATA[<h1 id="Servlet-annotation-PostConstruct-应用原理及注意事项"><a href="#Servlet-annotation-PostConstruct-应用原理及注意事项" class="headerlink" title="Servlet annotation PostConstruct 应用原理及注意事项"></a>Servlet annotation PostConstruct 应用原理及注意事项</h1><blockquote>
@@ -7939,26 +7982,6 @@ def <span class="token function">BGSAVE</span><span class="token punctuation">(<
 ]]></content>
       <tags>
         <tag>Java 基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>java --XXE 攻击原理及防御</title>
-    <url>/blogs/security-xxe.html</url>
-    <content><![CDATA[<h1 id="java-–XXE-攻击原理及防御"><a href="#java-–XXE-攻击原理及防御" class="headerlink" title="java –XXE 攻击原理及防御"></a>java –XXE 攻击原理及防御</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<p>XXE(XML External Entity Injection) 全称为 XML 外部实体注入，从名字就能看出来，这是一个注入漏洞，注入的是什么？XML外部实体。需要强调的是利用点是 外部实体 ，也是提醒读者将注意力集中于外部实体中，而不要被 XML 中其他的一些名字相似的东西扰乱了思维(盯好外部实体就行了)，如果能注入 外部实体并且成功解析的话，这就会大大拓宽我们 XML 注入的攻击面。</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
-<li><a href="https://www.k0rz3n.com/2018/11/19/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%20XXE%20%E6%BC%8F%E6%B4%9E/">一篇文章带你理解漏洞之 XXE 漏洞</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>security</tag>
       </tags>
   </entry>
   <entry>
@@ -8027,9 +8050,9 @@ def <span class="token function">BGSAVE</span><span class="token punctuation">(<
 <p>如有文章侵权相关，侵权立删，联系人：</p>
 <p><a href="https://github.com/Starriers">Starriers</a></p>
 <p>团队邮箱：</p>
-<p><a href="mailto:&#x73;&#116;&#x61;&#x72;&#x72;&#105;&#101;&#x72;&#64;&#x73;&#116;&#97;&#x72;&#x72;&#x69;&#x65;&#x72;&#x2e;&#111;&#x72;&#x67;">&#x73;&#116;&#x61;&#x72;&#x72;&#105;&#101;&#x72;&#64;&#x73;&#116;&#97;&#x72;&#x72;&#x69;&#x65;&#x72;&#x2e;&#111;&#x72;&#x67;</a></p>
+<p><a href="mailto:&#x73;&#x74;&#x61;&#114;&#x72;&#105;&#x65;&#x72;&#64;&#115;&#116;&#97;&#114;&#x72;&#x69;&#x65;&#114;&#46;&#x6f;&#114;&#x67;">&#x73;&#x74;&#x61;&#114;&#x72;&#105;&#x65;&#x72;&#64;&#115;&#116;&#97;&#114;&#x72;&#x69;&#x65;&#114;&#46;&#x6f;&#114;&#x67;</a></p>
 <p>个人邮箱：</p>
-<p><a href="mailto:&#115;&#116;&#x61;&#x72;&#x72;&#x69;&#x65;&#114;&#115;&#x40;&#115;&#x74;&#x61;&#x72;&#114;&#x69;&#x65;&#114;&#46;&#111;&#x72;&#x67;">&#115;&#116;&#x61;&#x72;&#x72;&#x69;&#x65;&#114;&#115;&#x40;&#115;&#x74;&#x61;&#x72;&#114;&#x69;&#x65;&#114;&#46;&#111;&#x72;&#x67;</a></p>
+<p><a href="mailto:&#x73;&#116;&#x61;&#x72;&#x72;&#x69;&#x65;&#114;&#x73;&#x40;&#115;&#x74;&#x61;&#x72;&#x72;&#105;&#x65;&#x72;&#46;&#x6f;&#x72;&#103;">&#x73;&#116;&#x61;&#x72;&#x72;&#x69;&#x65;&#114;&#x73;&#x40;&#115;&#x74;&#x61;&#x72;&#x72;&#105;&#x65;&#x72;&#46;&#x6f;&#x72;&#103;</a></p>
 ]]></content>
       <tags>
         <tag>Starrier</tag>
@@ -8456,25 +8479,6 @@ http &#123;
       </tags>
   </entry>
   <entry>
-    <title>spring-cloud-feign</title>
-    <url>/blogs/spring-cloud-feign.html</url>
-    <content><![CDATA[<h1 id="spring-cloud-feign"><a href="#spring-cloud-feign" class="headerlink" title="spring-cloud-feign"></a>spring-cloud-feign</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
-<li><a href="https://www.cnblogs.com/crazymakercircle/p/11965726.html">feign 原理图解</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>Spring</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>spring-beanfactory</title>
     <url>/blogs/spring-beanfactory.html</url>
     <content><![CDATA[<h1 id="Spring-BeanFactory"><a href="#Spring-BeanFactory" class="headerlink" title="Spring - BeanFactory"></a>Spring - BeanFactory</h1><blockquote>
@@ -8522,6 +8526,25 @@ http &#123;
 </li>
 <li><p><a href="https://cloud.tencent.com/developer/article/1497577">【小家Spring】一文读懂Spring中的BeanFactory和FactoryBean（以及它和ObjectFactory的区别）的区别</a></p>
 </li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Spring</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>spring-cloud-feign</title>
+    <url>/blogs/spring-cloud-feign.html</url>
+    <content><![CDATA[<h1 id="spring-cloud-feign"><a href="#spring-cloud-feign" class="headerlink" title="spring-cloud-feign"></a>spring-cloud-feign</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><a href="https://www.cnblogs.com/crazymakercircle/p/11965726.html">feign 原理图解</a></li>
 </ul>
 ]]></content>
       <tags>
@@ -8811,25 +8834,6 @@ org<span class="token punctuation">.</span>springframework<span class="token pun
       </tags>
   </entry>
   <entry>
-    <title>Spring 容器 refresh 过程</title>
-    <url>/blogs/spring-refresh.html</url>
-    <content><![CDATA[<h1 id="Spring-容器-refresh-过程"><a href="#Spring-容器-refresh-过程" class="headerlink" title="Spring 容器 refresh 过程"></a>Spring 容器 refresh 过程</h1><blockquote>
-<ul>
-<li>原文地址：<a href=""></a></li>
-<li>原文作者：<a href=""></a></li>
-<li>本文永久链接：<a href=""></a></li>
-</ul>
-</blockquote>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
-<li><a href="https://fangjian0423.github.io/2017/05/10/springboot-context-refresh/">SpringBoot源码分析之Spring容器的refresh过程</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>Spring</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>深入理解 Spring MVC ulr</title>
     <url>/blogs/spring-mvc-url-match.html</url>
     <content><![CDATA[<h1 id="深入理解-Spring-MVC-ulr"><a href="#深入理解-Spring-MVC-ulr" class="headerlink" title="深入理解 Spring MVC ulr"></a>深入理解 Spring MVC ulr</h1><blockquote>
@@ -8846,6 +8850,25 @@ org<span class="token punctuation">.</span>springframework<span class="token pun
 ]]></content>
       <tags>
         <tag>spring</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Spring 容器 refresh 过程</title>
+    <url>/blogs/spring-refresh.html</url>
+    <content><![CDATA[<h1 id="Spring-容器-refresh-过程"><a href="#Spring-容器-refresh-过程" class="headerlink" title="Spring 容器 refresh 过程"></a>Spring 容器 refresh 过程</h1><blockquote>
+<ul>
+<li>原文地址：<a href=""></a></li>
+<li>原文作者：<a href=""></a></li>
+<li>本文永久链接：<a href=""></a></li>
+</ul>
+</blockquote>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ul>
+<li><a href="https://fangjian0423.github.io/2017/05/10/springboot-context-refresh/">SpringBoot源码分析之Spring容器的refresh过程</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Spring</tag>
       </tags>
   </entry>
   <entry>
@@ -9229,6 +9252,42 @@ node    1879 starrier   46u  IPv6 0x8546bfa6d2b2dd07      0t0  TCP *:terabase (L
       </tags>
   </entry>
   <entry>
+    <title>使用 git-convert 回滚已经提交的 commit</title>
+    <url>/blogs/utils-git-commit-revert.html</url>
+    <content><![CDATA[<h1 id="使用-git-convert-回滚已经提交的-commit"><a href="#使用-git-convert-回滚已经提交的-commit" class="headerlink" title="使用 git-convert 回滚已经提交的 commit"></a>使用 git-convert 回滚已经提交的 commit</h1><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
+<h2 id="一-简介"><a href="#一-简介" class="headerlink" title="一. 简介"></a>一. 简介</h2><p><code>git-revert</code> 用于撤销某次指定提交的操作，被操作的版本，之前和之后的内容（包括 commit 和 history 都会被保留下来）</p>
+<h2 id="二-用法"><a href="#二-用法" class="headerlink" title="二. 用法"></a>二. 用法</h2><ol>
+<li>对当前版本进行回滚操作</li>
+</ol>
+<pre class=" language-git"><code class="language-git">git revert HEAD           </code></pre>
+<ol start="2">
+<li>对上一个版本内容进行回滚</li>
+</ol>
+<pre class=" language-git"><code class="language-git">git revert HEAD^   </code></pre>
+<ol start="3">
+<li>对指定版本进行回滚</li>
+</ol>
+<pre class=" language-git"><code class="language-git">git revert commit hashValue</code></pre>
+<h2 id="三-git-revert-和-git-rebase-比较"><a href="#三-git-revert-和-git-rebase-比较" class="headerlink" title="三. git-revert 和 git-rebase 比较"></a>三. git-revert 和 git-rebase 比较</h2><ol>
+<li><p><code>git revert</code> 是对之前 <code>commit</code> 内容进行覆盖。而 <code>git reset</code> 是直接删除指定的 <code>commit</code>。</p>
+</li>
+<li><p>两个命令效果一致：</p>
+<ul>
+<li><p><code>git-revert</code> 与之前的旧分支合并时，不会有新旧 <code>commit</code> 内容的冲突；</p>
+</li>
+<li><p><code>git-reset</code> 时，与旧分支合并时，旧分支的 <code>commit</code> 会被引入，有可能会产生冲突。</p>
+</li>
+</ul>
+</li>
+<li><p>git reset 是把 <code>HEAD</code> 向后移动了一下，而 <code>git revert</code> 是 <code>HEAD</code> 继续前进，只是新的 <code>commit</code> 的内容和要 <code>revert</code> 的内容正好相反，能够抵消要被 <code>revert</code>的内容。</p>
+</li>
+</ol>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5>]]></content>
+      <tags>
+        <tag>开发工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>git commit 操作详解</title>
     <url>/blogs/utils-git-commit-refactor.html</url>
     <content><![CDATA[<h1 id="Git-commit-已提交-commit-记录的重写"><a href="#Git-commit-已提交-commit-记录的重写" class="headerlink" title="Git - commit 已提交 commit 记录的重写"></a>Git - commit 已提交 commit 记录的重写</h1><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
@@ -9282,42 +9341,6 @@ fixup commit3-message</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>使用 git-convert 回滚已经提交的 commit</title>
-    <url>/blogs/utils-git-commit-revert.html</url>
-    <content><![CDATA[<h1 id="使用-git-convert-回滚已经提交的-commit"><a href="#使用-git-convert-回滚已经提交的-commit" class="headerlink" title="使用 git-convert 回滚已经提交的 commit"></a>使用 git-convert 回滚已经提交的 commit</h1><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
-<h2 id="一-简介"><a href="#一-简介" class="headerlink" title="一. 简介"></a>一. 简介</h2><p><code>git-revert</code> 用于撤销某次指定提交的操作，被操作的版本，之前和之后的内容（包括 commit 和 history 都会被保留下来）</p>
-<h2 id="二-用法"><a href="#二-用法" class="headerlink" title="二. 用法"></a>二. 用法</h2><ol>
-<li>对当前版本进行回滚操作</li>
-</ol>
-<pre class=" language-git"><code class="language-git">git revert HEAD           </code></pre>
-<ol start="2">
-<li>对上一个版本内容进行回滚</li>
-</ol>
-<pre class=" language-git"><code class="language-git">git revert HEAD^   </code></pre>
-<ol start="3">
-<li>对指定版本进行回滚</li>
-</ol>
-<pre class=" language-git"><code class="language-git">git revert commit hashValue</code></pre>
-<h2 id="三-git-revert-和-git-rebase-比较"><a href="#三-git-revert-和-git-rebase-比较" class="headerlink" title="三. git-revert 和 git-rebase 比较"></a>三. git-revert 和 git-rebase 比较</h2><ol>
-<li><p><code>git revert</code> 是对之前 <code>commit</code> 内容进行覆盖。而 <code>git reset</code> 是直接删除指定的 <code>commit</code>。</p>
-</li>
-<li><p>两个命令效果一致：</p>
-<ul>
-<li><p><code>git-revert</code> 与之前的旧分支合并时，不会有新旧 <code>commit</code> 内容的冲突；</p>
-</li>
-<li><p><code>git-reset</code> 时，与旧分支合并时，旧分支的 <code>commit</code> 会被引入，有可能会产生冲突。</p>
-</li>
-</ul>
-</li>
-<li><p>git reset 是把 <code>HEAD</code> 向后移动了一下，而 <code>git revert</code> 是 <code>HEAD</code> 继续前进，只是新的 <code>commit</code> 的内容和要 <code>revert</code> 的内容正好相反，能够抵消要被 <code>revert</code>的内容。</p>
-</li>
-</ol>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5>]]></content>
-      <tags>
-        <tag>开发工具</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>gitkeep 文件作用</title>
     <url>/blogs/utils-git-gitkeep.html</url>
     <content><![CDATA[<h1 id="gitkeep-文件作用"><a href="#gitkeep-文件作用" class="headerlink" title="gitkeep 文件作用"></a>gitkeep 文件作用</h1><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
@@ -9343,6 +9366,16 @@ fixup commit3-message</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>常见 Java 压缩-解压缩算法原理与实践</title>
+    <url>/blogs/utils-java-compress.html</url>
+    <content><![CDATA[<h1 id="常见-Java-压缩-解压缩算法原理与实践"><a href="#常见-Java-压缩-解压缩算法原理与实践" class="headerlink" title="常见 Java 压缩-解压缩算法原理与实践"></a>常见 Java 压缩-解压缩算法原理与实践</h1><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
+<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 PR 谢谢~~</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5>]]></content>
+      <tags>
+        <tag>Java 基础</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Gradle provided 类型</title>
     <url>/blogs/utils-gradle-provided.html</url>
     <content><![CDATA[<h1 id="Gradle-provided-类型"><a href="#Gradle-provided-类型" class="headerlink" title="Gradle provided 类型"></a>Gradle provided 类型</h1><blockquote>
@@ -9356,16 +9389,6 @@ fixup commit3-message</code></pre>
 <h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5>]]></content>
       <tags>
         <tag>开发工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常见 Java 压缩-解压缩算法原理与实践</title>
-    <url>/blogs/utils-java-compress.html</url>
-    <content><![CDATA[<h1 id="常见-Java-压缩-解压缩算法原理与实践"><a href="#常见-Java-压缩-解压缩算法原理与实践" class="headerlink" title="常见 Java 压缩-解压缩算法原理与实践"></a>常见 Java 压缩-解压缩算法原理与实践</h1><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
-<h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 PR 谢谢~~</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5>]]></content>
-      <tags>
-        <tag>Java 基础</tag>
       </tags>
   </entry>
   <entry>
@@ -9471,16 +9494,6 @@ InputStream in <span class="token operator">=</span> <span class="token keyword"
       </tags>
   </entry>
   <entry>
-    <title>使用 mvn -Dverbose dependency:tree 查看依赖树 - 解决依赖问题</title>
-    <url>/blogs/utils-maven-mvn-dependency-tree.html</url>
-    <content><![CDATA[<h1 id="使用-mvn-Dverbose-dependency-tree-查看依赖树-解决依赖问题"><a href="#使用-mvn-Dverbose-dependency-tree-查看依赖树-解决依赖问题" class="headerlink" title="使用 mvn -Dverbose dependency:tree 查看依赖树 - 解决依赖问题"></a>使用 mvn -Dverbose dependency:tree 查看依赖树 - 解决依赖问题</h1><h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
-<p>使用 <code>mvn dependency:tree</code> 命令查看当前项目的依赖树，解决依赖问题。</p>
-]]></content>
-      <tags>
-        <tag>开发工具</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Maven Pom 坐标 classifier 作用</title>
     <url>/blogs/utils-maven-pom-classifier.html</url>
     <content><![CDATA[<h1 id="Maven-Pom-坐标-classifier-作用"><a href="#Maven-Pom-坐标-classifier-作用" class="headerlink" title="Maven Pom 坐标 classifier 作用"></a>Maven Pom 坐标 classifier 作用</h1><blockquote>
@@ -9491,6 +9504,16 @@ InputStream in <span class="token operator">=</span> <span class="token keyword"
 </ul>
 </blockquote>
 <h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢 ~~</p>
+]]></content>
+      <tags>
+        <tag>开发工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用 mvn -Dverbose dependency:tree 查看依赖树 - 解决依赖问题</title>
+    <url>/blogs/utils-maven-mvn-dependency-tree.html</url>
+    <content><![CDATA[<h1 id="使用-mvn-Dverbose-dependency-tree-查看依赖树-解决依赖问题"><a href="#使用-mvn-Dverbose-dependency-tree-查看依赖树-解决依赖问题" class="headerlink" title="使用 mvn -Dverbose dependency:tree 查看依赖树 - 解决依赖问题"></a>使用 mvn -Dverbose dependency:tree 查看依赖树 - 解决依赖问题</h1><h5 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a><strong>特别说明</strong></h5><p>当前文章内容迁移中，如有问题，请提交 <a href="https://github.com/Starrier/starrier.github.io/issues">issues</a> 谢谢~~</p>
+<p>使用 <code>mvn dependency:tree</code> 命令查看当前项目的依赖树，解决依赖问题。</p>
 ]]></content>
       <tags>
         <tag>开发工具</tag>
