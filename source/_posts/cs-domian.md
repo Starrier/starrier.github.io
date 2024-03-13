@@ -1,21 +1,19 @@
 ---
-title: {{ title }}
-date: {{ date }}
-author: 
-tags:
-excerpt:
-swiper: 
-keywords: 
-description: 
+title: cs-domian
+date: 2024-03-12 23:19:38
+author: Starrier
+tags: [CS]
+excerpt: CS 域名
+swiper:
+keywords: [CS 域名]
+description: CS 域名
 ---
 
-# {{ :title }}
+#  CS 域名
 
 > * 原文地址：[]()
 > * 原文作者：[]()
 > * 本文永久链接：[]()
-
-### 问答 && 思考
 
 ##### **特别说明**
 

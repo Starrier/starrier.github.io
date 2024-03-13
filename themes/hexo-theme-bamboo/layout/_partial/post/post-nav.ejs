@@ -23,6 +23,7 @@
         return img;
     }
     img = imgs[Math.abs(hashCode(page.prev.title) % imgs.length)]
+
   %>
   <div class="post-nav-prev post-nav-item">
     <div class="post-nav-img lazyload" data-original="<%- url_for(page.prev.img  || page.prev.swiperImg || img) %>" style="background-size: cover; 
