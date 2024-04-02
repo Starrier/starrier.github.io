@@ -1,4 +1,5 @@
-https://starrier.starrier.org/blogs/cs-domian.html
+https://starrier.starrier.org/blogs/pattern-design-overview.html
+https://starrier.starrier.org/blogs/cs-domain.html
 https://starrier.starrier.org/blogs/mq-message-accumulation.html
 https://starrier.starrier.org/blogs/mysql-fuzzy-query.html
 https://starrier.starrier.org/blogs/datastruct-red-black-tree.html
@@ -97,4 +98,3 @@ https://starrier.starrier.org/blogs/java-thread-start.html
 https://starrier.starrier.org/blogs/java-thread-status.html
 https://starrier.starrier.org/blogs/mysql-introduce.html
 https://starrier.starrier.org/blogs/mysql-lock-introduce.html
-https://starrier.starrier.org/blogs/redis-cluster-1.html
