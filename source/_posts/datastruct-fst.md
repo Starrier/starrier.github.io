@@ -2,7 +2,7 @@
 title: 数据结构-FST-有限状态机
 date: 2021-03-23 10:07:54
 author: imperater
-tags: [数据结构]
+tags: [数据结构与算法]
 excerpt: 数据结构有限状态机FST
 swiper:
 keywords: [datastruct,数据结构,FST,有限状态机]

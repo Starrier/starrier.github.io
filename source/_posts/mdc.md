@@ -2,7 +2,7 @@
 title: 深入理解 MDC
 date: 2022-01-06 17:36:47
 author: Starrier
-tags: [mdc]
+tags: [最佳实践]
 excerpt: 深入理解 MDC
 swiper: 
 keywords: [mdc]

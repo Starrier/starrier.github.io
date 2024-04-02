@@ -2,7 +2,7 @@
 title: java-basic-collection-linked-blocking-queue
 date: 2021-01-13 20:16:30
 author: Imperator
-tags: [Java 基础]
+tags: [Java]
 ---
 
 # LinkedBlockingQueue

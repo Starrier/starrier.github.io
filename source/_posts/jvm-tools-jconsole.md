@@ -2,7 +2,7 @@
 title: jvm-tools-jconsole
 date: 2021-05-14 11:15:28
 author: Starrier
-tags: [jvm]
+tags: [JVM]
 excerpt: JVM - jconsole
 swiper:
 keywords: [jvm,jconsole]

@@ -2,7 +2,7 @@
 title: mybatis-actual-params-type
 date: 2021-02-22 15:48:29
 author: Imperater
-tags: [MyBatis]
+tags: [中间件]
 excerpt: MyBatis实战-传参类型
 swiper:
 keywords: [MyBtais,params]

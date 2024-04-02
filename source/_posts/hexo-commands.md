@@ -2,10 +2,10 @@
 title: Hexo 常用命令
 date: 2021-03-23 10:47:25
 author: Starriers
-tags: [hexo]
+tags: [Hexo]
 excerpt: Hexo 常用命令
 swiper:
-keywords: [hexo,命令]
+keywords: [Hexo,hexo,命令]
 description: [hexo,命令]
 ---
 

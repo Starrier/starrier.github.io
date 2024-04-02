@@ -2,10 +2,10 @@
 title: 深入理解 Spring 事务
 date: 2022-02-25 13:36:34
 author: Starrier
-tags: [spring]
+tags: [Spring]
 excerpt: 深入理解 Spring 事务
 swiper:
-keywords: [spring]
+keywords: [Spring,spring]
 description: 深入理解 Spring 事务
 ---
 

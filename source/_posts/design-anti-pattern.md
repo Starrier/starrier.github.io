@@ -2,14 +2,14 @@
 title: 反模式
 date: 2021-05-27 09:10:31
 author: Starrier
-tags: [desing]
+tags: [设计模式]
 excerpt: 反模式
 swiper:
 keywords: [反模式]
 description: 反模式
 ---
 
-# 反模式
+# 设计模式 - 反模式
 
 > * 原文地址：[]()
 > * 原文作者：[]()

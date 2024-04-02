@@ -2,7 +2,7 @@
 title: performance-base-core-processor
 date: 2021-05-17 12:31:26
 author: Starrier
-tags: [性能基础]
+tags: [最佳实践]
 excerpt: 性能基础 - CPU、物理核、逻辑核概念与关系
 swiper:
 keywords: [性能基础]

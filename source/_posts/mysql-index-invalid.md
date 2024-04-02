@@ -2,7 +2,7 @@
 title: MySQL 索引失效
 date: 2021-08-19 19:25:37
 author: Starrier
-tags: [MySQl]
+tags: [MySQL]
 excerpt: MySQL 索引失效
 swiper:
 keywords: [MySQL]

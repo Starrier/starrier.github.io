@@ -2,10 +2,10 @@
 title: 深入理解 RocketMQ 消费者
 date: 2022-01-24 17:18:34
 author: Starrier
-tags: [MQ]
+tags: [消息中间件]
 excerpt: 深入理解 RocketMQ 消费者
 swiper:
-keywords: [MQ]
+keywords: [MQ,消息中间件]
 description: 深入理解 RocketMQ 消费者
 ---
 

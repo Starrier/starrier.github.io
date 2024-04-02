@@ -2,10 +2,10 @@
 title: 深入理解 Docker Daemon 网络
 date: 2022-02-25 09:41:36
 author: Starrier
-tags: [Docker]
+tags: [DevOps]
 excerpt: 深入理解 Docker Daemon 网络
 swiper:
-keywords: [Docker]
+keywords: [Docker,DevOps]
 description: 深入理解 Docker Daemon 网络
 ---
 

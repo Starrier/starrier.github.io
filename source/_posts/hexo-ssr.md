@@ -2,11 +2,11 @@
 title: hexo-rss
 date: 2021-01-22 13:10:58
 author: Imperator
-tags: [hexo]
+tags: [Hexo]
 excerpt:  使用 RSS 作为 Hexo 的文章推送渠道
 swiper: https://github.com/Starrier/configure-resources/blob/master/images/starrier/fin-series.jpeg
 img: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/fin-series.jpeg
-keywords: [hexo,rss]
+keywords: [Hexo,hexo,rss]
 description: hexo 使用 RSS 推送新文章发布消息
 ---
 

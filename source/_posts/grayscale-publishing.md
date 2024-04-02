@@ -2,7 +2,7 @@
 title: 深入理解 - 灰度发布原理
 date: 2021-05-14 10:48:34
 author: Starrier
-tags: [分布式基础]
+tags: [分布式]
 excerpt: 深入理解 - 灰度发布原理
 swiper:
 keywords: [分布式,灰度发布]

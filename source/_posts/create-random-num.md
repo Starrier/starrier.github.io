@@ -2,7 +2,7 @@
 title: 产生随机数的三种方式
 date: 2021-09-13 11:09:14
 author: Starrier
-tags: [基础]
+tags: [Java]
 excerpt: 产生随机数的三种方式
 swiper:
 keywords: [基础]

@@ -2,7 +2,7 @@
 title: BigDecimal 最佳实践
 date: 2021-06-10 09:46:23
 author: Imperator
-tags: [java basic]
+tags: [Java]
 excerpt: BigDecimal 最佳实践
 swiper:
 keywords: [BigDecimal 最佳实践]

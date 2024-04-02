@@ -2,7 +2,7 @@
 title: high-performance-interface-equivalence
 date: 2021-05-14 16:07:17
 author: Starrier
-tags: [分布式基础]
+tags: [分布式]
 excerpt: 高性能 - 接口的冥等性
 swiper:
 keywords: [高性能,冥等性]

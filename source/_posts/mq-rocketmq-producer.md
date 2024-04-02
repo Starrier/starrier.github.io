@@ -2,10 +2,10 @@
 title: 深入理解 RocketMQ 生产者
 date: 2022-01-25 11:55:50
 author: Starrier
-tags: [MQ]
+tags: [消息中间件]
 excerpt: 深入理解 RocketMQ 生产者
 swiper:
-keywords: [MQ]
+keywords: [MQ,消息中间件, RocketMQ]
 description: 深入理解 RocketMQ 生产者
 ---
 

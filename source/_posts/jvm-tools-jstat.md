@@ -2,7 +2,7 @@
 title: jvm-tools-jstat
 date: 2021-05-14 11:12:49
 author: Starrier
-tags: [jvm]
+tags: [JVM]
 excerpt: jvm-tools-jstat
 swiper:
 keywords: [jvm,jstat]

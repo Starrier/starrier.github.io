@@ -2,7 +2,7 @@
 title: 数据结构 -ArrayBlockingQueue
 date: 2022-02-10 19:19:46
 author: Starrier
-tags: [数据结构]
+tags: [数据结构与算法]
 excerpt: 数据结构-ArrayBlockingQueue
 swiper:
 keywords: [数据结构]

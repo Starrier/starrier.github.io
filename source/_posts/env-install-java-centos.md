@@ -2,7 +2,7 @@
 title: Java 环境安装 - Centos-Mac-Windows
 date: 2021-01-31 13:34:10
 author: Imperator
-tags: [环境搭建]
+tags: [DevOps]
 excerpt: Java 环境安装 - Centos,Mac,Windows
 swiper:
 keywords: [java,centos,mac,windows,win]

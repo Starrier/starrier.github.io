@@ -2,7 +2,7 @@
 title: ES 底层 FST 有限状态机
 date: 2022-02-09 16:21:44
 author: Starrier
-tags: [ES]
+tags: [NoSQL]
 excerpt: ES 底层 FST 有限状态机
 swiper:
 keywords: [ES]

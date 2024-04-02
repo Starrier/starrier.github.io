@@ -2,7 +2,7 @@
 title: ES  数据更新 版本控制
 date: 2022-02-15 19:23:05
 author: Starrier
-tags: [ES]
+tags: [NoSQL]
 excerpt: ES  数据更新 版本控制
 swiper:
 keywords: [ES]

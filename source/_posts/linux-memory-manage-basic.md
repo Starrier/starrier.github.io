@@ -2,7 +2,7 @@
 title: 深入理解 Linux 内存管理
 date: 2022-03-03 15:03:17
 author: Starrier
-tags: [linux]
+tags: [Linux]
 excerpt: 深入理解 Linux 内存管理
 swiper:
 keywords: [linux]

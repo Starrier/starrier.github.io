@@ -2,7 +2,7 @@
 title: 深入理解 Redis zset
 date: 2022-02-22 17:30:01
 author: Starrier
-tags: [redis]
+tags: [Redis]
 excerpt: 深入理解 Redis zset
 swiper:
 keywords: [redis]

@@ -5,7 +5,7 @@ author: Starrier
 tags: [消息中间件]
 excerpt: 消息中间件 - ZeroMQ -简介
 swiper:
-keywords: [消息队列,消息中间件,ZeroMQ]
+keywords: [消息队列,MQ,ZeroMQ]
 description: 消息中间件 - ZeroMQ -简介
 ---
 

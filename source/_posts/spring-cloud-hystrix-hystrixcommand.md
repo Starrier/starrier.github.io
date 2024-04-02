@@ -2,7 +2,7 @@
 title: 深入分析与理解 spring-cloud-hystrix - HystrixCommand
 date: 2021-02-01 12:53:07
 author: Imperater
-tags: [分布式中间件]
+tags: [分布式]
 excerpt: 深入分析与理解 spring-cloud-hystrix - HystrixCommand
 swiper:
 keywords: [spring-cloud,hystrix,hystrix-command]

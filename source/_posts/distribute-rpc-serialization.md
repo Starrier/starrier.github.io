@@ -2,7 +2,7 @@
 title: distribute-rpc-serialization
 date: 2021-05-19 13:04:57
 author: Starrier
-tags: [分布式基础]
+tags: [分布式]
 excerpt: RPC - 序列化
 swiper:
 keywords: [分布式,RPC,序列化]

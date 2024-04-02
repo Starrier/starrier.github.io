@@ -2,14 +2,14 @@
 title: 深入理解 MySQL binlog redolog
 date: 2022-03-04 18:13:38
 author: Starrier
-tags: [mysql]
+tags: [MySQL]
 excerpt: 深入理解 MySQL binlog redolog
 swiper:
-keywords: [mysql]
+keywords: [MySQL]
 description: 深入理解 MySQL binlog redolog
 ---
 
-# 深入理解 MySQL binlog redolog
+# 深入理解 MySQL Binlog redo-log
 
 > * 原文地址：[]()
 > * 原文作者：[]()

@@ -2,7 +2,7 @@
 title: 深入理解同步队列
 date: 2022-02-23 16:30:51
 author: Starrier
-tags: [数据结构]
+tags: [数据结构与算法]
 excerpt: 深入理解同步队列
 swiper:
 keywords: [数据结构]

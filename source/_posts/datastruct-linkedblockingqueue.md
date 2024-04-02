@@ -2,7 +2,7 @@
 title: 数据结构 - LinkedBlockingQueue
 date: 2022-02-10 19:20:13
 author: Starrier
-tags: [数据结构]
+tags: [数据结构与算法]
 excerpt: 数据结构 - LinkedBlockingQueue
 swiper:
 keywords: [数据结构]

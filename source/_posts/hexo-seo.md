@@ -2,7 +2,7 @@
 title: hexo-seo 优化
 date: 2021-01-21 09:35:56
 author: Imperator
-tags: [hexo]
+tags: [Hexo]
 excerpt: hexo seo 优化
 swiper: true
 swiperImg: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/snow.webp

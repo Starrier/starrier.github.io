@@ -2,7 +2,7 @@
 title: java volatile
 date: 2019-02-19 21:58:27
 author: Imperator
-tags: [Java 基础]
+tags: [Java]
 excerpt: java volatile 分析
 ---
 

@@ -2,7 +2,7 @@
 title: 深入理解诶 JVM - 逃逸分析
 date: 2021-02-04 22:27:48
 author: Imperater
-tags: [jvm]
+tags: [JVM]
 excerpt: 深入理解诶 JVM - 逃逸分析
 swiper:
 keywords: [jvm]

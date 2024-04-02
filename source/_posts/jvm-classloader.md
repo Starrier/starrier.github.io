@@ -2,7 +2,7 @@
 title: JVM 类加载器原理
 date: 2021-04-15 10:02:04
 author: Starrier
-tags: [jvm]
+tags: [JVM]
 excerpt: JVM 类加载器原理
 swiper:
 keywords: [jvm,classloader,类加载器原理]

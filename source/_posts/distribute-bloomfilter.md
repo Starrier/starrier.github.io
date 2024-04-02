@@ -2,7 +2,7 @@
 title: high-performance-bloomfilter
 date: 2021-05-14 10:29:25
 author: Starrier
-tags: [分布式基础]
+tags: [分布式]
 excerpt: 深入理解高性能利器 - 布隆过滤器
 swiper:
 keywords: [布隆过滤器,分布式,高性能]

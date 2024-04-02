@@ -2,10 +2,10 @@
 title: 深入理解 RocketMQ 零拷贝
 date: 2022-01-17 10:54:17
 author: Starrier
-tags: [RocketMQ]
+tags: [消息中间件]
 excerpt: 深入理解 RocketMQ 零拷贝
 swiper:
-keywords: [RocketMQ]
+keywords: [RocketMQ,MQ,消息中间件]
 description: 深入理解 RocketMQ 零拷贝
 ---
 

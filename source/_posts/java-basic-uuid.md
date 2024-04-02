@@ -2,7 +2,7 @@
 title: 深入理解 Java UUID 及其实战应用
 date: 2021-05-20 09:38:54
 author: Starrier
-tags: [分布式基础]
+tags: [分布式]
 excerpt: 深入理解 Java UUID 及其实战应用
 swiper:
 keywords: [分布式,java,uuid,唯一标识，全局唯一标识符]

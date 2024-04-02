@@ -2,7 +2,7 @@
 title: jvm-parameter-command
 date: 2021-01-14 19:38:04
 author: Imperator
-tags: [jvm]
+tags: [JVM]
 excerpt: 定制化 Java 虚拟机的配置
 ---
 

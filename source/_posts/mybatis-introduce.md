@@ -2,7 +2,7 @@
 title: MyBatis 缓存
 date: 2021-01-12 22:57:00
 author: Imperator
-tags: [MyBatis]
+tags: [中间件]
 excerpt: MyBatis Cache 简介
 ---
 

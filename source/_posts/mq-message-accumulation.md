@@ -2,10 +2,10 @@
 title: 消息队列 消息堆积
 date: 2022-03-08 11:40:40
 author: Starrier
-tags: [mq]
+tags: [消息中间件]
 excerpt: 消息队列 消息堆积
 swiper:
-keywords: [mq]
+keywords: [消息中间件,MQ]
 description: 消息队列 消息堆积
 ---
 

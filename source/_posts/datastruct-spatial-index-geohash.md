@@ -2,7 +2,7 @@
 title: datastruce-spatial-index-geohash
 date: 2021-02-07 10:08:48
 author: Imperater
-tags: [数据结构]
+tags: [数据结构与算法]
 excerpt: 空间索引 - GeoHash 数据结构
 swiper:
 keywords: [datastruct,数据结构,GeoHash]

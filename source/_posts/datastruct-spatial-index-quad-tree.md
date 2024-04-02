@@ -2,7 +2,7 @@
 title: 空间索引 - Quard-Tree 四叉树数据结构
 date: 2021-02-07 10:09:25
 author: Imperater
-tags: [数据结构]
+tags: [数据结构与算法]
 excerpt: 空间索引 - Quard-Tree 四叉树数据结构
 swiper:
 keywords: [空间索引,QuardTree,四叉树]

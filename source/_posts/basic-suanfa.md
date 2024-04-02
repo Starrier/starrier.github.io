@@ -2,7 +2,7 @@
 title: 算法 - 基础算法简介
 date: 2021-08-18 21:20:47
 author: Starrier
-tags: [算法]
+tags: [数据结构与算法]
 excerpt: 算法 - 基础算法简介
 swiper:
 keywords: [算法]

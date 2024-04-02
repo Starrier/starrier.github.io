@@ -2,7 +2,7 @@
 title: servlet-annotation-postconstruct
 date: 2021-03-26 10:56:16
 author: imperater
-tags: [Java 基础]
+tags: [Java]
 excerpt: ServletPostConstruct应用原理及注意事项
 swiper:
 keywords: [servlet,postconstruct]

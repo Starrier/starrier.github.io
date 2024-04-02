@@ -2,7 +2,7 @@
 title: mybatis-sql-inject
 date: 2022-02-14 11:34:23
 author: Starrier
-tags: [MyBatis]
+tags: [中间件]
 excerpt: mybatis-sql-inject
 swiper:
 keywords: [MyBatis]

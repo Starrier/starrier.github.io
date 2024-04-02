@@ -2,7 +2,7 @@
 title: 深入理解 jvm - JIT 即时编译器
 date: 2021-02-04 23:06:05
 author: imperater
-tags: [jvm]
+tags: [JVM]
 excerpt: 深入理解 jvm - jit 即时编译器
 swiper:
 keywords: [jvm,jit]

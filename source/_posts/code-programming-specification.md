@@ -2,7 +2,7 @@
 title: 代码编程规范
 date: 2022-01-06 15:36:33
 author: Starrier
-tags: [规范]
+tags: [开发范式]
 excerpt: 代码编程规范
 swiper:
 keywords: [规范]

@@ -2,7 +2,7 @@
 title: 深入理解 ES - HA
 date: 2022-03-04 13:37:47
 author: Starrier
-tags: [ES]
+tags: [NoSQL]
 excerpt: 深入理解 ES - HA
 swiper:
 keywords: [ES]

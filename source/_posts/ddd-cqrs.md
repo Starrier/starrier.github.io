@@ -3,7 +3,7 @@
 title: 领域驱动 CQRS
 date: 2022-03-04 11:46:28
 author: Starrier
-tags: [DDD]
+tags: [开发范式]
 excerpt: 领域驱动 CQRS
 swiper:
 keywords: [DDD]

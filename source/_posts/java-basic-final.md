@@ -2,7 +2,7 @@
 title: Java - final
 date: 2022-02-14 16:33:17
 author: Starrier
-tags: [java]
+tags: [Java]
 excerpt: Java - final
 swiper:
 keywords: [java]

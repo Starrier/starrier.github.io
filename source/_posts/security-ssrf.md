@@ -2,7 +2,7 @@
 title: security-ssrf
 date: 2022-01-11 20:50:40
 author: Starrier
-tags: [security]
+tags: [计算机网络]
 excerpt: SSRF 漏洞的原理以及 Java 中的处理
 swiper: 
 keywords: [security] 

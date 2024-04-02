@@ -2,10 +2,10 @@
 title: RocketMQ 协议
 date: 2022-02-15 19:10:20
 author: Starrier
-tags: [RocketMQ]
+tags: [消息中间件]
 excerpt: RocketMQ 协议
 swiper:
-keywords: [RocketMQ]
+keywords: [RocketMQ,消息中间件,MQ]
 description: RocketMQ 协议
 ---
 

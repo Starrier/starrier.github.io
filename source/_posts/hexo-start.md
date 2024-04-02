@@ -2,10 +2,10 @@
 title: 用 Hexo 部署 github.io 静态网站 - 起源
 date: 2019-06-23 21:07:35
 author: Imperator
-tags: [hexo]
+tags: [Hexo]
 excerpt: 用 Hexo 部署 github.io 静态网站 - 起源
 swiper:
-keywords: [git,hexo,github.io]
+keywords: [Hexo,git,hexo,github.io]
 description: 用 Hexo 部署 github.io 静态网站 - 起源
 ---
 

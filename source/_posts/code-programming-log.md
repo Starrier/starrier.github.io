@@ -2,7 +2,7 @@
 title: 日志记录最佳实践
 date: 2022-01-18 19:06:47
 author: Starrier
-tags: [log]
+tags: [最佳实践]
 excerpt: 日志记录最佳实践
 swiper:
 keywords: [log]

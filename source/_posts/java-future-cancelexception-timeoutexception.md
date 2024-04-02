@@ -2,7 +2,7 @@
 title: Future 取消异常机制
 date: 2022-01-06 14:42:53
 author: Starrier
-tags: [java]
+tags: [Java]
 excerpt: Future 异常
 swiper:
 keywords: [多线程]

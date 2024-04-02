@@ -2,10 +2,10 @@
 title: 深入理解 RabbitMQ 简介
 date: 2022-02-17 16:45:09
 author: Starrier
-tags: [RabbitMQ]
+tags: [消息中间件]
 excerpt: 深入理解 RabbitMQ 简介
 swiper:
-keywords: [RabbitMQ]
+keywords: [RabbitMQ,MQ,消息中间件]
 description: 深入理解 RabbitMQ 简介
 ---
 

@@ -2,7 +2,7 @@
 title: 高并发 - 缓存问题处理方案
 date: 2021-02-02 10:21:44
 author: Imperator
-tags: [分布式基础]
+tags: [分布式]
 excerpt: 高并发 - 缓存问题处理方案
 swiper:
 keywords: [cache]

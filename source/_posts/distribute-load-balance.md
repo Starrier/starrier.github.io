@@ -2,7 +2,7 @@
 title: distribute-load-balance
 date: 2021-05-19 16:30:50
 author: Starrier
-tags: [分布式基础]
+tags: [分布式]
 excerpt: 分布式系统 - 负载均衡原理及算法实现
 swiper:
 keywords: [分布式,负载均衡]

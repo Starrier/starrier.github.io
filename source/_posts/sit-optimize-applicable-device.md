@@ -2,7 +2,7 @@
 title: sit-optimize-applicable-device
 date: 2021-01-27 13:36:17
 author: Imperator
-tags: [性能优化]
+tags: [最佳实践]
 excerpt: 网站优化，设备适配优化
 swiper:
 keywords: [seo,applicable-device]

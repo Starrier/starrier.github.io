@@ -2,7 +2,7 @@
 title: java 初始化时机
 date: 2021-02-02 09:55:03
 author: Imperator
-tags: [Java 基础]
+tags: [Java]
 excerpt: java 初始化时机
 swiper:
 keywords: [java]

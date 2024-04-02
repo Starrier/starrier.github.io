@@ -2,7 +2,7 @@
 title: 分布式系统 - RPC
 date: 2021-05-19 09:43:33
 author: Starrier
-tags: [分布式基础]
+tags: [分布式]
 excerpt: 分布式系统 - RPC
 swiper:
 keywords: [RPC,分布式]

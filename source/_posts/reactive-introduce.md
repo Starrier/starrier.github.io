@@ -2,7 +2,7 @@
 title: 响应式编程简介
 date: 2021-02-04 22:37:47
 author: Imperator
-tags: [响应式编程]
+tags: [开发范式]
 excerpt: 响应式编程简介
 swiper:
 keywords: [reactive,rx]

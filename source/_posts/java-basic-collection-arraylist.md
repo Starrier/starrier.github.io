@@ -2,7 +2,7 @@
 title: Java 集合 ArrayList 详解
 date: 2021-01-29 15:40:16
 author: Imperator
-tags: [Java 基础]
+tags: [Java]
 excerpt: Java 集合 ArrayList 详解
 swiper: /medias/1.jpg
 keywords: [java,collection,arraylist]

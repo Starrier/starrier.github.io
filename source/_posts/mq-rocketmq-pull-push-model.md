@@ -2,10 +2,10 @@
 title: 深入理解 RocketMQ 拉推模型 - Pull 模型
 date: 2022-02-21 17:02:48
 author: Starrier
-tags: [mq]
+tags: [消息中间件]
 excerpt: 深入理解 RocketMQ 拉推模型 - Pull 模型
 swiper:
-keywords: [mq]
+keywords: [消息中间件,MQ,RocketMQ]
 description: 深入理解 RocketMQ 拉推模型 - Pull 模型
 ---
 

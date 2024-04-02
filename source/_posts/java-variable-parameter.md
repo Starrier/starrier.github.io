@@ -2,7 +2,7 @@
 title: Java 可变参数
 date: 2021-01-13 22:02:12
 author: Imperator
-tags: [Java 基础]
+tags: [Java]
 excerpt: Java 可变参数分析
 ---
 

@@ -2,7 +2,7 @@
 title: 数据结构 - 红黑树
 date: 2022-03-07 15:30:54
 author: Starrier
-tags: [数据结构]
+tags: [数据结构与算法]
 excerpt: 数据结构 - 红黑树
 swiper:
 keywords: [数据结构]

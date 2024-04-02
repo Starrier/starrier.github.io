@@ -2,7 +2,7 @@
 title: Lambda表达式的原理
 date: 2021-08-19 09:10:40
 author: Starrier
-tags: [lambda]
+tags: [开发范式]
 excerpt:  Lambda表达式的原理
 swiper:
 keywords: [lambda]

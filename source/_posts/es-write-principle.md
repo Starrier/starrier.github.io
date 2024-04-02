@@ -2,10 +2,10 @@
 title: ES 数据写入原理
 date: 2022-02-15 11:21:52
 author: Starrier
-tags: [es]
+tags: [NoSQL]
 excerpt: ES 数据写入原理
 swiper:
-keywords: [es]
+keywords: [es,NoSQL,elastic,elasticsearch]
 description: ES 数据写入原理
 ---
 

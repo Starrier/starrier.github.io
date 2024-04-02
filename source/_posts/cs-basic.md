@@ -2,7 +2,7 @@
 title: 计算机基础
 date: 2022-01-27 16:35:28
 author: Starrier
-tags: [计算机基础]
+tags: [计算机网络]
 excerpt: 计算机基础
 swiper:
 keywords: [计算机基础]

@@ -2,7 +2,7 @@
 title: java-thread-volatile
 date: 2021-05-25 09:37:37
 author: Starrier
-tags: [并发编程]
+tags: [多线程]
 excerpt: 并发编程 - 深入理解 volatile
 swiper:
 keywords: [并发编程,volatile]

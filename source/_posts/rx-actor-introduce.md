@@ -2,7 +2,7 @@
 title: Actor 模型简介
 date: 2021-02-04 23:04:44
 author: imperater
-tags: [响应式编程]
+tags: [开发范式]
 excerpt: Actor 模型简介
 swiper:
 keywords: [actor]

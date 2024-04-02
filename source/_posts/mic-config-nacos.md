@@ -2,7 +2,7 @@
 title: 深入理解微服务配置中心 - Nacos
 date: 2022-02-22 09:41:22
 author: Starrier
-tags: [微服务]
+tags: [分布式]
 excerpt: 深入理解微服务配置中心 - Nacos
 swiper:
 keywords: [微服务]

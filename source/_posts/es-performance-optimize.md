@@ -2,7 +2,7 @@
 title: 深入理解 ES 性能优化
 date: 2022-02-23 20:41:24
 author: Starrier
-tags: [ES]
+tags: [NoSQL]
 excerpt: 深入理解 ES 性能优化
 swiper:
 keywords: [ES]

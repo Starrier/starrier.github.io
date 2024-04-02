@@ -2,7 +2,7 @@
 title: 分布式理论-CAP
 date: 2019-02-22 23:40:04
 author: Imperator
-tags: [分布式基础]
+tags: [分布式]
 excerpt: 分布式系统 - CAP 理论
 ---
 

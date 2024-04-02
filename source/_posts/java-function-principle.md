@@ -2,7 +2,7 @@
 title: 深入理解 Java 函数式编程
 date: 2021-01-31 13:10:55
 author: Imperator
-tags: [函数式编程]
+tags: [开发范式]
 excerpt: 深入理解 Java 函数式编程
 swiper:
 keywords: [java,functional,function]

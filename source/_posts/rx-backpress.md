@@ -2,7 +2,7 @@
 title: 深入理解 Rx 背压
 date: 2022-02-15 17:40:22
 author: Starrier
-tags: [Rx]
+tags: [开发范式]
 excerpt: 深入理解 Rx 背压
 swiper:
 keywords: [Rx]

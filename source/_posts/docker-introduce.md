@@ -2,7 +2,7 @@
 title: 深入理解 Docker
 date: 2022-02-25 09:29:56
 author: Starrier
-tags: [Docker]
+tags: [DevOps]
 excerpt: 深入理解 Docker
 swiper:
 keywords: [Docker]

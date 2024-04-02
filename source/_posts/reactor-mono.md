@@ -2,7 +2,7 @@
 title: reactor-mono
 date: 2021-01-13 20:17:20
 author: Starrier
-tags: [响应式编程]
+tags: [开发范式]
 excerpt: Reactor 简介
 ---
 

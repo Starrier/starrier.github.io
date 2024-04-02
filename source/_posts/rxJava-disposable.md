@@ -2,7 +2,7 @@
 title: 响应式编程 - RxJava - Disposable
 date: 2021-01-12 22:21:24
 author: Imperater
-tags: [响应式编程]
+tags: [开发范式]
 excerpt: 响应式编程 RxJava API Disposable 分析
 ---
 

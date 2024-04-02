@@ -2,7 +2,7 @@
 title: jvm-tools-jmap
 date: 2021-05-14 11:07:28
 author: Starrier
-tags: [jvm]
+tags: [JVM]
 excerpt: Java VM 工具 - JStack
 swiper:
 keywords: [jvm,jstack]

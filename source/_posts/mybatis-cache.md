@@ -2,7 +2,7 @@
 title: 深入理解 MyBatis - 缓存
 date: 2022-02-14 17:10:48
 author:  Starrier
-tags: [MyBatis]
+tags: [中间件]
 excerpt: 深入理解 MyBatis - 缓存
 swiper:
 keywords: [MyBatis]

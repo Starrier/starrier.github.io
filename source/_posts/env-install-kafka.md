@@ -2,7 +2,7 @@
 title: 环境搭建 - kafka -docker
 date: 2021-01-25 12:39:05
 author: Imperator
-tags: [环境搭建]
+tags: [DevOps]
 excerpt: 使用 `Docker` 搭建 `kafka` 环境
 swiper: 
 keywords: [docker,kafka]

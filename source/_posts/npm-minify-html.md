@@ -2,7 +2,7 @@
 title: minify-html 使用详解
 date: 2021-01-28 09:42:35
 author: Imperator
-tags: [性能优化]
+tags: [最佳实践]
 excerpt: minify-html 使用详解
 swiper:
 keywords: [minify-html,seo,hexo]

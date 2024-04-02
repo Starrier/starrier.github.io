@@ -2,7 +2,7 @@
 title: 事件
 date: 2021-05-25 11:04:09
 author: Starrier
-tags: [middle]
+tags: [分布式]
 excerpt: 事件
 swiper:
 keywords: [middle,event]

@@ -2,7 +2,7 @@
 title: performance-interface-optimize
 date: 2021-05-19 11:07:30
 author: Starrier
-tags: [性能基础]
+tags: [最佳实践]
 excerpt: 性能优化 - 接口性能优化方法
 swiper:
 keywords: [性能优化,接口性能优化]

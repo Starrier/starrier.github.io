@@ -2,7 +2,7 @@
 title:  深入理解 Java 动态代理
 date: 2021-05-24 12:32:24
 author: Starrier
-tags: [Java 基础]
+tags: [Java]
 excerpt: 深入理解 Java 动态代理
 swiper:
 keywords: []
