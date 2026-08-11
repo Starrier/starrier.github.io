@@ -30,35 +30,11 @@ jobs:
         run: npm ci --include=dev --no-fund --no-audit
 
       - name: Generate site
-        id: generate
-        continue-on-error: true
         run: |
-          set +e
-          node ./node_modules/hexo/bin/hexo version > gen.log 2>&1
-          node ./node_modules/hexo/bin/hexo generate >> gen.log 2>&1
-          HEXO_EXIT=$?
-          echo "HEXO_EXIT:$HEXO_EXIT" | tee -a gen.log
-          ls -la public >> gen.log 2>&1 || true
-          cat gen.log
-          exit $HEXO_EXIT
-
-      - name: Publish build log on failure
-        if: steps.generate.outcome == 'failure'
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const fs = require('fs');
-            const log = fs.readFileSync('gen.log', 'utf8').slice(0, 60000);
-            await github.rest.repos.createCommitComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              commit_sha: context.sha,
-              body: '### Hexo CI failure log\n\n```text\n' + log + '\n```'
-            });
-            core.setFailed('hexo generate failed; see commit comment for log');
+          node ./node_modules/hexo/bin/hexo generate
+          test -f public/index.html
 
       - name: Deploy to gh-pages
-        if: steps.generate.outcome == 'success'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
