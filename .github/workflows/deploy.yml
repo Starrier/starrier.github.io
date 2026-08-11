@@ -36,12 +36,11 @@ jobs:
           set +e
           node ./node_modules/hexo/bin/hexo version > gen.log 2>&1
           node ./node_modules/hexo/bin/hexo generate >> gen.log 2>&1
-          echo "HEXO_EXIT:$?" | tee -a gen.log
-          node ./node_modules/gulp/bin/gulp.js >> gen.log 2>&1 || true
-          ls -la public | head -20 >> gen.log 2>&1 || true
-          test -f public/index.html
-          echo "TEST_EXIT:$?" | tee -a gen.log
+          HEXO_EXIT=$?
+          echo "HEXO_EXIT:$HEXO_EXIT" | tee -a gen.log
+          ls -la public >> gen.log 2>&1 || true
           cat gen.log
+          exit $HEXO_EXIT
 
       - name: Publish build log on failure
         if: steps.generate.outcome == 'failure'
