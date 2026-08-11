@@ -19,6 +19,7 @@
     "babel-preset-mobx": "^2.0.0",
     "browser-sync": "^2.26.13",
     "eslint": "^8.57.0",
+    "gulp": "^4.0.2",
     "gulp-babel": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.3.0",
@@ -31,7 +32,6 @@
     "hexo": "^5.0.0",
     "hexo-baidu-url-submit": "0.0.6",
     "hexo-browsersync": "^0.3.0",
-    "hexo-cli": "^4.3.2",
     "hexo-deployer-git": "^2.1.0",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-generator-archive": "^1.0.0",
@@ -49,8 +49,7 @@
     "hexo-symbols-count-time": "^0.7.1",
     "hexo-theme-landscape": "^0.0.3",
     "hexo-wordcount": "^6.0.1",
-    "lighthouse": "^7.0.1",
-    "gulp": "^4.0.2"
+    "lighthouse": "^7.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
