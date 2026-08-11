@@ -1,9 +1,19 @@
 name: Deploy Hexo
 
+# Only runs after changes land on master (e.g. PR merge).
+# Pushes to feature/dev branches do NOT consume Actions minutes.
 on:
   push:
     branches: [master]
-  workflow_dispatch:
+    paths:
+      - 'source/**'
+      - 'themes/**'
+      - '_config.yml'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'gulpfile.js'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch: # manual run only when you click it in the Actions UI
 
 permissions:
   contents: write
