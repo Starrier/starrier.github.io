@@ -1,7 +1,15 @@
 # Starrier's Blog
 
-[![Build Status](https://app.travis-ci.com/Starrier/starrier.github.io.svg?branch=master)](https://travis-ci.com/Starrier/starrier.github.io)
+[![Deploy Hexo](https://github.com/Starrier/starrier.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/Starrier/starrier.github.io/actions/workflows/deploy.yml)
 
-## **<font color=red>注意:</font>**
+Push to `master` will build with Hexo and deploy to the `gh-pages` branch (GitHub Pages).
 
-鉴于 `Travis CI`  已不在为开源项目提供免费的 `CI`，后续会重建目录。同时会迁移至 `GitHub Action CI`,因此网站 内容非最新，参见 `GitHub PR` 即可。
+## Local
+
+```bash
+npm install
+npx hexo server   # http://localhost:4000
+npm run build     # hexo clean && hexo g && gulp
+```
+
+Manual deploy is usually unnecessary; use GitHub Actions, or run `npm run deploy` locally if needed.

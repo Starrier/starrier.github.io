@@ -15,7 +15,7 @@ swiper: medias/1.jpg
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://starrier.starrier.org/
+url: https://starrier.github.io/
 root: /
 permalink: blogs/:title.html
 permalink_defaults:

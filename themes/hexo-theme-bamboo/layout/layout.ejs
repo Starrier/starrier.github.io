@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <%- partial('_partial/head') %>
-  <script src="https://pagecdn.io/lib/jquery/3.5.1/jquery.js"></script>
-  <script src="https://pagecdn.io/lib/vue/2.6.11/vue.js"></script>
+  <script src="<%- url_for('/js/jquery3.5.1.js') %>"></script>
+  <script src="<%- url_for('/js/vue2.6.11.js') %>"></script>
   <body>
     <!-- 判断是否为黑夜模式 -->
     <script>
@@ -40,7 +40,7 @@
         <script src="<%- url_for('/js/cursor/fireworks.js') %>"></script>
       <% } else if(theme.cursor_effect.type === "explosion") { %>
         <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 999; pointer-events: none;" ></canvas>
-        <script src="https://pagecdn.io/lib/anime/3.2.0/anime.min.js"></script>
+        <script src="<%- url_for('/js/anime.min.js') %>"></script>
         <script src="<%- url_for('/js/cursor/explosion.min.js') %>"></script>
       <% } else if(theme.cursor_effect.type === "love") { %>
         <script src="<%- url_for('/js/cursor/clicklove.js') %>"></script>
