@@ -5,7 +5,6 @@ var htmlclean = require('gulp-htmlclean');
 var minifycss = require('gulp-minify-css');
 var uglify = require('gulp-uglify-es').default;
 var htmlmin = require('gulp-htmlmin');
-var imagemin = require('gulp-imagemin');//引入gulp-imagemin插件
 
 // 代理
 gulp.task('browser-sync', function () {
@@ -56,23 +55,27 @@ gulp.task('minify-js', function () {
         .pipe(gulp.dest('public/js'));
 });
 
-// 压缩 public/images 目录内图片(Version>3)
-gulp.task('minify-images', function () {
-   return gulp.src('src/img/*.{png,jpg,gif,ico}')//读取src/img下的所有png,jpg,gif,ico后缀名的文件
+// 压缩图片（可选；默认构建不依赖原生 imagemin 二进制，避免 CI 失败）
+gulp.task('minify-images', function (done) {
+   var imagemin;
+   try {
+     imagemin = require('gulp-imagemin');
+   } catch (e) {
+     console.warn('gulp-imagemin unavailable, skip minify-images:', e.message);
+     done();
+     return;
+   }
+   return gulp.src('src/img/*.{png,jpg,gif,ico}')
        .pipe(imagemin({
-           optimizationLevel: 5, //类型：Number  默认：3  取值范围：0-7（优化等级）
-           progressive: true, //类型：Boolean 默认：false 无损压缩jpg图片
-           interlaced: true, //类型：Boolean 默认：false 隔行扫描gif进行渲染
-           multipass: true //类型：Boolean 默认：false 多次优化svg直到完全优化
+           optimizationLevel: 5,
+           progressive: true,
+           interlaced: true,
+           multipass: true
        }))
        .pipe(gulp.dest('dist/img'));
 });
 
-//gulp.task('default',gulp.parallel('browser-sync'));
-gulp.task('default', gulp.series(gulp.parallel('minify-css', 'minify-js','minify-images')), function () {
-   console.log("----------gulp Finished----------");
-// Do something after a, b, and c are finished.
-});
+gulp.task('default', gulp.parallel('minify-css', 'minify-js'));
 
 //gulp.task('default', gulp.series(gulp.parallel('minify-html', 'minify-css', 'minify-js')), function () {
  //   console.log("----------gulp Finished----------");
