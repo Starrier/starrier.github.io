@@ -1,0 +1,19 @@
+source/_posts/java-basic-string.md
+  s_eafe4c6bc41364::t_910fba1518307d 1-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "e0e85721f74a6eb27fc8e921d704d285c628d94c",
+  "prompts": {},
+  "sessions": {
+    "s_eafe4c6bc41364": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "89480e95-308c-4e91-99b2-2f639131289a",
+        "model": "default"
+      },
+      "human_author": "Starrier <starrier@starrier.org>"
+    }
+  }
+}
