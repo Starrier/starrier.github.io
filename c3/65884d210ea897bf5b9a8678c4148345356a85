@@ -1,0 +1,125 @@
+themes/hexo-theme-bamboo/layout/_partial/baidu_tongji.ejs
+  s_eafe4c6bc41364::t_dfe7eab3acf3d0 7
+themes/hexo-theme-bamboo/_config.yml
+  s_eafe4c6bc41364::t_267498f619894d 109
+  s_eafe4c6bc41364::t_28bbb8c1cf453a 393
+  s_eafe4c6bc41364::t_514864f7b45838 88
+  s_eafe4c6bc41364::t_4f9f75c74c45fb 370
+  s_eafe4c6bc41364::t_24bbd0873fddfe 407-408
+themes/hexo-theme-bamboo/source/css/_partial/base.styl
+  s_eafe4c6bc41364::t_e60f367af7d368 21,24,30
+source/_posts/hexo-ssr.md
+  s_eafe4c6bc41364::t_b1daea1cf909aa 7-9
+themes/hexo-theme-bamboo/source/js/vue2.6.11.js
+  s_eafe4c6bc41364::t_f21edbfb60fb57 6
+themes/hexo-theme-bamboo/layout/_partial/post/post-nav.ejs
+  s_eafe4c6bc41364::t_3628fbf0bc4c73 20,47
+source/_posts/cs-domain.md
+  s_eafe4c6bc41364::t_e6d9140a467e6d 7
+gulpfile.js
+  s_eafe4c6bc41364::t_d76be2e6428190 18,24-25,67
+  s_eafe4c6bc41364::t_cb1227a034e7a7 6-7,26-36,38-49,51
+  s_eafe4c6bc41364::t_dd2259e33a8c45 55-60
+themes/hexo-theme-bamboo/source/js/bubble/bubble.js
+  s_eafe4c6bc41364::t_f90cfdc48bc2f2 3-5
+  s_eafe4c6bc41364::t_c7f597fa14772a 2,9-12,16,18,21-30,33-38,40,43-47,60-64,77,79
+source/_posts/hexo-seo.md
+  s_eafe4c6bc41364::t_95e7f18813f584 8-9
+themes/hexo-theme-bamboo/layout/_partial/head.ejs
+  s_eafe4c6bc41364::t_d922c4800376c4 108-109,111-112
+  s_eafe4c6bc41364::t_5b65820a80fb2c 51-54,69,71,73,91,101-106,113,121,132,145-146
+source/_posts/middle-intruduct.md
+  s_eafe4c6bc41364::t_e819b5ce49303e 9-10
+themes/hexo-theme-bamboo/source/js/wrapImage.js
+  s_eafe4c6bc41364::t_99b48e901ebe7a 9,11-14,46
+source/_posts/hexo-function.md
+  s_eafe4c6bc41364::t_7101671a9a0ca0 7-8,10
+README.md
+  s_eafe4c6bc41364::t_4a7ccd5d7e47f6 40
+themes/hexo-theme-bamboo/scripts/lazy-images.js
+  s_eafe4c6bc41364::t_341b54a43f7989 1-18
+themes/hexo-theme-bamboo/source/css/animate.min.css
+  ai_agent 1-5
+themes/hexo-theme-bamboo/layout/tag.ejs
+  s_eafe4c6bc41364::t_669eff4a072df6 51-57
+  s_eafe4c6bc41364::t_06d176512e8848 72
+themes/hexo-theme-bamboo/source/css/font-awesome.min.css
+  ai_agent 1-4
+source/_posts/git-rest.md
+  s_eafe4c6bc41364::t_fe02023b62f140 7-9
+themes/hexo-theme-bamboo/layout/post.ejs
+  s_eafe4c6bc41364::t_36a531dc10d45d 113-114
+themes/hexo-theme-bamboo/layout/_partial/drawer.ejs
+  s_eafe4c6bc41364::t_2ae75e039cfd03 9
+themes/hexo-theme-bamboo/layout/layout.ejs
+  s_eafe4c6bc41364::t_6a23f00b80512e 6-19,49-51,55-63,67-73,78-82,94-108,119,124-125,129-130,150,154-158,161
+  s_eafe4c6bc41364::t_404a3e30a1b2c0 20-31
+  s_eafe4c6bc41364::t_dfc2338551d21e 86-92
+  s_eafe4c6bc41364::t_fcf804f03ab812 120-123
+  s_eafe4c6bc41364::t_3a5219a1f3287e 64-66
+themes/hexo-theme-bamboo/layout/_partial/swiper.ejs
+  s_eafe4c6bc41364::t_929b8d4e8eb432 92-93,96
+  s_eafe4c6bc41364::t_2dd1ca06abeaa4 176
+  s_eafe4c6bc41364::t_01ef2786cb20a4 1
+  s_eafe4c6bc41364::t_17b4bc54bb2711 51
+  s_eafe4c6bc41364::t_beec6414afaad6 122-126
+  s_eafe4c6bc41364::t_a63660ed27a363 22-32,34-36
+  s_eafe4c6bc41364::t_6b3d03e5c2321f 59-60,63-70,73
+source/_posts/utils-git-commit-refactor.md
+  s_eafe4c6bc41364::t_af42f1fa6569bb 7-9
+themes/hexo-theme-bamboo/layout/_partial/topArticle.ejs
+  s_eafe4c6bc41364::t_33d86e3e4934cb 24
+themes/hexo-theme-bamboo/source/css/swiper.min.css
+  ai_agent 1-13
+_config.yml
+  s_eafe4c6bc41364::t_7e5aa299349fc6 78
+  s_eafe4c6bc41364::t_43b30b89b831d6 168
+themes/hexo-theme-bamboo/layout/category.ejs
+  s_eafe4c6bc41364::t_f76d53c06ff88c 72
+  s_eafe4c6bc41364::t_bad8d7d099af0c 51-57
+themes/hexo-theme-bamboo/layout/_partial/post-detail-header.ejs
+  s_eafe4c6bc41364::t_02f3c23f528918 17
+source/_posts/site-introduce.md
+  s_eafe4c6bc41364::t_50c9156715b78a 9-10
+themes/hexo-theme-bamboo/source/css/pace/pace-theme-flash.min.css
+  ai_agent 1
+.github/workflows/deploy.yml
+  s_eafe4c6bc41364::t_36b6c4eeeed844 42,45
+themes/hexo-theme-bamboo/layout/_partial/dark.ejs
+  s_eafe4c6bc41364::t_fba25317bcd6e1 11
+themes/hexo-theme-bamboo/layout/_partial/baidu-push.ejs
+  s_eafe4c6bc41364::t_6be72379bb2020 12
+source/_posts/important-dong-task.md
+  s_eafe4c6bc41364::t_24ab64aebc1d46 8-9
+themes/hexo-theme-bamboo/source/js/pace.min.js
+  ai_agent 1-2
+themes/hexo-theme-bamboo/layout/index.ejs
+  s_eafe4c6bc41364::t_d6f0806a8dcde3 47
+  s_eafe4c6bc41364::t_10ad7f543f3f37 85,87-91,93-97
+themes/hexo-theme-bamboo/layout/_partial/header.ejs
+  s_eafe4c6bc41364::t_5e5e94bfb4012e 11
+source/_posts/ml-algorithm-gradient-boosting.md
+  s_eafe4c6bc41364::t_282ab123cce4d5 6
+themes/hexo-theme-bamboo/source/css/_partial/post.styl
+  s_eafe4c6bc41364::t_f9edf61b6840bb 223
+themes/hexo-theme-bamboo/layout/_partial/footer.ejs
+  s_eafe4c6bc41364::t_7bda3f9aead439 32
+  s_eafe4c6bc41364::t_1800eac5473779 33
+  s_eafe4c6bc41364::t_7867cf6be663f5 16-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "c365884d210ea897bf5b9a8678c4148345356a85",
+  "prompts": {},
+  "sessions": {
+    "s_eafe4c6bc41364": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "89480e95-308c-4e91-99b2-2f639131289a",
+        "model": "default"
+      },
+      "human_author": "Starrier <starrier@starrier.org>"
+    }
+  }
+}
