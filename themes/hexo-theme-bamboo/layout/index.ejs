@@ -82,19 +82,27 @@
 </section>
 <%- partial('_partial/paginator') %>
 
-<!-- 雪花和花瓣特效：仅桌面且未开启减少动态时加载 -->
+<!-- 雪花和花瓣特效 -->
 <% if(theme.snow.on === true ) { %>
-  <script>
-    if (window.__bambooCanDecorate && window.__bambooCanDecorate()) {
-      window.__bambooLoadScript('<%- url_for("/js/snow.js") %>');
-    }
-  </script>
+  <% if(theme.snow.onlyPc === true ) { %>
+    <script>
+      if ($(window).width() > 768) {
+        window.__bambooLoadScript('<%- url_for("/js/snow.js") %>');
+      }
+    </script>
+  <% } else {  %>
+    <script src="<%- url_for('/js/snow.js') %>"></script>
+  <% } %>
 <% } else if(theme.sakura.on === true) { %>
-  <script>
-    if (window.__bambooCanDecorate && window.__bambooCanDecorate()) {
-      window.__bambooLoadScript('<%- url_for("/js/sakura.js") %>');
-    }
-  </script>
+  <% if(theme.sakura.onlyPc === true ) { %>
+    <script>
+      if ($(window).width() > 768) {
+        window.__bambooLoadScript('<%- url_for("/js/sakura.js") %>');
+      }
+    </script>
+  <% } else { %>
+    <script src="<%- url_for('/js/sakura.js') %>"></script>
+  <% } %>
 <% } %>
 
   
