@@ -4,9 +4,10 @@ date: 2021-01-22 10:12:15
 author: Imperator
 tags: [Hexo]
 excerpt: hexo 小功能
-swiper: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/fin-series.jpeg
+swiper: true
+swiperImg: /medias/fin-series.jpeg
 keywords: [Hexo,hexo]
-img: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/fin-series.jpeg
+img: /medias/fin-series.jpeg
 description: hexo 功能升级
 ---
 

@@ -26,3 +26,15 @@ npm install
 npx hexo server   # http://localhost:4000
 npm run build     # hexo clean && hexo g && gulp
 ```
+
+
+## 新版写法
+
+```bash
+git checkout -b article/xxx
+npx hexo new "标题"
+# 本地预览：npx hexo server
+git add -A && git commit -m "add: ..."
+git push -u origin HEAD
+# 开 PR，合并进 master → 只触发 1 次 Action
+```

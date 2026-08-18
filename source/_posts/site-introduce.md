@@ -6,8 +6,8 @@ tags: [Starrier]
 excerpt: 关于当前网站的一些问题说明
 top: tue
 swiper: true
-swiperImg: https://cdn.stocksnap.io/img-thumbs/960w/single-tree_HJDLDXUIFW.jpg
-img: https://cdn.stocksnap.io/img-thumbs/960w/single-tree_HJDLDXUIFW.jpg
+swiperImg: /medias/1.jpg
+img: /medias/1.jpg
 ---
 
 # 站点建设

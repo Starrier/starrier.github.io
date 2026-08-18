@@ -5,8 +5,8 @@ author: Imperater
 tags: [Starrier]
 top: true
 excerpt: 当前建设中的重点内容
-img: https://visualhunt.com/photos/1/white-earphones-and-papers-on-table.jpg?s=l
-swiperImg: https://visualhunt.com/photos/1/white-earphones-and-papers-on-table.jpg?s=l
+img: /medias/3.jpg
+swiperImg: /medias/3.jpg
 ---
 
 ## 当前网站建设的重点内容

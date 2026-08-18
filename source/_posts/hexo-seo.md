@@ -5,8 +5,8 @@ author: Imperator
 tags: [Hexo]
 excerpt: hexo seo 优化
 swiper: true
-swiperImg: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/snow.webp
-img: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/fin-series.jpeg
+swiperImg: /medias/snow.jpg
+img: /medias/fin-series.jpeg
 ---
 
 # Hexo SEO  优化

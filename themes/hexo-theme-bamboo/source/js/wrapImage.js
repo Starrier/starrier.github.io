@@ -6,8 +6,12 @@ $(document).ready(function () {
 * Wrap images with fancybox support.
 */
 function wrapImageWithFancyBox() {
-  $('img').not('.swiper-slide img').not('.sidebar-image img').not('#author-avatar img').not(".post-donate img").not(".post-donate img").not(".friend-avatar img").not('[title=notice]').not("#myComment img").not(".social-share .qrcode img").each(function () {
+  $('img').not('.swiper-slide img').not('.sidebar-image img').not('#author-avatar img').not(".post-donate img").not(".friend-avatar img").not('[title=notice]').not("#myComment img").not(".social-share .qrcode img").each(function () {
     var $image = $(this);
+    $image.attr({
+      loading: 'lazy',
+      decoding: 'async'
+    });
     var imageCaption = $image.attr('alt');
     var $imageWrapLink = $image.parent('a');
 

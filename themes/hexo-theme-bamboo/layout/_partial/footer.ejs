@@ -13,8 +13,9 @@
             <a href="/atom.xml" target="_blank">
                 <i class="fa fa-rss" aria-hidden="true"></i>
             </a>
-            <a>       <!--  友盟—+ -->
-                <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279642429'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279642429%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+            <a>
+                <span id="cnzz_stat_icon_1279642429"></span>
+                <script async src="https://s4.cnzz.com/z_stat.php?id=1279642429&show=pic"></script>
             </a>
         </div>
         <div class="footer-copyright">
@@ -28,8 +29,8 @@
 
             <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011102010240"
                style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
-                <img src="https://cdn.jsdelivr.net/gh/Starrier/configure-resources@v0.0.1/images/core/beian-log.png"
-                     style="float:left;" alt="备案图标"/>
+                <img src="<%- url_for('/medias/beian-logo.png') %>"
+                     style="float:left;" alt="备案图标" width="20" height="20" loading="lazy" decoding="async"/>
                 <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#110E0E;">苏公网安备 32011102010240号</p></a>
         </div>
 

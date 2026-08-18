@@ -1,4 +1,4 @@
-<link href="https://cdn.bootcdn.net/ajax/libs/Swiper/5.4.1/css/swiper.min.css" rel="stylesheet">
+<link href="<%- url_for('/css/swiper.min.css') %>" rel="stylesheet">
 <%
     var hashCode = function (str) {
         if (!str && str.length === 0) {
@@ -19,7 +19,21 @@ var imgArr = theme.imgs;
 var swpiers = site.posts.filter(function(post) {return post.swiper});
 var swiperLength = swpiers.length;
 var defaultIndex = Math.floor((Math.random()*imgArr.length));
+var isFirstSwiperSlide = true;
+var firstSwiperImg = theme.swiper.defaultImg || imgArr[defaultIndex];
+site.posts.sort('-date').each(function (post) {
+  if (post.swiper === true && isFirstSwiperSlide) {
+    var imgs = theme.imgs;
+    var hashed = (!imgs || imgs.length === 0) ? firstSwiperImg : imgs[Math.abs(hashCode(post.title) % imgs.length)];
+    firstSwiperImg = post.swiperImg || hashed;
+    isFirstSwiperSlide = false;
+  }
+});
+isFirstSwiperSlide = true;
 %>
+<% if (firstSwiperImg) { %>
+<link rel="preload" as="image" href="<%- url_for(firstSwiperImg) %>">
+<% } %>
 <div class="swiper-length" style="display: none;"><%- swiperLength %></div>
 <div id="appSwiper"
   class="<% if(swiperLength <= 1) { %>swiper-no-swiping<% } %>"
@@ -34,7 +48,7 @@ var defaultIndex = Math.floor((Math.random()*imgArr.length));
         %>
         <% if(post.swiper === true) { %>
           <%
-            var img = 'https://ssyerv1.oss-cn-hangzhou.aliyuncs.com/picture/ada660a8c596431983dddd411a12f2b3.jpg!sswm';
+            var img = '/medias/1.jpg';
             var imgs = theme.imgs;
             if (!imgs || imgs.length === 0) {
                 return img;
@@ -42,14 +56,21 @@ var defaultIndex = Math.floor((Math.random()*imgArr.length));
             img = imgs[Math.abs(hashCode(post.title) % imgs.length)]
           %>
           <swiper-slide>
-            <div class="item swiper-lazy" data-background="<%- url_for(post.swiperImg || img) %>" style=" background-size: 90000px;
-            background-position: center center;" style="position: relative;">
+            <% if (isFirstSwiperSlide) { %>
+            <div class="item" style="background-image: url('<%- url_for(post.swiperImg || img) %>'); background-size: cover; background-position: center center; position: relative;">
             <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
               <div class="flag" style="z-index: 2;">
-                <div class="img-mask swiper-lazy" data-background="<%- url_for(post.swiperImg || img) %>" style="height: 100%; background-size: cover;
-                  background-position: center center;">
+                <div class="img-mask" style="height: 100%; background-image: url('<%- url_for(post.swiperImg || img) %>'); background-size: cover; background-position: center center;">
+                </div>
+            <% isFirstSwiperSlide = false; %>
+            <% } else { %>
+            <div class="item swiper-lazy" data-background="<%- url_for(post.swiperImg || img) %>" style="background-size: cover; background-position: center center; position: relative;">
+            <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
+              <div class="flag" style="z-index: 2;">
+                <div class="img-mask swiper-lazy" data-background="<%- url_for(post.swiperImg || img) %>" style="height: 100%; background-size: cover; background-position: center center;">
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
+            <% } %>
                 <div class="flag-text">
                   <div>
                     <div class="title ani animated" swiper-animate-effect="<%= theme.swiper.textAnimated %>" swiper-animate-duration="<%= theme.swiper.textDuration %>" swiper-animate-delay="<%= theme.swiper.textDelay %>"><%=post.title%></div>
@@ -68,13 +89,12 @@ var defaultIndex = Math.floor((Math.random()*imgArr.length));
     <div class="swiper-button-next swiper-button-white" slot="button-next" style="<% if(!theme.swiper.showPrevNext || swiperLength <= 1) { %>display: none;<% } %>"></div>
     <% } else { %>
       <swiper-slide>
-        <div class="item swiper-lazy" data-background="<%- url_for(theme.swiper.defaultImg || imgArr[defaultIndex]) %>" style="background-size: 90000px;
-          background-position: center center;" style="position: relative;">
+            <div class="item" style="background-image: url('<%- url_for(theme.swiper.defaultImg || imgArr[defaultIndex]) %>'); background-size: cover;
+          background-position: center center; position: relative;">
           <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
             <div class="flag">
-              <div class="img-mask swiper-lazy" data-background="<%- url_for(theme.swiper.defaultImg || imgArr[defaultIndex]) %>" style="height: 100%; background-size: cover;
+              <div class="img-mask" style="height: 100%; background-image: url('<%- url_for(theme.swiper.defaultImg || imgArr[defaultIndex]) %>'); background-size: cover;
                 background-position: center center;">
-                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
               <div class="flag-text">
                 <div>
@@ -99,11 +119,11 @@ var defaultIndex = Math.floor((Math.random()*imgArr.length));
   Vue.use(window.VueAwesomeSwiper)
 </script>
 <script>
-  let autoplay = '<%= theme.swiper.autoplay %>';
-  let delay = '<%= theme.swiper.delay %>';
-  let loop = JSON.parse('<%= theme.swiper.loop %>');
-  let effect = '<%= theme.swiper.effect %>';
-  let swiperLength = parseInt(document.querySelector(".swiper-length").innerText);
+  var autoplay = '<%= theme.swiper.autoplay %>';
+  var delay = '<%= theme.swiper.delay %>';
+  var loop = JSON.parse('<%= theme.swiper.loop %>');
+  var effect = '<%= theme.swiper.effect %>';
+  var swiperLength = parseInt(document.querySelector(".swiper-length").innerText);
   var vm = new Vue({
     el: '#appSwiper',
     data: {
@@ -153,9 +173,7 @@ var defaultIndex = Math.floor((Math.random()*imgArr.length));
       startAutoPlay() {
         (autoplay && swiperLength > 1) && this.swiper.autoplay.start();
       },
-      slideChangeTransitionEnd() {
-        console.log('1');
-      }
+      slideChangeTransitionEnd() {}
     },
     created() {}
   })

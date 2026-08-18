@@ -8,7 +8,7 @@
 
 <script>
   $(function() {
-    let isDark = JSON.parse(localStorage.getItem('dark'))  || JSON.parse('<%= theme.dark.default %>');
+    var isDark = JSON.parse(localStorage.getItem('dark'))  || JSON.parse('<%= theme.dark.default %>');
     if (isDark) {
       $(".dark-content").replaceWith(
           `

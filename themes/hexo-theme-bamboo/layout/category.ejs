@@ -48,7 +48,13 @@ background-position: center center;">
             </div>
           </div>
           <div class="post-img-mobile">
-            <a href="<%- url_for(post.path) %>" style="background: url('<%- url_for(post.img  || 'https://ssyerv1.oss-cn-hangzhou.aliyuncs.com/picture/56d7b34ee52046a3af719a1c9b1e0753.jpg!sswm') %>');background-size: cover; 
+            <%
+              var thumb = '/medias/1.jpg';
+              if (theme.imgs && theme.imgs.length) {
+                thumb = theme.imgs[Math.abs(hashCode(post.title) % theme.imgs.length)];
+              }
+            %>
+            <a href="<%- url_for(post.path) %>" style="background: url('<%- url_for(post.img || post.swiperImg || thumb) %>');background-size: cover;
               background-position: center center;">
             </a>
           </div>
@@ -63,7 +69,7 @@ background-position: center center;">
         </div>
       </div>
       <div class="post-img">
-        <a href="<%- url_for(post.path) %>" style="background: url('<%- url_for(post.img  || 'https://ssyerv1.oss-cn-hangzhou.aliyuncs.com/picture/56d7b34ee52046a3af719a1c9b1e0753.jpg!sswm') %>');background-size: cover; 
+        <a href="<%- url_for(post.path) %>" style="background: url('<%- url_for(post.img || post.swiperImg || thumb) %>');background-size: cover;
           background-position: center center;">
         </a>
       </div>

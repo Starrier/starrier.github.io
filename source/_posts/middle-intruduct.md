@@ -6,8 +6,8 @@ top: true
 tag: [中间件 - 文章目录]
 excerpt: 中间件 目录
 swiper: true
-swiperImg: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/snow.webp
-img: https://cdn.jsdelivr.net/gh/Starrier/configure-resources/images/starrier/snow.webp
+swiperImg: /medias/snow.jpg
+img: /medias/snow.jpg
 ---
 
 #  目录 - 理论 -  中间件

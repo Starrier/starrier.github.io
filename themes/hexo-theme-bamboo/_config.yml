@@ -85,7 +85,7 @@ postNav:
 
 # 复制成功提示
 copy:
-  on: true
+  on: false
   title: '成功'
   content: '复制成功了哦'
 
@@ -106,7 +106,7 @@ live2d:
 # 首页雪花飘落效果--冬天
 snow:
   on: true
-  onlyPc: false # 设为true，只有pc端显示雪花特效
+  onlyPc: true # 设为true，只有pc端显示雪花特效
 
 # 首页花瓣飘落效果--春天
 sakura:
@@ -367,7 +367,7 @@ cursor:
   text: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/text.png
 
 # loading图片地址，为空则不使用loading图片
-loadingImg: '/medias/loading.gif'
+loadingImg: false
 
 # 文章图片
 imgs:
@@ -390,7 +390,7 @@ imgs:
 CDN:
   valine: https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js
   iconfont: https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css
-  fontAwesome: https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+  fontAwesome: /css/font-awesome.min.css
   aplayer: https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.js
   Meting: https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js
   MiniValine: https://unpkg.com/minivaline/dist/MiniValine.min.js
@@ -404,8 +404,8 @@ CDN:
   ayuJs: https://cdn.jsdelivr.net/npm/v-plugs-ayu/lib/ayu.umd.min.js
   copyRight: https://creativecommons.org/licenses/by-nc-nd/4.0/
   live2d: https://cdn.jsdelivr.net/gh/yuang01/live2d-widget@latest/autoload.js
-  paceJs: https://cdn.bootcdn.net/ajax/libs/pace/1.0.2/pace.min.js
-  paceCss: https://cdn.bootcdn.net/ajax/libs/pace/1.0.2/themes/pink/pace-theme-flash.css
+  paceJs: /js/pace.min.js
+  paceCss: /css/pace/pace-theme-flash.min.css
   weather: https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0
 
 baidu_tongji: true

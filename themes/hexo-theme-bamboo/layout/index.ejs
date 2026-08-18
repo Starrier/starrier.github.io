@@ -44,7 +44,7 @@
               </a>
             <% } else { %>
               <%
-                var img = 'https://ssyerv1.oss-cn-hangzhou.aliyuncs.com/picture/ada660a8c596431983dddd411a12f2b3.jpg!sswm';
+                var img = '/medias/1.jpg';
                 var imgs = theme.imgs;
                 if (!imgs || imgs.length === 0) {
                     return img;
@@ -82,31 +82,19 @@
 </section>
 <%- partial('_partial/paginator') %>
 
-<!-- 雪花和花瓣特效 -->
+<!-- 雪花和花瓣特效：仅桌面且未开启减少动态时加载 -->
 <% if(theme.snow.on === true ) { %>
-  <% if(theme.snow.onlyPc === true ) { %>
-    <script type="text/javascript">
-      //只在桌面版网页启用特效
-      var windowWidth = $(window).width();
-      if (windowWidth > 768) {
-          document.write('<script type="text/javascript" src="<%- url_for("/js/snow.js") %>"><\/script>');
-      }
-    </script>
-  <% } else {  %>
-    <script src="<%- url_for('/js/snow.js') %>"></script>
-  <% } %>
+  <script>
+    if (window.__bambooCanDecorate && window.__bambooCanDecorate()) {
+      window.__bambooLoadScript('<%- url_for("/js/snow.js") %>');
+    }
+  </script>
 <% } else if(theme.sakura.on === true) { %>
-  <% if(theme.sakura.onlyPc === true ) { %>
-    <script type="text/javascript">
-      //只在桌面版网页启用特效
-      var windowWidth = $(window).width();
-      if (windowWidth > 768) {
-          document.write('<script type="text/javascript" src="<%- url_for("/js/sakura.js") %>"><\/script>');
-      }
-    </script>
-  <% } else { %>
-    <script src="<%- url_for('/js/sakura.js') %>"></script>
-  <% } %>
+  <script>
+    if (window.__bambooCanDecorate && window.__bambooCanDecorate()) {
+      window.__bambooLoadScript('<%- url_for("/js/sakura.js") %>');
+    }
+  </script>
 <% } %>
 
   
