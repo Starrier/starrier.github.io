@@ -360,11 +360,11 @@ color_scheme:
 
 
 
-# 鼠标手势
+# 鼠标手势（系统光标，避免 jsDelivr 自定义 PNG 的 CORS）
 cursor:
-  pointer: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/pointer.png
-  default: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/left_ptr.png
-  text: https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/text.png
+  pointer: pointer
+  default: auto
+  text: text
 
 # loading图片地址，为空则不使用loading图片
 loadingImg: false
