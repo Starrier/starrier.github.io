@@ -1,0 +1,21 @@
+themes/hexo-theme-bamboo/layout/index.ejs
+  s_eafe4c6bc41364::t_3c8fb05205dd99 85,87-95,97-105
+themes/hexo-theme-bamboo/_config.yml
+  s_eafe4c6bc41364::t_a422bcc399a143 109
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.38-trip",
+  "base_commit_sha": "4fe54da27e83eb7da3387761c11859d6c39368ff",
+  "prompts": {},
+  "sessions": {
+    "s_eafe4c6bc41364": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "89480e95-308c-4e91-99b2-2f639131289a",
+        "model": "default"
+      },
+      "human_author": "Starrier <starrier@starrier.org>"
+    }
+  }
+}
