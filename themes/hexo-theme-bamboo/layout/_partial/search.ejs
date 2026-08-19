@@ -11,13 +11,14 @@
           <span class="title"><%= __('search') %></span>
           <!-- <i class="fa fa-close" style="float:right;" aria-hidden="true" @click.self="cancelDialogVisible()"></i> -->
         </h2>
-        <form class="site-search-form">
+        <form class="site-search-form" @submit.prevent>
           <input type="text"
             placeholder="<%= __('keyword') %>"
             id="local-search-input" 
-            @click="getSearchFile()"
+            @focus="getSearchFile()"
             class="st-search-input"
             v-model="searchInput"
+            autocomplete="off"
           />
         </form>
         <div class="result-wrapper">
@@ -49,9 +50,9 @@
         body.style.cssText = 'overflow: hidden;';
       },
       getSearchFile() {
-        if (!this.searchInput) {
-          getSearchFile("<%- url_for('search.xml') %>");
-        }
+        if (this._searchLoaded) return;
+        this._searchLoaded = true;
+        getSearchFile("<%- url_for('search.json') %>");
       },
       cancelDialogVisible() {
         this.dialogVisible = false;
